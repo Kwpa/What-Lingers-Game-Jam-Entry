@@ -4,6 +4,10 @@
   "scene": "scn_cnna5vwr",
   "schema": "patter/strings@0",
   "strings": {
-    "T_3q9t1ouq": "A new scene.",
+    "L_an1fdyvt": "One ghost today!",
+    "L_hdduh06t": "I saw a ghost! @gold",
+    "L_j8bftmg9": "Three ghosts today!",
+    "L_v08b3vax": "Two ghosts today!",
+    "T_3q9t1ouq": "I walked to the shore. ",
   },
 }

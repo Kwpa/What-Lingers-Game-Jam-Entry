@@ -12,13 +12,87 @@
             ],
             "id": "sn_ctu180ch",
             "jump": {
-              "to": "END",
+              "to": "blk_94f9zk6r",
             },
             "type": "snippet",
           },
         ],
         "id": "blk_smdes3sk",
-        "name": "Main",
+        "name": "Introduction",
+        "type": "block",
+      },
+      {
+        "children": [
+          {
+            "beats": [
+              {
+                "id": "L_100gnbza",
+                "kind": "text",
+              },
+            ],
+            "id": "sn_bbzy23yk",
+            "type": "snippet",
+          },
+          {
+            "beats": [
+              {
+                "id": "L_vdtk7uzg",
+                "kind": "text",
+              },
+            ],
+            "id": "sn_kvpvbmrl",
+            "type": "snippet",
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "beats": [
+                      {
+                        "id": "L_56aqsszp",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_s7vihhgd",
+                    "type": "snippet",
+                  },
+                ],
+                "id": "opt_e5fma62q",
+                "prompt": {
+                  "id": "L_i6bect3d",
+                  "kind": "text",
+                },
+                "type": "group",
+              },
+              {
+                "children": [
+                  {
+                    "beats": [
+                      {
+                        "id": "L_cf3zd9yr",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_dlovmc5i",
+                    "type": "snippet",
+                  },
+                ],
+                "id": "opt_5b0id6wt",
+                "prompt": {
+                  "id": "L_a4ow04vi",
+                  "kind": "text",
+                },
+                "type": "group",
+              },
+            ],
+            "id": "g_cwrqiy3q",
+            "selector": "choice",
+            "type": "group",
+          },
+        ],
+        "id": "blk_94f9zk6r",
+        "name": "Mist Appears",
         "type": "block",
       },
     ],

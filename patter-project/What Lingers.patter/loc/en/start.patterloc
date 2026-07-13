@@ -4,6 +4,12 @@
   "scene": "scn_nn1yrfas",
   "schema": "patter/strings@0",
   "strings": {
-    "T_14qsb7vt": "You are a lighthouse keeper. You've bee",
+    "L_100gnbza": "You love the lighthouse. But the Mist has returned.",
+    "L_56aqsszp": "The ghosts seem pleased!",
+    "L_a4ow04vi": "Linger",
+    "L_cf3zd9yr": "You linger a little longer",
+    "L_i6bect3d": "Get the ghost cake ready",
+    "L_vdtk7uzg": "You're worried the ghosts will return and you will be empty-handed.",
+    "T_14qsb7vt": "You are a lighthouse keeper's apprentice. It's been your dream for years!",
   },
 }

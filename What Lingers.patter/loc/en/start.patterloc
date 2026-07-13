@@ -1,9 +1,0 @@
-{
-  "default": true,
-  "locale": "en",
-  "scene": "scn_nn1yrfas",
-  "schema": "patter/strings@0",
-  "strings": {
-    "T_14qsb7vt": "Welcome to What Lingers. Edit scenes/start.patterflow, then run: patter play",
-  },
-}

@@ -1,4 +1,13 @@
 {
+  "autosave": true,
+  "cast": [
+    {
+      "actor": "Francine",
+      "displayName": "Ghostly Gal",
+      "name": "GHOSTLY GAL",
+    },
+  ],
+  "formatting": true,
   "locales": {
     "all": [
       "en",
@@ -10,6 +19,22 @@
     "name": "What Lingers",
   },
   "schema": "patter/project@0",
+  "scopeRegistry": {
+    "scopes": [
+      {
+        "declarations": [
+          {
+            "default": 0,
+            "name": "gold",
+            "type": "number",
+            "writable": false,
+          },
+        ],
+        "token": "world",
+      },
+    ],
+    "version": 1,
+  },
   "start": {
     "scene": "scn_nn1yrfas",
   },

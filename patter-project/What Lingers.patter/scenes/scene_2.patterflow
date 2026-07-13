@@ -11,19 +11,103 @@
               },
             ],
             "id": "sn_gtphz8zb",
-            "jump": {
-              "to": "END",
-            },
             "type": "snippet",
+          },
+          {
+            "beats": [
+              {
+                "id": "L_hdduh06t",
+                "kind": "text",
+              },
+            ],
+            "id": "sn_flvng6rn",
+            "onExit": [
+              {
+                "kind": "set",
+                "target": "@scene.ghost_count",
+                "value": "1 + @scene.ghost_count",
+              },
+            ],
+            "type": "snippet",
+          },
+          {
+            "children": [
+              {
+                "beats": [
+                  {
+                    "id": "L_an1fdyvt",
+                    "kind": "text",
+                  },
+                ],
+                "condition": "@scene.ghost_count == 1",
+                "id": "sn_56zkggr1",
+                "jump": {
+                  "to": "blk_xswq2g99",
+                },
+                "type": "snippet",
+              },
+            ],
+            "id": "g_bgzlo5wj",
+            "selector": "branch",
+            "type": "group",
+          },
+          {
+            "children": [
+              {
+                "beats": [
+                  {
+                    "id": "L_v08b3vax",
+                    "kind": "text",
+                  },
+                ],
+                "condition": "@scene.ghost_count == 2",
+                "id": "sn_lhsr1rni",
+                "jump": {
+                  "to": "blk_xswq2g99",
+                },
+                "type": "snippet",
+              },
+            ],
+            "id": "g_r2a2tdc2",
+            "selector": "branch",
+            "type": "group",
+          },
+          {
+            "children": [
+              {
+                "beats": [
+                  {
+                    "id": "L_j8bftmg9",
+                    "kind": "text",
+                  },
+                ],
+                "condition": "@scene.ghost_count == 3",
+                "id": "sn_38qou8um",
+                "jump": {
+                  "to": "blk_xswq2g99",
+                },
+                "type": "snippet",
+              },
+            ],
+            "id": "g_chxcw2st",
+            "selector": "branch",
+            "type": "group",
           },
         ],
         "id": "blk_xswq2g99",
-        "name": "Main",
+        "name": "Enter",
         "type": "block",
       },
     ],
     "id": "scn_cnna5vwr",
     "name": "Scene 2",
+    "sceneProps": [
+      {
+        "default": 0,
+        "name": "ghost_count",
+        "type": "number",
+      },
+    ],
     "type": "scene",
   },
   "schema": "patter/flow@0",
