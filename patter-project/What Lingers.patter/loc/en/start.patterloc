@@ -1,0 +1,9 @@
+{
+  "default": true,
+  "locale": "en",
+  "scene": "scn_nn1yrfas",
+  "schema": "patter/strings@0",
+  "strings": {
+    "T_14qsb7vt": "You are a lighthouse keeper. You've bee",
+  },
+}

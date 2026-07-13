@@ -1,0 +1,9 @@
+{
+  "default": true,
+  "locale": "en",
+  "scene": "scn_cnna5vwr",
+  "schema": "patter/strings@0",
+  "strings": {
+    "T_3q9t1ouq": "A new scene.",
+  },
+}

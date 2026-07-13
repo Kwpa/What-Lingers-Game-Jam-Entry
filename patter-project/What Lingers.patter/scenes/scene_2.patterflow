@@ -1,0 +1,30 @@
+{
+  "scene": {
+    "blocks": [
+      {
+        "children": [
+          {
+            "beats": [
+              {
+                "id": "T_3q9t1ouq",
+                "kind": "text",
+              },
+            ],
+            "id": "sn_gtphz8zb",
+            "jump": {
+              "to": "END",
+            },
+            "type": "snippet",
+          },
+        ],
+        "id": "blk_xswq2g99",
+        "name": "Main",
+        "type": "block",
+      },
+    ],
+    "id": "scn_cnna5vwr",
+    "name": "Scene 2",
+    "type": "scene",
+  },
+  "schema": "patter/flow@0",
+}
