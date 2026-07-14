@@ -6,8 +6,9 @@
           {
             "beats": [
               {
+                "character": "GHOSTLY GAL",
                 "id": "T_3q9t1ouq",
-                "kind": "text",
+                "kind": "line",
               },
             ],
             "id": "sn_gtphz8zb",
@@ -16,18 +17,23 @@
           {
             "beats": [
               {
-                "id": "L_hdduh06t",
-                "kind": "text",
+                "character": "GHOSTLY GAL",
+                "id": "L_bquxgxsq",
+                "kind": "line",
               },
             ],
-            "id": "sn_flvng6rn",
-            "onExit": [
+            "id": "sn_45o1meng",
+            "type": "snippet",
+          },
+          {
+            "beats": [
               {
-                "kind": "set",
-                "target": "@scene.ghost_count",
-                "value": "1 + @scene.ghost_count",
+                "character": "GHOSTLY GAL",
+                "id": "L_gwcj6b98",
+                "kind": "line",
               },
             ],
+            "id": "sn_l411hh5c",
             "type": "snippet",
           },
           {
@@ -35,8 +41,9 @@
               {
                 "beats": [
                   {
+                    "character": "GHOSTLY GAL",
                     "id": "L_an1fdyvt",
-                    "kind": "text",
+                    "kind": "line",
                   },
                 ],
                 "condition": "@scene.ghost_count == 1",
@@ -56,8 +63,9 @@
               {
                 "beats": [
                   {
+                    "character": "GHOSTLY GAL",
                     "id": "L_v08b3vax",
-                    "kind": "text",
+                    "kind": "line",
                   },
                 ],
                 "condition": "@scene.ghost_count == 2",
@@ -77,8 +85,9 @@
               {
                 "beats": [
                   {
+                    "character": "GHOSTLY GAL",
                     "id": "L_j8bftmg9",
-                    "kind": "text",
+                    "kind": "line",
                   },
                 ],
                 "condition": "@scene.ghost_count == 3",

@@ -39,5 +39,5 @@
     "scene": "scn_nn1yrfas",
   },
   "vcs": "git",
-  "voiced": true,
+  "voiced": false,
 }

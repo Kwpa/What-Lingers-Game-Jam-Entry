@@ -5,9 +5,10 @@
   "schema": "patter/strings@0",
   "strings": {
     "L_an1fdyvt": "One ghost today!",
-    "L_hdduh06t": "I saw a ghost! @gold",
+    "L_bquxgxsq": "But then... ",
+    "L_gwcj6b98": "I saw a ghost! ",
     "L_j8bftmg9": "Three ghosts today!",
     "L_v08b3vax": "Two ghosts today!",
-    "T_3q9t1ouq": "I walked to the shore. ",
+    "T_3q9t1ouq": "I walked to the shore, shocked that I had seen {@scene.ghost_count} ghosts.",
   },
 }
