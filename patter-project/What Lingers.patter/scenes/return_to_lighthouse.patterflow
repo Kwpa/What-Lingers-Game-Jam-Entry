@@ -1,0 +1,97 @@
+{
+  "scene": {
+    "blocks": [
+      {
+        "children": [
+          {
+            "beats": [
+              {
+                "id": "T_o9399qkh",
+                "kind": "text",
+              },
+            ],
+            "id": "sn_zld4v6ie",
+            "type": "snippet",
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "beats": [
+                      {
+                        "id": "L_fdm2d23v",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_ppdzewl6",
+                    "type": "snippet",
+                  },
+                ],
+                "id": "opt_pmxf4yy9",
+                "prompt": {
+                  "id": "L_rxqfrn2z",
+                  "kind": "text",
+                },
+                "type": "group",
+              },
+              {
+                "children": [
+                  {
+                    "beats": [
+                      {
+                        "id": "L_ix4rmvof",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_z7p8wzmv",
+                    "type": "snippet",
+                  },
+                ],
+                "id": "opt_irklimyi",
+                "prompt": {
+                  "id": "L_u1fiwv1h",
+                  "kind": "text",
+                },
+                "type": "group",
+              },
+              {
+                "children": [
+                  {
+                    "beats": [
+                      {
+                        "id": "L_qtnjiabs",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_qmd0qrn5",
+                    "jump": {
+                      "to": "blk_vqu6p79r",
+                    },
+                    "type": "snippet",
+                  },
+                ],
+                "id": "opt_b3sztkqj",
+                "prompt": {
+                  "id": "L_tqurm48a",
+                  "kind": "text",
+                },
+                "type": "group",
+              },
+            ],
+            "id": "g_y4dqj2tt",
+            "selector": "choice",
+            "type": "group",
+          },
+        ],
+        "id": "blk_hwgzp5pq",
+        "name": "Location Choice",
+        "type": "block",
+      },
+    ],
+    "id": "scn_89sjd1s0",
+    "name": "Return to Lighthouse",
+    "type": "scene",
+  },
+  "schema": "patter/flow@0",
+}

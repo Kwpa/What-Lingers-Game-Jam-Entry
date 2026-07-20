@@ -1,0 +1,15 @@
+{
+  "default": true,
+  "locale": "en",
+  "scene": "scn_89sjd1s0",
+  "schema": "patter/strings@0",
+  "strings": {
+    "L_fdm2d23v": "You know better than to get too close, but the waves call to you still.",
+    "L_ix4rmvof": "You enjoy watching over the village, even if no one else is awake yet.",
+    "L_qtnjiabs": "You've given up smoking, but the habit of seeking out other smokers lingers in you.",
+    "L_rxqfrn2z": "Down towards the sea.",
+    "L_tqurm48a": "Towards the designated smoking area.",
+    "L_u1fiwv1h": "Up to the high rocks.",
+    "T_o9399qkh": "It's still not light out, and the fog coils around you. Where will you go next?",
+  },
+}
