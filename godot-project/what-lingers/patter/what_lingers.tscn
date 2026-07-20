@@ -1,13 +1,13 @@
 [gd_scene format=3 uid="uid://dc43ytsmdmd1x"]
 
-[ext_resource type="Script" uid="uid://cikwfcjia6se5" path="res://patter/tour_copy.gd" id="1_8xfgf"]
-[ext_resource type="Texture2D" uid="uid://clyjaixgpwhs7" path="res://photos/lighthouse_exterior.jpg" id="2_e4dmm"]
-[ext_resource type="Texture2D" uid="uid://bm4kkhku8vbgj" path="res://graphics/black.jpg" id="3_ixqfv"]
-[ext_resource type="Shader" uid="uid://jffbdrtd34xn" path="res://shaders/glitch-double-vision.gdshader" id="4_xjjk5"]
-[ext_resource type="Texture2D" uid="uid://cf8rkoglvveo3" path="res://graphics/blank.jpg" id="5_36g1v"]
+[ext_resource type="Script" uid="uid://cikwfcjia6se5" path="res://patter/tour_copy.gd" id="1_6gba0"]
+[ext_resource type="Texture2D" uid="uid://clyjaixgpwhs7" path="res://photos/lighthouse_exterior.jpg" id="2_nsoh1"]
+[ext_resource type="Texture2D" uid="uid://bm4kkhku8vbgj" path="res://graphics/black.jpg" id="3_yhno6"]
+[ext_resource type="Shader" uid="uid://jffbdrtd34xn" path="res://shaders/glitch-double-vision.gdshader" id="4_njcbe"]
+[ext_resource type="Texture2D" uid="uid://cf8rkoglvveo3" path="res://graphics/blank.jpg" id="5_5l8xs"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_hh8yg"]
-shader = ExtResource("4_xjjk5")
+shader = ExtResource("4_njcbe")
 shader_parameter/pixel_size = 3.0
 shader_parameter/vhs_intensity = 1.8000000855
 shader_parameter/opacity = 0.400000019
@@ -20,7 +20,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_8xfgf")
+script = ExtResource("1_6gba0")
 
 [node name="Background" type="Control" parent="." unique_id=1610727841]
 layout_mode = 1
@@ -43,7 +43,7 @@ anchor_bottom = 1.0
 offset_right = 13.333336
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_e4dmm")
+texture = ExtResource("2_nsoh1")
 expand_mode = 3
 stretch_mode = 6
 
@@ -56,7 +56,7 @@ anchor_bottom = 1.0
 offset_right = 13.333336
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("3_ixqfv")
+texture = ExtResource("3_yhno6")
 expand_mode = 3
 stretch_mode = 6
 
@@ -69,7 +69,7 @@ anchor_bottom = 1.0
 offset_right = 13.333336
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("5_36g1v")
+texture = ExtResource("5_5l8xs")
 expand_mode = 3
 stretch_mode = 6
 
