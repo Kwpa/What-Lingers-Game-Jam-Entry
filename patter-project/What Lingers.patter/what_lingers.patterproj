@@ -22,6 +22,19 @@
     "id": "proj_pvhchy3o",
     "name": "What Lingers",
   },
+  "properties": [
+    {
+      "default": "lighthouse_exterior",
+      "name": "photo_title",
+      "type": "string",
+    },
+  ],
+  "sceneOrder": [
+    "scn_89sjd1s0",
+    "scn_zooxtu9c",
+    "scn_cnna5vwr",
+    "scn_nn1yrfas",
+  ],
   "schema": "patter/project@0",
   "scopeRegistry": {
     "scopes": [
@@ -40,7 +53,7 @@
     "version": 1,
   },
   "start": {
-    "scene": "scn_nn1yrfas",
+    "scene": "scn_89sjd1s0",
   },
   "vcs": "git",
   "voiced": false,

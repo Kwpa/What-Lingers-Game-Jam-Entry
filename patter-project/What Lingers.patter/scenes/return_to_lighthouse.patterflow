@@ -11,6 +11,13 @@
               },
             ],
             "id": "sn_zld4v6ie",
+            "onEnter": [
+              {
+                "kind": "set",
+                "target": "@photo_title",
+                "value": "\"lighthouse_exterior\"",
+              },
+            ],
             "type": "snippet",
           },
           {
@@ -25,6 +32,9 @@
                       },
                     ],
                     "id": "sn_ppdzewl6",
+                    "jump": {
+                      "to": "blk_hwgzp5pq",
+                    },
                     "type": "snippet",
                   },
                 ],
@@ -33,6 +43,7 @@
                   "id": "L_rxqfrn2z",
                   "kind": "text",
                 },
+                "sticky": true,
                 "type": "group",
               },
               {
@@ -45,6 +56,9 @@
                       },
                     ],
                     "id": "sn_z7p8wzmv",
+                    "jump": {
+                      "to": "blk_hwgzp5pq",
+                    },
                     "type": "snippet",
                   },
                 ],
@@ -53,6 +67,7 @@
                   "id": "L_u1fiwv1h",
                   "kind": "text",
                 },
+                "sticky": true,
                 "type": "group",
               },
               {
@@ -76,6 +91,7 @@
                   "id": "L_tqurm48a",
                   "kind": "text",
                 },
+                "sticky": true,
                 "type": "group",
               },
             ],

@@ -1,0 +1,904 @@
+{
+  "cast": [
+    {
+      "displayName": "Ghostly Gal",
+      "name": "GHOSTLY GAL"
+    },
+    {
+      "displayName": "Shelly",
+      "name": "SHELLY"
+    }
+  ],
+  "content": {
+    "hash": "09jikpp",
+    "project": "proj_pvhchy3o",
+    "structureHash": "15xnup3"
+  },
+  "locales": {
+    "default": "en",
+    "included": [
+      "en"
+    ]
+  },
+  "properties": [
+    {
+      "default": "lighthouse_exterior",
+      "name": "photo_title",
+      "type": "string"
+    }
+  ],
+  "scenes": {
+    "scn_89sjd1s0": {
+      "blocks": [
+        {
+          "children": [
+            {
+              "beats": [
+                {
+                  "id": "T_o9399qkh",
+                  "kind": "text"
+                }
+              ],
+              "id": "sn_zld4v6ie",
+              "onEnter": [
+                {
+                  "kind": "set",
+                  "target": "@photo_title",
+                  "value": {
+                    "ast": [
+                      "s",
+                      "lighthouse_exterior"
+                    ],
+                    "src": "\"lighthouse_exterior\""
+                  }
+                }
+              ],
+              "type": "snippet"
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "beats": [
+                        {
+                          "id": "L_fdm2d23v",
+                          "kind": "text"
+                        }
+                      ],
+                      "id": "sn_ppdzewl6",
+                      "jump": {
+                        "to": "blk_hwgzp5pq"
+                      },
+                      "type": "snippet"
+                    }
+                  ],
+                  "id": "opt_pmxf4yy9",
+                  "prompt": {
+                    "id": "L_rxqfrn2z",
+                    "kind": "text"
+                  },
+                  "sticky": true,
+                  "type": "group"
+                },
+                {
+                  "children": [
+                    {
+                      "beats": [
+                        {
+                          "id": "L_ix4rmvof",
+                          "kind": "text"
+                        }
+                      ],
+                      "id": "sn_z7p8wzmv",
+                      "jump": {
+                        "to": "blk_hwgzp5pq"
+                      },
+                      "type": "snippet"
+                    }
+                  ],
+                  "id": "opt_irklimyi",
+                  "prompt": {
+                    "id": "L_u1fiwv1h",
+                    "kind": "text"
+                  },
+                  "sticky": true,
+                  "type": "group"
+                },
+                {
+                  "children": [
+                    {
+                      "beats": [
+                        {
+                          "id": "L_qtnjiabs",
+                          "kind": "text"
+                        }
+                      ],
+                      "id": "sn_qmd0qrn5",
+                      "jump": {
+                        "to": "blk_vqu6p79r"
+                      },
+                      "type": "snippet"
+                    }
+                  ],
+                  "id": "opt_b3sztkqj",
+                  "prompt": {
+                    "id": "L_tqurm48a",
+                    "kind": "text"
+                  },
+                  "sticky": true,
+                  "type": "group"
+                }
+              ],
+              "id": "g_y4dqj2tt",
+              "selector": "choice",
+              "type": "group"
+            }
+          ],
+          "id": "blk_hwgzp5pq",
+          "name": "Location Choice",
+          "type": "block"
+        }
+      ],
+      "id": "scn_89sjd1s0",
+      "name": "Return to Lighthouse",
+      "type": "scene"
+    },
+    "scn_cnna5vwr": {
+      "blocks": [
+        {
+          "children": [
+            {
+              "beats": [
+                {
+                  "character": "GHOSTLY GAL",
+                  "id": "T_3q9t1ouq",
+                  "kind": "line"
+                }
+              ],
+              "id": "sn_gtphz8zb",
+              "type": "snippet"
+            },
+            {
+              "beats": [
+                {
+                  "character": "GHOSTLY GAL",
+                  "id": "L_bquxgxsq",
+                  "kind": "line"
+                }
+              ],
+              "id": "sn_45o1meng",
+              "type": "snippet"
+            },
+            {
+              "beats": [
+                {
+                  "character": "GHOSTLY GAL",
+                  "id": "L_gwcj6b98",
+                  "kind": "line"
+                }
+              ],
+              "id": "sn_l411hh5c",
+              "type": "snippet"
+            },
+            {
+              "children": [
+                {
+                  "beats": [
+                    {
+                      "character": "GHOSTLY GAL",
+                      "id": "L_an1fdyvt",
+                      "kind": "line"
+                    }
+                  ],
+                  "condition": {
+                    "ast": [
+                      "bin",
+                      "==",
+                      [
+                        "sv",
+                        "scene",
+                        "ghost_count"
+                      ],
+                      [
+                        "n",
+                        1
+                      ]
+                    ],
+                    "src": "@scene.ghost_count == 1"
+                  },
+                  "id": "sn_56zkggr1",
+                  "jump": {
+                    "to": "blk_xswq2g99"
+                  },
+                  "type": "snippet"
+                }
+              ],
+              "id": "g_bgzlo5wj",
+              "selector": "branch",
+              "type": "group"
+            },
+            {
+              "children": [
+                {
+                  "beats": [
+                    {
+                      "character": "GHOSTLY GAL",
+                      "id": "L_v08b3vax",
+                      "kind": "line"
+                    }
+                  ],
+                  "condition": {
+                    "ast": [
+                      "bin",
+                      "==",
+                      [
+                        "sv",
+                        "scene",
+                        "ghost_count"
+                      ],
+                      [
+                        "n",
+                        2
+                      ]
+                    ],
+                    "src": "@scene.ghost_count == 2"
+                  },
+                  "id": "sn_lhsr1rni",
+                  "jump": {
+                    "to": "blk_xswq2g99"
+                  },
+                  "type": "snippet"
+                }
+              ],
+              "id": "g_r2a2tdc2",
+              "selector": "branch",
+              "type": "group"
+            },
+            {
+              "children": [
+                {
+                  "beats": [
+                    {
+                      "character": "GHOSTLY GAL",
+                      "id": "L_j8bftmg9",
+                      "kind": "line"
+                    }
+                  ],
+                  "condition": {
+                    "ast": [
+                      "bin",
+                      "==",
+                      [
+                        "sv",
+                        "scene",
+                        "ghost_count"
+                      ],
+                      [
+                        "n",
+                        3
+                      ]
+                    ],
+                    "src": "@scene.ghost_count == 3"
+                  },
+                  "id": "sn_38qou8um",
+                  "jump": {
+                    "to": "blk_xswq2g99"
+                  },
+                  "type": "snippet"
+                }
+              ],
+              "id": "g_chxcw2st",
+              "selector": "branch",
+              "type": "group"
+            }
+          ],
+          "id": "blk_xswq2g99",
+          "name": "Enter",
+          "type": "block"
+        }
+      ],
+      "id": "scn_cnna5vwr",
+      "name": "Scene 2",
+      "sceneProps": [
+        {
+          "default": 0,
+          "name": "ghost_count",
+          "type": "number"
+        }
+      ],
+      "type": "scene"
+    },
+    "scn_nn1yrfas": {
+      "blocks": [
+        {
+          "children": [
+            {
+              "beats": [
+                {
+                  "id": "T_14qsb7vt",
+                  "kind": "text"
+                }
+              ],
+              "id": "sn_ctu180ch",
+              "jump": {
+                "to": "blk_94f9zk6r"
+              },
+              "type": "snippet"
+            }
+          ],
+          "id": "blk_smdes3sk",
+          "name": "Introduction",
+          "type": "block"
+        },
+        {
+          "children": [
+            {
+              "beats": [
+                {
+                  "id": "L_100gnbza",
+                  "kind": "text"
+                }
+              ],
+              "id": "sn_bbzy23yk",
+              "type": "snippet"
+            },
+            {
+              "beats": [
+                {
+                  "id": "L_vdtk7uzg",
+                  "kind": "text"
+                }
+              ],
+              "id": "sn_kvpvbmrl",
+              "type": "snippet"
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "beats": [
+                        {
+                          "id": "L_56aqsszp",
+                          "kind": "text"
+                        }
+                      ],
+                      "id": "sn_s7vihhgd",
+                      "type": "snippet"
+                    }
+                  ],
+                  "id": "opt_e5fma62q",
+                  "prompt": {
+                    "id": "L_i6bect3d",
+                    "kind": "text"
+                  },
+                  "type": "group"
+                },
+                {
+                  "children": [
+                    {
+                      "beats": [
+                        {
+                          "id": "L_cf3zd9yr",
+                          "kind": "text"
+                        }
+                      ],
+                      "id": "sn_dlovmc5i",
+                      "type": "snippet"
+                    }
+                  ],
+                  "id": "opt_5b0id6wt",
+                  "prompt": {
+                    "id": "L_a4ow04vi",
+                    "kind": "text"
+                  },
+                  "type": "group"
+                }
+              ],
+              "id": "g_cwrqiy3q",
+              "selector": "choice",
+              "type": "group"
+            }
+          ],
+          "id": "blk_94f9zk6r",
+          "name": "Mist Appears",
+          "type": "block"
+        }
+      ],
+      "id": "scn_nn1yrfas",
+      "name": "Scene 1",
+      "type": "scene"
+    },
+    "scn_zooxtu9c": {
+      "blocks": [
+        {
+          "children": [
+            {
+              "beats": [
+                {
+                  "id": "L_f323q40m",
+                  "kind": "text"
+                }
+              ],
+              "id": "sn_slg5lkb1",
+              "onEnter": [
+                {
+                  "kind": "set",
+                  "target": "@photo_title",
+                  "value": {
+                    "ast": [
+                      "s",
+                      "smoke_break"
+                    ],
+                    "src": "\"smoke_break\""
+                  }
+                }
+              ],
+              "type": "snippet"
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "beats": [
+                        {
+                          "id": "L_yn9n6e2n",
+                          "kind": "text"
+                        }
+                      ],
+                      "id": "sn_xbbyelm7",
+                      "jump": {
+                        "to": "blk_hwgzp5pq"
+                      },
+                      "type": "snippet"
+                    }
+                  ],
+                  "id": "opt_syhto98s",
+                  "prompt": {
+                    "id": "L_xz8epju2",
+                    "kind": "text"
+                  },
+                  "type": "group"
+                },
+                {
+                  "children": [
+                    {
+                      "beats": [
+                        {
+                          "id": "L_gg5bpmsm",
+                          "kind": "text"
+                        }
+                      ],
+                      "id": "sn_y7fvuk7d",
+                      "jump": {
+                        "to": "blk_v3tg5lfn"
+                      },
+                      "type": "snippet"
+                    }
+                  ],
+                  "id": "opt_jp32pael",
+                  "prompt": {
+                    "id": "L_pansdxhu",
+                    "kind": "text"
+                  },
+                  "type": "group"
+                }
+              ],
+              "id": "g_hhhwg7g2",
+              "selector": "choice",
+              "type": "group"
+            }
+          ],
+          "id": "blk_vqu6p79r",
+          "name": "Smoke Break",
+          "type": "block"
+        },
+        {
+          "children": [
+            {
+              "beats": [
+                {
+                  "id": "L_60hnsdp4",
+                  "kind": "text"
+                }
+              ],
+              "id": "sn_cbwgst6l",
+              "type": "snippet"
+            },
+            {
+              "beats": [
+                {
+                  "id": "L_zyehp8xs",
+                  "kind": "text"
+                }
+              ],
+              "id": "sn_wfxw87fm",
+              "type": "snippet"
+            },
+            {
+              "beats": [
+                {
+                  "id": "L_gkxr56mr",
+                  "kind": "text"
+                }
+              ],
+              "id": "sn_xdk7lc3l",
+              "jump": {
+                "to": "blk_kx92mgj3"
+              },
+              "type": "snippet"
+            }
+          ],
+          "id": "blk_v3tg5lfn",
+          "name": "Mermaid Lighter",
+          "type": "block"
+        },
+        {
+          "children": [
+            {
+              "beats": [
+                {
+                  "character": "SHELLY",
+                  "id": "L_8elavtpk",
+                  "kind": "line"
+                }
+              ],
+              "id": "sn_76ib3fd0",
+              "type": "snippet"
+            },
+            {
+              "beats": [
+                {
+                  "id": "L_j3iew24l",
+                  "kind": "text"
+                }
+              ],
+              "id": "sn_wu7u5haf",
+              "type": "snippet"
+            },
+            {
+              "beats": [
+                {
+                  "character": "SHELLY",
+                  "id": "L_65ocw23f",
+                  "kind": "line"
+                }
+              ],
+              "id": "sn_7ya035i5",
+              "type": "snippet"
+            },
+            {
+              "beats": [
+                {
+                  "character": "SHELLY",
+                  "id": "L_h595jy5a",
+                  "kind": "line"
+                }
+              ],
+              "id": "sn_vd9l8dfu",
+              "type": "snippet"
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "beats": [
+                        {
+                          "character": "SHELLY",
+                          "id": "L_4vcn2z5a",
+                          "kind": "line"
+                        }
+                      ],
+                      "id": "sn_zkv7utnb",
+                      "onEnter": [
+                        {
+                          "kind": "set",
+                          "target": "@scene.linger_points",
+                          "value": {
+                            "ast": [
+                              "bin",
+                              "+",
+                              [
+                                "n",
+                                1
+                              ],
+                              [
+                                "sv",
+                                "scene",
+                                "linger_points"
+                              ]
+                            ],
+                            "src": "1 + @scene.linger_points"
+                          }
+                        }
+                      ],
+                      "type": "snippet"
+                    }
+                  ],
+                  "id": "opt_qkv12ut4",
+                  "prompt": {
+                    "id": "L_x6k7subl",
+                    "kind": "text"
+                  },
+                  "type": "group"
+                },
+                {
+                  "children": [
+                    {
+                      "beats": [
+                        {
+                          "character": "SHELLY",
+                          "id": "L_p9mivedy",
+                          "kind": "line"
+                        }
+                      ],
+                      "id": "sn_i25st8ll",
+                      "type": "snippet"
+                    }
+                  ],
+                  "id": "opt_yh73nzv3",
+                  "prompt": {
+                    "id": "L_z2jvf84o",
+                    "kind": "text"
+                  },
+                  "type": "group"
+                }
+              ],
+              "id": "g_3s06uh1d",
+              "selector": "choice",
+              "type": "group"
+            },
+            {
+              "beats": [
+                {
+                  "character": "SHELLY",
+                  "id": "L_yarj2361",
+                  "kind": "line"
+                }
+              ],
+              "id": "sn_x7gkbs9r",
+              "type": "snippet"
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "beats": [
+                        {
+                          "character": "SHELLY",
+                          "id": "L_834c5qdi",
+                          "kind": "line"
+                        }
+                      ],
+                      "id": "sn_j76prj45",
+                      "type": "snippet"
+                    }
+                  ],
+                  "id": "opt_fotz7ayh",
+                  "prompt": {
+                    "id": "L_cyi26ado",
+                    "kind": "text"
+                  },
+                  "type": "group"
+                },
+                {
+                  "children": [
+                    {
+                      "beats": [
+                        {
+                          "character": "SHELLY",
+                          "id": "L_9gmx87of",
+                          "kind": "line"
+                        }
+                      ],
+                      "id": "sn_ue4e7ffp",
+                      "onEnter": [
+                        {
+                          "kind": "set",
+                          "target": "@scene.linger_points",
+                          "value": {
+                            "ast": [
+                              "bin",
+                              "+",
+                              [
+                                "n",
+                                1
+                              ],
+                              [
+                                "sv",
+                                "scene",
+                                "linger_points"
+                              ]
+                            ],
+                            "src": "1 + @scene.linger_points"
+                          }
+                        }
+                      ],
+                      "type": "snippet"
+                    }
+                  ],
+                  "id": "opt_llc2m7l5",
+                  "prompt": {
+                    "id": "L_acica9i0",
+                    "kind": "text"
+                  },
+                  "type": "group"
+                }
+              ],
+              "id": "g_76f3iuoa",
+              "selector": "choice",
+              "type": "group"
+            },
+            {
+              "beats": [
+                {
+                  "character": "SHELLY",
+                  "id": "L_2grsiq1f",
+                  "kind": "line"
+                }
+              ],
+              "id": "sn_lmivbm5k",
+              "type": "snippet"
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "beats": [
+                        {
+                          "character": "SHELLY",
+                          "id": "L_94pmnqbf",
+                          "kind": "line"
+                        }
+                      ],
+                      "id": "sn_0cu8trda",
+                      "jump": {
+                        "to": "blk_hwgzp5pq"
+                      },
+                      "type": "snippet"
+                    }
+                  ],
+                  "id": "opt_kc0ewi2o",
+                  "prompt": {
+                    "id": "L_2bz0z0qg",
+                    "kind": "text"
+                  },
+                  "type": "group"
+                },
+                {
+                  "children": [
+                    {
+                      "beats": [
+                        {
+                          "character": "SHELLY",
+                          "id": "L_k4iuk6qu",
+                          "kind": "line"
+                        }
+                      ],
+                      "id": "sn_ecgvoc2c",
+                      "jump": {
+                        "to": "blk_hwgzp5pq"
+                      },
+                      "type": "snippet"
+                    }
+                  ],
+                  "condition": {
+                    "ast": [
+                      "bin",
+                      ">=",
+                      [
+                        "sv",
+                        "scene",
+                        "linger_points"
+                      ],
+                      [
+                        "n",
+                        1
+                      ]
+                    ],
+                    "src": "@scene.linger_points >= 1"
+                  },
+                  "id": "opt_tjvkpbi1",
+                  "prompt": {
+                    "id": "L_lqabkiuy",
+                    "kind": "text"
+                  },
+                  "type": "group"
+                }
+              ],
+              "id": "g_4j83gcgt",
+              "selector": "choice",
+              "type": "group"
+            }
+          ],
+          "id": "blk_kx92mgj3",
+          "name": "Ghost Interaction",
+          "type": "block"
+        }
+      ],
+      "id": "scn_zooxtu9c",
+      "name": "Shelly Demo",
+      "sceneProps": [
+        {
+          "default": 0,
+          "name": "linger_points",
+          "type": "number"
+        }
+      ],
+      "type": "scene"
+    }
+  },
+  "schema": "patter/bundle@0",
+  "scopeRegistry": {
+    "scopes": [
+      {
+        "declarations": [
+          {
+            "default": 0,
+            "name": "gold",
+            "type": "number",
+            "writable": false
+          }
+        ],
+        "token": "world"
+      }
+    ],
+    "version": 1
+  },
+  "strings": {
+    "en": {
+      "L_100gnbza": "You love the lighthouse. But the Mist has returned.",
+      "L_2bz0z0qg": "You can't haunt these rocks forever.",
+      "L_2grsiq1f": "I was content to live here. Working as a waitress on the weekends, driving into town to see my girl when I could. Would've been more content if she'd visited here more often, but we were working on it. I was working on it. I wanted to carve my happiness into these rocks. I wanted to stay.",
+      "L_4vcn2z5a": "Yeah. I mean, it's the ocean, right?",
+      "L_56aqsszp": "The ghosts seem pleased!",
+      "L_60hnsdp4": "You take from your pocket the mermaid lighter, and turn it over a couple times in your hand. It's made from a cold and solid metal, but it's not as heavy as you might have expected. The front and back of it are engraved with a mermaid motif, in the style of a sailor's tattoo. Her hands are pushing back her hair, and her smiling face is somewhat worn down. This lighter has seen a lot of use.",
+      "L_65ocw23f": "Even when she first gave it to me, it was a piece of junk. If she had realized it was so cheaply made, she might not have picked it up. But she was in a hurry to select a present for my birthday, which she had forgotten about until that morning. When she saw the mermaid on it, she thought of me, is what she said.",
+      "L_834c5qdi": "Does it even matter, now?",
+      "L_8elavtpk": "It always was a finicky lighter.",
+      "L_94pmnqbf": "I know. I do know that. I'm sure there will be a beautiful ocean waiting for me in the next life. I just wish I could have lingered here a little while longer...",
+      "L_9gmx87of": "Does it even matter, now?",
+      "L_a4ow04vi": "Linger",
+      "L_acica9i0": "What did you want to do with your life?",
+      "L_an1fdyvt": "One ghost today!",
+      "L_bquxgxsq": "But then... ",
+      "L_cf3zd9yr": "You linger a little longer",
+      "L_cyi26ado": "What more did they expect?",
+      "L_f323q40m": "You walk out behind the restaurant. The small metal door that the employees use to bring out the trash or to take their smoke breaks is closed tight. The wind whispers of songs unsung, a promise backed by the crashing waves.  ",
+      "L_fdm2d23v": "You know better than to get too close, but the waves call to you still.",
+      "L_gg5bpmsm": "At this time of night, on the cusp of morning, the empty promises of the wind and waves are the only sound you can hear. The fog is rolling in, extinguishing the stars and softening the hard shapes of the rocks. The restaurant itself is far enough inland to dig a shallow foundation into the earth, but only just. A short trail leads from the employees' door to the shoreline, hardy sea weeds parting for their footsteps. Cigarette stubs are scattered like breadcrumbs, leading you onto the smooth and immense forms of the rocks.",
+      "L_gkxr56mr": "You try a couple more times anyway. The mechanism stops resisting, making a satisfying click. But no fire is forthcoming.",
+      "L_gwcj6b98": "I saw a ghost! ",
+      "L_h595jy5a": "So even though it always took two or three tries to light it, it was my treasure. It was my hope, my proof that she understood who I am. No matter how much we bickered and fought... After those long arguments, I would come out here to smoke. I had to calm down and remind myself that we might not see eye to eye, but we saw each other.",
+      "L_i6bect3d": "Get the ghost cake ready",
+      "L_ix4rmvof": "You enjoy watching over the village, even if no one else is awake yet.",
+      "L_j3iew24l": "You hardly noticed the ghost appear. She has the rasp of someone who smokes often, but despite her tired tone, she doesn't sound that old.",
+      "L_j8bftmg9": "Three ghosts today!",
+      "L_k4iuk6qu": "I wasn't expecting you to ask. I figured now that I'm dead, I'm supposed to move on to the next life, whatever that is. But you know what? I do want to stay. Thank you.",
+      "L_lqabkiuy": "Do you still want to stay?",
+      "L_p9mivedy": "Yeah. I mean, it's the ocean, right?",
+      "L_pansdxhu": "Linger...  ",
+      "L_qtnjiabs": "You've given up smoking, but the habit of seeking out other smokers lingers in you.",
+      "L_rxqfrn2z": "Down towards the sea.",
+      "L_tqurm48a": "Towards the designated smoking area.",
+      "L_u1fiwv1h": "Up to the high rocks.",
+      "L_v08b3vax": "Two ghosts today!",
+      "L_vdtk7uzg": "You're worried the ghosts will return and you will be empty-handed.",
+      "L_x6k7subl": "So you're like a mermaid, then?",
+      "L_xz8epju2": "Move on.",
+      "L_yarj2361": "No matter how hard it got, I could never bear to stay inland for too long. Got saltwater for blood, she said. Maybe she was just salty that I wasn't willing to scrounge around for a place to stay in the city. She was always saying I could do more with my life. Just like my parents, that way.",
+      "L_yn9n6e2n": "You turn your back, ignoring the wind's song as you leave.",
+      "L_z2jvf84o": "She saw you as a mermaid, then?",
+      "L_zyehp8xs": "You flip it open and try to light it. The mechanism catches under your thumb. On closer inspection, it's tarnished. There's a slight build-up of salt encrusting the opening where the flame should appear. It must have fallen into the sea.",
+      "T_14qsb7vt": "You are a lighthouse keeper's apprentice. It's been your dream for years!",
+      "T_3q9t1ouq": "I walked to the shore, shocked that I had seen {@scene.ghost_count} ghosts.",
+      "T_o9399qkh": "It's still not light out, and the fog coils around you. Where will you go next?"
+    }
+  },
+  "voiced": false
+}

@@ -1,0 +1,114 @@
+[gd_scene format=3 uid="uid://dc43ytsmdmd1x"]
+
+[ext_resource type="Script" uid="uid://cikwfcjia6se5" path="res://patter/tour_copy.gd" id="1_8xfgf"]
+[ext_resource type="Texture2D" uid="uid://clyjaixgpwhs7" path="res://photos/lighthouse_exterior.jpg" id="2_e4dmm"]
+[ext_resource type="Texture2D" uid="uid://bm4kkhku8vbgj" path="res://graphics/black.jpg" id="3_ixqfv"]
+[ext_resource type="Shader" uid="uid://jffbdrtd34xn" path="res://shaders/glitch-double-vision.gdshader" id="4_xjjk5"]
+[ext_resource type="Texture2D" uid="uid://cf8rkoglvveo3" path="res://graphics/blank.jpg" id="5_36g1v"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hh8yg"]
+shader = ExtResource("4_xjjk5")
+shader_parameter/pixel_size = 3.0
+shader_parameter/vhs_intensity = 1.8000000855
+shader_parameter/opacity = 0.400000019
+shader_parameter/double_vision_split = 0.002000000095
+
+[node name="WhatLingersDemo" type="Control" unique_id=809353887]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8xfgf")
+
+[node name="Background" type="Control" parent="." unique_id=1610727841]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -30.999996
+offset_top = -11.0
+offset_right = -31.0
+offset_bottom = -11.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.05, 1.05)
+
+[node name="Photo" type="TextureRect" parent="Background" unique_id=873929310]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 13.333336
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_e4dmm")
+expand_mode = 3
+stretch_mode = 6
+
+[node name="Darkness" type="TextureRect" parent="Background" unique_id=818470242]
+modulate = Color(1, 1, 1, 0.78431374)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 13.333336
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_ixqfv")
+expand_mode = 3
+stretch_mode = 6
+
+[node name="Glitch" type="TextureRect" parent="Background" unique_id=8125724]
+material = SubResource("ShaderMaterial_hh8yg")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 13.333336
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_36g1v")
+expand_mode = 3
+stretch_mode = 6
+
+[node name="Layout" type="VBoxContainer" parent="." unique_id=497630770]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 24.0
+offset_top = 16.0
+offset_right = -24.0
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
+
+[node name="Header" type="HBoxContainer" parent="Layout" unique_id=655381541]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="Layout/Header" unique_id=63315123]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "What Lingers Demo"
+
+[node name="AudioToggle" type="CheckBox" parent="Layout/Header" unique_id=212703635]
+layout_mode = 2
+button_pressed = true
+text = "Audio"
+
+[node name="Scroll" type="ScrollContainer" parent="Layout" unique_id=478204408]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Transcript" type="VBoxContainer" parent="Layout/Scroll" unique_id=1400889359]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 8
+
+[node name="Controls" type="VBoxContainer" parent="Layout" unique_id=1409167491]
+layout_mode = 2
+
+[node name="Player" type="AudioStreamPlayer" parent="." unique_id=1266100871]

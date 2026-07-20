@@ -11,6 +11,13 @@
               },
             ],
             "id": "sn_slg5lkb1",
+            "onEnter": [
+              {
+                "kind": "set",
+                "target": "@photo_title",
+                "value": "\"smoke_break\"",
+              },
+            ],
             "type": "snippet",
           },
           {
@@ -303,6 +310,9 @@
                       },
                     ],
                     "id": "sn_0cu8trda",
+                    "jump": {
+                      "to": "blk_hwgzp5pq",
+                    },
                     "type": "snippet",
                   },
                 ],
@@ -324,6 +334,9 @@
                       },
                     ],
                     "id": "sn_ecgvoc2c",
+                    "jump": {
+                      "to": "blk_hwgzp5pq",
+                    },
                     "type": "snippet",
                   },
                 ],
