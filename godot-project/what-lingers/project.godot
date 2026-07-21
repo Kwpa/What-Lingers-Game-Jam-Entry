@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="What Lingers"
-run/main_scene="res://addons/patterplay/demo/tour.tscn"
+run/main_scene="uid://dc43ytsmdmd1x"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -23,6 +23,10 @@ window/stretch/aspect="expand"
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/patterplay/plugin.cfg")
+
+[gui]
+
+theme/custom="uid://cn8ro78wv7fce"
 
 [physics]
 

@@ -5,6 +5,11 @@
 [ext_resource type="Texture2D" uid="uid://bm4kkhku8vbgj" path="res://graphics/black.jpg" id="3_yhno6"]
 [ext_resource type="Shader" uid="uid://jffbdrtd34xn" path="res://shaders/glitch-double-vision.gdshader" id="4_njcbe"]
 [ext_resource type="Texture2D" uid="uid://cf8rkoglvveo3" path="res://graphics/blank.jpg" id="5_5l8xs"]
+[ext_resource type="Material" uid="uid://b17vckll2tjdu" path="res://shaders/fog-overlay.tres" id="6_njcbe"]
+[ext_resource type="Shader" uid="uid://cs4b6l1lfiduq" path="res://shaders/blur-vignette.gdshader" id="7_5l8xs"]
+[ext_resource type="PackedScene" uid="uid://dm62dnxcua4vd" path="res://silhouettes/ghost.tscn" id="7_njcbe"]
+[ext_resource type="Material" uid="uid://bscvohn1msyvl" path="res://shaders/animated-outline.tres" id="9_8fh76"]
+[ext_resource type="Texture2D" uid="uid://doholpu0tqb2w" path="res://graphics/textbox-whiteonly.png" id="10_3akvv"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_hh8yg"]
 shader = ExtResource("4_njcbe")
@@ -12,6 +17,13 @@ shader_parameter/pixel_size = 3.0
 shader_parameter/vhs_intensity = 1.8000000855
 shader_parameter/opacity = 0.400000019
 shader_parameter/double_vision_split = 0.002000000095
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5l8xs"]
+shader = ExtResource("7_5l8xs")
+shader_parameter/blur_radius = 0.2
+shader_parameter/blur_amount = 1.0
+shader_parameter/blur_inner = 0.6
+shader_parameter/blur_outer = 0.66
 
 [node name="WhatLingersDemo" type="Control" unique_id=809353887]
 layout_mode = 3
@@ -48,7 +60,7 @@ expand_mode = 3
 stretch_mode = 6
 
 [node name="Darkness" type="TextureRect" parent="Background" unique_id=818470242]
-modulate = Color(1, 1, 1, 0.78431374)
+modulate = Color(1, 1, 1, 0.7058824)
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -61,17 +73,46 @@ expand_mode = 3
 stretch_mode = 6
 
 [node name="Glitch" type="TextureRect" parent="Background" unique_id=8125724]
+visible = false
 material = SubResource("ShaderMaterial_hh8yg")
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = 13.333336
+offset_right = 13.333252
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("5_5l8xs")
 expand_mode = 3
 stretch_mode = 6
+
+[node name="Fog" type="ColorRect" parent="Background" unique_id=2054359658]
+modulate = Color(1, 1, 1, 0.78431374)
+material = ExtResource("6_njcbe")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 13.333374
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Vignette" type="ColorRect" parent="Background" unique_id=130714544]
+visible = false
+modulate = Color(1, 1, 1, 0.78431374)
+material = SubResource("ShaderMaterial_5l8xs")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 13.333374
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Ghost" parent="." unique_id=617256557 instance=ExtResource("7_njcbe")]
+layout_mode = 1
+
+[node name="AudioPlayer" type="AudioStreamPlayer" parent="." unique_id=1266100871]
 
 [node name="Layout" type="VBoxContainer" parent="." unique_id=497630770]
 layout_mode = 1
@@ -100,6 +141,7 @@ button_pressed = true
 text = "Audio"
 
 [node name="Scroll" type="ScrollContainer" parent="Layout" unique_id=478204408]
+visible = false
 layout_mode = 2
 size_flags_vertical = 3
 
@@ -108,7 +150,67 @@ layout_mode = 2
 size_flags_horizontal = 3
 theme_override_constants/separation = 8
 
-[node name="Controls" type="VBoxContainer" parent="Layout" unique_id=1409167491]
-layout_mode = 2
+[node name="Dialogue" type="Control" parent="." unique_id=1065287922]
+custom_minimum_size = Vector2(800, 200)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -400.0
+offset_top = -200.0
+offset_right = 400.0
+grow_horizontal = 2
+grow_vertical = 0
 
-[node name="Player" type="AudioStreamPlayer" parent="." unique_id=1266100871]
+[node name="TextBackground" type="TextureRect" parent="Dialogue" unique_id=1861589935]
+material = ExtResource("9_8fh76")
+custom_minimum_size = Vector2(785, 185)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -392.5
+offset_top = -92.5
+offset_right = 392.5
+offset_bottom = 92.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("10_3akvv")
+expand_mode = 2
+
+[node name="Lines" type="RichTextLabel" parent="Dialogue" unique_id=721689834]
+custom_minimum_size = Vector2(600, 100)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -300.0
+offset_top = -50.0
+offset_right = 300.0
+offset_bottom = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+bbcode_enabled = true
+text = "You are the lighthouse keeper."
+
+[node name="Controls" type="VBoxContainer" parent="Dialogue" unique_id=1409167491]
+custom_minimum_size = Vector2(600, 150)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -300.0
+offset_top = -75.0
+offset_right = 300.0
+offset_bottom = 75.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 2
