@@ -1,0 +1,10 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://bu5dif167naw"]
+
+[ext_resource type="Shader" uid="uid://btrlhwjjhpr5q" path="res://shaders/noise-moving-smoke.gdshader" id="1_xbexv"]
+[ext_resource type="Texture2D" uid="uid://b5deiswe05e5m" path="res://graphics/prawny-seamless-1315265-white.jpg" id="2_vurp3"]
+
+[resource]
+shader = ExtResource("1_xbexv")
+shader_parameter/noise_texture = ExtResource("2_vurp3")
+shader_parameter/smoke_color = Color(1, 1, 1, 1)
+shader_parameter/distortion_speed = 0.0

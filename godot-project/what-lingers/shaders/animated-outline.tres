@@ -1,0 +1,11 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://bscvohn1msyvl"]
+
+[ext_resource type="Shader" uid="uid://ddtmuijam5hww" path="res://shaders/animated-outline.gdshader" id="1_xw6po"]
+
+[resource]
+shader = ExtResource("1_xw6po")
+shader_parameter/max_line_width = 30.0
+shader_parameter/min_line_width = 2.0
+shader_parameter/freq = 5.0
+shader_parameter/block_size = 15.0
+shader_parameter/outline_colour = Vector4(0, 0, 0, 1)

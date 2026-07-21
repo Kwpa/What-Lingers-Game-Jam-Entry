@@ -1,0 +1,10 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://gy0x6r2832ll"]
+
+[ext_resource type="Shader" uid="uid://fjmglm0oddab" path="res://shaders/disturbance.gdshader" id="1_a5hom"]
+[ext_resource type="Texture2D" uid="uid://b5deiswe05e5m" path="res://graphics/prawny-seamless-1315265-white.jpg" id="2_0yamk"]
+
+[resource]
+shader = ExtResource("1_a5hom")
+shader_parameter/smoke = ExtResource("2_0yamk")
+shader_parameter/speed = 0.1
+shader_parameter/size = 0.08

@@ -1,0 +1,13 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://c6rayxworjl8k"]
+
+[ext_resource type="Shader" uid="uid://de5kpnp8w45q0" path="res://shaders/proc-2d-fog.gdshader" id="1_7dace"]
+
+[resource]
+shader = ExtResource("1_7dace")
+shader_parameter/color = Color(1, 1, 1, 0.42352942)
+shader_parameter/OCTAVES = 2
+shader_parameter/enable_pixelation = false
+shader_parameter/pixelation_amount = 150
+shader_parameter/fog_direction = Vector2(0, 1)
+shader_parameter/scroll_noise_tex = false
+shader_parameter/noise_scroll_direction = Vector2(1, 0)

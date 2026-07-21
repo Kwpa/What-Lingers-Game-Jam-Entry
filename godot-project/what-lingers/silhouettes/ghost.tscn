@@ -1,0 +1,92 @@
+[gd_scene format=3 uid="uid://dm62dnxcua4vd"]
+
+[ext_resource type="Texture2D" uid="uid://cnosqlaa5f5mt" path="res://silhouettes/silhouette-only.png" id="1_blcom"]
+[ext_resource type="Material" uid="uid://0ammgfylp55f" path="res://shaders/radial-chromatic.tres" id="2_d47q8"]
+[ext_resource type="Material" uid="uid://bu5dif167naw" path="res://shaders/ghost-smoke.tres" id="3_blcom"]
+[ext_resource type="Material" uid="uid://gy0x6r2832ll" path="res://shaders/distortion.tres" id="4_blcom"]
+
+[node name="Ghost" type="Control" unique_id=617256557]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Silhouette" type="TextureRect" parent="." unique_id=1308793407]
+custom_minimum_size = Vector2(200, 500)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -382.0
+offset_top = -590.0
+offset_right = -11.0
+offset_bottom = 136.0
+grow_horizontal = 0
+grow_vertical = 0
+texture = ExtResource("1_blcom")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="SmokeEffect" type="TextureRect" parent="." unique_id=530473446]
+material = ExtResource("3_blcom")
+custom_minimum_size = Vector2(200, 500)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -451.0
+offset_top = -710.0
+offset_right = -80.0
+offset_bottom = 16.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("1_blcom")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="ChromaticEffect" type="TextureRect" parent="." unique_id=1982598779]
+material = ExtResource("2_d47q8")
+custom_minimum_size = Vector2(200, 500)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -381.99994
+offset_top = -590.0
+offset_right = -11.0
+offset_bottom = 136.0
+grow_horizontal = 0
+grow_vertical = 0
+texture = ExtResource("1_blcom")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="DistortionEffect" type="TextureRect" parent="." unique_id=1611969242]
+visible = false
+material = ExtResource("4_blcom")
+custom_minimum_size = Vector2(200, 500)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -451.0
+offset_top = -710.0
+offset_right = -80.0
+offset_bottom = 16.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("1_blcom")
+expand_mode = 3
+stretch_mode = 5

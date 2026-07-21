@@ -1,0 +1,10 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://b17vckll2tjdu"]
+
+[ext_resource type="Shader" uid="uid://ca631ubfk4saj" path="res://shaders/fog-overlay.gdshader" id="1_2cnjk"]
+[ext_resource type="Texture2D" uid="uid://b5deiswe05e5m" path="res://graphics/prawny-seamless-1315265-white.jpg" id="2_ruktp"]
+
+[resource]
+shader = ExtResource("1_2cnjk")
+shader_parameter/noise_texture = ExtResource("2_ruktp")
+shader_parameter/density = 0.25
+shader_parameter/speed = Vector2(0.02, 0.01)

@@ -1,0 +1,20 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://cuhnttjq6f8bx"]
+
+[ext_resource type="Shader" uid="uid://dk2uody60rshf" path="res://shaders/pulse.gdshader" id="1_5sn22"]
+
+[resource]
+shader = ExtResource("1_5sn22")
+shader_parameter/time_scale = 1.455
+shader_parameter/primary_color = Color(1, 0, 0, 1)
+shader_parameter/secondary_color = Color(0, 0.9439858, 0.9405729, 1)
+shader_parameter/turbulence = 1.26
+shader_parameter/distortion = 1.06
+shader_parameter/ring_count_influence = 11.045
+shader_parameter/go_backwards = false
+shader_parameter/alpha_blend = 0.46300006949250005
+shader_parameter/color_mix = Color(1, 1, 1, 1)
+shader_parameter/distortion_speed = 1.175
+shader_parameter/ring_speed = 1.0
+shader_parameter/final_alpha_multi = 1.0
+shader_parameter/opacity_smoothstep_1 = 7.05999961867488
+shader_parameter/opacity_smoothstep_2 = 1.5

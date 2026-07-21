@@ -1,0 +1,9 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://0ammgfylp55f"]
+
+[ext_resource type="Shader" uid="uid://c2kugjc83l1es" path="res://shaders/radial-chromatic-distortion.gdshader" id="1_30t8t"]
+
+[resource]
+shader = ExtResource("1_30t8t")
+shader_parameter/strength = 0.0170000008075
+shader_parameter/edge_falloff = true
+shader_parameter/distortion_amount = 4.7499999933364734e-08

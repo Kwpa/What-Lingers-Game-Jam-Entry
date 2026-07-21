@@ -22,10 +22,12 @@ var _audio_base: String = ""
 
 @onready var _transcript: VBoxContainer = $Layout/Scroll/Transcript
 @onready var _scroll: ScrollContainer = $Layout/Scroll
-@onready var _controls: VBoxContainer = $Layout/Controls
+@onready var _controls: VBoxContainer = $Dialogue/Controls
 @onready var _audio_toggle: CheckBox = $Layout/Header/AudioToggle
-@onready var _player: AudioStreamPlayer = $Player
+@onready var _player: AudioStreamPlayer = $AudioPlayer
+
 @onready var _photo: TextureRect = $Background/Photo
+@onready var _lines: RichTextLabel = $Dialogue/Lines
 
 
 func _ready() -> void:
@@ -129,6 +131,7 @@ func _append(bbcode: String) -> void:
 	label.fit_content = true
 	label.text = bbcode
 	_transcript.add_child(label)
+	_lines.text = bbcode
 	await get_tree().process_frame  # let the label size before jumping to the end
 	_scroll.scroll_vertical = int(_scroll.get_v_scroll_bar().max_value)
 
