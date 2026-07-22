@@ -16,9 +16,9 @@
     }
   ],
   "content": {
-    "hash": "0npybpc",
+    "hash": "0r67rf4",
     "project": "proj_pvhchy3o",
-    "structureHash": "0qbvqq9"
+    "structureHash": "0bbpco7"
   },
   "locales": {
     "default": "en",
@@ -428,6 +428,9 @@
                 }
               ],
               "id": "sn_slg5lkb1",
+              "jump": {
+                "to": "blk_drdi6800"
+              },
               "onEnter": [
                 {
                   "kind": "set",
@@ -441,6 +444,17 @@
                   }
                 }
               ],
+              "type": "snippet"
+            }
+          ],
+          "id": "blk_vqu6p79r",
+          "name": "Smoke Break",
+          "type": "block"
+        },
+        {
+          "children": [
+            {
+              "id": "sn_b9e9marx",
               "type": "snippet"
             },
             {
@@ -456,7 +470,7 @@
                       ],
                       "id": "sn_xbbyelm7",
                       "jump": {
-                        "to": "blk_hwgzp5pq"
+                        "to": "blk_oc4u3n36"
                       },
                       "type": "snippet"
                     }
@@ -466,6 +480,7 @@
                     "id": "L_xz8epju2",
                     "kind": "text"
                   },
+                  "sticky": true,
                   "type": "group"
                 },
                 {
@@ -477,53 +492,12 @@
                           "kind": "text"
                         },
                         {
-                          "id": "L_k4zw1if1",
+                          "id": "L_nrari1un",
                           "kind": "text"
                         }
                       ],
                       "id": "sn_y7fvuk7d",
                       "type": "snippet"
-                    },
-                    {
-                      "children": [
-                        {
-                          "children": [
-                            {
-                              "id": "sn_oiuolcgf",
-                              "jump": {
-                                "to": "blk_v3tg5lfn"
-                              },
-                              "type": "snippet"
-                            }
-                          ],
-                          "id": "opt_ba9841if",
-                          "prompt": {
-                            "id": "L_qrluqif5",
-                            "kind": "text"
-                          },
-                          "type": "group"
-                        },
-                        {
-                          "children": [
-                            {
-                              "id": "sn_mnqtxpag",
-                              "jump": {
-                                "to": "blk_ufive08l"
-                              },
-                              "type": "snippet"
-                            }
-                          ],
-                          "id": "opt_4nm9he2c",
-                          "prompt": {
-                            "id": "L_1slm711u",
-                            "kind": "text"
-                          },
-                          "type": "group"
-                        }
-                      ],
-                      "id": "g_1580fblt",
-                      "selector": "choice",
-                      "type": "group"
                     }
                   ],
                   "id": "opt_jp32pael",
@@ -531,16 +505,58 @@
                     "id": "L_pansdxhu",
                     "kind": "text"
                   },
+                  "sticky": true,
                   "type": "group"
                 }
               ],
               "id": "g_hhhwg7g2",
               "selector": "choice",
               "type": "group"
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "id": "sn_oiuolcgf",
+                      "jump": {
+                        "to": "blk_v3tg5lfn"
+                      },
+                      "type": "snippet"
+                    }
+                  ],
+                  "id": "opt_ba9841if",
+                  "prompt": {
+                    "id": "L_qrluqif5",
+                    "kind": "text"
+                  },
+                  "type": "group"
+                },
+                {
+                  "children": [
+                    {
+                      "id": "sn_mnqtxpag",
+                      "jump": {
+                        "to": "blk_ufive08l"
+                      },
+                      "type": "snippet"
+                    }
+                  ],
+                  "id": "opt_4nm9he2c",
+                  "prompt": {
+                    "id": "L_1slm711u",
+                    "kind": "text"
+                  },
+                  "type": "group"
+                }
+              ],
+              "id": "g_1580fblt",
+              "selector": "choice",
+              "type": "group"
             }
           ],
-          "id": "blk_vqu6p79r",
-          "name": "Smoke Break",
+          "id": "blk_drdi6800",
+          "name": "Linger or Move On",
           "type": "block"
         },
         {
@@ -553,6 +569,9 @@
                 }
               ],
               "id": "sn_febwnyr5",
+              "jump": {
+                "to": "blk_drdi6800"
+              },
               "type": "snippet"
             }
           ],
@@ -653,163 +672,174 @@
                 {
                   "children": [
                     {
-                      "beats": [
+                      "children": [
                         {
-                          "character": "YOU",
-                          "id": "L_4vcn2z5a",
-                          "kind": "line"
+                          "beats": [
+                            {
+                              "character": "YOU",
+                              "id": "L_4vcn2z5a",
+                              "kind": "line"
+                            },
+                            {
+                              "character": "SHELLY",
+                              "id": "L_9e8dqiex",
+                              "kind": "line"
+                            },
+                            {
+                              "character": "YOU",
+                              "id": "L_uk2b2tf3",
+                              "kind": "line"
+                            }
+                          ],
+                          "id": "sn_zkv7utnb",
+                          "onEnter": [
+                            {
+                              "kind": "set",
+                              "target": "@scene.linger_points",
+                              "value": {
+                                "ast": [
+                                  "bin",
+                                  "+",
+                                  [
+                                    "n",
+                                    1
+                                  ],
+                                  [
+                                    "sv",
+                                    "scene",
+                                    "linger_points"
+                                  ]
+                                ],
+                                "src": "1 + @scene.linger_points"
+                              }
+                            }
+                          ],
+                          "type": "snippet"
                         },
                         {
-                          "character": "SHELLY",
-                          "id": "L_9e8dqiex",
-                          "kind": "line"
-                        },
-                        {
-                          "character": "YOU",
-                          "id": "L_uk2b2tf3",
-                          "kind": "line"
-                        }
-                      ],
-                      "id": "sn_zkv7utnb",
-                      "onEnter": [
-                        {
-                          "kind": "set",
-                          "target": "@scene.linger_points",
-                          "value": {
-                            "ast": [
-                              "bin",
-                              "+",
-                              [
-                                "n",
-                                1
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "beats": [
+                                    {
+                                      "character": "YOU",
+                                      "id": "L_3ihdu46w",
+                                      "kind": "line"
+                                    },
+                                    {
+                                      "character": "SHELLY",
+                                      "id": "L_jrcmv0en",
+                                      "kind": "line"
+                                    }
+                                  ],
+                                  "id": "sn_2mhu04eo",
+                                  "jump": {
+                                    "to": "blk_c8zgk79n"
+                                  },
+                                  "type": "snippet"
+                                }
                               ],
-                              [
-                                "sv",
-                                "scene",
-                                "linger_points"
-                              ]
-                            ],
-                            "src": "1 + @scene.linger_points"
-                          }
+                              "id": "opt_06ypdoxq",
+                              "prompt": {
+                                "id": "L_8gwqow6e",
+                                "kind": "text"
+                              },
+                              "type": "group"
+                            },
+                            {
+                              "children": [
+                                {
+                                  "beats": [
+                                    {
+                                      "character": "YOU",
+                                      "id": "L_7cixjnhx",
+                                      "kind": "line"
+                                    },
+                                    {
+                                      "character": "SHELLY",
+                                      "id": "L_na6v92dj",
+                                      "kind": "line"
+                                    },
+                                    {
+                                      "character": "YOU",
+                                      "id": "L_mdk1s9we",
+                                      "kind": "line"
+                                    },
+                                    {
+                                      "character": "SHELLY",
+                                      "id": "L_xlo2p9g9",
+                                      "kind": "line"
+                                    }
+                                  ],
+                                  "id": "sn_f6asbucr",
+                                  "jump": {
+                                    "to": "blk_o42ol3uh"
+                                  },
+                                  "type": "snippet"
+                                }
+                              ],
+                              "id": "opt_q7ndfxuc",
+                              "prompt": {
+                                "id": "L_h3chz14i",
+                                "kind": "text"
+                              },
+                              "type": "group"
+                            }
+                          ],
+                          "id": "g_59ih4rtk",
+                          "selector": "choice",
+                          "type": "group"
                         }
                       ],
-                      "type": "snippet"
+                      "id": "opt_qkv12ut4",
+                      "prompt": {
+                        "id": "L_x6k7subl",
+                        "kind": "text"
+                      },
+                      "type": "group"
                     },
                     {
                       "children": [
                         {
-                          "children": [
+                          "beats": [
                             {
-                              "beats": [
-                                {
-                                  "character": "YOU",
-                                  "id": "L_3ihdu46w",
-                                  "kind": "line"
-                                },
-                                {
-                                  "character": "SHELLY",
-                                  "id": "L_jrcmv0en",
-                                  "kind": "line"
-                                }
-                              ],
-                              "id": "sn_2mhu04eo",
-                              "jump": {
-                                "to": "blk_c8zgk79n"
-                              },
-                              "type": "snippet"
+                              "character": "YOU",
+                              "id": "L_p9mivedy",
+                              "kind": "line"
+                            },
+                            {
+                              "character": "SHELLY",
+                              "id": "L_jlk1jiqw",
+                              "kind": "line"
                             }
                           ],
-                          "id": "opt_06ypdoxq",
-                          "prompt": {
-                            "id": "L_8gwqow6e",
-                            "kind": "text"
+                          "id": "sn_i25st8ll",
+                          "jump": {
+                            "to": "blk_rq5mdjsy"
                           },
-                          "type": "group"
-                        },
-                        {
-                          "children": [
-                            {
-                              "beats": [
-                                {
-                                  "character": "YOU",
-                                  "id": "L_7cixjnhx",
-                                  "kind": "line"
-                                },
-                                {
-                                  "character": "SHELLY",
-                                  "id": "L_na6v92dj",
-                                  "kind": "line"
-                                },
-                                {
-                                  "character": "YOU",
-                                  "id": "L_mdk1s9we",
-                                  "kind": "line"
-                                },
-                                {
-                                  "character": "SHELLY",
-                                  "id": "L_xlo2p9g9",
-                                  "kind": "line"
-                                }
-                              ],
-                              "id": "sn_f6asbucr",
-                              "jump": {
-                                "to": "blk_o42ol3uh"
-                              },
-                              "type": "snippet"
-                            }
-                          ],
-                          "id": "opt_q7ndfxuc",
-                          "prompt": {
-                            "id": "L_h3chz14i",
-                            "kind": "text"
-                          },
-                          "type": "group"
+                          "type": "snippet"
                         }
                       ],
-                      "id": "g_59ih4rtk",
-                      "selector": "choice",
+                      "id": "opt_yh73nzv3",
+                      "prompt": {
+                        "id": "L_z2jvf84o",
+                        "kind": "text"
+                      },
                       "type": "group"
                     }
                   ],
-                  "id": "opt_qkv12ut4",
-                  "prompt": {
-                    "id": "L_x6k7subl",
-                    "kind": "text"
-                  },
-                  "type": "group"
-                },
-                {
-                  "children": [
-                    {
-                      "beats": [
-                        {
-                          "character": "YOU",
-                          "id": "L_p9mivedy",
-                          "kind": "line"
-                        },
-                        {
-                          "character": "SHELLY",
-                          "id": "L_jlk1jiqw",
-                          "kind": "line"
-                        }
-                      ],
-                      "id": "sn_i25st8ll",
-                      "jump": {
-                        "to": "blk_rq5mdjsy"
-                      },
-                      "type": "snippet"
-                    }
-                  ],
-                  "id": "opt_yh73nzv3",
-                  "prompt": {
-                    "id": "L_z2jvf84o",
-                    "kind": "text"
-                  },
+                  "id": "g_3s06uh1d",
+                  "selector": "choice",
                   "type": "group"
                 }
               ],
-              "id": "g_3s06uh1d",
-              "selector": "choice",
+              "id": "g_knt3s0dy",
+              "options": {
+                "exhaust": "repeat",
+                "order": "shuffle"
+              },
+              "selector": "sequence",
               "type": "group"
             }
           ],
@@ -1152,9 +1182,16 @@
                 {
                   "id": "L_why0aiw1",
                   "kind": "text"
+                },
+                {
+                  "id": "L_tv2b6j8b",
+                  "kind": "text"
                 }
               ],
               "id": "sn_akj8ovry",
+              "jump": {
+                "to": "blk_oc4u3n36"
+              },
               "type": "snippet"
             }
           ],
@@ -1198,6 +1235,9 @@
                 }
               ],
               "id": "sn_fgjgl0mp",
+              "jump": {
+                "to": "blk_oc4u3n36"
+              },
               "type": "snippet"
             },
             {
@@ -1208,10 +1248,45 @@
           "id": "blk_aeyglvsv",
           "name": "Linger Ending",
           "type": "block"
+        },
+        {
+          "children": [
+            {
+              "id": "sn_5j7q97md",
+              "type": "snippet"
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "id": "sn_4gtzikon",
+                      "jump": {
+                        "to": "blk_hwgzp5pq"
+                      },
+                      "type": "snippet"
+                    }
+                  ],
+                  "id": "opt_x5k64jpu",
+                  "prompt": {
+                    "id": "L_rjx6ki9b",
+                    "kind": "text"
+                  },
+                  "type": "group"
+                }
+              ],
+              "id": "g_nbceylh1",
+              "selector": "choice",
+              "type": "group"
+            }
+          ],
+          "id": "blk_oc4u3n36",
+          "name": "Leave Shelly",
+          "type": "block"
         }
       ],
       "id": "scn_zooxtu9c",
-      "name": "Shelly Demo",
+      "name": "Shelly",
       "sceneProps": [
         {
           "default": 0,
@@ -1256,14 +1331,14 @@
       "L_4vcn2z5a": "I'm the new lighthouse keeper  ",
       "L_50rnso44": "She lights her translucent cigarette and turns the lighter over in her hand.",
       "L_56aqsszp": "The ghosts seem pleased!",
-      "L_5qvuk51w": "You know, Ariel had to leave the ocean to find her prince and satisfy her curiosity.",
+      "L_5qvuk51w": "Remember,  Ariel had to leave the ocean to find her prince and satisfy her curiosity.",
       "L_60hnsdp4": "You take from your pocket the mermaid lighter, and turn it over a couple times in your hand.  It's made from a cold and solid metal, but it's not as heavy as you might have expected. The front and back of it are engraved with a mermaid motif, in the style of a sailor's tattoo. Her hands are pushing back her hair, and her smiling face is somewhat worn down. This lighter has seen a lot of use.",
       "L_65ocw23f": "This was the best gift she ever gave me. If she had realized it was so cheaply made, she might not have picked it up. But she was in a hurry to select a present for my birthday, which she had forgotten about until that morning. She said she saw the mermaid and thought of me. She couldn't say why.",
       "L_76fdilkz": " I loved it there. All the people, the opportunities. There was so much I could have been there. I miss it.",
       "L_7cixjnhx": "It was...useful, I guess. Meaningful, probably. I would have kept at it if I hadn't been laid off.  ",
       "L_7njxkkxy": "She loves it there. She has this picture in her mind of the two of us living in a townhouse with a dog in ten years. I keep trying to tell her that I'm content here. I don't need my stupid degree.",
       "L_8elavtpk": "Here. There's a trick to it. Pass it over.",
-      "L_8gwqow6e": "When I got laid off, I knew I couldn't just find another job doing that. I needed to do something different",
+      "L_8gwqow6e": "When I got laid off, I knew I couldn't just find another job doing that. I needed to do something different.",
       "L_9e8dqiex": "You seem a little old to be fresh out of apprenticeship. What were you before?",
       "L_9k8om9h6": "Yeah, right, sure.",
       "L_a4ow04vi": "Linger",
@@ -1271,7 +1346,7 @@
       "L_b73o03rw": "You sit on the picnic bench and look up at the rocks. You have some thoughts. Time passes.",
       "L_bquxgxsq": "But then... ",
       "L_bvd7egxb": "There was a lot to like. I just... didn't.",
-      "L_c1j1nr5g": "You know, before I wasn't sure, but I was content here. Working as a waitress on the weekends, driving into town to see my girl when I can. I would have been more content if she visited here more often, but we were working on it. I would still be working on it, I guess. But now...I want to carve my happiness into these rocks. I want to stay.",
+      "L_c1j1nr5g": "You know, before I wasn't sure, but I was content here. Working as a waitress on the weekends, driving into town to see my girl when I can. I would have been more content if she'd visited more often, but we were working on it. I would still be working on it, I guess. But now...I want to carve my happiness into these rocks. I want to stay.",
       "L_cf3zd9yr": "You linger a little longer",
       "L_cxdem1h2": "I just...couldn't. I could never bear to stay inland for too long. Got saltwater for blood, she says. Maybe she's just salty that I wasn't willing to scrounge around for a place to stay in the city. But I'm like that mermaid; I belong with the waves. And she knows that, deep down, even if she doesn't understand why it's true.",
       "L_d2de5krv": "Degree? What did you study?",
@@ -1283,9 +1358,9 @@
       "L_gkxr56mr": "You try a couple more times anyway. The mechanism stops resisting, making a satisfying click. But no fire is forthcoming.",
       "L_gwcj6b98": "I saw a ghost! ",
       "L_h3chz14i": "It was...useful, I guess. Meaningful, probably. I would have kept at it if I hadn't been laid off.",
-      "L_h3v858ya": "Shelly turns away with a smile, and you watch her sink into the waves.",
+      "L_h3v858ya": "Shelly turns away with a smile, and you watch her sink into the waves. You stand there a long moment, watching that spot. Then it's time to return to your duties.",
       "L_hnpf2is7": "I know what you mean. In a way, I was glad to be laid off. It pushed me through a door I wouldn't have had the courage to open, let alone walk through.",
-      "L_i0uq4br9": "You know, the Brothers Grimm give that story a very different ending. Whatever. I can't believe I'm still  having this argument over and over again. I can't do this anymore.",
+      "L_i0uq4br9": "You know, the Brothers Grimm give that story a very different ending. Whatever. I can't believe I'm still having this argument over and over again. I can't do this anymore.",
       "L_i6bect3d": "Get the ghost cake ready",
       "L_ihupemdl": "I used to live in the city...",
       "L_ix4rmvof": "You enjoy watching over the village, even if no one else is awake yet.",
@@ -1294,19 +1369,21 @@
       "L_jhhztx7q": "How could a mermaid leave the ocean?",
       "L_jlk1jiqw": "Where were you before?",
       "L_jrcmv0en": "Yeah, that was how I felt after graduation. Like, if I had to find a job in that field and work at it for the rest of my life...I would survive it, I guess. Buy a house, marry my girlfriend. That's what she wanted. It's what my folks wanted.",
-      "L_k4zw1if1": "What will you reflect on?",
       "L_mdk1s9we": "Hey! I was good at it, and it was good for the world, you know? I got to approve a bunch of genuinely impactful projects. I was always a hit at cocktail parties, too.",
       "L_na6v92dj": "Wow...sounds like you really believed in the cause, eh?",
+      "L_nrari1un": "What will you reflect on?  ",
       "L_oga2e3gj": "It's what you want for yourself that matters most.",
       "L_p9mivedy": "I'm new in town.  ",
       "L_pansdxhu": "Linger...  ",
       "L_qrluqif5": "Mermaid Lighter",
       "L_qtnjiabs": "You've given up smoking, but the habit of seeking out other smokers lingers in you.",
       "L_qtzp9kwp": "So what do you want to do?",
-      "L_r0u8ioxq": "You know, Ariel had to leave the ocean to find her prince and satisfy her curiosity.  ",
+      "L_r0u8ioxq": "Remember, Ariel had to leave the ocean to find her prince and satisfy her curiosity.  ",
+      "L_rjx6ki9b": "Return to the lighthouse",
       "L_rucuvgi5": "Oh, how come you two are living apart?",
       "L_rxqfrn2z": "Down towards the sea.",
       "L_tqurm48a": "Towards the designated smoking area.",
+      "L_tv2b6j8b": "You'd better get back. There's nothing out here anymore.",
       "L_u1fiwv1h": "Up to the high rocks.",
       "L_ubiray8d": "I know what you mean. In a way, I was glad to be laid off. It pushed me through a door I wouldn't have had the courage to open, let alone walk through.",
       "L_uk2b2tf3": "I used to review grant applications at a charitable family foundation. I'd write reports on which projects to fund.",

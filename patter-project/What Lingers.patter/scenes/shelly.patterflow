@@ -11,6 +11,9 @@
               },
             ],
             "id": "sn_slg5lkb1",
+            "jump": {
+              "to": "blk_drdi6800",
+            },
             "onEnter": [
               {
                 "kind": "set",
@@ -18,6 +21,17 @@
                 "value": "\"smoke_break\"",
               },
             ],
+            "type": "snippet",
+          },
+        ],
+        "id": "blk_vqu6p79r",
+        "name": "Smoke Break",
+        "type": "block",
+      },
+      {
+        "children": [
+          {
+            "id": "sn_b9e9marx",
             "type": "snippet",
           },
           {
@@ -33,7 +47,7 @@
                     ],
                     "id": "sn_xbbyelm7",
                     "jump": {
-                      "to": "blk_hwgzp5pq",
+                      "to": "blk_oc4u3n36",
                     },
                     "type": "snippet",
                   },
@@ -43,6 +57,7 @@
                   "id": "L_xz8epju2",
                   "kind": "text",
                 },
+                "sticky": true,
                 "type": "group",
               },
               {
@@ -54,53 +69,12 @@
                         "kind": "text",
                       },
                       {
-                        "id": "L_k4zw1if1",
+                        "id": "L_nrari1un",
                         "kind": "text",
                       },
                     ],
                     "id": "sn_y7fvuk7d",
                     "type": "snippet",
-                  },
-                  {
-                    "children": [
-                      {
-                        "children": [
-                          {
-                            "id": "sn_oiuolcgf",
-                            "jump": {
-                              "to": "blk_v3tg5lfn",
-                            },
-                            "type": "snippet",
-                          },
-                        ],
-                        "id": "opt_ba9841if",
-                        "prompt": {
-                          "id": "L_qrluqif5",
-                          "kind": "text",
-                        },
-                        "type": "group",
-                      },
-                      {
-                        "children": [
-                          {
-                            "id": "sn_mnqtxpag",
-                            "jump": {
-                              "to": "blk_ufive08l",
-                            },
-                            "type": "snippet",
-                          },
-                        ],
-                        "id": "opt_4nm9he2c",
-                        "prompt": {
-                          "id": "L_1slm711u",
-                          "kind": "text",
-                        },
-                        "type": "group",
-                      },
-                    ],
-                    "id": "g_1580fblt",
-                    "selector": "choice",
-                    "type": "group",
                   },
                 ],
                 "id": "opt_jp32pael",
@@ -108,6 +82,7 @@
                   "id": "L_pansdxhu",
                   "kind": "text",
                 },
+                "sticky": true,
                 "type": "group",
               },
             ],
@@ -115,9 +90,50 @@
             "selector": "choice",
             "type": "group",
           },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "id": "sn_oiuolcgf",
+                    "jump": {
+                      "to": "blk_v3tg5lfn",
+                    },
+                    "type": "snippet",
+                  },
+                ],
+                "id": "opt_ba9841if",
+                "prompt": {
+                  "id": "L_qrluqif5",
+                  "kind": "text",
+                },
+                "type": "group",
+              },
+              {
+                "children": [
+                  {
+                    "id": "sn_mnqtxpag",
+                    "jump": {
+                      "to": "blk_ufive08l",
+                    },
+                    "type": "snippet",
+                  },
+                ],
+                "id": "opt_4nm9he2c",
+                "prompt": {
+                  "id": "L_1slm711u",
+                  "kind": "text",
+                },
+                "type": "group",
+              },
+            ],
+            "id": "g_1580fblt",
+            "selector": "choice",
+            "type": "group",
+          },
         ],
-        "id": "blk_vqu6p79r",
-        "name": "Smoke Break",
+        "id": "blk_drdi6800",
+        "name": "Linger or Move On",
         "type": "block",
       },
       {
@@ -130,6 +146,9 @@
               },
             ],
             "id": "sn_febwnyr5",
+            "jump": {
+              "to": "blk_drdi6800",
+            },
             "type": "snippet",
           },
         ],
@@ -230,148 +249,159 @@
               {
                 "children": [
                   {
-                    "beats": [
+                    "children": [
                       {
-                        "character": "YOU",
-                        "id": "L_4vcn2z5a",
-                        "kind": "line",
+                        "beats": [
+                          {
+                            "character": "YOU",
+                            "id": "L_4vcn2z5a",
+                            "kind": "line",
+                          },
+                          {
+                            "character": "SHELLY",
+                            "id": "L_9e8dqiex",
+                            "kind": "line",
+                          },
+                          {
+                            "character": "YOU",
+                            "id": "L_uk2b2tf3",
+                            "kind": "line",
+                          },
+                        ],
+                        "id": "sn_zkv7utnb",
+                        "onEnter": [
+                          {
+                            "kind": "set",
+                            "target": "@scene.linger_points",
+                            "value": "1 + @scene.linger_points",
+                          },
+                        ],
+                        "type": "snippet",
                       },
                       {
-                        "character": "SHELLY",
-                        "id": "L_9e8dqiex",
-                        "kind": "line",
-                      },
-                      {
-                        "character": "YOU",
-                        "id": "L_uk2b2tf3",
-                        "kind": "line",
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "beats": [
+                                  {
+                                    "character": "YOU",
+                                    "id": "L_3ihdu46w",
+                                    "kind": "line",
+                                  },
+                                  {
+                                    "character": "SHELLY",
+                                    "id": "L_jrcmv0en",
+                                    "kind": "line",
+                                  },
+                                ],
+                                "id": "sn_2mhu04eo",
+                                "jump": {
+                                  "to": "blk_c8zgk79n",
+                                },
+                                "type": "snippet",
+                              },
+                            ],
+                            "id": "opt_06ypdoxq",
+                            "prompt": {
+                              "id": "L_8gwqow6e",
+                              "kind": "text",
+                            },
+                            "type": "group",
+                          },
+                          {
+                            "children": [
+                              {
+                                "beats": [
+                                  {
+                                    "character": "YOU",
+                                    "id": "L_7cixjnhx",
+                                    "kind": "line",
+                                  },
+                                  {
+                                    "character": "SHELLY",
+                                    "id": "L_na6v92dj",
+                                    "kind": "line",
+                                  },
+                                  {
+                                    "character": "YOU",
+                                    "id": "L_mdk1s9we",
+                                    "kind": "line",
+                                  },
+                                  {
+                                    "character": "SHELLY",
+                                    "id": "L_xlo2p9g9",
+                                    "kind": "line",
+                                  },
+                                ],
+                                "id": "sn_f6asbucr",
+                                "jump": {
+                                  "to": "blk_o42ol3uh",
+                                },
+                                "type": "snippet",
+                              },
+                            ],
+                            "id": "opt_q7ndfxuc",
+                            "prompt": {
+                              "id": "L_h3chz14i",
+                              "kind": "text",
+                            },
+                            "type": "group",
+                          },
+                        ],
+                        "id": "g_59ih4rtk",
+                        "selector": "choice",
+                        "type": "group",
                       },
                     ],
-                    "id": "sn_zkv7utnb",
-                    "onEnter": [
-                      {
-                        "kind": "set",
-                        "target": "@scene.linger_points",
-                        "value": "1 + @scene.linger_points",
-                      },
-                    ],
-                    "type": "snippet",
+                    "id": "opt_qkv12ut4",
+                    "prompt": {
+                      "id": "L_x6k7subl",
+                      "kind": "text",
+                    },
+                    "type": "group",
                   },
                   {
                     "children": [
                       {
-                        "children": [
+                        "beats": [
                           {
-                            "beats": [
-                              {
-                                "character": "YOU",
-                                "id": "L_3ihdu46w",
-                                "kind": "line",
-                              },
-                              {
-                                "character": "SHELLY",
-                                "id": "L_jrcmv0en",
-                                "kind": "line",
-                              },
-                            ],
-                            "id": "sn_2mhu04eo",
-                            "jump": {
-                              "to": "blk_c8zgk79n",
-                            },
-                            "type": "snippet",
+                            "character": "YOU",
+                            "id": "L_p9mivedy",
+                            "kind": "line",
+                          },
+                          {
+                            "character": "SHELLY",
+                            "id": "L_jlk1jiqw",
+                            "kind": "line",
                           },
                         ],
-                        "id": "opt_06ypdoxq",
-                        "prompt": {
-                          "id": "L_8gwqow6e",
-                          "kind": "text",
+                        "id": "sn_i25st8ll",
+                        "jump": {
+                          "to": "blk_rq5mdjsy",
                         },
-                        "type": "group",
-                      },
-                      {
-                        "children": [
-                          {
-                            "beats": [
-                              {
-                                "character": "YOU",
-                                "id": "L_7cixjnhx",
-                                "kind": "line",
-                              },
-                              {
-                                "character": "SHELLY",
-                                "id": "L_na6v92dj",
-                                "kind": "line",
-                              },
-                              {
-                                "character": "YOU",
-                                "id": "L_mdk1s9we",
-                                "kind": "line",
-                              },
-                              {
-                                "character": "SHELLY",
-                                "id": "L_xlo2p9g9",
-                                "kind": "line",
-                              },
-                            ],
-                            "id": "sn_f6asbucr",
-                            "jump": {
-                              "to": "blk_o42ol3uh",
-                            },
-                            "type": "snippet",
-                          },
-                        ],
-                        "id": "opt_q7ndfxuc",
-                        "prompt": {
-                          "id": "L_h3chz14i",
-                          "kind": "text",
-                        },
-                        "type": "group",
+                        "type": "snippet",
                       },
                     ],
-                    "id": "g_59ih4rtk",
-                    "selector": "choice",
+                    "id": "opt_yh73nzv3",
+                    "prompt": {
+                      "id": "L_z2jvf84o",
+                      "kind": "text",
+                    },
                     "type": "group",
                   },
                 ],
-                "id": "opt_qkv12ut4",
-                "prompt": {
-                  "id": "L_x6k7subl",
-                  "kind": "text",
-                },
-                "type": "group",
-              },
-              {
-                "children": [
-                  {
-                    "beats": [
-                      {
-                        "character": "YOU",
-                        "id": "L_p9mivedy",
-                        "kind": "line",
-                      },
-                      {
-                        "character": "SHELLY",
-                        "id": "L_jlk1jiqw",
-                        "kind": "line",
-                      },
-                    ],
-                    "id": "sn_i25st8ll",
-                    "jump": {
-                      "to": "blk_rq5mdjsy",
-                    },
-                    "type": "snippet",
-                  },
-                ],
-                "id": "opt_yh73nzv3",
-                "prompt": {
-                  "id": "L_z2jvf84o",
-                  "kind": "text",
-                },
+                "id": "g_3s06uh1d",
+                "selector": "choice",
                 "type": "group",
               },
             ],
-            "id": "g_3s06uh1d",
-            "selector": "choice",
+            "id": "g_knt3s0dy",
+            "options": {
+              "exhaust": "repeat",
+              "order": "shuffle",
+            },
+            "selector": "sequence",
             "type": "group",
           },
         ],
@@ -715,8 +745,15 @@
                 "id": "L_why0aiw1",
                 "kind": "text",
               },
+              {
+                "id": "L_tv2b6j8b",
+                "kind": "text",
+              },
             ],
             "id": "sn_akj8ovry",
+            "jump": {
+              "to": "blk_oc4u3n36",
+            },
             "type": "snippet",
           },
         ],
@@ -760,6 +797,9 @@
               },
             ],
             "id": "sn_fgjgl0mp",
+            "jump": {
+              "to": "blk_oc4u3n36",
+            },
             "type": "snippet",
           },
           {
@@ -771,9 +811,44 @@
         "name": "Linger Ending",
         "type": "block",
       },
+      {
+        "children": [
+          {
+            "id": "sn_5j7q97md",
+            "type": "snippet",
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "id": "sn_4gtzikon",
+                    "jump": {
+                      "to": "blk_hwgzp5pq",
+                    },
+                    "type": "snippet",
+                  },
+                ],
+                "id": "opt_x5k64jpu",
+                "prompt": {
+                  "id": "L_rjx6ki9b",
+                  "kind": "text",
+                },
+                "type": "group",
+              },
+            ],
+            "id": "g_nbceylh1",
+            "selector": "choice",
+            "type": "group",
+          },
+        ],
+        "id": "blk_oc4u3n36",
+        "name": "Leave Shelly",
+        "type": "block",
+      },
     ],
     "id": "scn_zooxtu9c",
-    "name": "Shelly Demo",
+    "name": "Shelly",
     "sceneProps": [
       {
         "default": 0,
