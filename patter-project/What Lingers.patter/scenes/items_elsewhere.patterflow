@@ -18,12 +18,6 @@
               {
                 "children": [
                   {
-                    "beats": [
-                      {
-                        "id": "L_medv8y56",
-                        "kind": "text",
-                      },
-                    ],
                     "id": "sn_es3pbgna",
                     "jump": {
                       "to": "blk_hwgzp5pq",

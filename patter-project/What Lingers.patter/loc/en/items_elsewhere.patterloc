@@ -4,8 +4,7 @@
   "scene": "scn_aal75ur3",
   "schema": "patter/strings@0",
   "strings": {
-    "L_8nlex5hj": "Back to the lighthouse",
+    "L_8nlex5hj": "Back to the lighthouse.",
     "L_ldd99nq5": "You turn over the golden lighter and examine the engraving. It's a mermaid in traditional tattoo style. You don't smoke anymore, but even when you did, you weren't the kind to have a refillable lighter. Maybe you'll pick up some loosies from the bar one night and take them to the smokers' bench.",
-    "L_medv8y56": "ad",
   },
 }
