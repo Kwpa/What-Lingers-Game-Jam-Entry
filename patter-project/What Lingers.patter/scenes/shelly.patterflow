@@ -112,6 +112,46 @@
               {
                 "children": [
                   {
+                    "beats": [
+                      {
+                        "id": "L_9l358tqf",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_onvytjgt",
+                    "type": "snippet",
+                  },
+                ],
+                "id": "opt_4kzssqt2",
+                "prompt": {
+                  "id": "L_1tm3j39o",
+                  "kind": "text",
+                },
+                "type": "group",
+              },
+              {
+                "children": [
+                  {
+                    "beats": [
+                      {
+                        "id": "L_6uk1lkdw",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_a4faeo1e",
+                    "type": "snippet",
+                  },
+                ],
+                "id": "opt_xu2z6yq6",
+                "prompt": {
+                  "id": "L_0p718wn5",
+                  "kind": "text",
+                },
+                "type": "group",
+              },
+              {
+                "children": [
+                  {
                     "id": "sn_mnqtxpag",
                     "jump": {
                       "to": "blk_ufive08l",

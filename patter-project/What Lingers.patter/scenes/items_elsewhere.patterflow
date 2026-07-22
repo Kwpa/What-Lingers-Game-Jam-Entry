@@ -1,0 +1,57 @@
+{
+  "scene": {
+    "blocks": [
+      {
+        "children": [
+          {
+            "beats": [
+              {
+                "id": "L_ldd99nq5",
+                "kind": "text",
+              },
+            ],
+            "id": "sn_rzdgmwhy",
+            "type": "snippet",
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "beats": [
+                      {
+                        "id": "L_medv8y56",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_es3pbgna",
+                    "jump": {
+                      "to": "blk_hwgzp5pq",
+                    },
+                    "type": "snippet",
+                  },
+                ],
+                "id": "opt_nendq82i",
+                "prompt": {
+                  "id": "L_8nlex5hj",
+                  "kind": "text",
+                },
+                "type": "group",
+              },
+            ],
+            "id": "g_s1390rzi",
+            "selector": "choice",
+            "type": "group",
+          },
+        ],
+        "id": "blk_7bckv7q1",
+        "name": "Mermaid Lighter Elsewhere",
+        "type": "block",
+      },
+    ],
+    "id": "scn_aal75ur3",
+    "name": "Items Elsewhere",
+    "type": "scene",
+  },
+  "schema": "patter/flow@0",
+}

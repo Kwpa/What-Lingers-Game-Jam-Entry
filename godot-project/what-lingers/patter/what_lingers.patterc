@@ -16,9 +16,9 @@
     }
   ],
   "content": {
-    "hash": "0r67rf4",
+    "hash": "0f6bjgl",
     "project": "proj_pvhchy3o",
-    "structureHash": "0bbpco7"
+    "structureHash": "10wa3zf"
   },
   "locales": {
     "default": "en",
@@ -148,6 +148,60 @@
       ],
       "id": "scn_89sjd1s0",
       "name": "Return to Lighthouse",
+      "type": "scene"
+    },
+    "scn_aal75ur3": {
+      "blocks": [
+        {
+          "children": [
+            {
+              "beats": [
+                {
+                  "id": "L_ldd99nq5",
+                  "kind": "text"
+                }
+              ],
+              "id": "sn_rzdgmwhy",
+              "type": "snippet"
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "beats": [
+                        {
+                          "id": "L_medv8y56",
+                          "kind": "text"
+                        }
+                      ],
+                      "id": "sn_es3pbgna",
+                      "jump": {
+                        "to": "blk_hwgzp5pq"
+                      },
+                      "type": "snippet"
+                    }
+                  ],
+                  "id": "opt_nendq82i",
+                  "prompt": {
+                    "id": "L_8nlex5hj",
+                    "kind": "text"
+                  },
+                  "type": "group"
+                }
+              ],
+              "id": "g_s1390rzi",
+              "selector": "choice",
+              "type": "group"
+            }
+          ],
+          "id": "blk_7bckv7q1",
+          "name": "Mermaid Lighter Elsewhere",
+          "type": "block"
+        }
+      ],
+      "id": "scn_aal75ur3",
+      "name": "Items Elsewhere",
       "type": "scene"
     },
     "scn_cnna5vwr": {
@@ -528,6 +582,46 @@
                   "id": "opt_ba9841if",
                   "prompt": {
                     "id": "L_qrluqif5",
+                    "kind": "text"
+                  },
+                  "type": "group"
+                },
+                {
+                  "children": [
+                    {
+                      "beats": [
+                        {
+                          "id": "L_9l358tqf",
+                          "kind": "text"
+                        }
+                      ],
+                      "id": "sn_onvytjgt",
+                      "type": "snippet"
+                    }
+                  ],
+                  "id": "opt_4kzssqt2",
+                  "prompt": {
+                    "id": "L_1tm3j39o",
+                    "kind": "text"
+                  },
+                  "type": "group"
+                },
+                {
+                  "children": [
+                    {
+                      "beats": [
+                        {
+                          "id": "L_6uk1lkdw",
+                          "kind": "text"
+                        }
+                      ],
+                      "id": "sn_a4faeo1e",
+                      "type": "snippet"
+                    }
+                  ],
+                  "id": "opt_xu2z6yq6",
+                  "prompt": {
+                    "id": "L_0p718wn5",
                     "kind": "text"
                   },
                   "type": "group"
@@ -1318,10 +1412,12 @@
     "en": {
       "L_07th16an": "I think you're the only person who's ever said that to me. My girlfriend, my parents, they all had these plans for me. They just assumed that I would want the same things.",
       "L_09tmieow": "I know how you feel. My girlfriend loves it there. All the bustle and noise. She's still up there.",
+      "L_0p718wn5": "Glass vial",
       "L_0sntv0tk": "Anyway, I haven't seen you out here before. I'm Shelly. Who are you?  ",
       "L_100gnbza": "You love the lighthouse. But the Mist has returned.",
       "L_12t8bid4": "So even though it always takes two or three tries to light it, it's my treasure. My hope, my proof that she understands who I am. No matter how much we bicker and fight... After those long arguments, I always come out here to smoke. Y'know, to calm down and remind myself that we might not see eye to eye, but we see each other.  ",
-      "L_1slm711u": "Nothing",
+      "L_1slm711u": "Your life",
+      "L_1tm3j39o": "Rusted Key",
       "L_1y2n56oy": "You can't grow old here, that's true enough. But what you do next is up to you.",
       "L_23exwn8r": "There was a lot to like. I just... didn't.",
       "L_290jlhag": "Exactly. I finally feel like I'm right where I need to be. Can you hang onto that lighter for me? I don't have anywhere to put it. I'll see you around.",
@@ -1334,16 +1430,19 @@
       "L_5qvuk51w": "Remember,  Ariel had to leave the ocean to find her prince and satisfy her curiosity.",
       "L_60hnsdp4": "You take from your pocket the mermaid lighter, and turn it over a couple times in your hand.  It's made from a cold and solid metal, but it's not as heavy as you might have expected. The front and back of it are engraved with a mermaid motif, in the style of a sailor's tattoo. Her hands are pushing back her hair, and her smiling face is somewhat worn down. This lighter has seen a lot of use.",
       "L_65ocw23f": "This was the best gift she ever gave me. If she had realized it was so cheaply made, she might not have picked it up. But she was in a hurry to select a present for my birthday, which she had forgotten about until that morning. She said she saw the mermaid and thought of me. She couldn't say why.",
+      "L_6uk1lkdw": "You should look at this elsewhere",
       "L_76fdilkz": " I loved it there. All the people, the opportunities. There was so much I could have been there. I miss it.",
       "L_7cixjnhx": "It was...useful, I guess. Meaningful, probably. I would have kept at it if I hadn't been laid off.  ",
       "L_7njxkkxy": "She loves it there. She has this picture in her mind of the two of us living in a townhouse with a dog in ten years. I keep trying to tell her that I'm content here. I don't need my stupid degree.",
       "L_8elavtpk": "Here. There's a trick to it. Pass it over.",
       "L_8gwqow6e": "When I got laid off, I knew I couldn't just find another job doing that. I needed to do something different.",
+      "L_8nlex5hj": "Back to the lighthouse",
       "L_9e8dqiex": "You seem a little old to be fresh out of apprenticeship. What were you before?",
       "L_9k8om9h6": "Yeah, right, sure.",
+      "L_9l358tqf": "You should look at this elsewhere",
       "L_a4ow04vi": "Linger",
       "L_an1fdyvt": "One ghost today!",
-      "L_b73o03rw": "You sit on the picnic bench and look up at the rocks. You have some thoughts. Time passes.",
+      "L_b73o03rw": "You sit on the picnic bench and look up at the rocks. Their peaks are hidden by the fog, for now. Soon the sun will begin to turn them a pale pink, then reveal more and more of their heights as the fog burns away. Your future felt similarly obscured to you, until recently. Your apprenticeship with the lighthouse keeper gave you the direction you had been missing. Now that he has retired, you feel confident stepping into the role on your own. ",
       "L_bquxgxsq": "But then... ",
       "L_bvd7egxb": "There was a lot to like. I just... didn't.",
       "L_c1j1nr5g": "You know, before I wasn't sure, but I was content here. Working as a waitress on the weekends, driving into town to see my girl when I can. I would have been more content if she'd visited more often, but we were working on it. I would still be working on it, I guess. But now...I want to carve my happiness into these rocks. I want to stay.",
@@ -1369,7 +1468,9 @@
       "L_jhhztx7q": "How could a mermaid leave the ocean?",
       "L_jlk1jiqw": "Where were you before?",
       "L_jrcmv0en": "Yeah, that was how I felt after graduation. Like, if I had to find a job in that field and work at it for the rest of my life...I would survive it, I guess. Buy a house, marry my girlfriend. That's what she wanted. It's what my folks wanted.",
+      "L_ldd99nq5": "You turn over the golden lighter and examine the engraving. It's a mermaid in traditional tattoo style. You don't smoke anymore, but even when you did, you weren't the kind to have a refillable lighter. Maybe you'll pick up some loosies from the bar one night and take them to the smokers' bench.",
       "L_mdk1s9we": "Hey! I was good at it, and it was good for the world, you know? I got to approve a bunch of genuinely impactful projects. I was always a hit at cocktail parties, too.",
+      "L_medv8y56": "ad",
       "L_na6v92dj": "Wow...sounds like you really believed in the cause, eh?",
       "L_nrari1un": "What will you reflect on?  ",
       "L_oga2e3gj": "It's what you want for yourself that matters most.",
