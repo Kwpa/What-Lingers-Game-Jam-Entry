@@ -20,8 +20,11 @@
     },
     {
       "name": "YOU",
-    }
+    },
   ],
+  "dictionary": {
+    "language": "en-GB",
+  },
   "formatting": true,
   "locales": {
     "all": [
@@ -57,10 +60,14 @@
     },
   ],
   "sceneOrder": [
+    "scn_gsaier9p",
     "scn_89sjd1s0",
     "scn_zooxtu9c",
     "scn_cnna5vwr",
     "scn_nn1yrfas",
+    "scn_aal75ur3",
+    "scn_gny3t8sq",
+    "scn_q2o3j5ux",
   ],
   "schema": "patter/project@0",
   "start": {

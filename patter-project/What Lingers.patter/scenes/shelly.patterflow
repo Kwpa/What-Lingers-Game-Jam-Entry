@@ -31,6 +31,16 @@
       {
         "children": [
           {
+            "beats": [
+              {
+                "id": "L_ivxguvsn",
+                "kind": "text",
+              },
+            ],
+            "id": "sn_g740xa8t",
+            "type": "snippet",
+          },
+          {
             "children": [
               {
                 "children": [
@@ -112,11 +122,19 @@
                   {
                     "beats": [
                       {
-                        "id": "L_9l358tqf",
+                        "id": "L_dfx0bxum",
                         "kind": "text",
                       },
                     ],
                     "id": "sn_onvytjgt",
+                    "jump": {
+                      "mode": "call",
+                      "to": "blk_vkawyf5u",
+                    },
+                    "type": "snippet",
+                  },
+                  {
+                    "id": "sn_gfwqdvqb",
                     "jump": {
                       "to": "blk_drdi6800",
                     },
@@ -137,11 +155,18 @@
                   {
                     "beats": [
                       {
-                        "id": "L_6uk1lkdw",
+                        "id": "L_f2fn857f",
                         "kind": "text",
                       },
                     ],
                     "id": "sn_a4faeo1e",
+                    "jump": {
+                      "to": "blk_303sxwrx",
+                    },
+                    "type": "snippet",
+                  },
+                  {
+                    "id": "sn_vc1rciju",
                     "jump": {
                       "to": "blk_drdi6800",
                     },
@@ -211,7 +236,7 @@
           },
         ],
         "id": "blk_drdi6800",
-        "name": "Linger or Move On",
+        "name": "Shelly Linger or Move On",
         "type": "block",
       },
       {
@@ -259,7 +284,7 @@
           {
             "beats": [
               {
-                "character": "SHELLY",
+                "character": "???",
                 "id": "L_8elavtpk",
                 "kind": "line",
               },
@@ -284,12 +309,12 @@
           {
             "beats": [
               {
-                "character": "SHELLY",
+                "character": "???",
                 "id": "L_65ocw23f",
                 "kind": "line",
               },
               {
-                "character": "SHELLY",
+                "character": "???",
                 "id": "L_12t8bid4",
                 "kind": "line",
               },

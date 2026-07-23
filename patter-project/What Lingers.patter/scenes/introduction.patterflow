@@ -134,7 +134,22 @@
                         "kind": "text",
                       },
                     ],
+                    "condition": "@has_vial or @has_key or @has_ligher",
                     "id": "sn_7eseuo1w",
+                    "jump": {
+                      "to": "scn_89sjd1s0",
+                    },
+                    "type": "snippet",
+                  },
+                  {
+                    "beats": [
+                      {
+                        "id": "L_dfmdpejo",
+                        "kind": "text",
+                      },
+                    ],
+                    "condition": "not @has_key and not @has_ligher and not @has_vial",
+                    "id": "sn_ohv9dja7",
                     "jump": {
                       "to": "scn_89sjd1s0",
                     },
