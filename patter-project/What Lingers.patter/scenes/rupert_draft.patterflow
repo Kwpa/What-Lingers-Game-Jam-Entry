@@ -525,6 +525,70 @@
                             "id": "sn_xe8s33zs",
                             "type": "snippet",
                           },
+                          {
+                            "beats": [
+                              {
+                                "id": "L_riv8x740",
+                                "kind": "text",
+                              },
+                            ],
+                            "id": "sn_h7542h8r",
+                            "type": "snippet",
+                          },
+                          {
+                            "beats": [
+                              {
+                                "character": "RUPERT",
+                                "id": "L_p5yyl6fk",
+                                "kind": "line",
+                              },
+                            ],
+                            "id": "sn_koozcsh4",
+                            "type": "snippet",
+                          },
+                          {
+                            "beats": [
+                              {
+                                "id": "L_5ghzu3oc",
+                                "kind": "text",
+                              },
+                            ],
+                            "id": "sn_35k294dl",
+                            "type": "snippet",
+                          },
+                          {
+                            "beats": [
+                              {
+                                "id": "L_yqkmj6qm",
+                                "kind": "text",
+                              },
+                            ],
+                            "id": "sn_ac0dxdiy",
+                            "type": "snippet",
+                          },
+                          {
+                            "beats": [
+                              {
+                                "id": "L_va2gb6tv",
+                                "kind": "text",
+                              },
+                            ],
+                            "id": "sn_4ep6zo0q",
+                            "type": "snippet",
+                          },
+                          {
+                            "beats": [
+                              {
+                                "id": "L_tgpox7ez",
+                                "kind": "text",
+                              },
+                            ],
+                            "id": "sn_y5e1bdn6",
+                            "jump": {
+                              "to": "scn_89sjd1s0",
+                            },
+                            "type": "snippet",
+                          },
                         ],
                         "id": "opt_6a6yd1kp",
                         "prompt": {
@@ -536,7 +600,123 @@
                       {
                         "children": [
                           {
+                            "beats": [
+                              {
+                                "id": "L_bqvx3niw",
+                                "kind": "text",
+                              },
+                            ],
                             "id": "sn_5b6umla2",
+                            "type": "snippet",
+                          },
+                          {
+                            "beats": [
+                              {
+                                "id": "L_zv05xd5g",
+                                "kind": "text",
+                              },
+                            ],
+                            "id": "sn_gokgxyc2",
+                            "type": "snippet",
+                          },
+                          {
+                            "beats": [
+                              {
+                                "id": "L_bpd1jec3",
+                                "kind": "text",
+                              },
+                            ],
+                            "id": "sn_es40g1jf",
+                            "type": "snippet",
+                          },
+                          {
+                            "beats": [
+                              {
+                                "id": "L_awip25ie",
+                                "kind": "text",
+                              },
+                            ],
+                            "id": "sn_rywz1hro",
+                            "type": "snippet",
+                          },
+                          {
+                            "beats": [
+                              {
+                                "character": "RUPERT",
+                                "id": "L_te8gp2su",
+                                "kind": "line",
+                              },
+                            ],
+                            "id": "sn_s380d2q1",
+                            "type": "snippet",
+                          },
+                          {
+                            "beats": [
+                              {
+                                "character": "RUPERT",
+                                "direction": "sings",
+                                "id": "L_ox0aoxx0",
+                                "kind": "line",
+                              },
+                              {
+                                "character": "RUPERT",
+                                "direction": "sings",
+                                "id": "L_jhjck42y",
+                                "kind": "line",
+                              },
+                              {
+                                "character": "RUPERT",
+                                "direction": "sings",
+                                "id": "L_iq69kkje",
+                                "kind": "line",
+                              },
+                              {
+                                "character": "RUPERT",
+                                "direction": "sings",
+                                "id": "L_uly52w03",
+                                "kind": "line",
+                              },
+                              {
+                                "character": "RUPERT",
+                                "direction": "sings",
+                                "id": "L_e5qhmh3t",
+                                "kind": "line",
+                              },
+                            ],
+                            "id": "sn_qdp6i6tq",
+                            "type": "snippet",
+                          },
+                          {
+                            "beats": [
+                              {
+                                "id": "L_m2h69u5b",
+                                "kind": "text",
+                              },
+                            ],
+                            "id": "sn_tclkn7kq",
+                            "type": "snippet",
+                          },
+                          {
+                            "beats": [
+                              {
+                                "id": "L_6rwpqvbr",
+                                "kind": "text",
+                              },
+                            ],
+                            "id": "sn_yb8mzuw7",
+                            "type": "snippet",
+                          },
+                          {
+                            "beats": [
+                              {
+                                "id": "L_n0m0hpto",
+                                "kind": "text",
+                              },
+                            ],
+                            "id": "sn_8khb4h8x",
+                            "jump": {
+                              "to": "scn_89sjd1s0",
+                            },
                             "type": "snippet",
                           },
                         ],
@@ -602,6 +782,39 @@
                       },
                     ],
                     "id": "sn_xp03mvjw",
+                    "type": "snippet",
+                  },
+                  {
+                    "beats": [
+                      {
+                        "id": "L_lwvgntyk",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_2c21pmr8",
+                    "type": "snippet",
+                  },
+                  {
+                    "beats": [
+                      {
+                        "id": "L_3eyyzx0m",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_cfer8dve",
+                    "type": "snippet",
+                  },
+                  {
+                    "beats": [
+                      {
+                        "id": "L_a3d8ltck",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_aexg3eri",
+                    "jump": {
+                      "to": "scn_89sjd1s0",
+                    },
                     "type": "snippet",
                   },
                   {
