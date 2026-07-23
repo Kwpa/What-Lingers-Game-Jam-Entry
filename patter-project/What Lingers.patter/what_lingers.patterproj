@@ -11,8 +11,16 @@
       "name": "SHELLY",
     },
     {
-      "name": "YOU",
+      "displayName": "Rupert",
+      "name": "RUPERT",
     },
+    {
+      "displayName": "???",
+      "name": "???",
+    },
+    {
+      "name": "YOU",
+    }
   ],
   "formatting": true,
   "locales": {
