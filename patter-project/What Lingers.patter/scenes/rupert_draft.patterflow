@@ -63,6 +63,7 @@
                   "id": "L_dls1kmhu",
                   "kind": "text",
                 },
+                "sticky": true,
                 "type": "group",
               },
               {
@@ -197,6 +198,7 @@
                           "id": "L_h97ydol4",
                           "kind": "text",
                         },
+                        "sticky": true,
                         "type": "group",
                       },
                     ],
@@ -210,6 +212,7 @@
                   "id": "L_e6bywiys",
                   "kind": "text",
                 },
+                "sticky": true,
                 "type": "group",
               },
             ],
@@ -939,10 +942,6 @@
                     "jump": {
                       "to": "scn_89sjd1s0",
                     },
-                    "type": "snippet",
-                  },
-                  {
-                    "id": "sn_ffeqa98c",
                     "type": "snippet",
                   },
                 ],

@@ -1,5 +1,11 @@
 {
   "edits": {
+    "L_0agwnyjo": {
+      "modifiedAt": "2026-07-23T16:15:59.090Z",
+    },
+    "L_62liwz0k": {
+      "modifiedAt": "2026-07-23T16:15:52.248Z",
+    },
     "L_fdm2d23v": {
       "modifiedAt": "2026-07-20T07:39:55.329Z",
     },
@@ -23,7 +29,7 @@
     },
     "scn_89sjd1s0": {
       "by": "Esther",
-      "modifiedAt": "2026-07-23T16:01:08.721Z",
+      "modifiedAt": "2026-07-23T16:16:05.828Z",
     },
   },
   "schema": "patter/authoring@0",

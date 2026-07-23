@@ -12,8 +12,15 @@
             ],
             "id": "sn_wk50zmo4",
             "jump": {
-              "to": "blk_usdt6ey1",
+              "to": "blk_v4yjnpqq",
             },
+            "onEnter": [
+              {
+                "kind": "set",
+                "target": "@photo_title",
+                "value": "\"lighthouse_interior\"",
+              },
+            ],
             "type": "snippet",
           },
         ],
@@ -33,6 +40,31 @@
             "id": "sn_bm7zo0cl",
             "type": "snippet",
           },
+          {
+            "beats": [
+              {
+                "id": "L_k1w01qf8",
+                "kind": "text",
+              },
+            ],
+            "condition": "not seen(blk_hwgzp5pq)",
+            "id": "sn_dylufw5c",
+            "type": "snippet",
+          },
+          {
+            "id": "sn_1op50tfh",
+            "jump": {
+              "to": "blk_usdt6ey1",
+            },
+            "type": "snippet",
+          },
+        ],
+        "id": "blk_v4yjnpqq",
+        "name": "Enter the Lighthouse",
+        "type": "block",
+      },
+      {
+        "children": [
           {
             "children": [
               {
@@ -161,16 +193,13 @@
                   "id": "L_dgvy0a3q",
                   "kind": "text",
                 },
+                "sticky": true,
                 "type": "group",
               },
             ],
             "id": "g_o7xyw1oc",
             "selector": "choice",
             "type": "group",
-          },
-          {
-            "id": "sn_wada17m3",
-            "type": "snippet",
           },
         ],
         "id": "blk_usdt6ey1",

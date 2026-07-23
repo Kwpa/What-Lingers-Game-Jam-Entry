@@ -94,6 +94,23 @@
                 "sticky": true,
                 "type": "group",
               },
+              {
+                "children": [
+                  {
+                    "id": "sn_2ifzbarw",
+                    "jump": {
+                      "to": "blk_usdt6ey1",
+                    },
+                    "type": "snippet",
+                  },
+                ],
+                "id": "opt_6k6n89u1",
+                "prompt": {
+                  "id": "L_62liwz0k",
+                  "kind": "text",
+                },
+                "type": "group",
+              },
             ],
             "id": "g_y4dqj2tt",
             "selector": "choice",
@@ -106,7 +123,7 @@
       },
     ],
     "id": "scn_89sjd1s0",
-    "name": "Lighthouse Exterior",
+    "name": "Return to Lighthouse",
     "type": "scene",
   },
   "schema": "patter/flow@0",

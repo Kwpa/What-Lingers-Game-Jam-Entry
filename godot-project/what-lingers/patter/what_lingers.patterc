@@ -21,9 +21,9 @@
     }
   ],
   "content": {
-    "hash": "1lct0mx",
+    "hash": "1s6x2k0",
     "project": "proj_pvhchy3o",
-    "structureHash": "1syd7c5"
+    "structureHash": "013xccx"
   },
   "locales": {
     "default": "en",
@@ -170,7 +170,7 @@
         }
       ],
       "id": "scn_89sjd1s0",
-      "name": "Lighthouse Exterior",
+      "name": "Return to Lighthouse",
       "type": "scene"
     },
     "scn_aal75ur3": {
@@ -438,6 +438,19 @@
               "jump": {
                 "to": "blk_usdt6ey1"
               },
+              "onEnter": [
+                {
+                  "kind": "set",
+                  "target": "@photo_title",
+                  "value": {
+                    "ast": [
+                      "s",
+                      "lighthouse_interior"
+                    ],
+                    "src": "\"lighthouse_interior\""
+                  }
+                }
+              ],
               "type": "snippet"
             }
           ],
@@ -665,16 +678,13 @@
                     "id": "L_dgvy0a3q",
                     "kind": "text"
                   },
+                  "sticky": true,
                   "type": "group"
                 }
               ],
               "id": "g_o7xyw1oc",
               "selector": "choice",
               "type": "group"
-            },
-            {
-              "id": "sn_wada17m3",
-              "type": "snippet"
             }
           ],
           "id": "blk_usdt6ey1",
@@ -851,6 +861,7 @@
                     "id": "L_dls1kmhu",
                     "kind": "text"
                   },
+                  "sticky": true,
                   "type": "group"
                 },
                 {
@@ -1010,6 +1021,7 @@
                             "id": "L_h97ydol4",
                             "kind": "text"
                           },
+                          "sticky": true,
                           "type": "group"
                         }
                       ],
@@ -1023,6 +1035,7 @@
                     "id": "L_e6bywiys",
                     "kind": "text"
                   },
+                  "sticky": true,
                   "type": "group"
                 }
               ],
@@ -1785,10 +1798,6 @@
                       "jump": {
                         "to": "scn_89sjd1s0"
                       },
-                      "type": "snippet"
-                    },
-                    {
-                      "id": "sn_ffeqa98c",
                       "type": "snippet"
                     }
                   ],
@@ -2914,7 +2923,7 @@
       "L_nrari1un": "What will you reflect on?  ",
       "L_oga2e3gj": "It's what you want for yourself that matters most.",
       "L_ox0aoxx0": "Many have missed the starry nights, the crescent moon - the friendly lights.",
-      "L_p5yyl6fk": "Aye! John would be pleased with this. He was always harken on about pasturised milk and needles and the like. Didn't think he'd actually be right... smart lad. Guess he can make his own supper tonight.",
+      "L_p5yyl6fk": "Aye! John would be pleased with this. He was always harkened on about pasturised milk and needles and the like. Didn't think he'd actually be right... smart lad. Guess he can make his own supper tonight.",
       "L_p9mivedy": "I'm new in town.  ",
       "L_pansdxhu": "Linger...  ",
       "L_pvgmay5h": "How the static wooden structures of the town survive the stormy months truly remains a mystery to you.   ",
