@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://dm62dnxcua4vd" path="res://silhouettes/ghost.tscn" id="7_njcbe"]
 [ext_resource type="Material" uid="uid://bscvohn1msyvl" path="res://shaders/animated-outline.tres" id="9_8fh76"]
 [ext_resource type="Texture2D" uid="uid://doholpu0tqb2w" path="res://graphics/textbox-whiteonly.png" id="10_3akvv"]
+[ext_resource type="PackedScene" uid="uid://bcdjwp4us8ql1" path="res://scenes/next.tscn" id="11_3akvv"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_hh8yg"]
 shader = ExtResource("4_njcbe")
@@ -133,7 +134,7 @@ layout_mode = 2
 [node name="Title" type="Label" parent="Layout/Header" unique_id=63315123]
 layout_mode = 2
 size_flags_horizontal = 3
-text = "What Lingers Demo"
+text = "What Lingers"
 
 [node name="AudioToggle" type="CheckBox" parent="Layout/Header" unique_id=212703635]
 layout_mode = 2
@@ -195,7 +196,7 @@ grow_horizontal = 2
 bbcode_enabled = true
 text = "You are the lighthouse keeper."
 
-[node name="Controls" type="VBoxContainer" parent="Dialogue" unique_id=1409167491]
+[node name="Controls" type="VBoxContainer" parent="." unique_id=1409167491]
 custom_minimum_size = Vector2(600, 150)
 layout_mode = 1
 anchors_preset = 7
@@ -203,10 +204,19 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -300.0
-offset_top = -208.0
-offset_right = 300.0
-offset_bottom = -58.0
+offset_left = -375.0
+offset_top = -201.0
+offset_right = 375.0
+offset_bottom = -13.0
 grow_horizontal = 2
 grow_vertical = 0
 alignment = 2
+
+[node name="Next" parent="." unique_id=1443236702 instance=ExtResource("11_3akvv")]
+visible = false
+layout_mode = 1
+offset_left = 303.0
+offset_top = -105.0
+offset_right = 388.0
+offset_bottom = -65.0
+mouse_filter = 1

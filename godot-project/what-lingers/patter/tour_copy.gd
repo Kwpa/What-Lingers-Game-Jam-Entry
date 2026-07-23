@@ -22,10 +22,14 @@ var _audio_base: String = ""
 
 @onready var _transcript: VBoxContainer = $Layout/Scroll/Transcript
 @onready var _scroll: ScrollContainer = $Layout/Scroll
-@onready var _controls: VBoxContainer = $Dialogue/Controls
+@onready var _controls: VBoxContainer = $Controls
 @onready var _audio_toggle: CheckBox = $Layout/Header/AudioToggle
 @onready var _player: AudioStreamPlayer = $AudioPlayer
 
+@onready var _button_scene: PackedScene = preload("res://scenes/option_button.tscn")
+
+@onready var _dialogue: Control = $Dialogue
+@onready var _next_button: Button = $Next
 @onready var _photo: TextureRect = $Background/Photo
 @onready var _lines: RichTextLabel = $Dialogue/Lines
 
@@ -55,6 +59,7 @@ func _ready() -> void:
 	if manifest != "":
 		_audio = PatterAudioScript.new(manifest, _audio_base)
 
+	_next_button.pressed.connect(_step)
 	_start()
 
 
@@ -137,7 +142,10 @@ func _append(bbcode: String) -> void:
 
 
 func _show_next() -> void:
-	_set_controls([_button("▸ Next", _step)])
+	# _next_button.show()
+	var button = _button_scene.instantiate()
+	button._set_option("▸ Next", _step)
+	_set_controls([button])
 
 
 func _show_choices(options: Array) -> void:
@@ -145,12 +153,22 @@ func _show_choices(options: Array) -> void:
 	for o in options:
 		var opt: Dictionary = o
 		var label: String = _plain(opt.get("text", "(choice)"))
-		var b := _button(label, func() -> void:
+		var button = _button_scene.instantiate()
+		button._set_option(label, func() -> void:
 			_flow.choose(opt["id"])
+			_dialogue.show()
+			_clear_controls()
 			_step())
-		b.disabled = not opt.get("eligible", true)
-		buttons.append(b)
+		button.disabled = not opt.get("eligible", true)
+		buttons.append(button)
+	_dialogue.hide()
 	_set_controls(buttons)
+
+
+func _clear_controls():
+	for n in _controls.get_children():
+		_controls.remove_child(n)
+		n.queue_free()
 
 
 func _show_restart() -> void:
@@ -158,14 +176,13 @@ func _show_restart() -> void:
 
 
 func _button(label: String, on_pressed: Callable) -> Button:
-	var b := Button.new()
-	b.text = label
-	b.pressed.connect(on_pressed)
-	return b
+	var button = _button_scene.instantiate()
+	button._set_option(label, on_pressed)
+	return button
 
 
 func _set_controls(buttons: Array) -> void:
-	for child in _controls.get_children():
-		child.queue_free()
+	_clear_controls()
+	_next_button.hide()
 	for b in buttons:
 		_controls.add_child(b)

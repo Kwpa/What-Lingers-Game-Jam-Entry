@@ -8,4 +8,5 @@ shader_parameter/max_line_width = 30.0
 shader_parameter/min_line_width = 2.0
 shader_parameter/freq = 5.0
 shader_parameter/block_size = 15.0
-shader_parameter/outline_colour = Vector4(0, 0, 0, 1)
+shader_parameter/outline_color = Vector4(0, 0, 0, 1)
+shader_parameter/box_color = Vector4(1, 1, 1, 1)

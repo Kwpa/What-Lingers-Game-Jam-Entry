@@ -27,6 +27,7 @@ enabled=PackedStringArray("res://addons/patterplay/plugin.cfg")
 [gui]
 
 theme/custom="uid://cn8ro78wv7fce"
+theme/custom_font="uid://clewjiie1rgta"
 
 [physics]
 
