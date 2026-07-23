@@ -6,24 +6,331 @@
           {
             "beats": [
               {
-                "id": "T_ixuiokff",
+                "id": "L_umustd7w",
                 "kind": "text",
               },
             ],
-            "id": "sn_7niuc3tl",
+            "id": "sn_yo25zipf",
+            "type": "snippet",
+          },
+          {
+            "beats": [
+              {
+                "id": "L_hgo2utey",
+                "kind": "text",
+              },
+            ],
+            "id": "sn_yoyfxg0k",
+            "type": "snippet",
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "beats": [
+                      {
+                        "id": "L_zco2auz3",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_6agqoi49",
+                    "type": "snippet",
+                  },
+                ],
+                "id": "opt_ovkxrdg4",
+                "prompt": {
+                  "id": "L_dls1kmhu",
+                  "kind": "text",
+                },
+                "type": "group",
+              },
+              {
+                "children": [
+                  {
+                    "beats": [
+                      {
+                        "id": "L_vyodd8y3",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_fc9834vv",
+                    "type": "snippet",
+                  },
+                  {
+                    "beats": [
+                      {
+                        "id": "L_pvgmay5h",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_ji3x901i",
+                    "type": "snippet",
+                  },
+                  {
+                    "beats": [
+                      {
+                        "id": "L_kvfj0btq",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_udu2b0cl",
+                    "jump": {
+                      "to": "blk_s2fo2r51",
+                    },
+                    "type": "snippet",
+                  },
+                ],
+                "id": "opt_ezpmg1nl",
+                "prompt": {
+                  "id": "L_e6bywiys",
+                  "kind": "text",
+                },
+                "type": "group",
+              },
+            ],
+            "id": "g_bm7zm9nb",
+            "selector": "choice",
+            "type": "group",
+          },
+        ],
+        "id": "blk_lt2tzmaj",
+        "name": "Rolling Granite Landscape",
+        "type": "block",
+      },
+      {
+        "children": [
+          {
+            "beats": [
+              {
+                "id": "L_bxms09yk",
+                "kind": "text",
+              },
+            ],
+            "id": "sn_loh1ro6v",
+            "type": "snippet",
+          },
+          {
+            "beats": [
+              {
+                "id": "L_wcg03aht",
+                "kind": "text",
+              },
+            ],
+            "id": "sn_n6rmb4ci",
+            "type": "snippet",
+          },
+          {
+            "beats": [
+              {
+                "id": "L_ei4gkxni",
+                "kind": "text",
+              },
+            ],
+            "id": "sn_r8y88a66",
+            "type": "snippet",
+          },
+          {
+            "beats": [
+              {
+                "id": "L_st6nbww3",
+                "kind": "text",
+              },
+            ],
+            "id": "sn_y364jm4s",
             "jump": {
-              "to": "END",
+              "to": "blk_2g7t4o6i",
             },
             "type": "snippet",
           },
         ],
-        "id": "blk_lt2tzmaj",
-        "name": "Main",
+        "id": "blk_s2fo2r51",
+        "name": "The Antitoxin Vial",
+        "type": "block",
+      },
+      {
+        "children": [
+          {
+            "beats": [
+              {
+                "id": "L_e0l8e9zj",
+                "kind": "text",
+              },
+            ],
+            "condition": "@scene.guess_count == 1",
+            "id": "sn_lnh1lpcw",
+            "type": "snippet",
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "beats": [
+                      {
+                        "id": "L_7f9tmmt7",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_7dsw3hqp",
+                    "jump": {
+                      "to": "blk_2g7t4o6i",
+                    },
+                    "onEnter": [
+                      {
+                        "kind": "set",
+                        "target": "@scene.guess_count",
+                        "value": "1",
+                      },
+                    ],
+                    "type": "snippet",
+                  },
+                ],
+                "id": "opt_we7w8jkc",
+                "prompt": {
+                  "id": "L_e3rh6fhm",
+                  "kind": "text",
+                },
+                "type": "group",
+              },
+              {
+                "children": [
+                  {
+                    "beats": [
+                      {
+                        "id": "L_1h02vf13",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_wanvondm",
+                    "jump": {
+                      "to": "blk_2g7t4o6i",
+                    },
+                    "onEnter": [
+                      {
+                        "kind": "set",
+                        "target": "@scene.guess_count",
+                        "value": "1",
+                      },
+                    ],
+                    "type": "snippet",
+                  },
+                ],
+                "id": "opt_mlksgwra",
+                "prompt": {
+                  "id": "L_au7ez05s",
+                  "kind": "text",
+                },
+                "type": "group",
+              },
+              {
+                "children": [
+                  {
+                    "beats": [
+                      {
+                        "id": "L_hsiqhvme",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_6dp0hb73",
+                    "jump": {
+                      "to": "blk_drpqr9np",
+                    },
+                    "onEnter": [
+                      {
+                        "kind": "set",
+                        "target": "@scene.guess_count",
+                        "value": "1",
+                      },
+                    ],
+                    "type": "snippet",
+                  },
+                ],
+                "id": "opt_upymhz76",
+                "prompt": {
+                  "id": "L_8nbu6rcs",
+                  "kind": "text",
+                },
+                "type": "group",
+              },
+            ],
+            "id": "g_3d29p4nt",
+            "selector": "choice",
+            "type": "group",
+          },
+        ],
+        "id": "blk_2g7t4o6i",
+        "name": "Vial Age Guess",
+        "type": "block",
+      },
+      {
+        "children": [
+          {
+            "beats": [
+              {
+                "character": "RUPERT",
+                "id": "T_ixuiokff",
+                "kind": "line",
+              },
+            ],
+            "id": "sn_np1coqk8",
+            "type": "snippet",
+          },
+          {
+            "beats": [
+              {
+                "id": "L_qewl8yry",
+                "kind": "text",
+              },
+            ],
+            "id": "sn_13avk8cu",
+            "type": "snippet",
+          },
+          {
+            "beats": [
+              {
+                "id": "L_ep4wsehx",
+                "kind": "text",
+              },
+            ],
+            "id": "sn_t2lpk1fq",
+            "type": "snippet",
+          },
+          {
+            "beats": [
+              {
+                "id": "L_197oqjha",
+                "kind": "text",
+              },
+            ],
+            "id": "sn_qthanhry",
+            "type": "snippet",
+          },
+          {
+            "beats": [
+              {
+                "id": "L_vk4ed0ta",
+                "kind": "text",
+              },
+            ],
+            "id": "sn_bmwlzrax",
+            "type": "snippet",
+          },
+        ],
+        "id": "blk_drpqr9np",
+        "name": "Ghost Interaction",
         "type": "block",
       },
     ],
     "id": "scn_q2o3j5ux",
     "name": "Rupert Draft",
+    "sceneProps": [
+      {
+        "default": 0,
+        "name": "guess_count",
+        "type": "number",
+      },
+    ],
     "type": "scene",
   },
   "schema": "patter/flow@0",
