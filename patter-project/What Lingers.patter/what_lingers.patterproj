@@ -30,6 +30,22 @@
   },
   "properties": [
     {
+      "default": false,
+      "name": "has_vial",
+      "type": "boolean",
+    },
+    {
+      "default": false,
+      "name": "has_ligher",
+      "purpose": "to track whether the lighthouse keeper has picked up the lighter",
+      "type": "boolean",
+    },
+    {
+      "default": false,
+      "name": "has_key",
+      "type": "boolean",
+    },
+    {
       "default": "lighthouse_exterior",
       "name": "photo_title",
       "type": "string",
@@ -42,24 +58,8 @@
     "scn_nn1yrfas",
   ],
   "schema": "patter/project@0",
-  "scopeRegistry": {
-    "scopes": [
-      {
-        "declarations": [
-          {
-            "default": 0,
-            "name": "gold",
-            "type": "number",
-            "writable": false,
-          },
-        ],
-        "token": "world",
-      },
-    ],
-    "version": 1,
-  },
   "start": {
-    "scene": "scn_89sjd1s0",
+    "scene": "scn_gsaier9p",
   },
   "vcs": "git",
   "voiced": false,
