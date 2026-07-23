@@ -10,6 +10,20 @@
       "displayName": "Shelly",
       "name": "SHELLY",
     },
+    {
+      "displayName": "Rupert",
+      "name": "RUPERT",
+    },
+    {
+      "displayName": "???",
+      "name": "???",
+    },
+    {
+      "name": "LHK",
+    },
+    {
+      "name": "YOU",
+    }
   ],
   "formatting": true,
   "locales": {

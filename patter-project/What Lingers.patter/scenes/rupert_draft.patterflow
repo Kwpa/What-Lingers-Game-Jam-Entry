@@ -1,0 +1,855 @@
+{
+  "scene": {
+    "blocks": [
+      {
+        "children": [
+          {
+            "beats": [
+              {
+                "id": "L_umustd7w",
+                "kind": "text",
+              },
+            ],
+            "id": "sn_yo25zipf",
+            "type": "snippet",
+          },
+          {
+            "beats": [
+              {
+                "id": "L_hgo2utey",
+                "kind": "text",
+              },
+            ],
+            "id": "sn_yoyfxg0k",
+            "type": "snippet",
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "beats": [
+                      {
+                        "id": "L_zco2auz3",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_6agqoi49",
+                    "type": "snippet",
+                  },
+                ],
+                "id": "opt_ovkxrdg4",
+                "prompt": {
+                  "id": "L_dls1kmhu",
+                  "kind": "text",
+                },
+                "type": "group",
+              },
+              {
+                "children": [
+                  {
+                    "beats": [
+                      {
+                        "id": "L_vyodd8y3",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_fc9834vv",
+                    "type": "snippet",
+                  },
+                  {
+                    "beats": [
+                      {
+                        "id": "L_pvgmay5h",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_ji3x901i",
+                    "type": "snippet",
+                  },
+                  {
+                    "beats": [
+                      {
+                        "id": "L_kvfj0btq",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_udu2b0cl",
+                    "jump": {
+                      "to": "blk_s2fo2r51",
+                    },
+                    "type": "snippet",
+                  },
+                ],
+                "id": "opt_ezpmg1nl",
+                "prompt": {
+                  "id": "L_e6bywiys",
+                  "kind": "text",
+                },
+                "type": "group",
+              },
+            ],
+            "id": "g_bm7zm9nb",
+            "selector": "choice",
+            "type": "group",
+          },
+        ],
+        "id": "blk_lt2tzmaj",
+        "name": "Rolling Granite Landscape",
+        "type": "block",
+      },
+      {
+        "children": [
+          {
+            "beats": [
+              {
+                "id": "L_bxms09yk",
+                "kind": "text",
+              },
+            ],
+            "id": "sn_loh1ro6v",
+            "type": "snippet",
+          },
+          {
+            "beats": [
+              {
+                "id": "L_wcg03aht",
+                "kind": "text",
+              },
+            ],
+            "id": "sn_n6rmb4ci",
+            "type": "snippet",
+          },
+          {
+            "beats": [
+              {
+                "id": "L_ei4gkxni",
+                "kind": "text",
+              },
+            ],
+            "id": "sn_r8y88a66",
+            "type": "snippet",
+          },
+          {
+            "beats": [
+              {
+                "id": "L_st6nbww3",
+                "kind": "text",
+              },
+            ],
+            "id": "sn_y364jm4s",
+            "jump": {
+              "to": "blk_2g7t4o6i",
+            },
+            "type": "snippet",
+          },
+        ],
+        "id": "blk_s2fo2r51",
+        "name": "The Antitoxin Vial",
+        "type": "block",
+      },
+      {
+        "children": [
+          {
+            "beats": [
+              {
+                "id": "L_e0l8e9zj",
+                "kind": "text",
+              },
+            ],
+            "condition": "@scene.guess_count == 1",
+            "id": "sn_lnh1lpcw",
+            "type": "snippet",
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "beats": [
+                      {
+                        "id": "L_7f9tmmt7",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_7dsw3hqp",
+                    "jump": {
+                      "to": "blk_2g7t4o6i",
+                    },
+                    "onEnter": [
+                      {
+                        "kind": "set",
+                        "target": "@scene.guess_count",
+                        "value": "1",
+                      },
+                    ],
+                    "type": "snippet",
+                  },
+                ],
+                "id": "opt_we7w8jkc",
+                "prompt": {
+                  "id": "L_e3rh6fhm",
+                  "kind": "text",
+                },
+                "type": "group",
+              },
+              {
+                "children": [
+                  {
+                    "beats": [
+                      {
+                        "id": "L_1h02vf13",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_wanvondm",
+                    "jump": {
+                      "to": "blk_2g7t4o6i",
+                    },
+                    "onEnter": [
+                      {
+                        "kind": "set",
+                        "target": "@scene.guess_count",
+                        "value": "1",
+                      },
+                    ],
+                    "type": "snippet",
+                  },
+                ],
+                "id": "opt_mlksgwra",
+                "prompt": {
+                  "id": "L_au7ez05s",
+                  "kind": "text",
+                },
+                "type": "group",
+              },
+              {
+                "children": [
+                  {
+                    "beats": [
+                      {
+                        "id": "L_hsiqhvme",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_6dp0hb73",
+                    "jump": {
+                      "to": "blk_drpqr9np",
+                    },
+                    "onEnter": [
+                      {
+                        "kind": "set",
+                        "target": "@scene.guess_count",
+                        "value": "1",
+                      },
+                    ],
+                    "type": "snippet",
+                  },
+                ],
+                "id": "opt_upymhz76",
+                "prompt": {
+                  "id": "L_8nbu6rcs",
+                  "kind": "text",
+                },
+                "type": "group",
+              },
+            ],
+            "id": "g_3d29p4nt",
+            "selector": "choice",
+            "type": "group",
+          },
+        ],
+        "id": "blk_2g7t4o6i",
+        "name": "Vial Age Guess",
+        "type": "block",
+      },
+      {
+        "children": [
+          {
+            "beats": [
+              {
+                "id": "L_qewl8yry",
+                "kind": "text",
+              },
+            ],
+            "id": "sn_13avk8cu",
+            "type": "snippet",
+          },
+          {
+            "beats": [
+              {
+                "id": "L_ep4wsehx",
+                "kind": "text",
+              },
+            ],
+            "id": "sn_t2lpk1fq",
+            "type": "snippet",
+          },
+          {
+            "beats": [
+              {
+                "id": "L_197oqjha",
+                "kind": "text",
+              },
+            ],
+            "id": "sn_qthanhry",
+            "type": "snippet",
+          },
+          {
+            "beats": [
+              {
+                "character": "???",
+                "id": "T_ixuiokff",
+                "kind": "line",
+              },
+            ],
+            "id": "sn_np1coqk8",
+            "type": "snippet",
+          },
+          {
+            "beats": [
+              {
+                "id": "L_vk4ed0ta",
+                "kind": "text",
+              },
+            ],
+            "id": "sn_bmwlzrax",
+            "type": "snippet",
+          },
+          {
+            "beats": [
+              {
+                "character": "???",
+                "id": "L_5je4lacn",
+                "kind": "line",
+              },
+            ],
+            "id": "sn_ych0o0a7",
+            "type": "snippet",
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "beats": [
+                      {
+                        "character": "???",
+                        "id": "L_evybg16w",
+                        "kind": "line",
+                      },
+                    ],
+                    "id": "sn_e3sv6dny",
+                    "type": "snippet",
+                  },
+                ],
+                "id": "opt_7myrku9q",
+                "prompt": {
+                  "id": "L_zf8ipdru",
+                  "kind": "text",
+                },
+                "type": "group",
+              },
+              {
+                "children": [
+                  {
+                    "beats": [
+                      {
+                        "character": "???",
+                        "id": "L_2xdzc8iu",
+                        "kind": "line",
+                      },
+                    ],
+                    "id": "sn_oyx1c50l",
+                    "type": "snippet",
+                  },
+                ],
+                "id": "opt_f8nt2uha",
+                "prompt": {
+                  "id": "L_0abmu7uu",
+                  "kind": "text",
+                },
+                "type": "group",
+              },
+            ],
+            "id": "g_xw0gapgw",
+            "selector": "choice",
+            "type": "group",
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "beats": [
+                      {
+                        "id": "L_4xa35oxr",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_s5486a2n",
+                    "type": "snippet",
+                  },
+                ],
+                "id": "opt_3tci2tcb",
+                "prompt": {
+                  "id": "L_s05imwtb",
+                  "kind": "text",
+                },
+                "type": "group",
+              },
+              {
+                "children": [
+                  {
+                    "beats": [
+                      {
+                        "id": "L_sfook5qs",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_79gn1d5i",
+                    "type": "snippet",
+                  },
+                ],
+                "id": "opt_02xcpd8n",
+                "prompt": {
+                  "id": "L_8zbbfvo8",
+                  "kind": "text",
+                },
+                "type": "group",
+              },
+            ],
+            "id": "g_spattbip",
+            "selector": "choice",
+            "type": "group",
+          },
+          {
+            "beats": [
+              {
+                "id": "L_w3uzjotm",
+                "kind": "text",
+              },
+            ],
+            "id": "sn_50stbd96",
+            "type": "snippet",
+          },
+          {
+            "beats": [
+              {
+                "id": "L_rhus38j5",
+                "kind": "text",
+              },
+            ],
+            "id": "sn_vcjrv5ee",
+            "type": "snippet",
+          },
+          {
+            "beats": [
+              {
+                "character": "RUPERT",
+                "id": "L_iadozr77",
+                "kind": "line",
+              },
+            ],
+            "id": "sn_g2nf8qx4",
+            "type": "snippet",
+          },
+          {
+            "beats": [
+              {
+                "character": "RUPERT",
+                "id": "L_12a4tjho",
+                "kind": "line",
+              },
+            ],
+            "id": "sn_dlih4f2n",
+            "type": "snippet",
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "beats": [
+                      {
+                        "id": "L_ebs97quz",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_8yrcfof9",
+                    "type": "snippet",
+                  },
+                  {
+                    "beats": [
+                      {
+                        "character": "RUPERT",
+                        "id": "L_0gnymqfh",
+                        "kind": "line",
+                      },
+                    ],
+                    "id": "sn_qdwjbftu",
+                    "type": "snippet",
+                  },
+                  {
+                    "beats": [
+                      {
+                        "id": "L_fn18d6og",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_brahul01",
+                    "type": "snippet",
+                  },
+                  {
+                    "beats": [
+                      {
+                        "character": "RUPERT",
+                        "id": "L_h2jaqe3k",
+                        "kind": "line",
+                      },
+                    ],
+                    "id": "sn_65v4iyup",
+                    "type": "snippet",
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "beats": [
+                              {
+                                "id": "L_4dto6hro",
+                                "kind": "text",
+                              },
+                            ],
+                            "id": "sn_xe8s33zs",
+                            "type": "snippet",
+                          },
+                          {
+                            "beats": [
+                              {
+                                "id": "L_riv8x740",
+                                "kind": "text",
+                              },
+                            ],
+                            "id": "sn_h7542h8r",
+                            "type": "snippet",
+                          },
+                          {
+                            "beats": [
+                              {
+                                "character": "RUPERT",
+                                "id": "L_p5yyl6fk",
+                                "kind": "line",
+                              },
+                            ],
+                            "id": "sn_koozcsh4",
+                            "type": "snippet",
+                          },
+                          {
+                            "beats": [
+                              {
+                                "id": "L_5ghzu3oc",
+                                "kind": "text",
+                              },
+                            ],
+                            "id": "sn_35k294dl",
+                            "type": "snippet",
+                          },
+                          {
+                            "beats": [
+                              {
+                                "id": "L_yqkmj6qm",
+                                "kind": "text",
+                              },
+                            ],
+                            "id": "sn_ac0dxdiy",
+                            "type": "snippet",
+                          },
+                          {
+                            "beats": [
+                              {
+                                "id": "L_va2gb6tv",
+                                "kind": "text",
+                              },
+                            ],
+                            "id": "sn_4ep6zo0q",
+                            "type": "snippet",
+                          },
+                          {
+                            "beats": [
+                              {
+                                "id": "L_tgpox7ez",
+                                "kind": "text",
+                              },
+                            ],
+                            "id": "sn_y5e1bdn6",
+                            "jump": {
+                              "to": "scn_89sjd1s0",
+                            },
+                            "type": "snippet",
+                          },
+                        ],
+                        "id": "opt_6a6yd1kp",
+                        "prompt": {
+                          "id": "L_i9qu3653",
+                          "kind": "text",
+                        },
+                        "type": "group",
+                      },
+                      {
+                        "children": [
+                          {
+                            "beats": [
+                              {
+                                "id": "L_bqvx3niw",
+                                "kind": "text",
+                              },
+                            ],
+                            "id": "sn_5b6umla2",
+                            "type": "snippet",
+                          },
+                          {
+                            "beats": [
+                              {
+                                "id": "L_zv05xd5g",
+                                "kind": "text",
+                              },
+                            ],
+                            "id": "sn_gokgxyc2",
+                            "type": "snippet",
+                          },
+                          {
+                            "beats": [
+                              {
+                                "id": "L_bpd1jec3",
+                                "kind": "text",
+                              },
+                            ],
+                            "id": "sn_es40g1jf",
+                            "type": "snippet",
+                          },
+                          {
+                            "beats": [
+                              {
+                                "id": "L_awip25ie",
+                                "kind": "text",
+                              },
+                            ],
+                            "id": "sn_rywz1hro",
+                            "type": "snippet",
+                          },
+                          {
+                            "beats": [
+                              {
+                                "character": "RUPERT",
+                                "id": "L_te8gp2su",
+                                "kind": "line",
+                              },
+                            ],
+                            "id": "sn_s380d2q1",
+                            "type": "snippet",
+                          },
+                          {
+                            "beats": [
+                              {
+                                "character": "RUPERT",
+                                "direction": "sings",
+                                "id": "L_ox0aoxx0",
+                                "kind": "line",
+                              },
+                              {
+                                "character": "RUPERT",
+                                "direction": "sings",
+                                "id": "L_jhjck42y",
+                                "kind": "line",
+                              },
+                              {
+                                "character": "RUPERT",
+                                "direction": "sings",
+                                "id": "L_iq69kkje",
+                                "kind": "line",
+                              },
+                              {
+                                "character": "RUPERT",
+                                "direction": "sings",
+                                "id": "L_uly52w03",
+                                "kind": "line",
+                              },
+                              {
+                                "character": "RUPERT",
+                                "direction": "sings",
+                                "id": "L_e5qhmh3t",
+                                "kind": "line",
+                              },
+                            ],
+                            "id": "sn_qdp6i6tq",
+                            "type": "snippet",
+                          },
+                          {
+                            "beats": [
+                              {
+                                "id": "L_m2h69u5b",
+                                "kind": "text",
+                              },
+                            ],
+                            "id": "sn_tclkn7kq",
+                            "type": "snippet",
+                          },
+                          {
+                            "beats": [
+                              {
+                                "id": "L_6rwpqvbr",
+                                "kind": "text",
+                              },
+                            ],
+                            "id": "sn_yb8mzuw7",
+                            "type": "snippet",
+                          },
+                          {
+                            "beats": [
+                              {
+                                "id": "L_n0m0hpto",
+                                "kind": "text",
+                              },
+                            ],
+                            "id": "sn_8khb4h8x",
+                            "jump": {
+                              "to": "scn_89sjd1s0",
+                            },
+                            "type": "snippet",
+                          },
+                        ],
+                        "id": "opt_mu2bbvrv",
+                        "prompt": {
+                          "id": "L_2vfrrfk7",
+                          "kind": "text",
+                        },
+                        "type": "group",
+                      },
+                    ],
+                    "id": "g_jnojv1yp",
+                    "selector": "choice",
+                    "type": "group",
+                  },
+                ],
+                "id": "opt_gmdpguhk",
+                "prompt": {
+                  "id": "L_akt87cur",
+                  "kind": "text",
+                },
+                "type": "group",
+              },
+              {
+                "children": [
+                  {
+                    "beats": [
+                      {
+                        "character": "RUPERT",
+                        "id": "L_2ebdg1hk",
+                        "kind": "line",
+                      },
+                    ],
+                    "id": "sn_f07s3ghl",
+                    "type": "snippet",
+                  },
+                  {
+                    "beats": [
+                      {
+                        "character": "RUPERT",
+                        "id": "L_0947i49j",
+                        "kind": "line",
+                      },
+                    ],
+                    "id": "sn_lpiql6j2",
+                    "type": "snippet",
+                  },
+                  {
+                    "beats": [
+                      {
+                        "id": "L_9ammycvt",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_iaur3mbx",
+                    "type": "snippet",
+                  },
+                  {
+                    "beats": [
+                      {
+                        "id": "L_44jru503",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_xp03mvjw",
+                    "type": "snippet",
+                  },
+                  {
+                    "beats": [
+                      {
+                        "id": "L_lwvgntyk",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_2c21pmr8",
+                    "type": "snippet",
+                  },
+                  {
+                    "beats": [
+                      {
+                        "id": "L_3eyyzx0m",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_cfer8dve",
+                    "type": "snippet",
+                  },
+                  {
+                    "beats": [
+                      {
+                        "id": "L_a3d8ltck",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_aexg3eri",
+                    "jump": {
+                      "to": "scn_89sjd1s0",
+                    },
+                    "type": "snippet",
+                  },
+                  {
+                    "id": "sn_ffeqa98c",
+                    "type": "snippet",
+                  },
+                ],
+                "id": "opt_9r83z6up",
+                "prompt": {
+                  "id": "L_hmmttuo2",
+                  "kind": "text",
+                },
+                "type": "group",
+              },
+            ],
+            "id": "g_pcei4c2a",
+            "selector": "choice",
+            "type": "group",
+          },
+        ],
+        "id": "blk_drpqr9np",
+        "name": "Ghost Interaction",
+        "type": "block",
+      },
+    ],
+    "id": "scn_q2o3j5ux",
+    "name": "Rupert Draft",
+    "sceneProps": [
+      {
+        "default": 0,
+        "name": "guess_count",
+        "type": "number",
+      },
+    ],
+    "type": "scene",
+  },
+  "schema": "patter/flow@0",
+}
