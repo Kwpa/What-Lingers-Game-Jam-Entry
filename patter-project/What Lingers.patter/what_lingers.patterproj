@@ -40,17 +40,19 @@
     {
       "default": false,
       "name": "has_vial",
+      "purpose": "whether the lighthouse keeper has picked up the glass vial",
       "type": "boolean",
     },
     {
       "default": false,
       "name": "has_ligher",
-      "purpose": "to track whether the lighthouse keeper has picked up the lighter",
+      "purpose": "whether the lighthouse keeper has picked up the mermaid lighter",
       "type": "boolean",
     },
     {
       "default": false,
       "name": "has_key",
+      "purpose": "whether the lighthouse keeper has picked up the rusty key",
       "type": "boolean",
     },
     {
