@@ -337,11 +337,23 @@
                 "id": "L_m2ewo5h9",
                 "kind": "line",
               },
+            ],
+            "id": "sn_x4ar0y01",
+            "type": "snippet",
+          },
+          {
+            "beats": [
               {
                 "character": "YOU",
                 "id": "L_k3g8v4d5",
                 "kind": "line",
               },
+            ],
+            "id": "sn_wopuq0o3",
+            "type": "snippet",
+          },
+          {
+            "beats": [
               {
                 "character": "THEO",
                 "id": "L_ml32by0k",
@@ -383,7 +395,7 @@
                 "kind": "line",
               },
             ],
-            "id": "sn_x4ar0y01",
+            "id": "sn_uaw16k3c",
             "type": "snippet",
           },
           {
