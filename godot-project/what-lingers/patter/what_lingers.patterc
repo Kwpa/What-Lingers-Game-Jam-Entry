@@ -24,9 +24,9 @@
     }
   ],
   "content": {
-    "hash": "0idbpi9",
+    "hash": "0oa4r0d",
     "project": "proj_pvhchy3o",
-    "structureHash": "08yfdky"
+    "structureHash": "1b7l2sr"
   },
   "locales": {
     "default": "en",
@@ -442,6 +442,19 @@
                 }
               ],
               "type": "snippet"
+            },
+            {
+              "beats": [
+                {
+                  "id": "L_tx2zc6ah",
+                  "kind": "text"
+                }
+              ],
+              "id": "sn_jh1g63ct",
+              "jump": {
+                "to": "blk_jmv84e2l"
+              },
+              "type": "snippet"
             }
           ],
           "id": "blk_w1hmkah8",
@@ -483,6 +496,7 @@
                     "id": "L_d1z6wajd",
                     "kind": "text"
                   },
+                  "sticky": true,
                   "type": "group"
                 },
                 {
@@ -492,9 +506,45 @@
                         {
                           "id": "L_mp6o5p6l",
                           "kind": "text"
+                        },
+                        {
+                          "id": "L_mpvklgx2",
+                          "kind": "text"
+                        },
+                        {
+                          "id": "L_vccta3yn",
+                          "kind": "text"
                         }
                       ],
+                      "condition": {
+                        "ast": [
+                          "u",
+                          "not",
+                          [
+                            "call",
+                            "seen",
+                            [
+                              "s",
+                              "blk_v8w0wnn7"
+                            ]
+                          ]
+                        ],
+                        "src": "not seen(blk_v8w0wnn7)"
+                      },
                       "id": "sn_auz059be",
+                      "type": "snippet"
+                    },
+                    {
+                      "beats": [
+                        {
+                          "id": "L_2xskv8uj",
+                          "kind": "text"
+                        }
+                      ],
+                      "id": "sn_3mvo2wqn",
+                      "jump": {
+                        "to": "blk_v8w0wnn7"
+                      },
                       "type": "snippet"
                     }
                   ],
@@ -503,6 +553,7 @@
                     "id": "L_r8z63i2j",
                     "kind": "text"
                   },
+                  "sticky": true,
                   "type": "group"
                 }
               ],
@@ -518,23 +569,27 @@
         {
           "children": [
             {
-              "beats": [
-                {
-                  "id": "L_2xskv8uj",
-                  "kind": "text"
-                }
-              ],
-              "id": "sn_3mvo2wqn",
-              "type": "snippet"
-            },
-            {
               "children": [
                 {
                   "children": [
                     {
+                      "beats": [
+                        {
+                          "id": "L_rldhu02u",
+                          "kind": "text"
+                        }
+                      ],
                       "id": "sn_cx5y313o",
                       "jump": {
+                        "mode": "call",
                         "to": "blk_7bckv7q1"
+                      },
+                      "type": "snippet"
+                    },
+                    {
+                      "id": "sn_5z51m5x2",
+                      "jump": {
+                        "to": "blk_jmv84e2l"
                       },
                       "type": "snippet"
                     }
@@ -594,9 +649,23 @@
                 {
                   "children": [
                     {
+                      "beats": [
+                        {
+                          "id": "L_sp6clmpl",
+                          "kind": "text"
+                        }
+                      ],
                       "id": "sn_aj7bw7a9",
                       "jump": {
+                        "mode": "call",
                         "to": "blk_303sxwrx"
+                      },
+                      "type": "snippet"
+                    },
+                    {
+                      "id": "sn_e5b39aeo",
+                      "jump": {
+                        "to": "blk_jmv84e2l"
                       },
                       "type": "snippet"
                     }
@@ -640,6 +709,31 @@
                   },
                   "sticky": true,
                   "type": "group"
+                },
+                {
+                  "children": [
+                    {
+                      "beats": [
+                        {
+                          "id": "L_8vsnlvz3",
+                          "kind": "text"
+                        }
+                      ],
+                      "id": "sn_ohs4sipm",
+                      "jump": {
+                        "to": "scn_89sjd1s0"
+                      },
+                      "type": "snippet"
+                    }
+                  ],
+                  "fallback": true,
+                  "id": "opt_aop1mfdn",
+                  "prompt": {
+                    "id": "L_vcoe0rup",
+                    "kind": "text"
+                  },
+                  "sticky": true,
+                  "type": "group"
                 }
               ],
               "id": "g_6ws9q0tq",
@@ -648,7 +742,7 @@
             }
           ],
           "id": "blk_v8w0wnn7",
-          "name": "Legacy Reflection",
+          "name": "Legacy Item Choice",
           "type": "block"
         },
         {
@@ -656,7 +750,7 @@
             {
               "beats": [
                 {
-                  "character": "THEO",
+                  "character": "???",
                   "id": "L_x1lha2j9",
                   "kind": "line"
                 }
@@ -894,7 +988,7 @@
               ],
               "id": "sn_chrmodgq",
               "jump": {
-                "to": "scn_89sjd1s0"
+                "to": "blk_y5p6kxmg"
               },
               "type": "snippet"
             }
@@ -1002,7 +1096,7 @@
               ],
               "id": "sn_ul6yrb5u",
               "jump": {
-                "to": "scn_89sjd1s0"
+                "to": "blk_y5p6kxmg"
               },
               "type": "snippet"
             }
@@ -1010,10 +1104,30 @@
           "id": "blk_0enia60g",
           "name": "Rupert Move on",
           "type": "block"
+        },
+        {
+          "children": [
+            {
+              "beats": [
+                {
+                  "id": "L_86kgq4j7",
+                  "kind": "text"
+                }
+              ],
+              "id": "sn_tivr3csc",
+              "jump": {
+                "to": "scn_89sjd1s0"
+              },
+              "type": "snippet"
+            }
+          ],
+          "id": "blk_y5p6kxmg",
+          "name": "Leave Theo",
+          "type": "block"
         }
       ],
       "id": "scn_gny3t8sq",
-      "name": "Legacy",
+      "name": "Theo",
       "type": "scene"
     },
     "scn_gsaier9p": {
@@ -1659,6 +1773,29 @@
                           },
                           "sticky": true,
                           "type": "group"
+                        },
+                        {
+                          "children": [
+                            {
+                              "beats": [
+                                {
+                                  "id": "L_4mb6osvl",
+                                  "kind": "text"
+                                }
+                              ],
+                              "id": "sn_fv3d56hh",
+                              "jump": {
+                                "to": "scn_89sjd1s0"
+                              },
+                              "type": "snippet"
+                            }
+                          ],
+                          "id": "opt_n69oaidn",
+                          "prompt": {
+                            "id": "L_6yg5wr61",
+                            "kind": "text"
+                          },
+                          "type": "group"
                         }
                       ],
                       "id": "g_5crpf740",
@@ -1666,6 +1803,7 @@
                       "type": "group"
                     }
                   ],
+                  "fallback": true,
                   "id": "opt_ezpmg1nl",
                   "prompt": {
                     "id": "L_e6bywiys",
@@ -2547,13 +2685,37 @@
                         {
                           "id": "L_gg5bpmsm",
                           "kind": "text"
-                        },
+                        }
+                      ],
+                      "condition": {
+                        "ast": [
+                          "u",
+                          "not",
+                          [
+                            "call",
+                            "seen",
+                            [
+                              "s",
+                              "blk_lzgcmbdv"
+                            ]
+                          ]
+                        ],
+                        "src": "not seen(blk_lzgcmbdv)"
+                      },
+                      "id": "sn_y7fvuk7d",
+                      "type": "snippet"
+                    },
+                    {
+                      "beats": [
                         {
                           "id": "L_nrari1un",
                           "kind": "text"
                         }
                       ],
-                      "id": "sn_y7fvuk7d",
+                      "id": "sn_o18qe9oa",
+                      "jump": {
+                        "to": "blk_lzgcmbdv"
+                      },
                       "type": "snippet"
                     }
                   ],
@@ -2569,7 +2731,14 @@
               "id": "g_hhhwg7g2",
               "selector": "choice",
               "type": "group"
-            },
+            }
+          ],
+          "id": "blk_drdi6800",
+          "name": "Shelly Linger or Move On",
+          "type": "block"
+        },
+        {
+          "children": [
             {
               "children": [
                 {
@@ -2717,21 +2886,27 @@
                       "type": "snippet"
                     }
                   ],
+                  "fallback": true,
                   "id": "opt_ofumiqeh",
                   "prompt": {
                     "id": "L_jbm6guqa",
                     "kind": "text"
                   },
+                  "sticky": true,
                   "type": "group"
                 }
               ],
               "id": "g_1580fblt",
               "selector": "choice",
               "type": "group"
+            },
+            {
+              "id": "sn_b0kg2zvx",
+              "type": "snippet"
             }
           ],
-          "id": "blk_drdi6800",
-          "name": "Shelly Linger or Move On",
+          "id": "blk_lzgcmbdv",
+          "name": "Shelly Item Choice",
           "type": "block"
         },
         {
@@ -3445,7 +3620,7 @@
       "L_197oqjha": "You dab your face with a handkerchief, and look around, spying the restaurant too far in distance to be influencing you this way. Then, as you turn back to face the granite landscape, an apparition stands before you. ",
       "L_1h02vf13": "Looking it over again, the printed font on the vial looks quite ancient, so maybe not within the last half a century... ",
       "L_1pcx2n33": "How can I face them? My parents, my grandparents. Tell me how am I to face them after failing them?",
-      "L_1slm711u": "Your life",
+      "L_1slm711u": "Your future",
       "L_1td5i88e": "What do you mean?",
       "L_1tm3j39o": "Rusted Key",
       "L_1y2n56oy": "You can't grow old here, that's true enough. But what you do next is up to you.",
@@ -3463,6 +3638,7 @@
       "L_45zvi7ey": "So what do you want to do?",
       "L_4dto6hro": "You don't know how much Rupert would have known about vaccinations 100 years ago. ",
       "L_4fa7v880": "I insist. Lets go for a walk in town.",
+      "L_4mb6osvl": "There is nothing for you here. Best to head back.  ",
       "L_4vcn2z5a": "I'm the new lighthouse keeper  .",
       "L_4xa35oxr": "Surely you know me. I'm the lightkeep, the wickie. Rupert! Your big brother eh lad?",
       "L_50rnso44": "She lights her translucent cigarette and turns the lighter over in her hand.",
@@ -3476,6 +3652,7 @@
       "L_65kjaa55": "...",
       "L_65ocw23f": "This was the best gift she ever gave me. If she had realized it was so cheaply made, she might not have picked it up. But she was in a hurry to select a present for my birthday, which she had forgotten about until that morning. She said she saw the mermaid and thought of me. She couldn't say why.",
       "L_6rwpqvbr": "The smell of food is gone also, even if - strangely - your appetite remains.   ",
+      "L_6yg5wr61": "Return to the lighthouse",
       "L_718eixl7": "You can hardly be blamed for that.",
       "L_76fdilkz": " I loved it there. All the people, the opportunities. There was so much I could have been there. I miss it.",
       "L_7cixjnhx": "It was...useful, I guess. Meaningful, probably. I would have kept at it if I hadn't been laid off.  ",
@@ -3484,6 +3661,7 @@
       "L_7njxkkxy": "She loves it there. She has this picture in her mind of the two of us living in a townhouse with a dog in ten years. I keep trying to tell her that I'm content here. I don't need my stupid degree.",
       "L_7qjqv8kq": "Pick up the key",
       "L_84mf1odz": "Who are you?",
+      "L_86kgq4j7": "The ghost is gone from this place. There is nothing left for you here.",
       "L_88xus0uu": "Fine... I can tell you wont let this go... Lead on.",
       "L_8elavtpk": "Here. There's a trick to it. Pass it over.",
       "L_8gwqow6e": "When I got laid off, I knew I couldn't just find another job doing that. I needed to do something different.",
@@ -3491,7 +3669,8 @@
       "L_8ldn9lk4": "Surely it must be better than sitting out here? Reminding yourself of how you died...",
       "L_8n935pbu": "So you intend to just sit here and punish yourself for eternity?",
       "L_8nbu6rcs": "... 100 years?",
-      "L_8ykz79qz": "... no... no I don't think so... this whole thing has got me thinking... Ive wallowed in this place long enough. Now its time for another group of  Montgomerys to feed this town. And I'm happy knowing that I could be here to see it... thank you...\"",
+      "L_8vsnlvz3": "There is nothing for you here. Best to head back.  ",
+      "L_8ykz79qz": "... no... no I don't think so... this whole thing has got me thinking... I've wallowed in this place long enough. Now its time for another group of  Montgomerys to feed this town. And I'm happy knowing that I could be here to see it... thank you...\"",
       "L_8zbbfvo8": "Who is Johnathon?",
       "L_9ammycvt": "For the briefest moment, you catch a glimpse of the scene in the ghost's heart. A table laid with the bounty of sea and field, all caught and grown by Rupert's own hands. Fragrant steam escapes the cross stitch pattern of cuts on the skin of the cooked cod. A door cracks open, letting in the cold from an icy hail outside... A shout of grief and joy and relief... As both brothers embrace... ",
       "L_9e8dqiex": "You seem a little old to be fresh out of apprenticeship. What were you before?",
@@ -3596,7 +3775,8 @@
       "L_m2h69u5b": "Before you can say anything else, he is gone.",
       "L_mdk1s9we": "Hey! I was good at it, and it was good for the world, you know? I got to approve a bunch of genuinely impactful projects. I was always a hit at cocktail parties, too.",
       "L_ml32by0k": "You know of my family?...That's right. Guardians of the ol' windmill. Family stretching back 8 generations. And all the while the grain we milled filled the bellies of the town. Not a stretch to say if my ancestors weren't around there might not be a town here.",
-      "L_mp6o5p6l": "The feeling of isolation is palpable out here, even with the edge of town in sight. The only noise the rushing wind above and the crashing sea beneath. One cannot help but feel as if they are an outsider looking in when they step all the way back and look at the sleepy little town behind them. Right on the edge. A liminal space. Really gives you scope of how small life in this little town is. Yet as soon at you take a few moments of this quiet contemplation in the wind howls up again. Pushing against you and away from the cliff. As if to tell you: 'Go back home. You do not belong in this place'.",
+      "L_mp6o5p6l": "The feeling of isolation is palpable out here, even with the edge of town in sight. The only noise the rushing wind above and the crashing sea beneath. One cannot help but feel as if they are an outsider looking in when they step all the way back and look at the sleepy little town behind them. ",
+      "L_mpvklgx2": "Right on the edge. A liminal space. ",
       "L_mwuknde0": "... I had always thought I had done us in for good... but yet... my family endures in some way. I don't know what to say...",
       "L_n0m0hpto": "You head back to the lighthouse.",
       "L_na6v92dj": "Wow...sounds like you really believed in the cause, eh?",
@@ -3609,31 +3789,34 @@
       "L_pansdxhu": "Linger...  ",
       "L_pvgmay5h": "How the static wooden structures of the town survive the stormy months truly remains a mystery to you.   ",
       "L_q6o1oiuf": "The moment you next blink your eyes Theo has vanished. As you try to find him, the strong wind picks up once more. You catch yourself before you tumble backwards away from the cliff face.",
-      "L_q6tkr4kt": "My family... I'm... I was the last. It was on these cliffs that my line ended. I was drunk and on a dare was walking along the edge... Wind picked up... and my family's legacy ended. A stupid way to die. A dishonorable way. A way not fitting the weight I held. The trust my ancestors left to me. I squandered it. Now there is nothing.",
+      "L_q6tkr4kt": "My family... I'm... I was the last. It was on these cliffs that my line ended. I was drunk and on a dare was walking along the edge... Wind picked up... and my family's legacy ended. A stupid way to die. A dishonourable way. A way not fitting the weight I held. The trust my ancestors left to me. I squandered it. Now there is nothing.",
       "L_qewl8yry": "As your thumb traces the bottle, thinking about the poor souls of the past infected by the diphtheria bacteria, the strangest sensation overcomes you. ",
       "L_qrluqif5": "Mermaid Lighter",
       "L_qtnjiabs": "You've given up smoking, but the habit of seeking out other smokers lingers in you.",
       "L_qtzp9kwp": "So what do you want to do?",
       "L_r0u8ioxq": "Remember, Ariel had to leave the ocean to find her prince and satisfy her curiosity.  ",
-      "L_r6id9d6x": "The wind almost rebels against your steps as you walk out onto the rocky cliff face. The spray of the waves below is fresh in the air as they just barely crest over the steep ledge. Soon though the wind settles for but a moment. Giving you a view of the ocean from on high. This is about as far from the city you can get without making an unfortunate decent to the churning water below.",
+      "L_r6id9d6x": "The wind almost rebels against your steps as you walk out onto the rocky cliff face. The spray of the waves below is fresh in the air as they just barely crest over the steep ledge. ",
       "L_r8z63i2j": "Linger...",
       "L_rhus38j5": "Rupert's eyes open again. He stares at you with glittering orbs, thawing from grey to blue. His voice falters.",
       "L_riv8x740": "He silently listens to you explain that some major infections and illnesses have been treatable for while, and that vaccinations have saved untold numbers of lives. ",
       "L_rjx6ki9b": "Return to the lighthouse",
+      "L_rldhu02u": "Your hand finds the engraved lighter.",
       "L_rrwm8aa1": "You wander into the lighthouse and peruse the objects in the perpetual lost and found.   ",
       "L_rucuvgi5": "Oh, how come you two are living apart?",
       "L_rxqfrn2z": "Down towards the sea",
       "L_s05imwtb": "Who are you?",
       "L_sfook5qs": "Don't play games now. You're my flesh and blood. My little brother. Same salt and iron runs through ole Rupert's veins that runs through yours.",
+      "L_sp6clmpl": "You take out the glass vial.",
       "L_sqy4o4jj": "Legacy takes many forms. A local baker recently purchased the land your windmill stood. They're a lover of history as it were and felt like they would honour your family by not only using the windmill but also naming her new company after its original owners. The Montgomerys still feed the people of this town. Even now.",
       "L_st6nbww3": "Not much to go on. You take a guess at the age of the vial...  ",
       "L_suk7brcu": "You do, in fact, belong in this place. At least, you do now. You have left the bustle of the city for this isolation by choice. After you got laid off, there was nothing to keep you there. No family, few friends. The close ones will stay in touch and the others will move on.It's time for a new chapter, and you're eager to take up the mantle of the lighthouse keeper, with all of its responsibilities.",
       "L_t81o2avu": "\"A bakery? Wh- Montgomery Mill Baking Company? But how is this possible? My parents had passed before me and I died without kids. The Montgomery name should be all but dead...",
       "L_te8gp2su": "Let me share something I've learned as my time as a wickie...",
       "L_tgpox7ez": "You head back to the lighthouse.",
-      "L_tlm6kapm": "You reach into your pocket and pull out the rusted old key. It might have once been ornate but with time its luster has dimmed a bit. Still the design on its handle is distinct: a depiction of a famous local windmill from the early 1800s sits within a wreath of wheat. Below is a ribbon with the name Montgomery etched inside. Only just legible as the years wear and tear have taken hold.",
+      "L_tlm6kapm": "You reach into your pocket and pull out the rusted old key. It might have once been ornate but with time its lustre has dimmed a bit. Still the design on its handle is distinct: a depiction of a famous local windmill from the early 1800s sits within a wreath of wheat. Below is a ribbon with the name Montgomery etched inside. Only just legible as the years wear and tear have taken hold.",
       "L_tqurm48a": "Towards the designated smoking area",
       "L_tv2b6j8b": "You'd better get back. There's nothing out here anymore.",
+      "L_tx2zc6ah": "Soon though the wind settles for but a moment. Giving you a view of the ocean from on high. This is about as far from the city you can get without making an unfortunate decent to the churning water below.",
       "L_u1fiwv1h": "Up to the rocks close to the lighthouse",
       "L_ubiray8d": "I know what you mean. In a way, I was glad to be laid off. It pushed me through a door I wouldn't have had the courage to open, let alone walk through.",
       "L_uk2b2tf3": "I used to review grant applications at a charitable family foundation. I'd write reports on which projects to fund.",
@@ -3642,6 +3825,8 @@
       "L_ux3t4f92": "I wanted you to see something... Look at this building",
       "L_v08b3vax": "Two ghosts today!",
       "L_va2gb6tv": "The smell of food is gone also, even if - strangely - your appetite remains.  ",
+      "L_vccta3yn": "Really gives you scope of how small life in this little town is. Yet as soon at you take a few moments of this quiet contemplation in the wind howls up again. Pushing against you and away from the cliff. As if to tell you: 'Go back home. You do not belong in this place'.",
+      "L_vcoe0rup": "Return to the lighthouse",
       "L_vdtk7uzg": "You're worried the ghosts will return and you will be empty-handed.",
       "L_ve1tyk1n": "It's what you want for yourself that matters most.",
       "L_vjus2jiw": "My name is... Theo. I don't have much of an opportunity to use it these days.",

@@ -84,8 +84,27 @@
                         "id": "L_mp6o5p6l",
                         "kind": "text",
                       },
+                      {
+                        "id": "L_mpvklgx2",
+                        "kind": "text",
+                      },
+                      {
+                        "id": "L_vccta3yn",
+                        "kind": "text",
+                      },
                     ],
+                    "condition": "not seen(blk_v8w0wnn7)",
                     "id": "sn_auz059be",
+                    "type": "snippet",
+                  },
+                  {
+                    "beats": [
+                      {
+                        "id": "L_2xskv8uj",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_3mvo2wqn",
                     "jump": {
                       "to": "blk_v8w0wnn7",
                     },
@@ -113,23 +132,27 @@
       {
         "children": [
           {
-            "beats": [
-              {
-                "id": "L_2xskv8uj",
-                "kind": "text",
-              },
-            ],
-            "id": "sn_3mvo2wqn",
-            "type": "snippet",
-          },
-          {
             "children": [
               {
                 "children": [
                   {
+                    "beats": [
+                      {
+                        "id": "L_rldhu02u",
+                        "kind": "text",
+                      },
+                    ],
                     "id": "sn_cx5y313o",
                     "jump": {
+                      "mode": "call",
                       "to": "blk_7bckv7q1",
+                    },
+                    "type": "snippet",
+                  },
+                  {
+                    "id": "sn_5z51m5x2",
+                    "jump": {
+                      "to": "blk_jmv84e2l",
                     },
                     "type": "snippet",
                   },
@@ -175,9 +198,23 @@
               {
                 "children": [
                   {
+                    "beats": [
+                      {
+                        "id": "L_sp6clmpl",
+                        "kind": "text",
+                      },
+                    ],
                     "id": "sn_aj7bw7a9",
                     "jump": {
+                      "mode": "call",
                       "to": "blk_303sxwrx",
+                    },
+                    "type": "snippet",
+                  },
+                  {
+                    "id": "sn_e5b39aeo",
+                    "jump": {
+                      "to": "blk_jmv84e2l",
                     },
                     "type": "snippet",
                   },
@@ -215,6 +252,31 @@
                 "sticky": true,
                 "type": "group",
               },
+              {
+                "children": [
+                  {
+                    "beats": [
+                      {
+                        "id": "L_8vsnlvz3",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_ohs4sipm",
+                    "jump": {
+                      "to": "scn_89sjd1s0",
+                    },
+                    "type": "snippet",
+                  },
+                ],
+                "fallback": true,
+                "id": "opt_aop1mfdn",
+                "prompt": {
+                  "id": "L_vcoe0rup",
+                  "kind": "text",
+                },
+                "sticky": true,
+                "type": "group",
+              },
             ],
             "id": "g_6ws9q0tq",
             "selector": "choice",
@@ -222,7 +284,7 @@
           },
         ],
         "id": "blk_v8w0wnn7",
-        "name": "Legacy Reflection",
+        "name": "Legacy Item Choice",
         "type": "block",
       },
       {
@@ -230,7 +292,7 @@
           {
             "beats": [
               {
-                "character": "THEO",
+                "character": "???",
                 "id": "L_x1lha2j9",
                 "kind": "line",
               },
@@ -468,7 +530,7 @@
             ],
             "id": "sn_chrmodgq",
             "jump": {
-              "to": "scn_89sjd1s0",
+              "to": "blk_y5p6kxmg",
             },
             "type": "snippet",
           },
@@ -570,7 +632,7 @@
             ],
             "id": "sn_ul6yrb5u",
             "jump": {
-              "to": "scn_89sjd1s0",
+              "to": "blk_y5p6kxmg",
             },
             "type": "snippet",
           },
@@ -579,9 +641,29 @@
         "name": "Rupert Move on",
         "type": "block",
       },
+      {
+        "children": [
+          {
+            "beats": [
+              {
+                "id": "L_86kgq4j7",
+                "kind": "text",
+              },
+            ],
+            "id": "sn_tivr3csc",
+            "jump": {
+              "to": "scn_89sjd1s0",
+            },
+            "type": "snippet",
+          },
+        ],
+        "id": "blk_y5p6kxmg",
+        "name": "Leave Theo",
+        "type": "block",
+      },
     ],
     "id": "scn_gny3t8sq",
-    "name": "Legacy",
+    "name": "Theo",
     "type": "scene",
   },
   "schema": "patter/flow@0",

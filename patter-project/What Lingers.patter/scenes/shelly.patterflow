@@ -74,12 +74,22 @@
                         "id": "L_gg5bpmsm",
                         "kind": "text",
                       },
+                    ],
+                    "condition": "not seen(blk_lzgcmbdv)",
+                    "id": "sn_y7fvuk7d",
+                    "type": "snippet",
+                  },
+                  {
+                    "beats": [
                       {
                         "id": "L_nrari1un",
                         "kind": "text",
                       },
                     ],
-                    "id": "sn_y7fvuk7d",
+                    "id": "sn_o18qe9oa",
+                    "jump": {
+                      "to": "blk_lzgcmbdv",
+                    },
                     "type": "snippet",
                   },
                 ],
@@ -96,6 +106,13 @@
             "selector": "choice",
             "type": "group",
           },
+        ],
+        "id": "blk_drdi6800",
+        "name": "Shelly Linger or Move On",
+        "type": "block",
+      },
+      {
+        "children": [
           {
             "children": [
               {
@@ -222,11 +239,13 @@
                     "type": "snippet",
                   },
                 ],
+                "fallback": true,
                 "id": "opt_ofumiqeh",
                 "prompt": {
                   "id": "L_jbm6guqa",
                   "kind": "text",
                 },
+                "sticky": true,
                 "type": "group",
               },
             ],
@@ -234,9 +253,13 @@
             "selector": "choice",
             "type": "group",
           },
+          {
+            "id": "sn_b0kg2zvx",
+            "type": "snippet",
+          },
         ],
-        "id": "blk_drdi6800",
-        "name": "Shelly Linger or Move On",
+        "id": "blk_lzgcmbdv",
+        "name": "Shelly Item Choice",
         "type": "block",
       },
       {

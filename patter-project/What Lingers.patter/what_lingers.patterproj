@@ -26,6 +26,9 @@
     },
   ],
   "dictionary": {
+    "ignore": [
+      "Wh",
+    ],
     "language": "en-GB",
     "words": [
       "Montgomerys",
@@ -38,6 +41,9 @@
       "pasturised",
       "harkened",
       "eons",
+      "Theo",
+      "ol'",
+      "cliffside",
     ],
   },
   "formatting": true,
