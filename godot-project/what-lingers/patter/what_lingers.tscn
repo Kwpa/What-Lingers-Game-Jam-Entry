@@ -113,7 +113,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Ghost" parent="." unique_id=617256557 instance=ExtResource("7_njcbe")]
-visible = false
+modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 
 [node name="AudioPlayer" type="AudioStreamPlayer" parent="." unique_id=1266100871]

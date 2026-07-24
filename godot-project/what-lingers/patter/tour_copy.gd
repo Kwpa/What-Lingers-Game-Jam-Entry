@@ -32,10 +32,15 @@ var _audio_base: String = ""
 @onready var _transcript_bg: TextureRect = $Layout/TranscriptBG
 @onready var _lighthouse_button: Button = $Layout/Header/LighthouseButton
 @onready var _silhouette: TextureRect = $Ghost/Silhouette
+@onready var _ghost: Control = $Ghost
 
-@onready var _button_scene: PackedScene = preload("res://scenes/option_button.tscn")
+@onready var _button_scene: PackedScene = load("res://scenes/option_button.tscn")
+@onready var _title_scene: PackedScene = load("res://scenes/title.tscn")
 
 var _audio_enabled : bool = true
+var _ghost_in : bool = false
+var _ghost_out : bool = false
+var _speed : float = 0.5
 
 func _ready() -> void:
 	# The bundle ships with the addon, so the demo runs straight from a downloaded zip.
@@ -109,13 +114,32 @@ func _update_background() -> void:
 func _update_ghost() -> void:
 	var ghost_name: String = _flow.get_property("@ghost_name")
 	if ghost_name == "NONE":
-		_silhouette.get_parent().hide()
+		if _ghost.visible:
+			_ghost_out = true
 	else:
-		_silhouette.get_parent().show()
+		_ghost.show()
 		var correct_ghost = str("res://silhouettes/", ghost_name, ".png")
 		var current_ghost: String = _silhouette.texture.get_path()
 		if current_ghost != correct_ghost:
 			_silhouette.texture = load(correct_ghost)
+			_ghost.modulate = Color(1, 1, 1, 0)
+			_ghost_in = true
+			print(_ghost.modulate.a)
+
+
+func _process(delta: float) -> void:
+	delta = delta * _speed
+	var alpha = _ghost.modulate.a
+	if _ghost_in:
+		_ghost.modulate = Color(1, 1, 1, alpha + delta)
+		if _ghost.modulate.a >= 1:
+			_ghost_in = false
+			print(_ghost.modulate.a)
+	elif _ghost_out:
+		_ghost.modulate = Color(1, 1, 1, alpha - delta)
+		if _ghost.modulate.a <= 0:
+			_ghost_out = false
+			_ghost.hide()
 
 
 ## Fire the beat's winning take, if the manifest resolves one for it.
@@ -241,5 +265,4 @@ func _toggle_audio():
 
 
 func _return_to_title():
-	print("title")
-	pass
+	get_tree().change_scene_to_packed(_title_scene)

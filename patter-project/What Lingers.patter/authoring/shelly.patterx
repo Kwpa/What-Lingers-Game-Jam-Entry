@@ -106,13 +106,8 @@
       "modifiedAt": "2026-07-19T13:08:42.999Z",
     },
     "scn_zooxtu9c": {
-<<<<<<< HEAD
-      "by": "Tristan",
-      "modifiedAt": "2026-07-24T15:28:44.399Z",
-=======
       "by": "Esther",
       "modifiedAt": "2026-07-23T16:02:34.084Z",
->>>>>>> d0009398f5cd12d8f2828495f2ec5ea206a65900
     },
   },
   "schema": "patter/authoring@0",

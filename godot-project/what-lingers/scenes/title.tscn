@@ -1,0 +1,178 @@
+[gd_scene format=3 uid="uid://dfms5jetw15kd"]
+
+[ext_resource type="Texture2D" uid="uid://dkcbx6bqwtunv" path="res://photos/title_empty.jpg" id="1_b3w7a"]
+[ext_resource type="Script" uid="uid://drsnk2w627yjo" path="res://scenes/title.gd" id="1_ia1n6"]
+[ext_resource type="Texture2D" uid="uid://bm4kkhku8vbgj" path="res://graphics/black.jpg" id="2_4rr2b"]
+[ext_resource type="Material" uid="uid://b17vckll2tjdu" path="res://shaders/fog-overlay.tres" id="3_yql1r"]
+[ext_resource type="Shader" uid="uid://cs4b6l1lfiduq" path="res://shaders/blur-vignette.gdshader" id="4_ia1n6"]
+[ext_resource type="Texture2D" uid="uid://doholpu0tqb2w" path="res://graphics/textbox-whiteonly.png" id="5_yql1r"]
+[ext_resource type="PackedScene" uid="uid://c7oe6lw0d4v8c" path="res://scenes/option_button.tscn" id="7_ia1n6"]
+[ext_resource type="Texture2D" uid="uid://b58avjog0pb1b" path="res://graphics/icon-nolight.png" id="8_ygloa"]
+[ext_resource type="Texture2D" uid="uid://c7ejm2jtsyrjd" path="res://graphics/icon-lightonly.png" id="9_6civk"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5l8xs"]
+shader = ExtResource("4_ia1n6")
+shader_parameter/blur_radius = 0.2
+shader_parameter/blur_amount = 1.0
+shader_parameter/blur_inner = 0.6
+shader_parameter/blur_outer = 0.66
+
+[node name="Title" type="Control" unique_id=1178414331]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ia1n6")
+
+[node name="Background" type="Control" parent="." unique_id=1047523937]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -30.999996
+offset_top = -11.0
+offset_right = -31.0
+offset_bottom = -11.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.05, 1.05)
+
+[node name="Photo" type="TextureRect" parent="Background" unique_id=1486965101]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 13.333336
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_b3w7a")
+expand_mode = 3
+stretch_mode = 6
+
+[node name="Darkness" type="TextureRect" parent="Background" unique_id=470066834]
+modulate = Color(1, 1, 1, 0.7058824)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 13.333336
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_4rr2b")
+expand_mode = 3
+stretch_mode = 6
+
+[node name="Fog" type="ColorRect" parent="Background" unique_id=1641787230]
+modulate = Color(1, 1, 1, 0.78431374)
+material = ExtResource("3_yql1r")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 13.333374
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Vignette" type="ColorRect" parent="Background" unique_id=1743392031]
+material = SubResource("ShaderMaterial_5l8xs")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 13.333374
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TitleBackground" type="TextureRect" parent="." unique_id=887715203]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -428.5
+offset_right = 428.5
+offset_bottom = 333.0
+grow_horizontal = 2
+texture = ExtResource("5_yql1r")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="TitleText" type="Label" parent="TitleBackground" unique_id=976328218]
+top_level = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -96.0
+offset_top = -206.0
+offset_right = 231.0
+offset_bottom = -142.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 48
+text = "What Lingers..."
+
+[node name="LighthouseButton" type="Button" parent="." unique_id=1599605180]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 0
+offset_left = 76.0
+offset_top = -73.0
+offset_right = 513.0
+offset_bottom = 337.0
+
+[node name="Lighthouse" type="TextureRect" parent="LighthouseButton" unique_id=990607543]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("8_ygloa")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="Light" type="TextureRect" parent="LighthouseButton" unique_id=781536667]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("9_6civk")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="Controls" type="VBoxContainer" parent="." unique_id=1414881952]
+custom_minimum_size = Vector2(600, 150)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -375.0
+offset_top = -201.0
+offset_right = 375.0
+offset_bottom = -13.0
+grow_horizontal = 2
+grow_vertical = 0
+alignment = 1
+
+[node name="OptionButton" parent="Controls" unique_id=1988735009 instance=ExtResource("7_ia1n6")]
+layout_mode = 2
+disabled = true
+
+[node name="Label" parent="Controls/OptionButton" index="1" unique_id=576058164]
+text = "Begin"
+
+[connection signal="focus_entered" from="LighthouseButton" to="LighthouseButton" method="_show_light"]
+[connection signal="focus_exited" from="LighthouseButton" to="LighthouseButton" method="_hide_light"]
+[connection signal="mouse_entered" from="LighthouseButton" to="LighthouseButton" method="_show_light"]
+[connection signal="mouse_exited" from="LighthouseButton" to="LighthouseButton" method="_hide_light"]
+[connection signal="pressed" from="Controls/OptionButton" to="." method="_begin"]
+
+[editable path="Controls/OptionButton"]
