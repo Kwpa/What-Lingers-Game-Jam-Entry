@@ -21,9 +21,9 @@
     }
   ],
   "content": {
-    "hash": "1s6x2k0",
+    "hash": "0905haa",
     "project": "proj_pvhchy3o",
-    "structureHash": "013xccx"
+    "structureHash": "0yitwe7"
   },
   "locales": {
     "default": "en",
@@ -156,6 +156,23 @@
                     "kind": "text"
                   },
                   "sticky": true,
+                  "type": "group"
+                },
+                {
+                  "children": [
+                    {
+                      "id": "sn_2ifzbarw",
+                      "jump": {
+                        "to": "blk_usdt6ey1"
+                      },
+                      "type": "snippet"
+                    }
+                  ],
+                  "id": "opt_6k6n89u1",
+                  "prompt": {
+                    "id": "L_62liwz0k",
+                    "kind": "text"
+                  },
                   "type": "group"
                 }
               ],
@@ -436,7 +453,7 @@
               ],
               "id": "sn_wk50zmo4",
               "jump": {
-                "to": "blk_usdt6ey1"
+                "to": "blk_v4yjnpqq"
               },
               "onEnter": [
                 {
@@ -470,6 +487,49 @@
               "id": "sn_bm7zo0cl",
               "type": "snippet"
             },
+            {
+              "beats": [
+                {
+                  "id": "L_k1w01qf8",
+                  "kind": "text"
+                },
+                {
+                  "id": "L_a57fhyh4",
+                  "kind": "text"
+                }
+              ],
+              "condition": {
+                "ast": [
+                  "u",
+                  "not",
+                  [
+                    "call",
+                    "seen",
+                    [
+                      "s",
+                      "blk_hwgzp5pq"
+                    ]
+                  ]
+                ],
+                "src": "not seen(blk_hwgzp5pq)"
+              },
+              "id": "sn_dylufw5c",
+              "type": "snippet"
+            },
+            {
+              "id": "sn_1op50tfh",
+              "jump": {
+                "to": "blk_usdt6ey1"
+              },
+              "type": "snippet"
+            }
+          ],
+          "id": "blk_v4yjnpqq",
+          "name": "Enter the Lighthouse",
+          "type": "block"
+        },
+        {
+          "children": [
             {
               "children": [
                 {
@@ -2826,6 +2886,7 @@
       "L_5je4lacn": "Johnathon lad, is that you?",
       "L_5qvuk51w": "Remember,  Ariel had to leave the ocean to find her prince and satisfy her curiosity.",
       "L_60hnsdp4": "You take from your pocket the mermaid lighter, and turn it over a couple times in your hand.  It's made from a cold and solid metal, but it's not as heavy as you might have expected. The front and back of it are engraved with a mermaid motif, in the style of a sailor's tattoo. Her hands are pushing back her hair, and her smiling face is somewhat worn down. This lighter has seen a lot of use.",
+      "L_62liwz0k": "Into the lighthouse",
       "L_65ocw23f": "This was the best gift she ever gave me. If she had realized it was so cheaply made, she might not have picked it up. But she was in a hurry to select a present for my birthday, which she had forgotten about until that morning. She said she saw the mermaid and thought of me. She couldn't say why.",
       "L_6rwpqvbr": "The smell of food is gone also, even if - strangely - your appetite remains.   ",
       "L_76fdilkz": " I loved it there. All the people, the opportunities. There was so much I could have been there. I miss it.",
@@ -2843,6 +2904,7 @@
       "L_9k8om9h6": "Yeah, right, sure.",
       "L_a3d8ltck": "You head back to the lighthouse.  ",
       "L_a4ow04vi": "Linger",
+      "L_a57fhyh4": "What will you do?",
       "L_akt87cur": "Show Rupert the vial",
       "L_an1fdyvt": "One ghost today!",
       "L_au7ez05s": "... 50 years?",
@@ -2910,6 +2972,7 @@
       "L_jhjck42y": "Many have seen. . . . but blind to the heartbeats inside the open doors.",
       "L_jlk1jiqw": "Where were you before?",
       "L_jrcmv0en": "Yeah, that was how I felt after graduation. Like, if I had to find a job in that field and work at it for the rest of my life...I would survive it, I guess. Buy a house, marry my girlfriend. That's what she wanted. It's what my folks wanted.",
+      "L_k1w01qf8": "Some items were left by tourists that day, like a keychain that fell out of the unzipped pocket of a tourist clambering over the rocks. Others look so old that they're unlikely to be claimed by any modern visitor. You look at the table. A few items stand out to you.  ",
       "L_kp463q12": "Pick up the lighter",
       "L_kvfj0btq": "You chalk it up to the famous sturdiness of the folk inhabiting these colourful homes. What will you reflect on? ",
       "L_l1a31hlz": "What will you do here?",
@@ -2935,7 +2998,7 @@
       "L_rhus38j5": "Rupert's eyes open again. He stares at you with glittering orbs, thawing from grey to blue. His voice falters.",
       "L_riv8x740": "He silently listens to you explain that some major infections and illnesses have been treatable for while, and that vaccinations have saved untold numbers of lives. ",
       "L_rjx6ki9b": "Return to the lighthouse",
-      "L_rrwm8aa1": "What will you do?",
+      "L_rrwm8aa1": "You wander into the lighthouse and peruse the objects in the perpetual lost and found.   ",
       "L_rucuvgi5": "Oh, how come you two are living apart?",
       "L_rxqfrn2z": "Down towards the sea",
       "L_s05imwtb": "Who are you?",
@@ -2969,7 +3032,7 @@
       "L_xkwf599b": " Well, I did walk through that door and it didn't turn out quite how I planned. And now I guess I have to walk through another one, to whatever's next, right? I don't even get to grow old here.",
       "L_xlo2p9g9": "Oh, and popular, too... Cause what really matters is what other people think of you. I've been down that road with my parents. But I couldn't just live the life they wanted me to. Stay in the city, marry my girlfriend, buy a house, work a job that actually uses my degree.",
       "L_xz8epju2": "Move on.",
-      "L_y0pq7vo2": "You're up early, again. So early that folks in the city are still having a late night. But here in the lighthouse, you are the only living soul up and about.You wander into the lighthouse and peruse the objects in the perpetual lost and found. Some items were left by tourists that day, like a keychain that fell out of the unzipped pocket of a tourist clambering over the rocks. Others look so old that they're unlikely to be claimed by any modern visitor. You look at the table. A few items stand out to you.  ",
+      "L_y0pq7vo2": "You're up early, again. So early that folks in the city are still having a late night. But here in the lighthouse, you are the only living soul up and about.",
       "L_yn9n6e2n": "You turn your back, ignoring the wind's song as you leave.",
       "L_yqkmj6qm": "Before you can say anything else, he is gone.",
       "L_ysafydga": "You sound just like my girlfriend. \"You can be anything you want up here! There's nothing for you back home!\" What if I don't want to take any of those opportunities. What if I don't want anything? I had to live there to get this stupid degree, and then I spent all summer after graduation trying to get work with it. I'm honestly relieved I didn't get hired up there.",
