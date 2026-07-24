@@ -1,0 +1,21 @@
+{
+  "default": true,
+  "locale": "en",
+  "scene": "scn_gsaier9p",
+  "schema": "patter/strings@0",
+  "strings": {
+    "L_597l5mx6": "That rusty lump of metal looks like a key, but larger than any key made in this century...or the last. When you pick it up, you feel a...resonance. You put it in your pocket.",
+    "L_7qjqv8kq": "Pick up the key",
+    "L_8jp82ohu": "A small glass vial with a water-logged label. You think you can still make out some of the lettering on it. It's cool and smooth to the touch. You'll take it with you today.",
+    "L_a57fhyh4": "What will you do?",
+    "L_b9dlmzrj": "A golden glimmer catches your eye. It's a lighter, the refillable kind. It's rusty and some of the gold plating worn away. This one must have been in the sea for some time before being washed up again. You'll hold onto it for now.",
+    "L_dfmdpejo": "You're not interested in any of the items that litter the table. You go outside to get a breath of air. ",
+    "L_dgvy0a3q": "Go outside",
+    "L_iibv2hid": "Pick up the vial",
+    "L_k1w01qf8": "Some items were left by tourists that day, like a keychain that fell out of the unzipped pocket of a tourist clambering over the rocks. Others look so old that they're unlikely to be claimed by any modern visitor. You look at the table. A few items stand out to you.  ",
+    "L_kp463q12": "Pick up the lighter",
+    "L_l2atfu2w": "You're not interested in any of the other items that litter the table. Maybe a walk will clear your head. Surely the sun will rise soon. You leave the lighthouse.",
+    "L_rrwm8aa1": "You wander into the lighthouse and peruse the objects in the perpetual lost and found.   ",
+    "L_y0pq7vo2": "You're up early, again. So early that folks in the city are still having a late night. But here in the lighthouse, you are the only living soul up and about.",
+  },
+}

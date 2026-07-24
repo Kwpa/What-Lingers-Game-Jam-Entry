@@ -19,12 +19,12 @@
       "name": "???",
     },
     {
-      "name": "LHK",
-    },
-    {
       "name": "YOU",
-    }
+    },
   ],
+  "dictionary": {
+    "language": "en-GB",
+  },
   "formatting": true,
   "locales": {
     "all": [
@@ -38,36 +38,42 @@
   },
   "properties": [
     {
+      "default": false,
+      "name": "has_vial",
+      "purpose": "whether the lighthouse keeper has picked up the glass vial",
+      "type": "boolean",
+    },
+    {
+      "default": false,
+      "name": "has_ligher",
+      "purpose": "whether the lighthouse keeper has picked up the mermaid lighter",
+      "type": "boolean",
+    },
+    {
+      "default": false,
+      "name": "has_key",
+      "purpose": "whether the lighthouse keeper has picked up the rusty key",
+      "type": "boolean",
+    },
+    {
       "default": "lighthouse_exterior",
       "name": "photo_title",
       "type": "string",
     },
   ],
   "sceneOrder": [
+    "scn_gsaier9p",
     "scn_89sjd1s0",
     "scn_zooxtu9c",
     "scn_cnna5vwr",
     "scn_nn1yrfas",
+    "scn_aal75ur3",
+    "scn_gny3t8sq",
+    "scn_q2o3j5ux",
   ],
   "schema": "patter/project@0",
-  "scopeRegistry": {
-    "scopes": [
-      {
-        "declarations": [
-          {
-            "default": 0,
-            "name": "gold",
-            "type": "number",
-            "writable": false,
-          },
-        ],
-        "token": "world",
-      },
-    ],
-    "version": 1,
-  },
   "start": {
-    "scene": "scn_89sjd1s0",
+    "scene": "scn_gsaier9p",
   },
   "vcs": "git",
   "voiced": false,

@@ -1,0 +1,219 @@
+{
+  "scene": {
+    "blocks": [
+      {
+        "children": [
+          {
+            "beats": [
+              {
+                "id": "L_y0pq7vo2",
+                "kind": "text",
+              },
+            ],
+            "id": "sn_wk50zmo4",
+            "jump": {
+              "to": "blk_v4yjnpqq",
+            },
+            "onEnter": [
+              {
+                "kind": "set",
+                "target": "@photo_title",
+                "value": "\"lighthouse_interior\"",
+              },
+            ],
+            "type": "snippet",
+          },
+        ],
+        "id": "blk_qj4m6inf",
+        "name": "Meet the Keeper",
+        "type": "block",
+      },
+      {
+        "children": [
+          {
+            "beats": [
+              {
+                "id": "L_rrwm8aa1",
+                "kind": "text",
+              },
+            ],
+            "id": "sn_bm7zo0cl",
+            "type": "snippet",
+          },
+          {
+            "beats": [
+              {
+                "id": "L_k1w01qf8",
+                "kind": "text",
+              },
+              {
+                "id": "L_a57fhyh4",
+                "kind": "text",
+              },
+            ],
+            "condition": "not seen(blk_hwgzp5pq)",
+            "id": "sn_dylufw5c",
+            "type": "snippet",
+          },
+          {
+            "id": "sn_1op50tfh",
+            "jump": {
+              "to": "blk_usdt6ey1",
+            },
+            "type": "snippet",
+          },
+        ],
+        "id": "blk_v4yjnpqq",
+        "name": "Enter the Lighthouse",
+        "type": "block",
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "beats": [
+                      {
+                        "id": "L_597l5mx6",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_xscvec4h",
+                    "jump": {
+                      "to": "blk_usdt6ey1",
+                    },
+                    "onEnter": [
+                      {
+                        "kind": "set",
+                        "target": "@has_key",
+                        "value": "true",
+                      },
+                    ],
+                    "type": "snippet",
+                  },
+                ],
+                "id": "opt_dnd7qq8j",
+                "prompt": {
+                  "id": "L_7qjqv8kq",
+                  "kind": "text",
+                },
+                "type": "group",
+              },
+              {
+                "children": [
+                  {
+                    "beats": [
+                      {
+                        "id": "L_b9dlmzrj",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_pro9fzj9",
+                    "jump": {
+                      "to": "blk_usdt6ey1",
+                    },
+                    "onEnter": [
+                      {
+                        "kind": "set",
+                        "target": "@has_ligher",
+                        "value": "true",
+                      },
+                    ],
+                    "type": "snippet",
+                  },
+                ],
+                "id": "opt_7s5u5xzq",
+                "prompt": {
+                  "id": "L_kp463q12",
+                  "kind": "text",
+                },
+                "type": "group",
+              },
+              {
+                "children": [
+                  {
+                    "beats": [
+                      {
+                        "id": "L_8jp82ohu",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_lswch43z",
+                    "jump": {
+                      "to": "blk_usdt6ey1",
+                    },
+                    "onEnter": [
+                      {
+                        "kind": "set",
+                        "target": "@has_vial",
+                        "value": "true",
+                      },
+                    ],
+                    "type": "snippet",
+                  },
+                ],
+                "id": "opt_2d2vxvze",
+                "prompt": {
+                  "id": "L_iibv2hid",
+                  "kind": "text",
+                },
+                "type": "group",
+              },
+              {
+                "children": [
+                  {
+                    "beats": [
+                      {
+                        "id": "L_l2atfu2w",
+                        "kind": "text",
+                      },
+                    ],
+                    "condition": "@has_vial or @has_key or @has_ligher",
+                    "id": "sn_7eseuo1w",
+                    "jump": {
+                      "to": "scn_89sjd1s0",
+                    },
+                    "type": "snippet",
+                  },
+                  {
+                    "beats": [
+                      {
+                        "id": "L_dfmdpejo",
+                        "kind": "text",
+                      },
+                    ],
+                    "condition": "not @has_key and not @has_ligher and not @has_vial",
+                    "id": "sn_ohv9dja7",
+                    "jump": {
+                      "to": "scn_89sjd1s0",
+                    },
+                    "type": "snippet",
+                  },
+                ],
+                "id": "opt_uilaxtsv",
+                "prompt": {
+                  "id": "L_dgvy0a3q",
+                  "kind": "text",
+                },
+                "sticky": true,
+                "type": "group",
+              },
+            ],
+            "id": "g_o7xyw1oc",
+            "selector": "choice",
+            "type": "group",
+          },
+        ],
+        "id": "blk_usdt6ey1",
+        "name": "Picking up items",
+        "type": "block",
+      },
+    ],
+    "id": "scn_gsaier9p",
+    "name": "Introduction",
+    "type": "scene",
+  },
+  "schema": "patter/flow@0",
+}

@@ -1,0 +1,9 @@
+{
+  "default": true,
+  "locale": "en",
+  "scene": "scn_gny3t8sq",
+  "schema": "patter/strings@0",
+  "strings": {
+    "L_suk7brcu": "You do, in fact, belong in this place. At least, you do now. You have left the bustle of the city for this isolation by choice. After you got laid off, there was nothing to keep you there. No family, few friends. The close ones will stay in touch and the others will move on.It's time for a new chapter, and you're eager to take up the mantle of the lighthouse keeper, with all of its responsibilities.",
+  },
+}

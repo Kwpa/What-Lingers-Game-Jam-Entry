@@ -21,6 +21,26 @@
               },
             ],
             "id": "sn_yoyfxg0k",
+            "jump": {
+              "to": "blk_6oomi77o",
+            },
+            "type": "snippet",
+          },
+        ],
+        "id": "blk_lt2tzmaj",
+        "name": "Rolling Granite Landscape",
+        "type": "block",
+      },
+      {
+        "children": [
+          {
+            "beats": [
+              {
+                "id": "L_l1a31hlz",
+                "kind": "text",
+              },
+            ],
+            "id": "sn_j356zu4o",
             "type": "snippet",
           },
           {
@@ -43,6 +63,7 @@
                   "id": "L_dls1kmhu",
                   "kind": "text",
                 },
+                "sticky": true,
                 "type": "group",
               },
               {
@@ -53,32 +74,137 @@
                         "id": "L_vyodd8y3",
                         "kind": "text",
                       },
-                    ],
-                    "id": "sn_fc9834vv",
-                    "type": "snippet",
-                  },
-                  {
-                    "beats": [
                       {
                         "id": "L_pvgmay5h",
                         "kind": "text",
                       },
-                    ],
-                    "id": "sn_ji3x901i",
-                    "type": "snippet",
-                  },
-                  {
-                    "beats": [
                       {
                         "id": "L_kvfj0btq",
                         "kind": "text",
                       },
                     ],
-                    "id": "sn_udu2b0cl",
-                    "jump": {
-                      "to": "blk_s2fo2r51",
-                    },
+                    "id": "sn_fc9834vv",
                     "type": "snippet",
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "beats": [
+                              {
+                                "id": "L_zeu4b0ri",
+                                "kind": "text",
+                              },
+                            ],
+                            "id": "sn_oh9c4dlc",
+                            "jump": {
+                              "mode": "call",
+                              "to": "blk_7bckv7q1",
+                            },
+                            "type": "snippet",
+                          },
+                          {
+                            "id": "sn_zhijglf7",
+                            "jump": {
+                              "to": "blk_6oomi77o",
+                            },
+                            "type": "snippet",
+                          },
+                        ],
+                        "condition": "not @has_ligher",
+                        "id": "opt_abm5f6zz",
+                        "prompt": {
+                          "id": "L_w5wr6i1p",
+                          "kind": "text",
+                        },
+                        "secretUntilEligible": true,
+                        "type": "group",
+                      },
+                      {
+                        "children": [
+                          {
+                            "beats": [
+                              {
+                                "id": "L_fmi4ixm4",
+                                "kind": "text",
+                              },
+                            ],
+                            "id": "sn_8kfgfelj",
+                            "jump": {
+                              "mode": "call",
+                              "to": "blk_vkawyf5u",
+                            },
+                            "type": "snippet",
+                          },
+                          {
+                            "id": "sn_treih4pd",
+                            "jump": {
+                              "to": "blk_6oomi77o",
+                            },
+                            "type": "snippet",
+                          },
+                        ],
+                        "condition": "@has_key",
+                        "id": "opt_mh8labqs",
+                        "prompt": {
+                          "id": "L_e2mzfj6x",
+                          "kind": "text",
+                        },
+                        "secretUntilEligible": true,
+                        "type": "group",
+                      },
+                      {
+                        "children": [
+                          {
+                            "id": "sn_mrbfpmmn",
+                            "jump": {
+                              "to": "blk_s2fo2r51",
+                            },
+                            "type": "snippet",
+                          },
+                        ],
+                        "condition": "@has_vial",
+                        "id": "opt_mnw0ftk3",
+                        "prompt": {
+                          "id": "L_w15hkfcg",
+                          "kind": "text",
+                        },
+                        "secretUntilEligible": true,
+                        "type": "group",
+                      },
+                      {
+                        "children": [
+                          {
+                            "beats": [
+                              {
+                                "id": "L_ay6cyec8",
+                                "kind": "text",
+                              },
+                              {
+                                "id": "L_guqtacp3",
+                                "kind": "text",
+                              },
+                            ],
+                            "id": "sn_gzjotyzr",
+                            "jump": {
+                              "to": "blk_6oomi77o",
+                            },
+                            "type": "snippet",
+                          },
+                        ],
+                        "id": "opt_mq95fupi",
+                        "prompt": {
+                          "id": "L_h97ydol4",
+                          "kind": "text",
+                        },
+                        "sticky": true,
+                        "type": "group",
+                      },
+                    ],
+                    "id": "g_5crpf740",
+                    "selector": "choice",
+                    "type": "group",
                   },
                 ],
                 "id": "opt_ezpmg1nl",
@@ -86,6 +212,7 @@
                   "id": "L_e6bywiys",
                   "kind": "text",
                 },
+                "sticky": true,
                 "type": "group",
               },
             ],
@@ -94,8 +221,8 @@
             "type": "group",
           },
         ],
-        "id": "blk_lt2tzmaj",
-        "name": "Rolling Granite Landscape",
+        "id": "blk_6oomi77o",
+        "name": "Shivers Linger or Move On",
         "type": "block",
       },
       {
@@ -815,10 +942,6 @@
                     "jump": {
                       "to": "scn_89sjd1s0",
                     },
-                    "type": "snippet",
-                  },
-                  {
-                    "id": "sn_ffeqa98c",
                     "type": "snippet",
                   },
                 ],
