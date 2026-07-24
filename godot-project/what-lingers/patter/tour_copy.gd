@@ -31,6 +31,7 @@ var _audio_base: String = ""
 @onready var _lines: RichTextLabel = $Dialogue/Lines
 @onready var _transcript_bg: TextureRect = $Layout/TranscriptBG
 @onready var _lighthouse_button: Button = $Layout/Header/LighthouseButton
+@onready var _silhouette: TextureRect = $Ghost/Silhouette
 
 @onready var _button_scene: PackedScene = preload("res://scenes/option_button.tscn")
 
@@ -77,6 +78,7 @@ func _step() -> void:
 	#print(_flow.get_property("@scene.linger_points")) # get Shelly's linger points
 	#print(_flow.get_property("@photo_title")) # get the global photo title
 	_update_background()
+	_update_ghost()
 	match step["type"]:
 		"line":
 			var who: String = step.get("characterName", step.get("character", ""))
@@ -102,6 +104,18 @@ func _update_background() -> void:
 	var current_background: String = _photo.texture.get_path()
 	if current_background != correct_background:
 		_photo.texture = load(correct_background)
+
+
+func _update_ghost() -> void:
+	var ghost_name: String = _flow.get_property("@ghost_name")
+	if ghost_name == "NONE":
+		_silhouette.get_parent().hide()
+	else:
+		_silhouette.get_parent().show()
+		var correct_ghost = str("res://silhouettes/", ghost_name, ".png")
+		var current_ghost: String = _silhouette.texture.get_path()
+		if current_ghost != correct_ghost:
+			_silhouette.texture = load(correct_ghost)
 
 
 ## Fire the beat's winning take, if the manifest resolves one for it.

@@ -113,6 +113,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Ghost" parent="." unique_id=617256557 instance=ExtResource("7_njcbe")]
+visible = false
 layout_mode = 1
 
 [node name="AudioPlayer" type="AudioStreamPlayer" parent="." unique_id=1266100871]
@@ -132,7 +133,6 @@ theme_override_constants/separation = 10
 
 [node name="Header" type="HBoxContainer" parent="Layout" unique_id=655381541]
 layout_mode = 2
-alignment = 2
 
 [node name="Title" type="Label" parent="Layout/Header" unique_id=63315123]
 visible = false
@@ -241,3 +241,5 @@ offset_bottom = -65.0
 mouse_filter = 1
 
 [connection signal="pressed" from="Layout/Header/LighthouseButton" to="." method="_show_menu"]
+
+[editable path="Ghost"]

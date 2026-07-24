@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dm62dnxcua4vd"]
 
-[ext_resource type="Texture2D" uid="uid://cnosqlaa5f5mt" path="res://silhouettes/silhouette-only.png" id="1_blcom"]
+[ext_resource type="Texture2D" uid="uid://cnosqlaa5f5mt" path="res://silhouettes/SHELLY.png" id="1_blcom"]
 [ext_resource type="Material" uid="uid://0ammgfylp55f" path="res://shaders/radial-chromatic.tres" id="2_d47q8"]
 [ext_resource type="Material" uid="uid://bu5dif167naw" path="res://shaders/ghost-smoke.tres" id="3_blcom"]
 [ext_resource type="Material" uid="uid://gy0x6r2832ll" path="res://shaders/distortion.tres" id="4_blcom"]

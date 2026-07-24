@@ -247,6 +247,13 @@
               },
             ],
             "id": "sn_76ib3fd0",
+            "onEnter": [
+              {
+                "kind": "set",
+                "target": "@ghost_name",
+                "value": "\"SHELLY\"",
+              },
+            ],
             "type": "snippet",
           },
           {
@@ -794,6 +801,13 @@
             "jump": {
               "to": "blk_oc4u3n36",
             },
+            "onExit": [
+              {
+                "kind": "set",
+                "target": "@ghost_name",
+                "value": "\"NONE\"",
+              },
+            ],
             "type": "snippet",
           },
         ],
@@ -840,6 +854,13 @@
             "jump": {
               "to": "blk_oc4u3n36",
             },
+            "onExit": [
+              {
+                "kind": "set",
+                "target": "@ghost_name",
+                "value": "\"NONE\"",
+              },
+            ],
             "type": "snippet",
           },
           {

@@ -23,7 +23,7 @@
     },
     {
       "name": "YOU",
-    }
+    },
   ],
   "formatting": true,
   "locales": {
@@ -40,6 +40,11 @@
     {
       "default": "lighthouse_exterior",
       "name": "photo_title",
+      "type": "string",
+    },
+    {
+      "default": "NONE",
+      "name": "ghost_name",
       "type": "string",
     },
   ],

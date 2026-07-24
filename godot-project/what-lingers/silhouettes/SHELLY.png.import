@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cnosqlaa5f5mt"
-path="res://.godot/imported/silhouette-only.png-0a9ffa32d194cb40cae9af4e06476e26.ctex"
+path="res://.godot/imported/SHELLY.png-a7372b55d7b1757b635348b5d5c56316.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://silhouettes/silhouette-only.png"
-dest_files=["res://.godot/imported/silhouette-only.png-0a9ffa32d194cb40cae9af4e06476e26.ctex"]
+source_file="res://silhouettes/SHELLY.png"
+dest_files=["res://.godot/imported/SHELLY.png-a7372b55d7b1757b635348b5d5c56316.ctex"]
 
 [params]
 
