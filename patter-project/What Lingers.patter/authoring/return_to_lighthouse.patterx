@@ -1,5 +1,11 @@
 {
   "edits": {
+    "L_0agwnyjo": {
+      "modifiedAt": "2026-07-23T16:15:59.090Z",
+    },
+    "L_62liwz0k": {
+      "modifiedAt": "2026-07-23T16:15:52.248Z",
+    },
     "L_fdm2d23v": {
       "modifiedAt": "2026-07-20T07:39:55.329Z",
     },
@@ -22,8 +28,13 @@
       "modifiedAt": "2026-07-20T07:42:55.315Z",
     },
     "scn_89sjd1s0": {
+<<<<<<< HEAD
       "by": "Tristan",
       "modifiedAt": "2026-07-24T15:28:58.597Z",
+=======
+      "by": "Esther",
+      "modifiedAt": "2026-07-23T16:16:05.828Z",
+>>>>>>> d0009398f5cd12d8f2828495f2ec5ea206a65900
     },
   },
   "schema": "patter/authoring@0",

@@ -69,7 +69,7 @@ func _ready() -> void:
 func _start() -> void:
 	for child in _transcript.get_children():
 		child.queue_free()
-	_flow = _engine.open_flow("main", "return-to-lighthouse")  # the project's start scene
+	_flow = _engine.open_flow("main", "introduction")  # the project's start scene
 	_step()
 
 

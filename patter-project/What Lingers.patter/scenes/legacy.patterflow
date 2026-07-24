@@ -1,0 +1,30 @@
+{
+  "scene": {
+    "blocks": [
+      {
+        "children": [
+          {
+            "beats": [
+              {
+                "id": "L_suk7brcu",
+                "kind": "text",
+              },
+            ],
+            "id": "sn_l2zev0xf",
+            "jump": {
+              "to": "scn_89sjd1s0",
+            },
+            "type": "snippet",
+          },
+        ],
+        "id": "blk_nuwmz6ob",
+        "name": "Legacy self-reflection",
+        "type": "block",
+      },
+    ],
+    "id": "scn_gny3t8sq",
+    "name": "Legacy",
+    "type": "scene",
+  },
+  "schema": "patter/flow@0",
+}

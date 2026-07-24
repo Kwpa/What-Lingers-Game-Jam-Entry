@@ -4,7 +4,8 @@
   "scene": "scn_aal75ur3",
   "schema": "patter/strings@0",
   "strings": {
-    "L_8nlex5hj": "Back to the lighthouse.",
+    "L_az4sxqfw": "The vial looks like something from an old-time pharmacy. Maybe it belonged to someone who lived in the village ages ago. You wonder if any buildings are still standing from that time. Medicine like this would have been brought in from the city by boat. You wonder who used it.",
+    "L_ip44x0w4": "They key is huge, much larger than any key made these days. You wonder whether it fits any of the buildings in town. Maybe the lock it was built to fit has disintegrated long ago. It must have been a beautiful item when it was first made.",
     "L_ldd99nq5": "You turn over the golden lighter and examine the engraving. It's a mermaid in traditional tattoo style. You don't smoke anymore, but even when you did, you weren't the kind to have a refillable lighter. Maybe you'll pick up some loosies from the bar one night and take them to the smokers' bench.",
   },
 }
