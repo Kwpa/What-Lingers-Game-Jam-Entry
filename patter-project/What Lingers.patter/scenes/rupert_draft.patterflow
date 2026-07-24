@@ -201,12 +201,36 @@
                         "sticky": true,
                         "type": "group",
                       },
+                      {
+                        "children": [
+                          {
+                            "beats": [
+                              {
+                                "id": "L_4mb6osvl",
+                                "kind": "text",
+                              },
+                            ],
+                            "id": "sn_fv3d56hh",
+                            "jump": {
+                              "to": "scn_89sjd1s0",
+                            },
+                            "type": "snippet",
+                          },
+                        ],
+                        "id": "opt_n69oaidn",
+                        "prompt": {
+                          "id": "L_6yg5wr61",
+                          "kind": "text",
+                        },
+                        "type": "group",
+                      },
                     ],
                     "id": "g_5crpf740",
                     "selector": "choice",
                     "type": "group",
                   },
                 ],
+                "fallback": true,
                 "id": "opt_ezpmg1nl",
                 "prompt": {
                   "id": "L_e6bywiys",
@@ -373,6 +397,7 @@
                     "type": "snippet",
                   },
                 ],
+                "fallback": true,
                 "id": "opt_upymhz76",
                 "prompt": {
                   "id": "L_8nbu6rcs",

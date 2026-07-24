@@ -21,9 +21,30 @@
     {
       "name": "YOU",
     },
+    {
+      "name": "THEO",
+    },
   ],
   "dictionary": {
+    "ignore": [
+      "Wh",
+    ],
     "language": "en-GB",
+    "words": [
+      "Montgomerys",
+      "liminal",
+      "Blakely",
+      "immunized",
+      "tastebuds",
+      "lightkeep",
+      "wickie",
+      "pasturised",
+      "harkened",
+      "eons",
+      "Theo",
+      "ol'",
+      "cliffside",
+    ],
   },
   "formatting": true,
   "locales": {
