@@ -20,19 +20,21 @@ var _flow: PatterFlow
 var _audio = null  # PatterAudio, or null when the manifest is missing
 var _audio_base: String = ""
 
-@onready var _transcript: VBoxContainer = $Layout/Scroll/Transcript
-@onready var _scroll: ScrollContainer = $Layout/Scroll
+@onready var _transcript: VBoxContainer = $Layout/TranscriptBG/Scroll/Transcript
+@onready var _scroll: ScrollContainer = $Layout/TranscriptBG/Scroll
 @onready var _controls: VBoxContainer = $Controls
 @onready var _audio_toggle: CheckBox = $Layout/Header/AudioToggle
 @onready var _player: AudioStreamPlayer = $AudioPlayer
-
-@onready var _button_scene: PackedScene = preload("res://scenes/option_button.tscn")
-
 @onready var _dialogue: Control = $Dialogue
 @onready var _next_button: Button = $Next
 @onready var _photo: TextureRect = $Background/Photo
 @onready var _lines: RichTextLabel = $Dialogue/Lines
+@onready var _transcript_bg: TextureRect = $Layout/TranscriptBG
+@onready var _lighthouse_button: Button = $Layout/Header/LighthouseButton
 
+@onready var _button_scene: PackedScene = preload("res://scenes/option_button.tscn")
+
+var _audio_enabled : bool = true
 
 func _ready() -> void:
 	# The bundle ships with the addon, so the demo runs straight from a downloaded zip.
@@ -104,7 +106,7 @@ func _update_background() -> void:
 
 ## Fire the beat's winning take, if the manifest resolves one for it.
 func _play_clip(beat_id: String) -> void:
-	if _audio == null or not _audio_toggle.button_pressed:
+	if _audio == null or not _audio_enabled:
 		return
 	var path: String = _audio.resolve(beat_id)
 	if path == "":
@@ -186,3 +188,44 @@ func _set_controls(buttons: Array) -> void:
 	_next_button.hide()
 	for b in buttons:
 		_controls.add_child(b)
+
+
+func _show_transcript(state: bool):
+	if state:
+		_transcript_bg.show()
+		_dialogue.hide()
+		_lighthouse_button.hide()
+		var button = _button_scene.instantiate()
+		button._set_option("Close Transcript", func(): _show_transcript(false))
+		_set_controls([button])
+	else:
+		_hide_menu()
+
+
+func _show_menu():
+	_dialogue.hide()
+	var transcript_button = _button_scene.instantiate()
+	transcript_button._set_option("Show Transcript", func(): _show_transcript(true))
+	var return_button = _button_scene.instantiate()
+	return_button._set_option("Return to Title", _return_to_title)
+	var audio_button = _button_scene.instantiate()
+	audio_button._set_option("Toggle Audio", _toggle_audio)
+	var close_button = _button_scene.instantiate()
+	close_button._set_option("Close Menu", _hide_menu)
+	_set_controls([transcript_button, audio_button, return_button, close_button])
+
+
+func _hide_menu():
+	_transcript_bg.hide()
+	_dialogue.show()
+	_lighthouse_button.show()
+	_show_next()
+
+
+func _toggle_audio():
+	_audio_enabled = not _audio_enabled
+
+
+func _return_to_title():
+	print("title")
+	pass

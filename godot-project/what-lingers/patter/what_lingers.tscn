@@ -9,7 +9,9 @@
 [ext_resource type="Shader" uid="uid://cs4b6l1lfiduq" path="res://shaders/blur-vignette.gdshader" id="7_5l8xs"]
 [ext_resource type="PackedScene" uid="uid://dm62dnxcua4vd" path="res://silhouettes/ghost.tscn" id="7_njcbe"]
 [ext_resource type="Material" uid="uid://bscvohn1msyvl" path="res://shaders/animated-outline.tres" id="9_8fh76"]
+[ext_resource type="PackedScene" uid="uid://bj06jif4bxt58" path="res://scenes/lighthouse_button.tscn" id="9_8vd72"]
 [ext_resource type="Texture2D" uid="uid://doholpu0tqb2w" path="res://graphics/textbox-whiteonly.png" id="10_3akvv"]
+[ext_resource type="Texture2D" uid="uid://uggdke35u2n7" path="res://graphics/textbox_large.png" id="10_6j7cu"]
 [ext_resource type="PackedScene" uid="uid://bcdjwp4us8ql1" path="res://scenes/next.tscn" id="11_3akvv"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_hh8yg"]
@@ -130,23 +132,40 @@ theme_override_constants/separation = 10
 
 [node name="Header" type="HBoxContainer" parent="Layout" unique_id=655381541]
 layout_mode = 2
+alignment = 2
 
 [node name="Title" type="Label" parent="Layout/Header" unique_id=63315123]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 3
 text = "What Lingers"
 
 [node name="AudioToggle" type="CheckBox" parent="Layout/Header" unique_id=212703635]
+visible = false
 layout_mode = 2
 button_pressed = true
 text = "Audio"
 
-[node name="Scroll" type="ScrollContainer" parent="Layout" unique_id=478204408]
-visible = false
+[node name="LighthouseButton" parent="Layout/Header" unique_id=1599605180 instance=ExtResource("9_8vd72")]
 layout_mode = 2
+
+[node name="TranscriptBG" type="TextureRect" parent="Layout" unique_id=870628195]
+visible = false
+material = ExtResource("9_8fh76")
+custom_minimum_size = Vector2(550, 600)
+layout_mode = 2
+texture = ExtResource("10_6j7cu")
+expand_mode = 3
+
+[node name="Scroll" type="ScrollContainer" parent="Layout/TranscriptBG" unique_id=478204408]
+layout_mode = 0
+offset_left = 96.0
+offset_top = 51.0
+offset_right = 1009.0
+offset_bottom = 538.0
 size_flags_vertical = 3
 
-[node name="Transcript" type="VBoxContainer" parent="Layout/Scroll" unique_id=1400889359]
+[node name="Transcript" type="VBoxContainer" parent="Layout/TranscriptBG/Scroll" unique_id=1400889359]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_constants/separation = 8
@@ -220,3 +239,5 @@ offset_top = -105.0
 offset_right = 388.0
 offset_bottom = -65.0
 mouse_filter = 1
+
+[connection signal="pressed" from="Layout/Header/LighthouseButton" to="." method="_show_menu"]

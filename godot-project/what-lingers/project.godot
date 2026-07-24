@@ -13,7 +13,7 @@ config_version=5
 config/name="What Lingers"
 run/main_scene="uid://dc43ytsmdmd1x"
 config/features=PackedStringArray("4.7", "GL Compatibility")
-config/icon="res://icon.svg"
+config/icon="uid://cownmsik0qte4"
 
 [display]
 
