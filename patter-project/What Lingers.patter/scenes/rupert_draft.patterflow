@@ -373,6 +373,7 @@
                     "type": "snippet",
                   },
                 ],
+                "fallback": true,
                 "id": "opt_upymhz76",
                 "prompt": {
                   "id": "L_8nbu6rcs",

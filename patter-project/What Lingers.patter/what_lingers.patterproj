@@ -21,9 +21,24 @@
     {
       "name": "YOU",
     },
+    {
+      "name": "THEO",
+    },
   ],
   "dictionary": {
     "language": "en-GB",
+    "words": [
+      "Montgomerys",
+      "liminal",
+      "Blakely",
+      "immunized",
+      "tastebuds",
+      "lightkeep",
+      "wickie",
+      "pasturised",
+      "harkened",
+      "eons",
+    ],
   },
   "formatting": true,
   "locales": {

@@ -203,6 +203,7 @@
                   "id": "L_1slm711u",
                   "kind": "text",
                 },
+                "sticky": true,
                 "type": "group",
               },
               {
@@ -221,7 +222,6 @@
                     "type": "snippet",
                   },
                 ],
-                "fallback": true,
                 "id": "opt_ofumiqeh",
                 "prompt": {
                   "id": "L_jbm6guqa",
