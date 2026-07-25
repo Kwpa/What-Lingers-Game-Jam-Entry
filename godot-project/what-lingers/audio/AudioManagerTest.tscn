@@ -100,6 +100,10 @@ text = "Ghost Appears"
 layout_mode = 2
 text = "Footsteps"
 
+[node name="FootstepsDoorSFXButton" type="Button" parent="HBoxContainer/VBoxContainer3" unique_id=1218437403]
+layout_mode = 2
+text = "Footstep/Door"
+
 [node name="LingersPosSFXButton" type="Button" parent="HBoxContainer/VBoxContainer3" unique_id=431446718]
 layout_mode = 2
 text = "Lingers (pos.)"
@@ -115,6 +119,18 @@ text = "Moves On (pos.)"
 [node name="MovesOnNegSFXButton" type="Button" parent="HBoxContainer/VBoxContainer3" unique_id=146578739]
 layout_mode = 2
 text = "Moves On (neg.)"
+
+[node name="AcquireItemSFXButton" type="Button" parent="HBoxContainer/VBoxContainer3" unique_id=2034784129]
+layout_mode = 2
+text = "Acquire Item"
+
+[node name="PocketItemSFXButton" type="Button" parent="HBoxContainer/VBoxContainer3" unique_id=2002443884]
+layout_mode = 2
+text = "Pocket Item"
+
+[node name="RetrieveItemSFXButton" type="Button" parent="HBoxContainer/VBoxContainer3" unique_id=1312223337]
+layout_mode = 2
+text = "Retrieve Item"
 
 [node name="ButtonClickSFXButton" type="Button" parent="HBoxContainer/VBoxContainer3" unique_id=1440103146]
 layout_mode = 2
@@ -135,8 +151,12 @@ text = "Button Click"
 [connection signal="pressed" from="HBoxContainer/VBoxContainer2/NoAmbienceButton" to="." method="_on_no_ambience_button_pressed"]
 [connection signal="pressed" from="HBoxContainer/VBoxContainer3/GhostAppearsSFXButton" to="." method="_on_ghost_appears_sfx_button_pressed"]
 [connection signal="pressed" from="HBoxContainer/VBoxContainer3/FootstepSFXButton" to="." method="_on_footstep_sfx_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer3/FootstepsDoorSFXButton" to="." method="_on_footsteps_door_sfx_button_pressed"]
 [connection signal="pressed" from="HBoxContainer/VBoxContainer3/LingersPosSFXButton" to="." method="_on_lingers_pos_sfx_button_pressed"]
 [connection signal="pressed" from="HBoxContainer/VBoxContainer3/LingersNegSFXButton" to="." method="_on_lingers_neg_sfx_button_pressed"]
 [connection signal="pressed" from="HBoxContainer/VBoxContainer3/MovesOnPosSFXButton" to="." method="_on_moves_on_pos_sfx_button_pressed"]
 [connection signal="pressed" from="HBoxContainer/VBoxContainer3/MovesOnNegSFXButton" to="." method="_on_moves_on_neg_sfx_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer3/AcquireItemSFXButton" to="." method="_on_acquire_item_sfx_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer3/PocketItemSFXButton" to="." method="_on_pocket_item_sfx_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer3/RetrieveItemSFXButton" to="." method="_on_retrieve_item_sfx_button_pressed"]
 [connection signal="pressed" from="HBoxContainer/VBoxContainer3/ButtonClickSFXButton" to="." method="_on_button_click_sfx_button_pressed"]
