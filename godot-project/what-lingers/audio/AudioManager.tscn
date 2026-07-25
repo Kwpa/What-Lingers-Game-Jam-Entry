@@ -22,6 +22,18 @@ sfx = Dictionary[StringName, AudioStream]({
 &"sfx_moves_on_chime_neg": ExtResource("5_voe3v"),
 &"sfx_moves_on_chime_pos": ExtResource("4_74rsu")
 })
+music_volume_offset = Dictionary[StringName, float]({
+&"music_ghost": -1.5
+})
+ambience_volume_offset = Dictionary[StringName, float]({
+&"amb_lighthouse_exterior": 2.5,
+&"amb_lighthouse_interior": -3.5,
+&"amb_site_keepers_house": 2.5,
+&"amb_smoke_break": -3.0
+})
+sfx_volume_offset = Dictionary[StringName, float]({
+&"sfx_button_press": -15.0
+})
 
 [node name="MusicAudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=419459764]
 stream = ExtResource("1_pwwtb")

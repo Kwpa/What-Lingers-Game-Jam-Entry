@@ -8,7 +8,7 @@
 
 [resource]
 clip_count = 8
-clip_0/name = &"silent"
+clip_0/name = &"none"
 clip_0/stream = SubResource("AudioStreamInteractive_pfkx5")
 clip_0/auto_advance = 0
 clip_1/name = &"amb_sea"

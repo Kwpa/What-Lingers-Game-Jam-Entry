@@ -18,7 +18,7 @@ func _on_music_menu_button_pressed() -> void:
 
 
 func _on_no_music_button_pressed() -> void:
-	AudioManager.set_music("silent")
+	AudioManager.set_music("none")
 
 
 func _on_sea_ambience_button_pressed() -> void:
@@ -50,7 +50,7 @@ func _on_lighthouse_ext_ambience_button_pressed() -> void:
 
 
 func _on_no_ambience_button_pressed() -> void:
-	AudioManager.set_ambience("silent")
+	AudioManager.set_ambience("none")
 	
 
 func _on_ghost_appears_sfx_button_pressed() -> void:
