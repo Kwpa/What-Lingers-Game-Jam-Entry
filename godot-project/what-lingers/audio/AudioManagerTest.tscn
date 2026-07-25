@@ -1,0 +1,142 @@
+[gd_scene format=3 uid="uid://cqrll5ds84lsk"]
+
+[ext_resource type="Script" uid="uid://bppf5lcmujw4o" path="res://audio/audio_manager_test.gd" id="1_xkvak"]
+
+[node name="AudioManagerTest" type="Control" unique_id=86855550]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xkvak")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=2135922271]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer" unique_id=2115107524]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer" unique_id=1393007337]
+layout_mode = 2
+text = "MUSIC"
+horizontal_alignment = 1
+
+[node name="MusicBackgroundButton" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=118652428]
+layout_mode = 2
+text = "Background"
+
+[node name="MusicGhostButton" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=1219765473]
+layout_mode = 2
+text = "Ghost"
+
+[node name="MusicCreditsButton" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=1525956614]
+layout_mode = 2
+text = "Credits"
+
+[node name="MusicMenuButton" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=1604587143]
+layout_mode = 2
+text = "Menu"
+
+[node name="NoMusicButton" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=1154705448]
+layout_mode = 2
+text = "None"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="HBoxContainer" unique_id=618185396]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer2" unique_id=185491109]
+layout_mode = 2
+text = "AMBIENCE"
+horizontal_alignment = 1
+
+[node name="SeaAmbienceButton" type="Button" parent="HBoxContainer/VBoxContainer2" unique_id=1033092056]
+layout_mode = 2
+text = "Sea"
+
+[node name="CliffAmbienceButton" type="Button" parent="HBoxContainer/VBoxContainer2" unique_id=2047919703]
+layout_mode = 2
+text = "Cliff"
+
+[node name="TownAmbienceButton" type="Button" parent="HBoxContainer/VBoxContainer2" unique_id=470210555]
+layout_mode = 2
+text = "Town"
+
+[node name="SmokeAmbienceButton" type="Button" parent="HBoxContainer/VBoxContainer2" unique_id=249057348]
+layout_mode = 2
+text = "Smoke Break"
+
+[node name="KeepersHouseAmbienceButton" type="Button" parent="HBoxContainer/VBoxContainer2" unique_id=2131127660]
+layout_mode = 2
+text = "Old Keeper's House"
+
+[node name="LighthouseIntAmbienceButton" type="Button" parent="HBoxContainer/VBoxContainer2" unique_id=1946144245]
+layout_mode = 2
+text = "Lighthouse Int."
+
+[node name="LighthouseExtAmbienceButton" type="Button" parent="HBoxContainer/VBoxContainer2" unique_id=469293155]
+layout_mode = 2
+text = "Lighthouse Ext."
+
+[node name="NoAmbienceButton" type="Button" parent="HBoxContainer/VBoxContainer2" unique_id=124158265]
+layout_mode = 2
+text = "None"
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="HBoxContainer" unique_id=102371824]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer3" unique_id=65982742]
+layout_mode = 2
+text = "SFX"
+horizontal_alignment = 1
+
+[node name="GhostAppearsSFXButton" type="Button" parent="HBoxContainer/VBoxContainer3" unique_id=548489128]
+layout_mode = 2
+text = "Ghost Appears"
+
+[node name="FootstepSFXButton" type="Button" parent="HBoxContainer/VBoxContainer3" unique_id=1064127341]
+layout_mode = 2
+text = "Footsteps"
+
+[node name="LingersPosSFXButton" type="Button" parent="HBoxContainer/VBoxContainer3" unique_id=431446718]
+layout_mode = 2
+text = "Lingers (pos.)"
+
+[node name="LingersNegSFXButton" type="Button" parent="HBoxContainer/VBoxContainer3" unique_id=2136348685]
+layout_mode = 2
+text = "Lingers (neg.)"
+
+[node name="MovesOnPosSFXButton" type="Button" parent="HBoxContainer/VBoxContainer3" unique_id=1843102834]
+layout_mode = 2
+text = "Moves On (pos.)"
+
+[node name="MovesOnNegSFXButton" type="Button" parent="HBoxContainer/VBoxContainer3" unique_id=146578739]
+layout_mode = 2
+text = "Moves On (neg.)"
+
+[node name="ButtonClickSFXButton" type="Button" parent="HBoxContainer/VBoxContainer3" unique_id=1440103146]
+layout_mode = 2
+text = "Button Click"
+
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/MusicBackgroundButton" to="." method="_on_music_background_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/MusicGhostButton" to="." method="_on_music_ghost_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/MusicCreditsButton" to="." method="_on_music_credits_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/MusicMenuButton" to="." method="_on_music_menu_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/NoMusicButton" to="." method="_on_no_music_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/SeaAmbienceButton" to="." method="_on_sea_ambience_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/CliffAmbienceButton" to="." method="_on_cliff_ambience_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/TownAmbienceButton" to="." method="_on_town_ambience_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/SmokeAmbienceButton" to="." method="_on_smoke_ambience_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/KeepersHouseAmbienceButton" to="." method="_on_keepers_house_ambience_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/LighthouseIntAmbienceButton" to="." method="_on_lighthouse_int_ambience_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/LighthouseExtAmbienceButton" to="." method="_on_lighthouse_ext_ambience_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/NoAmbienceButton" to="." method="_on_no_ambience_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer3/GhostAppearsSFXButton" to="." method="_on_ghost_appears_sfx_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer3/FootstepSFXButton" to="." method="_on_footstep_sfx_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer3/LingersPosSFXButton" to="." method="_on_lingers_pos_sfx_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer3/LingersNegSFXButton" to="." method="_on_lingers_neg_sfx_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer3/MovesOnPosSFXButton" to="." method="_on_moves_on_pos_sfx_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer3/MovesOnNegSFXButton" to="." method="_on_moves_on_neg_sfx_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer3/ButtonClickSFXButton" to="." method="_on_button_click_sfx_button_pressed"]
