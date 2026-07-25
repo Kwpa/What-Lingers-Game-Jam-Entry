@@ -19,11 +19,38 @@
       "name": "???",
     },
     {
+      "displayName": "You",
       "name": "YOU",
+    },
+    {
+      "displayName": "Theo",
+      "name": "THEO",
     },
   ],
   "dictionary": {
+    "ignore": [
+      "Wh",
+      "talkin'",
+      "Y'know",
+    ],
     "language": "en-GB",
+    "words": [
+      "Montgomerys",
+      "liminal",
+      "Blakely",
+      "immunized",
+      "tastebuds",
+      "lightkeep",
+      "wickie",
+      "pasturised",
+      "harkened",
+      "eons",
+      "Theo",
+      "ol'",
+      "cliffside",
+      "impactful",
+      "loosies",
+    ],
   },
   "formatting": true,
   "locales": {
