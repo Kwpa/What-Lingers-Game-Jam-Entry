@@ -126,7 +126,7 @@
           },
         ],
         "id": "blk_jmv84e2l",
-        "name": "Legacy Linger or Move On",
+        "name": "Theo Linger or Move On",
         "type": "block",
       },
       {
@@ -284,7 +284,7 @@
           },
         ],
         "id": "blk_v8w0wnn7",
-        "name": "Legacy Item Choice",
+        "name": "Theo Item Choice",
         "type": "block",
       },
       {
@@ -405,89 +405,45 @@
                   {
                     "beats": [
                       {
-                        "character": "THEO",
-                        "id": "L_ww4b4473",
-                        "kind": "line",
-                      },
-                      {
                         "character": "YOU",
-                        "id": "L_8ldn9lk4",
-                        "kind": "line",
-                      },
-                      {
-                        "character": "THEO",
-                        "id": "L_l0bcw964",
-                        "kind": "line",
-                      },
-                      {
-                        "character": "THEO",
-                        "id": "L_zuhls44v",
-                        "kind": "line",
-                      },
-                      {
-                        "character": "THEO",
-                        "id": "L_9u78mxyw",
-                        "kind": "line",
-                      },
-                      {
-                        "character": "YOU",
-                        "id": "L_718eixl7",
-                        "kind": "line",
-                      },
-                      {
-                        "character": "THEO",
-                        "id": "L_hxtfc8rb",
+                        "id": "L_qzmqdfkk",
                         "kind": "line",
                       },
                     ],
-                    "id": "sn_k9ickgrv",
+                    "id": "sn_hsnxdz1t",
+                    "jump": {
+                      "to": "blk_um2svrub",
+                    },
                     "type": "snippet",
-                  },
-                  {
-                    "children": [
-                      {
-                        "children": [
-                          {
-                            "id": "sn_pb0mtzbj",
-                            "jump": {
-                              "to": "blk_4y5hhr97",
-                            },
-                            "type": "snippet",
-                          },
-                        ],
-                        "id": "opt_1ym9tia6",
-                        "prompt": {
-                          "id": "L_8n935pbu",
-                          "kind": "text",
-                        },
-                        "type": "group",
-                      },
-                      {
-                        "children": [
-                          {
-                            "id": "sn_t2xwev84",
-                            "jump": {
-                              "to": "blk_0enia60g",
-                            },
-                            "type": "snippet",
-                          },
-                        ],
-                        "id": "opt_xcxfd9rf",
-                        "prompt": {
-                          "id": "L_4fa7v880",
-                          "kind": "text",
-                        },
-                        "type": "group",
-                      },
-                    ],
-                    "id": "g_2n8mgsuo",
-                    "selector": "choice",
-                    "type": "group",
                   },
                 ],
                 "id": "opt_jd73q9fm",
                 "prompt": {
                   "id": "L_a3ahhmb2",
+                  "kind": "text",
+                },
+                "type": "group",
+              },
+              {
+                "children": [
+                  {
+                    "beats": [
+                      {
+                        "character": "YOU",
+                        "id": "L_3my1lr2g",
+                        "kind": "line",
+                      },
+                    ],
+                    "id": "sn_nmuu41d7",
+                    "jump": {
+                      "to": "blk_cc381xim",
+                    },
+                    "type": "snippet",
+                  },
+                ],
+                "id": "opt_x3vvkr1r",
+                "prompt": {
+                  "id": "L_2byiz0qg",
                   "kind": "text",
                 },
                 "type": "group",
@@ -507,10 +463,201 @@
           {
             "beats": [
               {
-                "character": "YOU",
-                "id": "L_hdmlwmke",
+                "character": "THEO",
+                "id": "L_ww4b4473",
                 "kind": "line",
               },
+              {
+                "character": "YOU",
+                "id": "L_8ldn9lk4",
+                "kind": "line",
+              },
+              {
+                "character": "THEO",
+                "id": "L_l0bcw964",
+                "kind": "line",
+              },
+              {
+                "character": "THEO",
+                "id": "L_zuhls44v",
+                "kind": "line",
+              },
+              {
+                "character": "THEO",
+                "id": "L_9u78mxyw",
+                "kind": "line",
+              },
+              {
+                "character": "YOU",
+                "id": "L_718eixl7",
+                "kind": "line",
+              },
+              {
+                "character": "THEO",
+                "id": "L_hxtfc8rb",
+                "kind": "line",
+              },
+            ],
+            "id": "sn_k9ickgrv",
+            "type": "snippet",
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "beats": [
+                      {
+                        "character": "YOU",
+                        "id": "L_hdmlwmke",
+                        "kind": "line",
+                      },
+                    ],
+                    "id": "sn_chrmodgq",
+                    "jump": {
+                      "to": "blk_8ogr0z5u",
+                    },
+                    "type": "snippet",
+                  },
+                ],
+                "id": "opt_1ym9tia6",
+                "prompt": {
+                  "id": "L_8n935pbu",
+                  "kind": "text",
+                },
+                "type": "group",
+              },
+              {
+                "children": [
+                  {
+                    "beats": [
+                      {
+                        "character": "YOU",
+                        "id": "L_aqpahzqg",
+                        "kind": "line",
+                      },
+                    ],
+                    "id": "sn_t2xwev84",
+                    "jump": {
+                      "to": "blk_0enia60g",
+                    },
+                    "type": "snippet",
+                  },
+                ],
+                "id": "opt_xcxfd9rf",
+                "prompt": {
+                  "id": "L_4fa7v880",
+                  "kind": "text",
+                },
+                "type": "group",
+              },
+            ],
+            "id": "g_2n8mgsuo",
+            "selector": "choice",
+            "type": "group",
+          },
+        ],
+        "id": "blk_um2svrub",
+        "name": "Branch A",
+        "type": "block",
+      },
+      {
+        "children": [
+          {
+            "beats": [
+              {
+                "character": "THEO",
+                "id": "L_h9m86pt9",
+                "kind": "line",
+              },
+              {
+                "character": "YOU",
+                "id": "L_1ltvs1g5",
+                "kind": "line",
+              },
+              {
+                "character": "THEO",
+                "id": "L_5y4b677l",
+                "kind": "line",
+              },
+              {
+                "character": "YOU",
+                "id": "L_0lu4y0kt",
+                "kind": "line",
+              },
+              {
+                "character": "THEO",
+                "id": "L_nn2oojnd",
+                "kind": "line",
+              },
+            ],
+            "id": "sn_6czmdyju",
+            "type": "snippet",
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "beats": [
+                      {
+                        "character": "YOU",
+                        "id": "L_dsbuimlv",
+                        "kind": "line",
+                      },
+                    ],
+                    "id": "sn_dnmcn4j7",
+                    "jump": {
+                      "to": "blk_uxi5uona",
+                    },
+                    "type": "snippet",
+                  },
+                ],
+                "id": "opt_cm46tbgy",
+                "prompt": {
+                  "id": "L_papcc2g4",
+                  "kind": "text",
+                },
+                "type": "group",
+              },
+              {
+                "children": [
+                  {
+                    "beats": [
+                      {
+                        "character": "YOU",
+                        "id": "L_cua946ka",
+                        "kind": "line",
+                      },
+                    ],
+                    "id": "sn_sfogduf6",
+                    "jump": {
+                      "to": "blk_2f2ivc9n",
+                    },
+                    "type": "snippet",
+                  },
+                ],
+                "id": "opt_yd69rvk7",
+                "prompt": {
+                  "id": "L_pq05f08i",
+                  "kind": "text",
+                },
+                "type": "group",
+              },
+            ],
+            "id": "g_2m1lijf5",
+            "selector": "choice",
+            "type": "group",
+          },
+        ],
+        "id": "blk_cc381xim",
+        "name": "Branch B",
+        "type": "block",
+      },
+      {
+        "children": [
+          {
+            "beats": [
               {
                 "character": "THEO",
                 "id": "L_1pcx2n33",
@@ -540,15 +687,15 @@
                 "kind": "text",
               },
             ],
-            "id": "sn_chrmodgq",
+            "id": "sn_9hqr1yl6",
             "jump": {
               "to": "blk_y5p6kxmg",
             },
             "type": "snippet",
           },
         ],
-        "id": "blk_4y5hhr97",
-        "name": "Rupert Linger",
+        "id": "blk_8ogr0z5u",
+        "name": "Theo Linger I",
         "type": "block",
       },
       {
@@ -556,13 +703,8 @@
           {
             "beats": [
               {
-                "character": "YOU",
-                "id": "L_18kykl3i",
-                "kind": "line",
-              },
-              {
                 "character": "THEO",
-                "id": "L_cfbr5zvw",
+                "id": "L_18kykl3i",
                 "kind": "line",
               },
               {
@@ -641,6 +783,10 @@
                 "id": "L_bmxkbhrq",
                 "kind": "text",
               },
+              {
+                "id": "L_mtd5mkvn",
+                "kind": "text",
+              },
             ],
             "id": "sn_ul6yrb5u",
             "jump": {
@@ -650,7 +796,146 @@
           },
         ],
         "id": "blk_0enia60g",
-        "name": "Rupert Move on",
+        "name": "Theo Move on I",
+        "type": "block",
+      },
+      {
+        "children": [
+          {
+            "beats": [
+              {
+                "character": "THEO",
+                "id": "L_asqgxqo2",
+                "kind": "line",
+              },
+              {
+                "character": "YOU",
+                "id": "L_ilh8yn8t",
+                "kind": "line",
+              },
+              {
+                "character": "THEO",
+                "id": "L_65lzicca",
+                "kind": "line",
+              },
+              {
+                "character": "YOU",
+                "id": "L_u7rxvp4u",
+                "kind": "line",
+              },
+              {
+                "character": "THEO",
+                "id": "L_fh0ag060",
+                "kind": "line",
+              },
+              {
+                "character": "YOU",
+                "id": "L_1kdg38lq",
+                "kind": "line",
+              },
+              {
+                "character": "THEO",
+                "id": "L_gcupcyt4",
+                "kind": "line",
+              },
+              {
+                "character": "YOU",
+                "id": "L_udamx04r",
+                "kind": "line",
+              },
+              {
+                "character": "THEO",
+                "id": "L_kx4yx8lq",
+                "kind": "line",
+              },
+              {
+                "character": "THEO",
+                "id": "L_xb5m0msp",
+                "kind": "line",
+              },
+              {
+                "character": "YOU",
+                "id": "L_2h24z2a6",
+                "kind": "line",
+              },
+              {
+                "character": "THEO",
+                "id": "L_itikmlb9",
+                "kind": "line",
+              },
+              {
+                "id": "L_3s23qi5g",
+                "kind": "text",
+              },
+            ],
+            "id": "sn_ewr2s4q5",
+            "jump": {
+              "to": "blk_y5p6kxmg",
+            },
+            "type": "snippet",
+          },
+        ],
+        "id": "blk_uxi5uona",
+        "name": "Theo Move on II",
+        "type": "block",
+      },
+      {
+        "children": [
+          {
+            "beats": [
+              {
+                "character": "THEO",
+                "id": "L_dalio096",
+                "kind": "line",
+              },
+              {
+                "character": "YOU",
+                "id": "L_zfyh9fz9",
+                "kind": "line",
+              },
+              {
+                "character": "THEO",
+                "id": "L_r9z6za30",
+                "kind": "line",
+              },
+              {
+                "character": "YOU",
+                "id": "L_aqwtfo76",
+                "kind": "line",
+              },
+              {
+                "character": "THEO",
+                "id": "L_zwh8c0ok",
+                "kind": "line",
+              },
+              {
+                "character": "THEO",
+                "id": "L_9mqz7xoo",
+                "kind": "line",
+              },
+              {
+                "id": "L_arlhn3o2",
+                "kind": "text",
+              },
+              {
+                "character": "THEO",
+                "id": "L_h5fwq28x",
+                "kind": "line",
+              },
+              {
+                "id": "L_ayuu2x8q",
+                "kind": "text",
+              },
+            ],
+            "id": "sn_691rp3bz",
+            "jump": {
+              "to": "blk_y5p6kxmg",
+            },
+            "type": "snippet",
+          },
+        ],
+        "id": "blk_2f2ivc9n",
+        "name": "Theo Linger II",
         "type": "block",
       },
       {

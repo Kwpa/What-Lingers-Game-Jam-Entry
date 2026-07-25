@@ -30,6 +30,8 @@
   "dictionary": {
     "ignore": [
       "Wh",
+      "talkin'",
+      "Y'know",
     ],
     "language": "en-GB",
     "words": [
@@ -46,6 +48,8 @@
       "Theo",
       "ol'",
       "cliffside",
+      "impactful",
+      "loosies",
     ],
   },
   "formatting": true,

@@ -55,6 +55,9 @@
                       },
                     ],
                     "id": "sn_6agqoi49",
+                    "jump": {
+                      "to": "scn_89sjd1s0",
+                    },
                     "type": "snippet",
                   },
                 ],
@@ -112,7 +115,7 @@
                             "type": "snippet",
                           },
                         ],
-                        "condition": "not @has_ligher",
+                        "condition": "@has_ligher",
                         "id": "opt_abm5f6zz",
                         "prompt": {
                           "id": "L_w5wr6i1p",
@@ -230,7 +233,6 @@
                     "type": "group",
                   },
                 ],
-                "fallback": true,
                 "id": "opt_ezpmg1nl",
                 "prompt": {
                   "id": "L_e6bywiys",

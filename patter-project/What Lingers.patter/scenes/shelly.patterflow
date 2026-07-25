@@ -253,10 +253,6 @@
             "selector": "choice",
             "type": "group",
           },
-          {
-            "id": "sn_b0kg2zvx",
-            "type": "snippet",
-          },
         ],
         "id": "blk_lzgcmbdv",
         "name": "Shelly Item Choice",
