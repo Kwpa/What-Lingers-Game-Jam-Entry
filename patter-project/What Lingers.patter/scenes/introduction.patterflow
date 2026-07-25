@@ -40,7 +40,14 @@
           {
             "beats": [
               {
-                "id": "L_rrwm8aa1",
+                "gameData": {
+                  "Fade In Looped Audio": "music_background",
+                },
+                "id": "A_nzyl6q6v",
+                "kind": "gameEvent",
+              },
+              {
+                "id": "L_reg927cb",
                 "kind": "text",
               },
             ],

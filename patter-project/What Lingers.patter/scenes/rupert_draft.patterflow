@@ -6,7 +6,14 @@
           {
             "beats": [
               {
-                "id": "L_umustd7w",
+                "gameData": {
+                  "Fade In Looped Audio": "amb_site_keepers_house",
+                },
+                "id": "A_l1q0zpsl",
+                "kind": "gameEvent",
+              },
+              {
+                "id": "L_uwxx6su0",
                 "kind": "text",
               },
             ],
@@ -800,7 +807,14 @@
                   {
                     "beats": [
                       {
-                        "id": "L_lwvgntyk",
+                        "gameData": {
+                          "Play Oneshot SFX": "sfx_lingers_chime_pos",
+                        },
+                        "id": "A_huz0ioje",
+                        "kind": "gameEvent",
+                      },
+                      {
+                        "id": "L_kl7aem9j",
                         "kind": "text",
                       },
                     ],
@@ -895,7 +909,14 @@
                   {
                     "beats": [
                       {
-                        "id": "L_yqkmj6qm",
+                        "gameData": {
+                          "Play Oneshot SFX": "sfx_moves_on_chime_pos",
+                        },
+                        "id": "A_hrs5vcl2",
+                        "kind": "gameEvent",
+                      },
+                      {
+                        "id": "L_n5vh0wbe",
                         "kind": "text",
                       },
                     ],
@@ -1062,10 +1083,6 @@
             "selector": "choice",
             "type": "group",
           },
-          {
-            "id": "sn_h5omtz28",
-            "type": "snippet",
-          },
         ],
         "id": "blk_tub1romz",
         "name": "Chocie D ",
@@ -1093,6 +1110,40 @@
               "to": "scn_89sjd1s0",
             },
             "type": "snippet",
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "beats": [
+                      {
+                        "gameData": {
+                          "Fade Out Looped Audio": "amb_site_keepers_house",
+                          "Play Oneshot SFX": "sfx_footsteps",
+                        },
+                        "id": "A_4hr4wfh2",
+                        "kind": "gameEvent",
+                      },
+                    ],
+                    "id": "sn_lyd0b50a",
+                    "jump": {
+                      "to": "scn_89sjd1s0",
+                    },
+                    "type": "snippet",
+                  },
+                ],
+                "id": "opt_lhh425g3",
+                "prompt": {
+                  "id": "L_bg0lz5y6",
+                  "kind": "text",
+                },
+                "type": "group",
+              },
+            ],
+            "id": "g_i40lqypf",
+            "selector": "choice",
+            "type": "group",
           },
         ],
         "id": "blk_3kdz8gna",

@@ -336,12 +336,12 @@
                 "gameData": {
                   "Play Oneshot SFX": "sfx_ghost_appears",
                 },
-                "id": "A_25j92zbw",
+                "id": "A_vucpoqrq",
                 "kind": "gameEvent",
               },
               {
                 "character": "???",
-                "id": "L_wbmq1dlx",
+                "id": "L_nr66qpcy",
                 "kind": "line",
               },
             ],
@@ -358,7 +358,15 @@
           {
             "beats": [
               {
-                "id": "L_j3iew24l",
+                "gameData": {
+                  "Fade In Looped Audio": "music_ghost",
+                  "Fade Out Looped Audio": "music_background",
+                },
+                "id": "A_nubg7pmu",
+                "kind": "gameEvent",
+              },
+              {
+                "id": "L_j6p4wqjg",
                 "kind": "text",
               },
               {
@@ -873,8 +881,23 @@
                 "kind": "text",
               },
               {
-                "id": "L_tv2b6j8b",
+                "gameData": {
+                  "Play Oneshot SFX": "sfx_moves_on_chime_neg",
+                },
+                "id": "A_tbxbf5ae",
+                "kind": "gameEvent",
+              },
+              {
+                "id": "L_rs5covfm",
                 "kind": "text",
+              },
+              {
+                "gameData": {
+                  "Fade In Looped Audio": "music_background",
+                  "Fade Out Looped Audio": "music_ghost",
+                },
+                "id": "A_k2b5oxy0",
+                "kind": "gameEvent",
               },
             ],
             "id": "sn_akj8ovry",
@@ -929,6 +952,25 @@
                 "id": "L_h3v858ya",
                 "kind": "text",
               },
+              {
+                "gameData": {
+                  "Play Oneshot SFX": "sfx_lingers_chime_pos",
+                },
+                "id": "A_5vwqped9",
+                "kind": "gameEvent",
+              },
+              {
+                "id": "L_cqgmbrwe",
+                "kind": "text",
+              },
+              {
+                "gameData": {
+                  "Fade In Looped Audio": "music_background",
+                  "Fade Out Looped Audio": "music_ghost",
+                },
+                "id": "A_56d0os9f",
+                "kind": "gameEvent",
+              },
             ],
             "id": "sn_fgjgl0mp",
             "jump": {
@@ -941,6 +983,10 @@
                 "value": "\"NONE\"",
               },
             ],
+            "type": "snippet",
+          },
+          {
+            "id": "sn_rklej5in",
             "type": "snippet",
           },
         ],
