@@ -9,6 +9,13 @@
                 "id": "L_u912nuzh",
                 "kind": "text",
               },
+              {
+                "gameData": {
+                  "Remove Fog": true,
+                },
+                "id": "A_khhx4k0l",
+                "kind": "gameEvent",
+              },
             ],
             "condition": "seen(blk_oc4u3n36) and seen(blk_y5p6kxmg) and seen(blk_drpqr9np)",
             "id": "sn_jhxwzuaj",
@@ -21,14 +28,6 @@
             "beats": [
               {
                 "id": "T_o9399qkh",
-                "gameData": {
-                  "Fade In Looped Audio": "amb_lighthouse_exterior",
-                },
-                "id": "A_3do91ygc",
-                "kind": "gameEvent",
-              },
-              {
-                "id": "L_a17obfq3",
                 "kind": "text",
               },
             ],
@@ -58,14 +57,6 @@
                         "id": "L_fdm2d23v",
                         "kind": "text",
                       },
-                      {
-                        "gameData": {
-                          "Fade Out Looped Audio": "amb_lighthouse_exterior",
-                          "Play Oneshot SFX": "sfx_footsteps",
-                        },
-                        "id": "A_3be3rqsr",
-                        "kind": "gameEvent",
-                      },
                     ],
                     "id": "sn_ppdzewl6",
                     "jump": {
@@ -89,14 +80,6 @@
                       {
                         "id": "L_ix4rmvof",
                         "kind": "text",
-                      },
-                      {
-                        "gameData": {
-                          "Fade Out Looped Audio": "lighthouse_exterior",
-                          "Play Oneshot SFX": "sfx_footsteps",
-                        },
-                        "id": "A_d0y4aixa",
-                        "kind": "gameEvent",
                       },
                     ],
                     "id": "sn_z7p8wzmv",
@@ -122,14 +105,6 @@
                         "id": "L_qtnjiabs",
                         "kind": "text",
                       },
-                      {
-                        "gameData": {
-                          "Fade Out Looped Audio": "amb_lighthouse_exterior",
-                          "Play Oneshot SFX": "sfx_footsteps",
-                        },
-                        "id": "A_d23tl432",
-                        "kind": "gameEvent",
-                      },
                     ],
                     "id": "sn_qmd0qrn5",
                     "jump": {
@@ -149,15 +124,6 @@
               {
                 "children": [
                   {
-                    "beats": [
-                      {
-                        "gameData": {
-                          "Play Oneshot SFX": "sfx_footsteps",
-                        },
-                        "id": "A_l9kbs2wp",
-                        "kind": "gameEvent",
-                      },
-                    ],
                     "id": "sn_2ifzbarw",
                     "jump": {
                       "to": "blk_usdt6ey1",
@@ -173,6 +139,24 @@
                 "sticky": true,
                 "type": "group",
               },
+              {
+                "children": [
+                  {
+                    "id": "sn_om0mmmh4",
+                    "jump": {
+                      "to": "scn_b4t9ehwb",
+                    },
+                    "type": "snippet",
+                  },
+                ],
+                "fallback": true,
+                "id": "opt_6hlfw8ym",
+                "prompt": {
+                  "id": "L_qkbvwrv2",
+                  "kind": "text",
+                },
+                "type": "group",
+              },
             ],
             "condition": "not (seen(blk_oc4u3n36) and seen(blk_y5p6kxmg) and seen(blk_drpqr9np))",
             "id": "g_y4dqj2tt",
@@ -182,12 +166,6 @@
         ],
         "id": "blk_hwgzp5pq",
         "name": "Location Choice",
-        "type": "block",
-      },
-      {
-        "children": [],
-        "id": "blk_6m1do6w6",
-        "name": "To the end",
         "type": "block",
       },
     ],

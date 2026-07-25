@@ -26,9 +26,9 @@
     }
   ],
   "content": {
-    "hash": "1y4xf2l",
+    "hash": "1tsmkew",
     "project": "proj_pvhchy3o",
-    "structureHash": "0hcafeg"
+    "structureHash": "1soqe05"
   },
   "gameDataFields": {
     "gameEvent": [
@@ -88,11 +88,6 @@
       "default": "NONE",
       "name": "ghost_name",
       "type": "string"
-    },
-    {
-      "default": "NONE",
-      "name": "item_name",
-      "type": "string"
     }
   ],
   "scenes": {
@@ -103,14 +98,62 @@
             {
               "beats": [
                 {
-                  "gameData": {
-                    "Fade In Looped Audio": "amb_lighthouse_exterior"
-                  },
-                  "id": "A_3do91ygc",
-                  "kind": "gameEvent"
+                  "id": "L_u912nuzh",
+                  "kind": "text"
                 },
                 {
-                  "id": "L_a17obfq3",
+                  "gameData": {
+                    "Remove Fog": true
+                  },
+                  "id": "A_khhx4k0l",
+                  "kind": "gameEvent"
+                }
+              ],
+              "condition": {
+                "ast": [
+                  "bin",
+                  "and",
+                  [
+                    "bin",
+                    "and",
+                    [
+                      "call",
+                      "seen",
+                      [
+                        "s",
+                        "blk_oc4u3n36"
+                      ]
+                    ],
+                    [
+                      "call",
+                      "seen",
+                      [
+                        "s",
+                        "blk_y5p6kxmg"
+                      ]
+                    ]
+                  ],
+                  [
+                    "call",
+                    "seen",
+                    [
+                      "s",
+                      "blk_drpqr9np"
+                    ]
+                  ]
+                ],
+                "src": "seen(blk_oc4u3n36) and seen(blk_y5p6kxmg) and seen(blk_drpqr9np)"
+              },
+              "id": "sn_jhxwzuaj",
+              "jump": {
+                "to": "scn_b4t9ehwb"
+              },
+              "type": "snippet"
+            },
+            {
+              "beats": [
+                {
+                  "id": "T_o9399qkh",
                   "kind": "text"
                 }
               ],
@@ -189,14 +232,6 @@
                         {
                           "id": "L_fdm2d23v",
                           "kind": "text"
-                        },
-                        {
-                          "gameData": {
-                            "Fade Out Looped Audio": "amb_lighthouse_exterior",
-                            "Play Oneshot SFX": "sfx_footsteps"
-                          },
-                          "id": "A_3be3rqsr",
-                          "kind": "gameEvent"
                         }
                       ],
                       "id": "sn_ppdzewl6",
@@ -221,14 +256,6 @@
                         {
                           "id": "L_ix4rmvof",
                           "kind": "text"
-                        },
-                        {
-                          "gameData": {
-                            "Fade Out Looped Audio": "lighthouse_exterior",
-                            "Play Oneshot SFX": "sfx_footsteps"
-                          },
-                          "id": "A_d0y4aixa",
-                          "kind": "gameEvent"
                         }
                       ],
                       "id": "sn_z7p8wzmv",
@@ -253,14 +280,6 @@
                         {
                           "id": "L_qtnjiabs",
                           "kind": "text"
-                        },
-                        {
-                          "gameData": {
-                            "Fade Out Looped Audio": "amb_lighthouse_exterior",
-                            "Play Oneshot SFX": "sfx_footsteps"
-                          },
-                          "id": "A_d23tl432",
-                          "kind": "gameEvent"
                         }
                       ],
                       "id": "sn_qmd0qrn5",
@@ -281,16 +300,6 @@
                 {
                   "children": [
                     {
-                      "beats": [
-                        {
-                          "gameData": {
-                            "Fade Out Looped Audio": "amb_lighthouse_exterior",
-                            "Play Oneshot SFX": "sfx_footsteps"
-                          },
-                          "id": "A_l9kbs2wp",
-                          "kind": "gameEvent"
-                        }
-                      ],
                       "id": "sn_2ifzbarw",
                       "jump": {
                         "to": "blk_usdt6ey1"
@@ -304,6 +313,24 @@
                     "kind": "text"
                   },
                   "sticky": true,
+                  "type": "group"
+                },
+                {
+                  "children": [
+                    {
+                      "id": "sn_om0mmmh4",
+                      "jump": {
+                        "to": "scn_b4t9ehwb"
+                      },
+                      "type": "snippet"
+                    }
+                  ],
+                  "fallback": true,
+                  "id": "opt_6hlfw8ym",
+                  "prompt": {
+                    "id": "L_qkbvwrv2",
+                    "kind": "text"
+                  },
                   "type": "group"
                 }
               ],
@@ -353,26 +380,6 @@
           ],
           "id": "blk_hwgzp5pq",
           "name": "Location Choice",
-          "type": "block"
-        },
-        {
-          "children": [
-            {
-              "beats": [
-                {
-                  "id": "L_u912nuzh",
-                  "kind": "text"
-                }
-              ],
-              "id": "sn_jhxwzuaj",
-              "jump": {
-                "to": "scn_b4t9ehwb"
-              },
-              "type": "snippet"
-            }
-          ],
-          "id": "blk_6m1do6w6",
-          "name": "To the end",
           "type": "block"
         }
       ],
@@ -487,7 +494,7 @@
             {
               "beats": [
                 {
-                  "id": "L_gzn5ie20",
+                  "id": "L_7xydcvlr",
                   "kind": "text"
                 }
               ],
@@ -507,10 +514,10 @@
                   "seen",
                   [
                     "s",
-                    "blk_uds47jhj"
+                    "blk_aeyglvsv"
                   ]
                 ],
-                "src": "seen(blk_uds47jhj)"
+                "src": "seen(blk_aeyglvsv)"
               },
               "id": "sn_bjw6jpyt",
               "type": "snippet"
@@ -528,10 +535,10 @@
                   "seen",
                   [
                     "s",
-                    "blk_n8kt9epx"
+                    "blk_3my4pn3k"
                   ]
                 ],
-                "src": "seen(blk_n8kt9epx)"
+                "src": "seen(blk_3my4pn3k)"
               },
               "id": "sn_umxesekf",
               "type": "snippet"
@@ -601,19 +608,6 @@
               },
               "id": "sn_e9c3fgpf",
               "type": "snippet"
-            },
-            {
-              "beats": [
-                {
-                  "id": "L_5fyzfhq5",
-                  "kind": "text"
-                }
-              ],
-              "id": "sn_tugiucrx",
-              "jump": {
-                "to": "END"
-              },
-              "type": "snippet"
             }
           ],
           "id": "blk_ckuvidyr",
@@ -629,6 +623,17 @@
                   "kind": "text"
                 }
               ],
+              "condition": {
+                "ast": [
+                  "call",
+                  "seen",
+                  [
+                    "s",
+                    "blk_6ql24v81"
+                  ]
+                ],
+                "src": "seen(blk_6ql24v81)"
+              },
               "id": "sn_q1gbmhm6",
               "type": "snippet"
             }
@@ -646,6 +651,17 @@
                   "kind": "text"
                 }
               ],
+              "condition": {
+                "ast": [
+                  "call",
+                  "seen",
+                  [
+                    "s",
+                    "blk_25suz2s1"
+                  ]
+                ],
+                "src": "seen(blk_25suz2s1)"
+              },
               "id": "sn_5pwr1ykz",
               "type": "snippet"
             }
@@ -663,7 +679,31 @@
                   "kind": "text"
                 }
               ],
+              "condition": {
+                "ast": [
+                  "call",
+                  "seen",
+                  [
+                    "s",
+                    "blk_0qzvjhsy"
+                  ]
+                ],
+                "src": "seen(blk_0qzvjhsy)"
+              },
               "id": "sn_3o783n55",
+              "type": "snippet"
+            },
+            {
+              "beats": [
+                {
+                  "id": "L_5fyzfhq5",
+                  "kind": "text"
+                }
+              ],
+              "id": "sn_tugiucrx",
+              "jump": {
+                "to": "END"
+              },
               "type": "snippet"
             }
           ],
@@ -676,7 +716,7 @@
       "name": "Ending",
       "type": "scene"
     },
-    "scn_cnna5vwr": {
+    "scn_gny3t8sq": {
       "blocks": [
         {
           "children": [
@@ -1041,6 +1081,7 @@
               "beats": [
                 {
                   "gameData": {
+                    "Fade In Looped Audio": "music_ghost",
                     "Play Oneshot SFX": "sfx_ghost_appears"
                   },
                   "id": "A_ogy5l07a",
@@ -1057,14 +1098,6 @@
             },
             {
               "beats": [
-                {
-                  "gameData": {
-                    "Fade In Looped Audio": "music_ghost",
-                    "Fade Out Looped Audio": "music_background"
-                  },
-                  "id": "A_ib81vqen",
-                  "kind": "gameEvent"
-                },
                 {
                   "id": "L_orlsugel",
                   "kind": "text"
@@ -1842,10 +1875,6 @@
                 {
                   "id": "L_k1w01qf8",
                   "kind": "text"
-                },
-                {
-                  "id": "L_a57fhyh4",
-                  "kind": "text"
                 }
               ],
               "condition": {
@@ -1864,6 +1893,32 @@
                 "src": "not seen(blk_hwgzp5pq)"
               },
               "id": "sn_dylufw5c",
+              "type": "snippet"
+            },
+            {
+              "beats": [
+                {
+                  "gameData": {
+                    "Fade In Looped Audio": "amb_lighthouse_interior"
+                  },
+                  "id": "A_lai3ze80",
+                  "kind": "gameEvent"
+                }
+              ],
+              "id": "sn_onayifuq",
+              "onEnter": [
+                {
+                  "kind": "set",
+                  "target": "@photo_title",
+                  "value": {
+                    "ast": [
+                      "s",
+                      "lighthouse_interior"
+                    ],
+                    "src": "\"lighthouse_interior\""
+                  }
+                }
+              ],
               "type": "snippet"
             },
             {
@@ -2151,6 +2206,19 @@
                 }
               ],
               "id": "sn_yo25zipf",
+              "onEnter": [
+                {
+                  "kind": "set",
+                  "target": "@photo_title",
+                  "value": {
+                    "ast": [
+                      "s",
+                      "keepers_house_site"
+                    ],
+                    "src": "\"keepers_house_site\""
+                  }
+                }
+              ],
               "type": "snippet"
             },
             {
@@ -2653,6 +2721,7 @@
               "beats": [
                 {
                   "gameData": {
+                    "Fade In Looped Audio": "music_ghost",
                     "Play Oneshot SFX": "sfx_ghost_appears"
                   },
                   "id": "A_1d2pgahm",
@@ -2683,14 +2752,6 @@
             {
               "beats": [
                 {
-                  "gameData": {
-                    "Fade In Looped Audio": "music_ghost",
-                    "Fade Out Looped Audio": "music_background"
-                  },
-                  "id": "A_67s8gyk3",
-                  "kind": "gameEvent"
-                },
-                {
                   "id": "L_miet7eir",
                   "kind": "text"
                 }
@@ -2707,6 +2768,9 @@
                 }
               ],
               "id": "sn_ych0o0a7",
+              "jump": {
+                "to": "blk_y4yaud29"
+              },
               "type": "snippet"
             }
           ],
@@ -2879,7 +2943,7 @@
               ],
               "id": "sn_dlih4f2n",
               "jump": {
-                "to": "blk_y4yaud29"
+                "to": "blk_zd1roqik"
               },
               "type": "snippet"
             }
@@ -2934,6 +2998,9 @@
                         }
                       ],
                       "id": "sn_65v4iyup",
+                      "jump": {
+                        "to": "blk_tub1romz"
+                      },
                       "type": "snippet"
                     }
                   ],
@@ -2955,89 +3022,8 @@
                         }
                       ],
                       "id": "sn_f07s3ghl",
-                      "type": "snippet"
-                    },
-                    {
-                      "beats": [
-                        {
-                          "character": "RUPERT",
-                          "id": "L_0947i49j",
-                          "kind": "line"
-                        }
-                      ],
-                      "id": "sn_lpiql6j2",
-                      "type": "snippet"
-                    },
-                    {
-                      "beats": [
-                        {
-                          "id": "L_9ammycvt",
-                          "kind": "text"
-                        }
-                      ],
-                      "id": "sn_iaur3mbx",
-                      "type": "snippet"
-                    },
-                    {
-                      "beats": [
-                        {
-                          "id": "L_2e40yfzm",
-                          "kind": "text"
-                        }
-                      ],
-                      "id": "sn_0s18i1qi",
-                      "type": "snippet"
-                    },
-                    {
-                      "beats": [
-                        {
-                          "id": "L_44jru503",
-                          "kind": "text"
-                        }
-                      ],
-                      "id": "sn_xp03mvjw",
-                      "onExit": [
-                        {
-                          "kind": "set",
-                          "target": "@ghost_name",
-                          "value": {
-                            "ast": [
-                              "s",
-                              ""
-                            ],
-                            "src": "\"\""
-                          }
-                        }
-                      ],
-                      "type": "snippet"
-                    },
-                    {
-                      "beats": [
-                        {
-                          "gameData": {
-                            "Play Oneshot SFX": "sfx_lingers_chime_pos"
-                          },
-                          "id": "A_huz0ioje",
-                          "kind": "gameEvent"
-                        },
-                        {
-                          "id": "L_kl7aem9j",
-                          "kind": "text"
-                        }
-                      ],
-                      "id": "sn_2c21pmr8",
-                      "type": "snippet"
-                    },
-                    {
-                      "beats": [
-                        {
-                          "id": "L_3eyyzx0m",
-                          "kind": "text"
-                        }
-                      ],
-                      "id": "sn_cfer8dve",
                       "jump": {
-                        "to": "blk_3kdz8gna"
+                        "to": "blk_6ql24v81"
                       },
                       "type": "snippet"
                     }
@@ -3073,79 +3059,8 @@
                         }
                       ],
                       "id": "sn_xe8s33zs",
-                      "type": "snippet"
-                    },
-                    {
-                      "beats": [
-                        {
-                          "id": "L_riv8x740",
-                          "kind": "text"
-                        }
-                      ],
-                      "id": "sn_h7542h8r",
-                      "type": "snippet"
-                    },
-                    {
-                      "beats": [
-                        {
-                          "character": "RUPERT",
-                          "id": "L_p5yyl6fk",
-                          "kind": "line"
-                        }
-                      ],
-                      "id": "sn_koozcsh4",
-                      "type": "snippet"
-                    },
-                    {
-                      "beats": [
-                        {
-                          "id": "L_5ghzu3oc",
-                          "kind": "text"
-                        }
-                      ],
-                      "id": "sn_35k294dl",
-                      "onExit": [
-                        {
-                          "kind": "set",
-                          "target": "@ghost_name",
-                          "value": {
-                            "ast": [
-                              "s",
-                              ""
-                            ],
-                            "src": "\"\""
-                          }
-                        }
-                      ],
-                      "type": "snippet"
-                    },
-                    {
-                      "beats": [
-                        {
-                          "gameData": {
-                            "Play Oneshot SFX": "sfx_moves_on_chime_pos"
-                          },
-                          "id": "A_hrs5vcl2",
-                          "kind": "gameEvent"
-                        },
-                        {
-                          "id": "L_n5vh0wbe",
-                          "kind": "text"
-                        }
-                      ],
-                      "id": "sn_ac0dxdiy",
-                      "type": "snippet"
-                    },
-                    {
-                      "beats": [
-                        {
-                          "id": "L_va2gb6tv",
-                          "kind": "text"
-                        }
-                      ],
-                      "id": "sn_4ep6zo0q",
                       "jump": {
-                        "to": "blk_3kdz8gna"
+                        "to": "blk_25suz2s1"
                       },
                       "type": "snippet"
                     }
@@ -3167,125 +3082,8 @@
                         }
                       ],
                       "id": "sn_5b6umla2",
-                      "type": "snippet"
-                    },
-                    {
-                      "beats": [
-                        {
-                          "id": "L_zv05xd5g",
-                          "kind": "text"
-                        }
-                      ],
-                      "id": "sn_gokgxyc2",
-                      "type": "snippet"
-                    },
-                    {
-                      "beats": [
-                        {
-                          "id": "L_bpd1jec3",
-                          "kind": "text"
-                        }
-                      ],
-                      "id": "sn_es40g1jf",
-                      "type": "snippet"
-                    },
-                    {
-                      "beats": [
-                        {
-                          "id": "L_awip25ie",
-                          "kind": "text"
-                        }
-                      ],
-                      "id": "sn_rywz1hro",
-                      "type": "snippet"
-                    },
-                    {
-                      "beats": [
-                        {
-                          "character": "RUPERT",
-                          "id": "L_te8gp2su",
-                          "kind": "line"
-                        }
-                      ],
-                      "id": "sn_s380d2q1",
-                      "type": "snippet"
-                    },
-                    {
-                      "beats": [
-                        {
-                          "character": "RUPERT",
-                          "direction": "sings",
-                          "id": "L_ox0aoxx0",
-                          "kind": "line"
-                        },
-                        {
-                          "character": "RUPERT",
-                          "direction": "sings",
-                          "id": "L_jhjck42y",
-                          "kind": "line"
-                        },
-                        {
-                          "character": "RUPERT",
-                          "direction": "sings",
-                          "id": "L_iq69kkje",
-                          "kind": "line"
-                        },
-                        {
-                          "character": "RUPERT",
-                          "direction": "sings",
-                          "id": "L_uly52w03",
-                          "kind": "line"
-                        },
-                        {
-                          "character": "RUPERT",
-                          "direction": "sings",
-                          "id": "L_e5qhmh3t",
-                          "kind": "line"
-                        }
-                      ],
-                      "id": "sn_qdp6i6tq",
-                      "onExit": [
-                        {
-                          "kind": "set",
-                          "target": "@ghost_name",
-                          "value": {
-                            "ast": [
-                              "s",
-                              ""
-                            ],
-                            "src": "\"\""
-                          }
-                        }
-                      ],
-                      "type": "snippet"
-                    },
-                    {
-                      "beats": [
-                        {
-                          "gameData": {
-                            "Play Oneshot SFX": "sfx_moves_on_chime_neg"
-                          },
-                          "id": "A_rd0ebphn",
-                          "kind": "gameEvent"
-                        },
-                        {
-                          "id": "L_giha5vka",
-                          "kind": "text"
-                        }
-                      ],
-                      "id": "sn_tclkn7kq",
-                      "type": "snippet"
-                    },
-                    {
-                      "beats": [
-                        {
-                          "id": "L_6rwpqvbr",
-                          "kind": "text"
-                        }
-                      ],
-                      "id": "sn_yb8mzuw7",
                       "jump": {
-                        "to": "blk_3kdz8gna"
+                        "to": "blk_0qzvjhsy"
                       },
                       "type": "snippet"
                     }
@@ -3367,6 +3165,176 @@
           ],
           "id": "blk_3kdz8gna",
           "name": "Leave Rupert",
+          "type": "block"
+        },
+        {
+          "children": [
+            {
+              "beats": [
+                {
+                  "id": "L_riv8x740",
+                  "kind": "text"
+                },
+                {
+                  "character": "RUPERT",
+                  "id": "L_p5yyl6fk",
+                  "kind": "line"
+                },
+                {
+                  "id": "L_5ghzu3oc",
+                  "kind": "text"
+                },
+                {
+                  "gameData": {
+                    "Play Oneshot SFX": "sfx_moves_on_chime_pos"
+                  },
+                  "id": "A_hrs5vcl2",
+                  "kind": "gameEvent"
+                },
+                {
+                  "id": "L_n5vh0wbe",
+                  "kind": "text"
+                },
+                {
+                  "id": "L_va2gb6tv",
+                  "kind": "text"
+                }
+              ],
+              "id": "sn_h7542h8r",
+              "jump": {
+                "to": "blk_3kdz8gna"
+              },
+              "type": "snippet"
+            }
+          ],
+          "id": "blk_25suz2s1",
+          "name": "Rupert Positive Move On ",
+          "type": "block"
+        },
+        {
+          "children": [
+            {
+              "beats": [
+                {
+                  "id": "L_zv05xd5g",
+                  "kind": "text"
+                },
+                {
+                  "id": "L_bpd1jec3",
+                  "kind": "text"
+                },
+                {
+                  "id": "L_awip25ie",
+                  "kind": "text"
+                },
+                {
+                  "character": "RUPERT",
+                  "id": "L_te8gp2su",
+                  "kind": "line"
+                },
+                {
+                  "character": "RUPERT",
+                  "direction": "sings",
+                  "id": "L_ox0aoxx0",
+                  "kind": "line"
+                },
+                {
+                  "character": "RUPERT",
+                  "direction": "sings",
+                  "id": "L_jhjck42y",
+                  "kind": "line"
+                },
+                {
+                  "character": "RUPERT",
+                  "direction": "sings",
+                  "id": "L_iq69kkje",
+                  "kind": "line"
+                },
+                {
+                  "character": "RUPERT",
+                  "direction": "sings",
+                  "id": "L_uly52w03",
+                  "kind": "line"
+                },
+                {
+                  "character": "RUPERT",
+                  "direction": "sings",
+                  "id": "L_e5qhmh3t",
+                  "kind": "line"
+                },
+                {
+                  "gameData": {
+                    "Play Oneshot SFX": "sfx_moves_on_chime_neg"
+                  },
+                  "id": "A_rd0ebphn",
+                  "kind": "gameEvent"
+                },
+                {
+                  "id": "L_giha5vka",
+                  "kind": "text"
+                },
+                {
+                  "id": "L_6rwpqvbr",
+                  "kind": "text"
+                }
+              ],
+              "id": "sn_gokgxyc2",
+              "jump": {
+                "to": "blk_3kdz8gna"
+              },
+              "type": "snippet"
+            }
+          ],
+          "id": "blk_0qzvjhsy",
+          "name": "Rupert Negative Move On",
+          "type": "block"
+        },
+        {
+          "children": [
+            {
+              "beats": [
+                {
+                  "character": "RUPERT",
+                  "id": "L_0947i49j",
+                  "kind": "line"
+                },
+                {
+                  "id": "L_9ammycvt",
+                  "kind": "text"
+                },
+                {
+                  "id": "L_2e40yfzm",
+                  "kind": "text"
+                },
+                {
+                  "id": "L_44jru503",
+                  "kind": "text"
+                },
+                {
+                  "gameData": {
+                    "Play Oneshot SFX": "sfx_lingers_chime_pos"
+                  },
+                  "id": "A_huz0ioje",
+                  "kind": "gameEvent"
+                },
+                {
+                  "id": "L_kl7aem9j",
+                  "kind": "text"
+                },
+                {
+                  "id": "L_3eyyzx0m",
+                  "kind": "text"
+                }
+              ],
+              "id": "sn_lpiql6j2",
+              "jump": {
+                "to": "blk_3kdz8gna"
+              },
+              "type": "snippet"
+            }
+          ],
+          "id": "blk_6ql24v81",
+          "name": "Rupert Linger",
           "type": "block"
         }
       ],
@@ -3757,6 +3725,7 @@
               "beats": [
                 {
                   "gameData": {
+                    "Fade In Looped Audio": "music_ghost",
                     "Play Oneshot SFX": "sfx_ghost_appears"
                   },
                   "id": "A_vucpoqrq",
@@ -3786,14 +3755,6 @@
             },
             {
               "beats": [
-                {
-                  "gameData": {
-                    "Fade In Looped Audio": "music_ghost",
-                    "Fade Out Looped Audio": "music_background"
-                  },
-                  "id": "A_nubg7pmu",
-                  "kind": "gameEvent"
-                },
                 {
                   "id": "L_j6p4wqjg",
                   "kind": "text"
@@ -4365,7 +4326,7 @@
             }
           ],
           "id": "blk_3my4pn3k",
-          "name": "Move on Ending",
+          "name": "Shelly Move On",
           "type": "block"
         },
         {
@@ -4447,7 +4408,7 @@
             }
           ],
           "id": "blk_aeyglvsv",
-          "name": "Linger Ending",
+          "name": "Shelly Linger",
           "type": "block"
         },
         {
@@ -4576,6 +4537,7 @@
       "L_7i5avrta": "Glass vial",
       "L_7njxkkxy": "She loves it there. She has this picture in her mind of the two of us living in a townhouse with a dog in ten years. I keep trying to tell her that I'm content here. I don't need my stupid degree.",
       "L_7qjqv8kq": "Pick up the key",
+      "L_7xydcvlr": "It must be nearly 10 o'clock. You look out over the waves at the distant horizon.  ",
       "L_7yx41p3c": "You feel Shelly's lighter in your pocket. She was finally able to choose her own path. Like the mermaid she admired, she's now truly a creature of the waves, lingering in the place she loved best.",
       "L_84mf1odz": "Who are you?",
       "L_88xus0uu": "Fine... I can tell you wont let this go... Lead on.",
@@ -4595,10 +4557,8 @@
       "L_9mqz7xoo": "The last little flame keeping our foothold to our home. I have a new duty now.\"",
       "L_9u78mxyw": "Maybe that why I chose to come this way on that night. It hadn't been 2 weeks since I buried by father. 'Heartsickness from my mother's passing the year prior', they said. I was yearning for a simpler time. So I walked the cliffs as I did back then...",
       "L_9um5evet": "The wind continues to howl like before: 'Go back home. You do not belong in this place'. ",
-      "L_a17obfq3": "It's still not light out, and the fog coils around you. Where will you go next?",
       "L_a3ahhmb2": "Have you never thought to see the town as it is now?  ",
       "L_a3d8ltck": "You head back to the lighthouse.",
-      "L_a57fhyh4": "What will you do?",
       "L_a82nswqe": "Your sense of place",
       "L_akt87cur": "Show Rupert the vial",
       "L_aqpahzqg": "I insist. Lets go for a walk in town.  ",
@@ -4610,7 +4570,7 @@
       "L_ay6cyec8": "You think back on your apprenticeship to the previous lighthouse keeper. The lighthouse keepers have served this community as a trusted guide for generations, keeping ships from foundering on the rocks and shining light where it is needed most.",
       "L_ayuu2x8q": "Theo then disappears into the wind. A gust pushes against you forcing you back away from the cliff. Theo's new home is amongst the crags of the shoreline. His vigil everlasting... such is the legacy of the Montgomery family.",
       "L_b73o03rw": "You sit on the picnic bench and look up at the rocks. Their peaks are hidden by the fog, for now. Soon the sun will turn them a pale pink, then reveal more and more of their heights as the fog burns away. Your future felt similarly obscured, until recently. Your apprenticeship with the lighthouse keeper gave you the direction you had been missing. Now that he has retired, you feel confident stepping into the role on your own. ",
-      "L_b9dlmzrj": "A golden glimmer catches your eye. It's a lighter, the refillable kind. It's rusty and some of the gold plating worn away. This one must have been in the sea for some time before being washed up again. You'll hold onto it for now.",
+      "L_b9dlmzrj": "A golden glimmer catches your eye. It's a lighter, the refillable kind. It's rusty and some of the gold plating has been worn away. This one must have been in the sea for some time before being washed up again. You'll hold onto it for now.",
       "L_bg0lz5y6": "Head back to the lighthouse",
       "L_bmxkbhrq": "The apparition then begins to fade from view. With a tired smile he nods to you before finally disappearing completely.",
       "L_bpd1jec3": "In truth, you realise he's probably seen just as much suffering as you're describing, just in different guises. You finish feeling a little foolish. ",
@@ -4618,14 +4578,10 @@
       "L_bt2y0vfk": "Mermaid Lighter",
       "L_bvd7egxb": "There was a lot to like. I just... didn't.",
       "L_c1j1nr5g": "You know, before I wasn't sure, but I was content here. Working as a waitress on the weekends, driving into town to see my girl when I can. I would have been more content if she'd visited more often, but we were working on it. I would still be working on it, I guess. But now...I want to carve my happiness into these rocks. I want to stay.",
-<<<<<<< HEAD
-      "L_cf3zd9yr": "You linger a little longer",
-      "L_cois0olq": "Rupert was delighted to learn that John survived and millions more have been saved.",
-=======
       "L_c6oi4riy": "The ghost is gone from this place. There is nothing left for you here.",
       "L_cdyj7w3y": "The vial looks like something from an old-time pharmacy. Maybe it belonged to someone who lived in the village ages ago. You wonder if any buildings are still standing from that time. Medicine like this would have been brought in from the city by boat. You wonder who used it.",
+      "L_cois0olq": "Rupert was delighted to learn that John survived and millions more have been saved.",
       "L_cqgmbrwe": "You stand there a long moment, watching that spot. Then it's time to return to your duties.",
->>>>>>> origin
       "L_cua946ka": "Your penance is paid, Theo.",
       "L_cxdem1h2": "I just...couldn't. I could never bear to stay inland for too long. Got saltwater for blood, she says. Maybe she's just salty that I wasn't willing to scrounge around for a place to stay in the city. But I'm like that mermaid; I belong with the waves. And she knows that, deep down, even if she doesn't understand why it's true.",
       "L_d1z6wajd": "Move on",
@@ -4663,9 +4619,7 @@
       "L_giha5vka": "Before you can say anything else, he is gone.",
       "L_gkxr56mr": "You try a couple more times anyway. The mechanism stops resisting, making a satisfying click. But no fire is forthcoming.",
       "L_guqtacp3": "You miss your mentor, but are glad they have come to the rest they deserve. You are proud to take on this meaningful work. It's a far cry from what you were doing up in the city, but it suits you.",
-      "L_gwcj6b98": "I saw a ghost! ",
-      "L_gzn5ie20": "It must be nearly 10 o'clock. You look out over the waves at the distant horizon.",
-      "L_h2jaqe3k": "I've hidden away at home you know, and at the lighthouse, for so long. Don't want the town catching it from me. Maybe the world has changed since I last went out, and everyone is free from such ailments. I just don't know.",
+      "L_h2jaqe3k": "I've hidden away at home you know, and at the lighthouse, for so long. Don't want the town catching the croup from me. Maybe the world has changed since I last went out, and everyone is free from such ailments... I just don't know.",
       "L_h3chz14i": "It was...useful, I guess. Meaningful, probably. I would have kept at it if I hadn't been laid off.",
       "L_h3v858ya": "Shelly turns away with a smile, and you watch her sink into the waves. ",
       "L_h5fwq28x": "This is my duty.... and i will see it through.\"",
@@ -4696,7 +4650,7 @@
       "L_jhjck42y": "Many have seen. . . . but blind to the heartbeats inside the open doors.",
       "L_jlk1jiqw": "Where were you before?",
       "L_jrcmv0en": "Yeah, that was how I felt after graduation. Like, if I had to find a job in that field and work at it for the rest of my life...I would survive it, I guess. Buy a house, marry my girlfriend. That's what she wanted. It's what my folks wanted.",
-      "L_k1w01qf8": "Some items were left by tourists that day, like a keychain that fell out of the unzipped pocket of a tourist clambering over the rocks. Others look so old that they're unlikely to be claimed by any modern visitor. You look at the table. A few items stand out to you.  ",
+      "L_k1w01qf8": "Some items were lost that day, like a keychain that fell out of the unzipped pocket of a tourist clambering over the rocks. Others look so old that they're unlikely to be claimed by any modern visitor. You look at the table. A few items stand out to you.  ",
       "L_k3g8v4d5": "Were you a Montgomery?",
       "L_kl7aem9j": "So has the ghost of Rupert.",
       "L_kp463q12": "Pick up the lighter",
@@ -4732,6 +4686,7 @@
       "L_q6o1oiuf": "The moment you next blink your eyes Theo has vanished. As you try to find him, the strong wind picks up once more. You catch yourself before you tumble backwards away from the cliff face.",
       "L_q6tkr4kt": "My family... I'm... I was the last. It was on these cliffs that my line ended. I was drunk and on a dare was walking along the edge... Wind picked up... and my family's legacy ended. A stupid way to die. A dishonourable way. A way not fitting the weight I held. The trust my ancestors left to me. I squandered it. Now there is nothing.",
       "L_qewl8yry": "As your thumb traces the bottle, thinking about the poor souls of the past infected by the diphtheria bacteria, the strangest sensation overcomes you. ",
+      "L_qkbvwrv2": "Face the sea",
       "L_qrluqif5": "Mermaid Lighter",
       "L_qtnjiabs": "You've given up smoking, but the habit of seeking out other smokers lingers in you.",
       "L_qtzp9kwp": "So what do you want to do?",
@@ -4759,7 +4714,6 @@
       "L_te8gp2su": "Let me share something I've learned as my time as a wickie...",
       "L_tqurm48a": "Towards the designated smoking area",
       "L_tsscwz4l": "You wish you could have gotten through to Theo. But the cycle of sadness and guilt is a chain not so easily broken. Maybe at some point Theo will find peace with what happened. But until that day the legacy of the Montgomery family still lingers in those isolated crags.",
-      "L_tv2b6j8b": "You'd better get back. There's nothing out here anymore.",
       "L_tx2zc6ah": "Soon though the wind settles for but a moment. Giving you a view of the ocean from on high. This is about as far from the city you can get without making an unfortunate decent to the churning water below.",
       "L_u1fiwv1h": "Up to the rocks close to the lighthouse",
       "L_u7rxvp4u": "They loved you?",
@@ -4797,7 +4751,7 @@
       "L_xm4d8z1w": "Rusty Key",
       "L_xz8epju2": "Move on.",
       "L_y2ninfuz": "Then why do you linger here and not the old mill?",
-      "L_y887gtqr": "You're up early, again. So early that folks in the city are still having a late night. But here in the lighthouse, you are the only living soul up and about.",
+      "L_y887gtqr": "You're up early, again. So early that folks in the city are still having a late night. But in this small town, you are the only living soul up and about.",
       "L_yn9n6e2n": "You turn your back, ignoring the wind's song as you leave.",
       "L_ysafydga": "You sound just like my girlfriend. \"You can be anything you want up here! There's nothing for you back home!\" What if I don't want to take any of those opportunities. What if I don't want anything? I had to live there to get this stupid degree, and then I spent all summer after graduation trying to get work with it. I'm honestly relieved I didn't get hired up there.",
       "L_z2jvf84o": "I'm new in town.",
@@ -4810,7 +4764,8 @@
       "L_zv05xd5g": "Maybe you're hoping this phantom from the afterlife has some essential wisdom to share. ",
       "L_zw8z5i1h": "The crashing waves make you uneasy. Time to go.",
       "L_zwh8c0ok": "Don't you see though? That's just it. I cant move on.... if I do then there truly WILL be nothing. I am the last spark of our legacy. ",
-      "L_zyehp8xs": "You flip it open and try to light it. The mechanism catches under your thumb. On closer inspection, it's tarnished. There's a slight build-up of salt encrusting the opening where the flame should appear. It must have fallen into the sea."
+      "L_zyehp8xs": "You flip it open and try to light it. The mechanism catches under your thumb. On closer inspection, it's tarnished. There's a slight build-up of salt encrusting the opening where the flame should appear. It must have fallen into the sea.",
+      "T_o9399qkh": "It's still not light out, and the fog coils around you. Where will you go next?"
     }
   },
   "voiced": false

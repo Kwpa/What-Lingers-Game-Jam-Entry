@@ -60,29 +60,11 @@
                 "id": "L_k1w01qf8",
                 "kind": "text",
               },
-              {
-                "id": "L_a57fhyh4",
-                "kind": "text",
-              },
             ],
             "condition": "not seen(blk_hwgzp5pq)",
             "id": "sn_dylufw5c",
             "type": "snippet",
           },
-          {
-            "id": "sn_1op50tfh",
-            "jump": {
-              "to": "blk_usdt6ey1",
-            },
-            "type": "snippet",
-          },
-        ],
-        "id": "blk_v4yjnpqq",
-        "name": "Enter the Lighthouse",
-        "type": "block",
-      },
-      {
-        "children": [
           {
             "beats": [
               {
@@ -103,6 +85,20 @@
             ],
             "type": "snippet",
           },
+          {
+            "id": "sn_1op50tfh",
+            "jump": {
+              "to": "blk_usdt6ey1",
+            },
+            "type": "snippet",
+          },
+        ],
+        "id": "blk_v4yjnpqq",
+        "name": "Enter the Lighthouse",
+        "type": "block",
+      },
+      {
+        "children": [
           {
             "children": [
               {

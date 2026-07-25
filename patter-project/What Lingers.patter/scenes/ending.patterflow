@@ -6,7 +6,7 @@
           {
             "beats": [
               {
-                "id": "L_gzn5ie20",
+                "id": "L_7xydcvlr",
                 "kind": "text",
               },
             ],
@@ -57,19 +57,6 @@
             "id": "sn_e9c3fgpf",
             "type": "snippet",
           },
-          {
-            "beats": [
-              {
-                "id": "L_5fyzfhq5",
-                "kind": "text",
-              },
-            ],
-            "id": "sn_tugiucrx",
-            "jump": {
-              "to": "END",
-            },
-            "type": "snippet",
-          },
         ],
         "id": "blk_ckuvidyr",
         "name": "Main",
@@ -84,6 +71,7 @@
                 "kind": "text",
               },
             ],
+            "condition": "seen(blk_6ql24v81)",
             "id": "sn_q1gbmhm6",
             "type": "snippet",
           },
@@ -101,6 +89,7 @@
                 "kind": "text",
               },
             ],
+            "condition": "seen(blk_25suz2s1)",
             "id": "sn_5pwr1ykz",
             "type": "snippet",
           },
@@ -118,7 +107,21 @@
                 "kind": "text",
               },
             ],
+            "condition": "seen(blk_0qzvjhsy)",
             "id": "sn_3o783n55",
+            "type": "snippet",
+          },
+          {
+            "beats": [
+              {
+                "id": "L_5fyzfhq5",
+                "kind": "text",
+              },
+            ],
+            "id": "sn_tugiucrx",
+            "jump": {
+              "to": "END",
+            },
             "type": "snippet",
           },
         ],
