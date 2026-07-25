@@ -79,3 +79,19 @@ func _on_moves_on_neg_sfx_button_pressed() -> void:
 
 func _on_button_click_sfx_button_pressed() -> void:
 	AudioManager.play_sfx("sfx_button_press")
+
+
+func _on_footsteps_door_sfx_button_pressed() -> void:
+	AudioManager.play_sfx("sfx_footsteps_door")
+
+
+func _on_acquire_item_sfx_button_pressed() -> void:
+	AudioManager.play_sfx("sfx_acquire_item")
+
+
+func _on_pocket_item_sfx_button_pressed() -> void:
+	AudioManager.play_sfx("sfx_pocket_item")
+
+
+func _on_retrieve_item_sfx_button_pressed() -> void:
+	AudioManager.play_sfx("sfx_retrieve_item")
