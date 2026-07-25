@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dkcbx6bqwtunv"
-path="res://.godot/imported/title_empty.jpg-2443a20c94964e272bdbf21b02843c9a.ctex"
+uid="uid://bfcwdh46w16di"
+path="res://.godot/imported/RUPERT.png-5e9c7a3e49f0b4fc886eda3d08f486b1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://photos/title_empty.jpg"
-dest_files=["res://.godot/imported/title_empty.jpg-2443a20c94964e272bdbf21b02843c9a.ctex"]
+source_file="res://silhouettes/RUPERT.png"
+dest_files=["res://.godot/imported/RUPERT.png-5e9c7a3e49f0b4fc886eda3d08f486b1.ctex"]
 
 [params]
 

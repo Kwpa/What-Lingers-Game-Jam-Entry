@@ -6,11 +6,25 @@
           {
             "beats": [
               {
-                "id": "L_umustd7w",
+                "gameData": {
+                  "Fade In Looped Audio": "amb_site_keepers_house",
+                },
+                "id": "A_l1q0zpsl",
+                "kind": "gameEvent",
+              },
+              {
+                "id": "L_uwxx6su0",
                 "kind": "text",
               },
             ],
             "id": "sn_yo25zipf",
+            "onEnter": [
+              {
+                "kind": "set",
+                "target": "@photo_title",
+                "value": "\"keepers_house_site\"",
+              },
+            ],
             "type": "snippet",
           },
           {
@@ -28,7 +42,7 @@
           },
         ],
         "id": "blk_lt2tzmaj",
-        "name": "Rolling Granite Landscape",
+        "name": "Site Of The Old Keeper's House",
         "type": "block",
       },
       {
@@ -248,7 +262,7 @@
           },
         ],
         "id": "blk_6oomi77o",
-        "name": "Shivers Linger or Move On",
+        "name": "Linger or Move On",
         "type": "block",
       },
       {
@@ -256,7 +270,14 @@
           {
             "beats": [
               {
-                "id": "L_bxms09yk",
+                "gameData": {
+                  "Play Oneshot SFX": "sfx_retrieve_item",
+                },
+                "id": "A_8xjoainf",
+                "kind": "gameEvent",
+              },
+              {
+                "id": "L_8y6yxvyj",
                 "kind": "text",
               },
             ],
@@ -387,7 +408,7 @@
                     ],
                     "id": "sn_6dp0hb73",
                     "jump": {
-                      "to": "blk_drpqr9np",
+                      "to": "blk_b4whxrqv",
                     },
                     "onEnter": [
                       {
@@ -451,18 +472,33 @@
           {
             "beats": [
               {
+                "gameData": {
+                  "Fade In Looped Audio": "music_ghost",
+                  "Play Oneshot SFX": "sfx_ghost_appears",
+                },
+                "id": "A_1d2pgahm",
+                "kind": "gameEvent",
+              },
+              {
                 "character": "???",
-                "id": "T_ixuiokff",
+                "id": "L_1bc773cu",
                 "kind": "line",
               },
             ],
             "id": "sn_np1coqk8",
+            "onEnter": [
+              {
+                "kind": "set",
+                "target": "@ghost_name",
+                "value": "\"RUPERT\"",
+              },
+            ],
             "type": "snippet",
           },
           {
             "beats": [
               {
-                "id": "L_vk4ed0ta",
+                "id": "L_miet7eir",
                 "kind": "text",
               },
             ],
@@ -478,8 +514,18 @@
               },
             ],
             "id": "sn_ych0o0a7",
+            "jump": {
+              "to": "blk_y4yaud29",
+            },
             "type": "snippet",
           },
+        ],
+        "id": "blk_b4whxrqv",
+        "name": "Rupert Appears",
+        "type": "block",
+      },
+      {
+        "children": [
           {
             "children": [
               {
@@ -493,6 +539,9 @@
                       },
                     ],
                     "id": "sn_e3sv6dny",
+                    "jump": {
+                      "to": "blk_mxdf39zw",
+                    },
                     "type": "snippet",
                   },
                 ],
@@ -514,6 +563,9 @@
                       },
                     ],
                     "id": "sn_oyx1c50l",
+                    "jump": {
+                      "to": "blk_mxdf39zw",
+                    },
                     "type": "snippet",
                   },
                 ],
@@ -529,6 +581,13 @@
             "selector": "choice",
             "type": "group",
           },
+        ],
+        "id": "blk_y4yaud29",
+        "name": "Choice A",
+        "type": "block",
+      },
+      {
+        "children": [
           {
             "children": [
               {
@@ -541,6 +600,9 @@
                       },
                     ],
                     "id": "sn_s5486a2n",
+                    "jump": {
+                      "to": "blk_drpqr9np",
+                    },
                     "type": "snippet",
                   },
                 ],
@@ -561,6 +623,9 @@
                       },
                     ],
                     "id": "sn_79gn1d5i",
+                    "jump": {
+                      "to": "blk_drpqr9np",
+                    },
                     "type": "snippet",
                   },
                 ],
@@ -576,6 +641,13 @@
             "selector": "choice",
             "type": "group",
           },
+        ],
+        "id": "blk_mxdf39zw",
+        "name": "Choice B",
+        "type": "block",
+      },
+      {
+        "children": [
           {
             "beats": [
               {
@@ -616,8 +688,18 @@
               },
             ],
             "id": "sn_dlih4f2n",
+            "jump": {
+              "to": "blk_y4yaud29",
+            },
             "type": "snippet",
           },
+        ],
+        "id": "blk_drpqr9np",
+        "name": "Asking About Johnathon",
+        "type": "block",
+      },
+      {
+        "children": [
           {
             "children": [
               {
@@ -664,227 +746,6 @@
                     "id": "sn_65v4iyup",
                     "type": "snippet",
                   },
-                  {
-                    "children": [
-                      {
-                        "children": [
-                          {
-                            "beats": [
-                              {
-                                "id": "L_4dto6hro",
-                                "kind": "text",
-                              },
-                            ],
-                            "id": "sn_xe8s33zs",
-                            "type": "snippet",
-                          },
-                          {
-                            "beats": [
-                              {
-                                "id": "L_riv8x740",
-                                "kind": "text",
-                              },
-                            ],
-                            "id": "sn_h7542h8r",
-                            "type": "snippet",
-                          },
-                          {
-                            "beats": [
-                              {
-                                "character": "RUPERT",
-                                "id": "L_p5yyl6fk",
-                                "kind": "line",
-                              },
-                            ],
-                            "id": "sn_koozcsh4",
-                            "type": "snippet",
-                          },
-                          {
-                            "beats": [
-                              {
-                                "id": "L_5ghzu3oc",
-                                "kind": "text",
-                              },
-                            ],
-                            "id": "sn_35k294dl",
-                            "type": "snippet",
-                          },
-                          {
-                            "beats": [
-                              {
-                                "id": "L_yqkmj6qm",
-                                "kind": "text",
-                              },
-                            ],
-                            "id": "sn_ac0dxdiy",
-                            "type": "snippet",
-                          },
-                          {
-                            "beats": [
-                              {
-                                "id": "L_va2gb6tv",
-                                "kind": "text",
-                              },
-                            ],
-                            "id": "sn_4ep6zo0q",
-                            "type": "snippet",
-                          },
-                          {
-                            "beats": [
-                              {
-                                "id": "L_tgpox7ez",
-                                "kind": "text",
-                              },
-                            ],
-                            "id": "sn_y5e1bdn6",
-                            "jump": {
-                              "to": "scn_89sjd1s0",
-                            },
-                            "type": "snippet",
-                          },
-                        ],
-                        "id": "opt_6a6yd1kp",
-                        "prompt": {
-                          "id": "L_i9qu3653",
-                          "kind": "text",
-                        },
-                        "type": "group",
-                      },
-                      {
-                        "children": [
-                          {
-                            "beats": [
-                              {
-                                "id": "L_bqvx3niw",
-                                "kind": "text",
-                              },
-                            ],
-                            "id": "sn_5b6umla2",
-                            "type": "snippet",
-                          },
-                          {
-                            "beats": [
-                              {
-                                "id": "L_zv05xd5g",
-                                "kind": "text",
-                              },
-                            ],
-                            "id": "sn_gokgxyc2",
-                            "type": "snippet",
-                          },
-                          {
-                            "beats": [
-                              {
-                                "id": "L_bpd1jec3",
-                                "kind": "text",
-                              },
-                            ],
-                            "id": "sn_es40g1jf",
-                            "type": "snippet",
-                          },
-                          {
-                            "beats": [
-                              {
-                                "id": "L_awip25ie",
-                                "kind": "text",
-                              },
-                            ],
-                            "id": "sn_rywz1hro",
-                            "type": "snippet",
-                          },
-                          {
-                            "beats": [
-                              {
-                                "character": "RUPERT",
-                                "id": "L_te8gp2su",
-                                "kind": "line",
-                              },
-                            ],
-                            "id": "sn_s380d2q1",
-                            "type": "snippet",
-                          },
-                          {
-                            "beats": [
-                              {
-                                "character": "RUPERT",
-                                "direction": "sings",
-                                "id": "L_ox0aoxx0",
-                                "kind": "line",
-                              },
-                              {
-                                "character": "RUPERT",
-                                "direction": "sings",
-                                "id": "L_jhjck42y",
-                                "kind": "line",
-                              },
-                              {
-                                "character": "RUPERT",
-                                "direction": "sings",
-                                "id": "L_iq69kkje",
-                                "kind": "line",
-                              },
-                              {
-                                "character": "RUPERT",
-                                "direction": "sings",
-                                "id": "L_uly52w03",
-                                "kind": "line",
-                              },
-                              {
-                                "character": "RUPERT",
-                                "direction": "sings",
-                                "id": "L_e5qhmh3t",
-                                "kind": "line",
-                              },
-                            ],
-                            "id": "sn_qdp6i6tq",
-                            "type": "snippet",
-                          },
-                          {
-                            "beats": [
-                              {
-                                "id": "L_m2h69u5b",
-                                "kind": "text",
-                              },
-                            ],
-                            "id": "sn_tclkn7kq",
-                            "type": "snippet",
-                          },
-                          {
-                            "beats": [
-                              {
-                                "id": "L_6rwpqvbr",
-                                "kind": "text",
-                              },
-                            ],
-                            "id": "sn_yb8mzuw7",
-                            "type": "snippet",
-                          },
-                          {
-                            "beats": [
-                              {
-                                "id": "L_n0m0hpto",
-                                "kind": "text",
-                              },
-                            ],
-                            "id": "sn_8khb4h8x",
-                            "jump": {
-                              "to": "scn_89sjd1s0",
-                            },
-                            "type": "snippet",
-                          },
-                        ],
-                        "id": "opt_mu2bbvrv",
-                        "prompt": {
-                          "id": "L_2vfrrfk7",
-                          "kind": "text",
-                        },
-                        "type": "group",
-                      },
-                    ],
-                    "id": "g_jnojv1yp",
-                    "selector": "choice",
-                    "type": "group",
-                  },
                 ],
                 "id": "opt_gmdpguhk",
                 "prompt": {
@@ -930,17 +791,41 @@
                   {
                     "beats": [
                       {
-                        "id": "L_44jru503",
+                        "id": "L_2e40yfzm",
                         "kind": "text",
                       },
                     ],
-                    "id": "sn_xp03mvjw",
+                    "id": "sn_0s18i1qi",
                     "type": "snippet",
                   },
                   {
                     "beats": [
                       {
-                        "id": "L_lwvgntyk",
+                        "id": "L_44jru503",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_xp03mvjw",
+                    "onExit": [
+                      {
+                        "kind": "set",
+                        "target": "@ghost_name",
+                        "value": "\"\"",
+                      },
+                    ],
+                    "type": "snippet",
+                  },
+                  {
+                    "beats": [
+                      {
+                        "gameData": {
+                          "Play Oneshot SFX": "sfx_lingers_chime_pos",
+                        },
+                        "id": "A_huz0ioje",
+                        "kind": "gameEvent",
+                      },
+                      {
+                        "id": "L_kl7aem9j",
                         "kind": "text",
                       },
                     ],
@@ -955,18 +840,8 @@
                       },
                     ],
                     "id": "sn_cfer8dve",
-                    "type": "snippet",
-                  },
-                  {
-                    "beats": [
-                      {
-                        "id": "L_a3d8ltck",
-                        "kind": "text",
-                      },
-                    ],
-                    "id": "sn_aexg3eri",
                     "jump": {
-                      "to": "scn_89sjd1s0",
+                      "to": "blk_3kdz8gna",
                     },
                     "type": "snippet",
                   },
@@ -984,13 +859,311 @@
             "type": "group",
           },
         ],
-        "id": "blk_drpqr9np",
-        "name": "Ghost Interaction",
+        "id": "blk_zd1roqik",
+        "name": "Choice C",
+        "type": "block",
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "beats": [
+                      {
+                        "id": "L_4dto6hro",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_xe8s33zs",
+                    "type": "snippet",
+                  },
+                  {
+                    "beats": [
+                      {
+                        "id": "L_riv8x740",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_h7542h8r",
+                    "type": "snippet",
+                  },
+                  {
+                    "beats": [
+                      {
+                        "character": "RUPERT",
+                        "id": "L_p5yyl6fk",
+                        "kind": "line",
+                      },
+                    ],
+                    "id": "sn_koozcsh4",
+                    "type": "snippet",
+                  },
+                  {
+                    "beats": [
+                      {
+                        "id": "L_5ghzu3oc",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_35k294dl",
+                    "onExit": [
+                      {
+                        "kind": "set",
+                        "target": "@ghost_name",
+                        "value": "\"\"",
+                      },
+                    ],
+                    "type": "snippet",
+                  },
+                  {
+                    "beats": [
+                      {
+                        "gameData": {
+                          "Play Oneshot SFX": "sfx_moves_on_chime_pos",
+                        },
+                        "id": "A_hrs5vcl2",
+                        "kind": "gameEvent",
+                      },
+                      {
+                        "id": "L_n5vh0wbe",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_ac0dxdiy",
+                    "type": "snippet",
+                  },
+                  {
+                    "beats": [
+                      {
+                        "id": "L_va2gb6tv",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_4ep6zo0q",
+                    "jump": {
+                      "to": "blk_3kdz8gna",
+                    },
+                    "type": "snippet",
+                  },
+                ],
+                "id": "opt_6a6yd1kp",
+                "prompt": {
+                  "id": "L_i9qu3653",
+                  "kind": "text",
+                },
+                "type": "group",
+              },
+              {
+                "children": [
+                  {
+                    "beats": [
+                      {
+                        "id": "L_bqvx3niw",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_5b6umla2",
+                    "type": "snippet",
+                  },
+                  {
+                    "beats": [
+                      {
+                        "id": "L_zv05xd5g",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_gokgxyc2",
+                    "type": "snippet",
+                  },
+                  {
+                    "beats": [
+                      {
+                        "id": "L_bpd1jec3",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_es40g1jf",
+                    "type": "snippet",
+                  },
+                  {
+                    "beats": [
+                      {
+                        "id": "L_awip25ie",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_rywz1hro",
+                    "type": "snippet",
+                  },
+                  {
+                    "beats": [
+                      {
+                        "character": "RUPERT",
+                        "id": "L_te8gp2su",
+                        "kind": "line",
+                      },
+                    ],
+                    "id": "sn_s380d2q1",
+                    "type": "snippet",
+                  },
+                  {
+                    "beats": [
+                      {
+                        "character": "RUPERT",
+                        "direction": "sings",
+                        "id": "L_ox0aoxx0",
+                        "kind": "line",
+                      },
+                      {
+                        "character": "RUPERT",
+                        "direction": "sings",
+                        "id": "L_jhjck42y",
+                        "kind": "line",
+                      },
+                      {
+                        "character": "RUPERT",
+                        "direction": "sings",
+                        "id": "L_iq69kkje",
+                        "kind": "line",
+                      },
+                      {
+                        "character": "RUPERT",
+                        "direction": "sings",
+                        "id": "L_uly52w03",
+                        "kind": "line",
+                      },
+                      {
+                        "character": "RUPERT",
+                        "direction": "sings",
+                        "id": "L_e5qhmh3t",
+                        "kind": "line",
+                      },
+                    ],
+                    "id": "sn_qdp6i6tq",
+                    "onExit": [
+                      {
+                        "kind": "set",
+                        "target": "@ghost_name",
+                        "value": "\"\"",
+                      },
+                    ],
+                    "type": "snippet",
+                  },
+                  {
+                    "beats": [
+                      {
+                        "gameData": {
+                          "Play Oneshot SFX": "sfx_moves_on_chime_neg",
+                        },
+                        "id": "A_rd0ebphn",
+                        "kind": "gameEvent",
+                      },
+                      {
+                        "id": "L_giha5vka",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_tclkn7kq",
+                    "type": "snippet",
+                  },
+                  {
+                    "beats": [
+                      {
+                        "id": "L_6rwpqvbr",
+                        "kind": "text",
+                      },
+                    ],
+                    "id": "sn_yb8mzuw7",
+                    "jump": {
+                      "to": "blk_3kdz8gna",
+                    },
+                    "type": "snippet",
+                  },
+                ],
+                "id": "opt_mu2bbvrv",
+                "prompt": {
+                  "id": "L_2vfrrfk7",
+                  "kind": "text",
+                },
+                "type": "group",
+              },
+            ],
+            "id": "g_jnojv1yp",
+            "selector": "choice",
+            "type": "group",
+          },
+        ],
+        "id": "blk_tub1romz",
+        "name": "Chocie D ",
+        "type": "block",
+      },
+      {
+        "children": [
+          {
+            "beats": [
+              {
+                "id": "L_a3d8ltck",
+                "kind": "text",
+              },
+              {
+                "gameData": {
+                  "Fade Out Looped Audio": "amb_site_keepers_house",
+                  "Play Oneshot SFX": "sfx_footsteps",
+                },
+                "id": "A_kho1pqjx",
+                "kind": "gameEvent",
+              },
+            ],
+            "id": "sn_aexg3eri",
+            "jump": {
+              "to": "scn_89sjd1s0",
+            },
+            "type": "snippet",
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "beats": [
+                      {
+                        "gameData": {
+                          "Fade Out Looped Audio": "amb_site_keepers_house",
+                          "Play Oneshot SFX": "sfx_footsteps",
+                        },
+                        "id": "A_4hr4wfh2",
+                        "kind": "gameEvent",
+                      },
+                    ],
+                    "id": "sn_lyd0b50a",
+                    "jump": {
+                      "to": "scn_89sjd1s0",
+                    },
+                    "type": "snippet",
+                  },
+                ],
+                "id": "opt_lhh425g3",
+                "prompt": {
+                  "id": "L_bg0lz5y6",
+                  "kind": "text",
+                },
+                "type": "group",
+              },
+            ],
+            "id": "g_i40lqypf",
+            "selector": "choice",
+            "type": "group",
+          },
+        ],
+        "id": "blk_3kdz8gna",
+        "name": "Leave Rupert",
         "type": "block",
       },
     ],
     "id": "scn_q2o3j5ux",
-    "name": "Rupert Draft",
+    "name": "Rupert",
     "sceneProps": [
       {
         "default": 0,

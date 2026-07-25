@@ -1,5 +1,8 @@
 {
   "edits": {
+    "L_0v5au78a": {
+      "modifiedAt": "2026-07-25T16:23:51.502Z",
+    },
     "L_1slm711u": {
       "modifiedAt": "2026-07-24T18:32:39.452Z",
     },
@@ -9,8 +12,17 @@
     "L_2grsiq1f": {
       "modifiedAt": "2026-07-20T07:26:25.327Z",
     },
+    "L_3surfs6l": {
+      "modifiedAt": "2026-07-25T15:32:21.503Z",
+    },
+    "L_4jpvldza": {
+      "modifiedAt": "2026-07-25T15:33:21.971Z",
+    },
     "L_4vcn2z5a": {
-      "modifiedAt": "2026-07-20T07:21:55.309Z",
+      "modifiedAt": "2026-07-25T15:35:21.494Z",
+    },
+    "L_4xnys642": {
+      "modifiedAt": "2026-07-25T16:24:51.500Z",
     },
     "L_5zqrqz24": {
       "modifiedAt": "2026-07-19T13:12:34.274Z",
@@ -30,6 +42,9 @@
     "L_8elavtpk": {
       "modifiedAt": "2026-07-20T07:10:55.311Z",
     },
+    "L_8ub0xlvu": {
+      "modifiedAt": "2026-07-25T16:21:51.501Z",
+    },
     "L_94pmnqbf": {
       "modifiedAt": "2026-07-20T07:28:55.318Z",
     },
@@ -38,6 +53,9 @@
     },
     "L_acica9i0": {
       "modifiedAt": "2026-07-20T07:25:55.308Z",
+    },
+    "L_cqgmbrwe": {
+      "modifiedAt": "2026-07-25T16:22:51.498Z",
     },
     "L_cyi26ado": {
       "modifiedAt": "2026-07-20T07:24:55.330Z",
@@ -57,6 +75,9 @@
     "L_gkxr56mr": {
       "modifiedAt": "2026-07-19T13:18:12.997Z",
     },
+    "L_h3v858ya": {
+      "modifiedAt": "2026-07-25T16:21:21.505Z",
+    },
     "L_h595jy5a": {
       "modifiedAt": "2026-07-20T07:14:55.320Z",
     },
@@ -65,6 +86,12 @@
     },
     "L_j3iew24l": {
       "modifiedAt": "2026-07-20T07:14:25.325Z",
+    },
+    "L_j6p4wqjg": {
+      "modifiedAt": "2026-07-25T16:25:21.492Z",
+    },
+    "L_jar6gxql": {
+      "modifiedAt": "2026-07-25T15:29:21.492Z",
     },
     "L_jxh4wjfl": {
       "modifiedAt": "2026-07-19T13:11:13.005Z",
@@ -75,14 +102,29 @@
     "L_k4iuk6qu": {
       "modifiedAt": "2026-07-20T07:29:25.313Z",
     },
+    "L_knzh8jox": {
+      "modifiedAt": "2026-07-25T15:32:51.496Z",
+    },
     "L_lqabkiuy": {
       "modifiedAt": "2026-07-20T07:28:55.318Z",
+    },
+    "L_nr66qpcy": {
+      "modifiedAt": "2026-07-25T16:26:20.662Z",
     },
     "L_p9mivedy": {
       "modifiedAt": "2026-07-20T07:21:55.309Z",
     },
     "L_pansdxhu": {
       "modifiedAt": "2026-07-19T13:14:42.997Z",
+    },
+    "L_rs5covfm": {
+      "modifiedAt": "2026-07-25T16:20:21.496Z",
+    },
+    "L_s5cjxswk": {
+      "modifiedAt": "2026-07-25T15:28:51.966Z",
+    },
+    "L_wbmq1dlx": {
+      "modifiedAt": "2026-07-25T15:34:51.502Z",
     },
     "L_x6k7subl": {
       "modifiedAt": "2026-07-20T07:20:25.326Z",
@@ -109,8 +151,8 @@
       "modifiedAt": "2026-07-19T13:08:42.999Z",
     },
     "scn_zooxtu9c": {
-      "by": "Esther",
-      "modifiedAt": "2026-07-25T16:39:52.670Z",
+      "by": "Kai",
+      "modifiedAt": "2026-07-25T19:40:21.274Z",
     },
   },
   "schema": "patter/authoring@0",

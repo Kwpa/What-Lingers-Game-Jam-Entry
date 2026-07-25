@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dfms5jetw15kd"]
 
-[ext_resource type="Texture2D" uid="uid://dkcbx6bqwtunv" path="res://photos/title_empty.jpg" id="1_b3w7a"]
+[ext_resource type="Texture2D" uid="uid://dkcbx6bqwtunv" path="res://photos/keepers_house_site.jpg" id="1_b3w7a"]
 [ext_resource type="Script" uid="uid://drsnk2w627yjo" path="res://scenes/title.gd" id="1_ia1n6"]
 [ext_resource type="Texture2D" uid="uid://bm4kkhku8vbgj" path="res://graphics/black.jpg" id="2_4rr2b"]
 [ext_resource type="Material" uid="uid://b17vckll2tjdu" path="res://shaders/fog-overlay.tres" id="3_yql1r"]

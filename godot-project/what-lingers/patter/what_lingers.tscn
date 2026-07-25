@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://doholpu0tqb2w" path="res://graphics/textbox-whiteonly.png" id="10_3akvv"]
 [ext_resource type="Texture2D" uid="uid://uggdke35u2n7" path="res://graphics/textbox_large.png" id="10_6j7cu"]
 [ext_resource type="PackedScene" uid="uid://bcdjwp4us8ql1" path="res://scenes/next.tscn" id="11_3akvv"]
+[ext_resource type="Script" uid="uid://dmi2dum7siiiw" path="res://scripts/dummy_audio.gd" id="14_ctf42"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_hh8yg"]
 shader = ExtResource("4_njcbe")
@@ -239,6 +240,54 @@ offset_top = -105.0
 offset_right = 388.0
 offset_bottom = -65.0
 mouse_filter = 1
+
+[node name="DummyAudio" type="Control" parent="." unique_id=1897451021]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("14_ctf42")
+
+[node name="Label1" type="Label" parent="DummyAudio" unique_id=1986294757]
+visible = false
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -171.0
+offset_right = 171.0
+offset_bottom = 22.0
+grow_horizontal = 2
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="DummyAudio" unique_id=77119884]
+visible = false
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -171.0
+offset_top = 32.0
+offset_right = 171.0
+offset_bottom = 54.0
+grow_horizontal = 2
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="DummyAudio" unique_id=67450692]
+visible = false
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -171.0
+offset_top = 61.0
+offset_right = 171.0
+offset_bottom = 83.0
+grow_horizontal = 2
+horizontal_alignment = 1
 
 [connection signal="pressed" from="Layout/Header/LighthouseButton" to="." method="_show_menu"]
 

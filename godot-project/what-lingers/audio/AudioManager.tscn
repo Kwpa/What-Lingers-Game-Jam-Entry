@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://cyen4ya7mlfv7"]
+
+[ext_resource type="Script" uid="uid://ipwkf4lx25t3" path="res://audio/audio_manager.gd" id="1_ngew5"]
+[ext_resource type="AudioStream" uid="uid://cwikx10jeeh4u" path="res://audio/music_audio_stream_interactive.tres" id="1_pwwtb"]
+[ext_resource type="AudioStream" uid="uid://b237soeae3cjo" path="res://audio/sfx/sfx_ghost_appear_short.mp3" id="2_h6j6i"]
+[ext_resource type="AudioStream" uid="uid://djorpdf58itfk" path="res://audio/ambience_audio_stream_interactive.tres" id="3_8tqdp"]
+[ext_resource type="AudioStream" uid="uid://d0up3gvr2f87x" path="res://audio/sfx/sfx_footfalls_short.mp3" id="3_sm7jd"]
+[ext_resource type="AudioStream" uid="uid://bwmbljw6kch66" path="res://audio/sfx/sfx_ghost_move_on_pos.mp3" id="4_74rsu"]
+[ext_resource type="AudioStream" uid="uid://d20wsokj8ncv" path="res://audio/sfx/sfx_ghost_move_on_neg.mp3" id="5_voe3v"]
+[ext_resource type="AudioStream" uid="uid://cxdcbkdclsc1p" path="res://audio/sfx/sfx_ghost_linger_pos.mp3" id="6_tnd1i"]
+[ext_resource type="AudioStream" uid="uid://gvfa7qqpbu4o" path="res://audio/sfx/sfx_ghost_linger_neg.mp3" id="7_1ucoi"]
+[ext_resource type="AudioStream" uid="uid://0rsuffgb5gex" path="res://audio/sfx/sfx_button_click.wav" id="8_7j3cy"]
+
+[node name="AudioManager" type="Node" unique_id=617749080]
+script = ExtResource("1_ngew5")
+sfx = Dictionary[StringName, AudioStream]({
+&"sfx_button_press": ExtResource("8_7j3cy"),
+&"sfx_footsteps": ExtResource("3_sm7jd"),
+&"sfx_ghost_appears": ExtResource("2_h6j6i"),
+&"sfx_lingers_chime_neg": ExtResource("7_1ucoi"),
+&"sfx_lingers_chime_pos": ExtResource("6_tnd1i"),
+&"sfx_moves_on_chime_neg": ExtResource("5_voe3v"),
+&"sfx_moves_on_chime_pos": ExtResource("4_74rsu")
+})
+music_volume_offset = Dictionary[StringName, float]({
+&"music_ghost": -1.5
+})
+ambience_volume_offset = Dictionary[StringName, float]({
+&"amb_lighthouse_exterior": 2.5,
+&"amb_lighthouse_interior": -3.5,
+&"amb_site_keepers_house": 2.5,
+&"amb_smoke_break": -3.0
+})
+sfx_volume_offset = Dictionary[StringName, float]({
+&"sfx_button_press": -15.0
+})
+
+[node name="MusicAudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=419459764]
+stream = ExtResource("1_pwwtb")
+autoplay = true
+bus = &"Music"
+
+[node name="AmbienceAudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1522909527]
+stream = ExtResource("3_8tqdp")
+autoplay = true
+bus = &"Ambience"

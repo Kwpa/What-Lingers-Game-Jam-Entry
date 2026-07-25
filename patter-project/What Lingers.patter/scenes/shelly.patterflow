@@ -6,7 +6,14 @@
           {
             "beats": [
               {
-                "id": "L_f323q40m",
+                "gameData": {
+                  "Fade In Looped Audio": "amb_smoke_break",
+                },
+                "id": "A_1k3hs7k6",
+                "kind": "gameEvent",
+              },
+              {
+                "id": "L_jar6gxql",
                 "kind": "text",
               },
             ],
@@ -49,6 +56,14 @@
                       {
                         "id": "L_yn9n6e2n",
                         "kind": "text",
+                      },
+                      {
+                        "gameData": {
+                          "Fade Out Looped Audio": "amb_smoke_break",
+                          "Play Oneshot SFX": "sfx_footsteps",
+                        },
+                        "id": "A_9sk2rhns",
+                        "kind": "gameEvent",
                       },
                     ],
                     "id": "sn_xbbyelm7",
@@ -231,6 +246,14 @@
                         "id": "L_dkfioeqj",
                         "kind": "text",
                       },
+                      {
+                        "gameData": {
+                          "Fade Out Looped Audio": "amb_smoke_break",
+                          "Play Oneshot SFX": "sfx_footsteps",
+                        },
+                        "id": "A_ejeefbt6",
+                        "kind": "gameEvent",
+                      },
                     ],
                     "id": "sn_y350uewq",
                     "jump": {
@@ -263,7 +286,14 @@
           {
             "beats": [
               {
-                "id": "L_60hnsdp4",
+                "gameData": {
+                  "Play Oneshot SFX": "sfx_retrieve_item",
+                },
+                "id": "A_pczwdmv6",
+                "kind": "gameEvent",
+              },
+              {
+                "id": "L_3surfs6l",
                 "kind": "text",
               },
             ],
@@ -303,8 +333,16 @@
           {
             "beats": [
               {
+                "gameData": {
+                  "Fade In Looped Audio": "music_ghost",
+                  "Play Oneshot SFX": "sfx_ghost_appears",
+                },
+                "id": "A_vucpoqrq",
+                "kind": "gameEvent",
+              },
+              {
                 "character": "???",
-                "id": "L_8elavtpk",
+                "id": "L_nr66qpcy",
                 "kind": "line",
               },
             ],
@@ -321,7 +359,7 @@
           {
             "beats": [
               {
-                "id": "L_j3iew24l",
+                "id": "L_j6p4wqjg",
                 "kind": "text",
               },
               {
@@ -836,8 +874,23 @@
                 "kind": "text",
               },
               {
-                "id": "L_tv2b6j8b",
+                "gameData": {
+                  "Play Oneshot SFX": "sfx_moves_on_chime_neg",
+                },
+                "id": "A_tbxbf5ae",
+                "kind": "gameEvent",
+              },
+              {
+                "id": "L_rs5covfm",
                 "kind": "text",
+              },
+              {
+                "gameData": {
+                  "Fade In Looped Audio": "music_background",
+                  "Fade Out Looped Audio": "music_ghost",
+                },
+                "id": "A_k2b5oxy0",
+                "kind": "gameEvent",
               },
             ],
             "id": "sn_akj8ovry",
@@ -892,6 +945,25 @@
                 "id": "L_h3v858ya",
                 "kind": "text",
               },
+              {
+                "gameData": {
+                  "Play Oneshot SFX": "sfx_lingers_chime_pos",
+                },
+                "id": "A_5vwqped9",
+                "kind": "gameEvent",
+              },
+              {
+                "id": "L_cqgmbrwe",
+                "kind": "text",
+              },
+              {
+                "gameData": {
+                  "Fade In Looped Audio": "music_background",
+                  "Fade Out Looped Audio": "music_ghost",
+                },
+                "id": "A_56d0os9f",
+                "kind": "gameEvent",
+              },
             ],
             "id": "sn_fgjgl0mp",
             "jump": {
@@ -906,6 +978,10 @@
             ],
             "type": "snippet",
           },
+          {
+            "id": "sn_rklej5in",
+            "type": "snippet",
+          },
         ],
         "id": "blk_aeyglvsv",
         "name": "Shelly Linger",
@@ -918,6 +994,16 @@
               {
                 "children": [
                   {
+                    "beats": [
+                      {
+                        "gameData": {
+                          "Fade Out Looped Audio": "amb_smoke_break",
+                          "Play Oneshot SFX": "sfx_footsteps",
+                        },
+                        "id": "A_qu55u8fc",
+                        "kind": "gameEvent",
+                      },
+                    ],
                     "id": "sn_4gtzikon",
                     "jump": {
                       "to": "scn_89sjd1s0",

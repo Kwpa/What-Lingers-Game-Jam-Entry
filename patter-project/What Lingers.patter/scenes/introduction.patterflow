@@ -6,7 +6,14 @@
           {
             "beats": [
               {
-                "id": "L_y0pq7vo2",
+                "gameData": {
+                  "Fade In Looped Audio": "amb_lighthouse_interior",
+                },
+                "id": "A_fkxtr5xj",
+                "kind": "gameEvent",
+              },
+              {
+                "id": "L_y887gtqr",
                 "kind": "text",
               },
             ],
@@ -33,7 +40,14 @@
           {
             "beats": [
               {
-                "id": "L_rrwm8aa1",
+                "gameData": {
+                  "Fade In Looped Audio": "music_background",
+                },
+                "id": "A_nzyl6q6v",
+                "kind": "gameEvent",
+              },
+              {
+                "id": "L_reg927cb",
                 "kind": "text",
               },
             ],
@@ -70,6 +84,26 @@
       {
         "children": [
           {
+            "beats": [
+              {
+                "gameData": {
+                  "Fade In Looped Audio": "amb_lighthouse_interior",
+                },
+                "id": "A_lai3ze80",
+                "kind": "gameEvent",
+              },
+            ],
+            "id": "sn_onayifuq",
+            "onEnter": [
+              {
+                "kind": "set",
+                "target": "@photo_title",
+                "value": "\"lighthouse_interior\"",
+              },
+            ],
+            "type": "snippet",
+          },
+          {
             "children": [
               {
                 "children": [
@@ -78,6 +112,10 @@
                       {
                         "id": "L_597l5mx6",
                         "kind": "text",
+                      },
+                      {
+                        "id": "A_jwp06wjj",
+                        "kind": "gameEvent",
                       },
                     ],
                     "id": "sn_xscvec4h",
@@ -109,6 +147,13 @@
                         "id": "L_b9dlmzrj",
                         "kind": "text",
                       },
+                      {
+                        "gameData": {
+                          "Play Oneshot SFX": "sfx_acquire_item",
+                        },
+                        "id": "A_7x9qxcsk",
+                        "kind": "gameEvent",
+                      },
                     ],
                     "id": "sn_pro9fzj9",
                     "jump": {
@@ -138,6 +183,13 @@
                       {
                         "id": "L_8jp82ohu",
                         "kind": "text",
+                      },
+                      {
+                        "gameData": {
+                          "Play Oneshot SFX": "sfx_acquire_item",
+                        },
+                        "id": "A_5lw8eq8y",
+                        "kind": "gameEvent",
                       },
                     ],
                     "id": "sn_lswch43z",
@@ -182,6 +234,14 @@
                       {
                         "id": "L_dfmdpejo",
                         "kind": "text",
+                      },
+                      {
+                        "gameData": {
+                          "Fade Out Looped Audio": "amb_lighthouse_interior",
+                          "Play Oneshot SFX": "sfx_footsteps",
+                        },
+                        "id": "A_ly89h9lx",
+                        "kind": "gameEvent",
                       },
                     ],
                     "condition": "not @has_key and not @has_ligher and not @has_vial",

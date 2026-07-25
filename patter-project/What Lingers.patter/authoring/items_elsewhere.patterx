@@ -1,14 +1,23 @@
 {
   "edits": {
+    "L_1mcagbvh": {
+      "modifiedAt": "2026-07-25T15:23:21.502Z",
+    },
     "L_az4sxqfw": {
       "modifiedAt": "2026-07-23T15:52:29.096Z",
+    },
+    "L_cdyj7w3y": {
+      "modifiedAt": "2026-07-25T15:26:51.493Z",
+    },
+    "L_gglkt8ka": {
+      "modifiedAt": "2026-07-25T15:23:51.495Z",
     },
     "L_ip44x0w4": {
       "modifiedAt": "2026-07-25T01:33:35.399Z",
     },
     "scn_aal75ur3": {
-      "by": "Esther",
-      "modifiedAt": "2026-07-25T01:33:35.399Z",
+      "by": "Kai",
+      "modifiedAt": "2026-07-25T15:27:21.968Z",
     },
   },
   "schema": "patter/authoring@0",

@@ -66,3 +66,4 @@ vertical_alignment = 1
 [connection signal="focus_exited" from="." to="." method="fade_off"]
 [connection signal="mouse_entered" from="." to="." method="fade_on"]
 [connection signal="mouse_exited" from="." to="." method="fade_off"]
+[connection signal="pressed" from="." to="." method="_on_pressed"]
