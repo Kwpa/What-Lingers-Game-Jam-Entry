@@ -30,3 +30,7 @@ func fade_on():
 
 func fade_off():
 	_fade(false)
+
+
+func _on_pressed() -> void:
+	AudioManager.play_sfx("sfx_button_press")
