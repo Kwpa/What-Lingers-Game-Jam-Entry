@@ -6,8 +6,22 @@
           {
             "beats": [
               {
-                "id": "L_ldd99nq5",
+                "gameData": {
+                  "Play Oneshot SFX": "sfx_retrieve_item",
+                },
+                "id": "A_s2ed3437",
+                "kind": "gameEvent",
+              },
+              {
+                "id": "L_1mcagbvh",
                 "kind": "text",
+              },
+              {
+                "gameData": {
+                  "Play Oneshot SFX": "sfx_pocket_item",
+                },
+                "id": "A_z0hq0x9z",
+                "kind": "gameEvent",
               },
             ],
             "id": "sn_rzdgmwhy",
@@ -23,8 +37,22 @@
           {
             "beats": [
               {
-                "id": "L_ip44x0w4",
+                "gameData": {
+                  "Play Oneshot SFX": "sfx_retrieve_item",
+                },
+                "id": "A_nmq2wdva",
+                "kind": "gameEvent",
+              },
+              {
+                "id": "L_gglkt8ka",
                 "kind": "text",
+              },
+              {
+                "gameData": {
+                  "Play Oneshot SFX": "sfx_pocket_item",
+                },
+                "id": "A_puc3a3ae",
+                "kind": "gameEvent",
               },
             ],
             "id": "sn_kxotpebb",
@@ -40,8 +68,22 @@
           {
             "beats": [
               {
-                "id": "L_az4sxqfw",
+                "gameData": {
+                  "Play Oneshot SFX": "sfx_retrieve_item",
+                },
+                "id": "A_uiu5j44r",
+                "kind": "gameEvent",
+              },
+              {
+                "id": "L_cdyj7w3y",
                 "kind": "text",
+              },
+              {
+                "gameData": {
+                  "Play Oneshot SFX": "sfx_pocket_item",
+                },
+                "id": "A_xb3hclvn",
+                "kind": "gameEvent",
               },
             ],
             "id": "sn_5i6onxcd",

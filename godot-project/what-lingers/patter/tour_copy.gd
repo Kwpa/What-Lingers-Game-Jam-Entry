@@ -95,8 +95,18 @@ func _step() -> void:
 			_play_clip(step["id"])
 			_show_next()
 		"gameEvent":
-			_append("[color=#8a8069]⚙ game event %s[/color]" % step["id"])
-			_show_next()
+			#_append("[color=#8a8069]⚙ game event %s[/color]" % step["id"])
+			print(step)
+			if step.has("gameData"):
+				for key in step.gameData.keys():
+					match key:
+						"Fade In Looped Audio":
+							Events.emit_signal("fadein_loop_sfx",step.gameData[key])
+						"Fade Out Looped Audio":
+							Events.emit_signal("fadeout_loop_sfx",step.gameData[key])
+						"Play Oneshot SFX":
+							Events.emit_signal("oneshot_sfx",step.gameData[key])
+			_step()
 		"choice":
 			_show_choices(step["options"])
 		"end":

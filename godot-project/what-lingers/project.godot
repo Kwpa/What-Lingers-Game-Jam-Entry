@@ -22,6 +22,7 @@ buses/default_bus_layout="uid://ds1k27nrf7lds"
 [autoload]
 
 AudioManager="*uid://cyen4ya7mlfv7"
+Events="*uid://cnmm1ddjegfv4"
 
 [display]
 

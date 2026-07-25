@@ -5,12 +5,12 @@
   "schema": "patter/strings@0",
   "strings": {
     "L_62liwz0k": "Into the lighthouse",
+    "L_a17obfq3": "It's still not light out, and the fog coils around you. Where will you go next?",
     "L_fdm2d23v": "You know better than to get too close to the edge, but the view of the town is incredible.",
     "L_ix4rmvof": "You enjoy watching over the village, even if no one else is awake yet.",
     "L_qtnjiabs": "You've given up smoking, but the habit of seeking out other smokers lingers in you.",
     "L_rxqfrn2z": "To the cliffs near town",
     "L_tqurm48a": "Towards the designated smoking area",
     "L_u1fiwv1h": "Up to the rocks close to the lighthouse",
-    "T_o9399qkh": "It's still not light out, and the fog coils around you. Where will you go next?",
   },
 }

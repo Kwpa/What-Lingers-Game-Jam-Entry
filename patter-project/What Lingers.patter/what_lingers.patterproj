@@ -53,6 +53,30 @@
     ],
   },
   "formatting": true,
+  "gameDataFields": {
+    "gameEvent": [
+      {
+        "default": "NONE",
+        "name": "Play Oneshot SFX",
+        "type": "text",
+      },
+      {
+        "default": "NONE",
+        "name": "Fade In Looped Audio",
+        "type": "text",
+      },
+      {
+        "default": "NONE",
+        "name": "Fade Out Looped Audio",
+        "type": "text",
+      },
+      {
+        "default": false,
+        "name": "Remove Fog",
+        "type": "boolean",
+      },
+    ],
+  },
   "locales": {
     "all": [
       "en",
@@ -92,14 +116,17 @@
       "name": "ghost_name",
       "type": "string",
     },
+    {
+      "default": "NONE",
+      "name": "item_name",
+      "type": "string",
+    },
   ],
   "sceneOrder": [
     "scn_gsaier9p",
     "scn_89sjd1s0",
-    "scn_zooxtu9c",
-    "scn_cnna5vwr",
-    "scn_nn1yrfas",
     "scn_aal75ur3",
+    "scn_zooxtu9c",
     "scn_gny3t8sq",
     "scn_q2o3j5ux",
   ],
