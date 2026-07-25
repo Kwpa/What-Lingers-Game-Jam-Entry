@@ -87,6 +87,11 @@
       "name": "photo_title",
       "type": "string",
     },
+    {
+      "default": "NONE",
+      "name": "ghost_name",
+      "type": "string",
+    },
   ],
   "sceneOrder": [
     "scn_gsaier9p",

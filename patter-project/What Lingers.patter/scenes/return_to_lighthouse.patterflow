@@ -17,6 +17,11 @@
                 "target": "@photo_title",
                 "value": "\"lighthouse_exterior\"",
               },
+              {
+                "kind": "set",
+                "target": "@ghost_name",
+                "value": "\"NONE\"",
+              },
             ],
             "type": "snippet",
           },

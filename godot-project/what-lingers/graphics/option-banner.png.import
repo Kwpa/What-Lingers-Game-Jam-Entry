@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cnosqlaa5f5mt"
-path="res://.godot/imported/silhouette-only.png-0a9ffa32d194cb40cae9af4e06476e26.ctex"
+uid="uid://dh1yrn8v8vx7e"
+path="res://.godot/imported/option-banner.png-a8dd2a33db1dd75275b75e0ab3efce43.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://silhouettes/silhouette-only.png"
-dest_files=["res://.godot/imported/silhouette-only.png-0a9ffa32d194cb40cae9af4e06476e26.ctex"]
+source_file="res://graphics/option-banner.png"
+dest_files=["res://.godot/imported/option-banner.png-a8dd2a33db1dd75275b75e0ab3efce43.ctex"]
 
 [params]
 

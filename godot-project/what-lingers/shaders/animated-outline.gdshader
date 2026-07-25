@@ -5,7 +5,8 @@ uniform float max_line_width = 10.0;
 uniform float min_line_width = 5.0;
 uniform float freq = 1.0;
 uniform float block_size = 20.0;
-uniform vec4 outline_colour = vec4(0,0,0,1);
+uniform vec4 outline_color = vec4(0,0,0,1);
+uniform vec4 box_color = vec4(1, 1, 1, 1);
 
 const float pi = 3.1415;
 const int ang_res = 16;
@@ -50,9 +51,9 @@ void fragment() {
 	}
 	
 	if ((alpha > 0.0) && (texture(TEXTURE, UV).a < 0.1)) {
-		COLOR = outline_colour;
+		COLOR = outline_color;
 	}
 	else {
-		COLOR = texture(TEXTURE, UV);
+		COLOR = texture(TEXTURE, UV) * box_color;
 	}
 }

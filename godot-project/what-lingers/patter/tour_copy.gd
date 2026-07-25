@@ -20,15 +20,27 @@ var _flow: PatterFlow
 var _audio = null  # PatterAudio, or null when the manifest is missing
 var _audio_base: String = ""
 
-@onready var _transcript: VBoxContainer = $Layout/Scroll/Transcript
-@onready var _scroll: ScrollContainer = $Layout/Scroll
-@onready var _controls: VBoxContainer = $Dialogue/Controls
+@onready var _transcript: VBoxContainer = $Layout/TranscriptBG/Scroll/Transcript
+@onready var _scroll: ScrollContainer = $Layout/TranscriptBG/Scroll
+@onready var _controls: VBoxContainer = $Controls
 @onready var _audio_toggle: CheckBox = $Layout/Header/AudioToggle
 @onready var _player: AudioStreamPlayer = $AudioPlayer
-
+@onready var _dialogue: Control = $Dialogue
+@onready var _next_button: Button = $Next
 @onready var _photo: TextureRect = $Background/Photo
 @onready var _lines: RichTextLabel = $Dialogue/Lines
+@onready var _transcript_bg: TextureRect = $Layout/TranscriptBG
+@onready var _lighthouse_button: Button = $Layout/Header/LighthouseButton
+@onready var _silhouette: TextureRect = $Ghost/Silhouette
+@onready var _ghost: Control = $Ghost
 
+@onready var _button_scene: PackedScene = load("res://scenes/option_button.tscn")
+@onready var _title_scene: PackedScene = load("res://scenes/title.tscn")
+
+var _audio_enabled : bool = true
+var _ghost_in : bool = false
+var _ghost_out : bool = false
+var _speed : float = 0.5
 
 func _ready() -> void:
 	# The bundle ships with the addon, so the demo runs straight from a downloaded zip.
@@ -55,6 +67,7 @@ func _ready() -> void:
 	if manifest != "":
 		_audio = PatterAudioScript.new(manifest, _audio_base)
 
+	_next_button.pressed.connect(_step)
 	_start()
 
 
@@ -70,6 +83,7 @@ func _step() -> void:
 	#print(_flow.get_property("@scene.linger_points")) # get Shelly's linger points
 	#print(_flow.get_property("@photo_title")) # get the global photo title
 	_update_background()
+	_update_ghost()
 	match step["type"]:
 		"line":
 			var who: String = step.get("characterName", step.get("character", ""))
@@ -97,9 +111,40 @@ func _update_background() -> void:
 		_photo.texture = load(correct_background)
 
 
+func _update_ghost() -> void:
+	var ghost_name: String = _flow.get_property("@ghost_name")
+	if ghost_name == "NONE":
+		if _ghost.visible:
+			_ghost_out = true
+	else:
+		_ghost.show()
+		var correct_ghost = str("res://silhouettes/", ghost_name, ".png")
+		var current_ghost: String = _silhouette.texture.get_path()
+		if current_ghost != correct_ghost:
+			_silhouette.texture = load(correct_ghost)
+			_ghost.modulate = Color(1, 1, 1, 0)
+			_ghost_in = true
+			print(_ghost.modulate.a)
+
+
+func _process(delta: float) -> void:
+	delta = delta * _speed
+	var alpha = _ghost.modulate.a
+	if _ghost_in:
+		_ghost.modulate = Color(1, 1, 1, alpha + delta)
+		if _ghost.modulate.a >= 1:
+			_ghost_in = false
+			print(_ghost.modulate.a)
+	elif _ghost_out:
+		_ghost.modulate = Color(1, 1, 1, alpha - delta)
+		if _ghost.modulate.a <= 0:
+			_ghost_out = false
+			_ghost.hide()
+
+
 ## Fire the beat's winning take, if the manifest resolves one for it.
 func _play_clip(beat_id: String) -> void:
-	if _audio == null or not _audio_toggle.button_pressed:
+	if _audio == null or not _audio_enabled:
 		return
 	var path: String = _audio.resolve(beat_id)
 	if path == "":
@@ -137,7 +182,10 @@ func _append(bbcode: String) -> void:
 
 
 func _show_next() -> void:
-	_set_controls([_button("▸ Next", _step)])
+	# _next_button.show()
+	var button = _button_scene.instantiate()
+	button._set_option("▸ Next", _step)
+	_set_controls([button])
 
 
 func _show_choices(options: Array) -> void:
@@ -145,12 +193,22 @@ func _show_choices(options: Array) -> void:
 	for o in options:
 		var opt: Dictionary = o
 		var label: String = _plain(opt.get("text", "(choice)"))
-		var b := _button(label, func() -> void:
+		var button = _button_scene.instantiate()
+		button._set_option(label, func() -> void:
 			_flow.choose(opt["id"])
+			_dialogue.show()
+			_clear_controls()
 			_step())
-		b.disabled = not opt.get("eligible", true)
-		buttons.append(b)
+		button.disabled = not opt.get("eligible", true)
+		buttons.append(button)
+	_dialogue.hide()
 	_set_controls(buttons)
+
+
+func _clear_controls():
+	for n in _controls.get_children():
+		_controls.remove_child(n)
+		n.queue_free()
 
 
 func _show_restart() -> void:
@@ -158,14 +216,53 @@ func _show_restart() -> void:
 
 
 func _button(label: String, on_pressed: Callable) -> Button:
-	var b := Button.new()
-	b.text = label
-	b.pressed.connect(on_pressed)
-	return b
+	var button = _button_scene.instantiate()
+	button._set_option(label, on_pressed)
+	return button
 
 
 func _set_controls(buttons: Array) -> void:
-	for child in _controls.get_children():
-		child.queue_free()
+	_clear_controls()
+	_next_button.hide()
 	for b in buttons:
 		_controls.add_child(b)
+
+
+func _show_transcript(state: bool):
+	if state:
+		_transcript_bg.show()
+		_dialogue.hide()
+		_lighthouse_button.hide()
+		var button = _button_scene.instantiate()
+		button._set_option("Close Transcript", func(): _show_transcript(false))
+		_set_controls([button])
+	else:
+		_hide_menu()
+
+
+func _show_menu():
+	_dialogue.hide()
+	var transcript_button = _button_scene.instantiate()
+	transcript_button._set_option("Show Transcript", func(): _show_transcript(true))
+	var return_button = _button_scene.instantiate()
+	return_button._set_option("Return to Title", _return_to_title)
+	var audio_button = _button_scene.instantiate()
+	audio_button._set_option("Toggle Audio", _toggle_audio)
+	var close_button = _button_scene.instantiate()
+	close_button._set_option("Close Menu", _hide_menu)
+	_set_controls([transcript_button, audio_button, return_button, close_button])
+
+
+func _hide_menu():
+	_transcript_bg.hide()
+	_dialogue.show()
+	_lighthouse_button.show()
+	_show_next()
+
+
+func _toggle_audio():
+	_audio_enabled = not _audio_enabled
+
+
+func _return_to_title():
+	get_tree().change_scene_to_packed(_title_scene)

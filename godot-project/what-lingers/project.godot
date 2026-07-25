@@ -11,9 +11,9 @@ config_version=5
 [application]
 
 config/name="What Lingers"
-run/main_scene="uid://dc43ytsmdmd1x"
+run/main_scene="uid://dfms5jetw15kd"
 config/features=PackedStringArray("4.7", "GL Compatibility")
-config/icon="res://icon.svg"
+config/icon="uid://cownmsik0qte4"
 
 [display]
 
@@ -27,6 +27,7 @@ enabled=PackedStringArray("res://addons/patterplay/plugin.cfg")
 [gui]
 
 theme/custom="uid://cn8ro78wv7fce"
+theme/custom_font="uid://clewjiie1rgta"
 
 [physics]
 

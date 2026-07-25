@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://c7oe6lw0d4v8c"]
+
+[ext_resource type="Theme" uid="uid://cn8ro78wv7fce" path="res://theme/wl_theme.tres" id="1_yuh0f"]
+[ext_resource type="Script" uid="uid://c38j3mj14rfft" path="res://scenes/option_button.gd" id="2_c5ecr"]
+[ext_resource type="Shader" uid="uid://ddtmuijam5hww" path="res://shaders/animated-outline.gdshader" id="3_a6fum"]
+[ext_resource type="Texture2D" uid="uid://dh1yrn8v8vx7e" path="res://graphics/option-banner.png" id="4_5l6m7"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6ty5e"]
+shader = ExtResource("3_a6fum")
+shader_parameter/max_line_width = 10.0
+shader_parameter/min_line_width = 1.0
+shader_parameter/freq = 5.0
+shader_parameter/block_size = 15.0
+shader_parameter/outline_color = Vector4(0, 0, 0, 1)
+shader_parameter/box_color = Vector4(0.88, 0.9, 0.98, 1)
+
+[node name="OptionButton" type="Button" unique_id=1988735009]
+physics_interpolation_mode = 0
+custom_minimum_size = Vector2(750, 60)
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -375.0
+offset_top = -8.0
+offset_right = 375.0
+offset_bottom = 71.72803
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 1
+theme = ExtResource("1_yuh0f")
+script = ExtResource("2_c5ecr")
+
+[node name="Image" type="TextureRect" parent="." unique_id=2067537963]
+material = SubResource("ShaderMaterial_6ty5e")
+custom_minimum_size = Vector2(750, 60)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_5l6m7")
+expand_mode = 2
+stretch_mode = 3
+
+[node name="Label" type="RichTextLabel" parent="." unique_id=576058164]
+custom_minimum_size = Vector2(700, 40)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -0.5
+offset_right = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+text = "This is an option."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="focus_entered" from="." to="." method="fade_on"]
+[connection signal="focus_exited" from="." to="." method="fade_off"]
+[connection signal="mouse_entered" from="." to="." method="fade_on"]
+[connection signal="mouse_exited" from="." to="." method="fade_off"]
