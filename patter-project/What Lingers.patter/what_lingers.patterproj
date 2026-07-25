@@ -70,6 +70,11 @@
         "name": "Fade Out Looped Audio",
         "type": "text",
       },
+      {
+        "default": false,
+        "name": "Remove Fog",
+        "type": "boolean",
+      },
     ],
   },
   "locales": {

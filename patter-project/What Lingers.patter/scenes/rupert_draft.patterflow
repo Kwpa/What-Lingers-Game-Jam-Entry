@@ -490,7 +490,15 @@
           {
             "beats": [
               {
-                "id": "L_vk4ed0ta",
+                "gameData": {
+                  "Fade In Looped Audio": "music_ghost",
+                  "Fade Out Looped Audio": "music_background",
+                },
+                "id": "A_67s8gyk3",
+                "kind": "gameEvent",
+              },
+              {
+                "id": "L_miet7eir",
                 "kind": "text",
               },
             ],

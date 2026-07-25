@@ -96,6 +96,9 @@ func _step() -> void:
 			_show_next()
 		"gameEvent":
 			_append("[color=#8a8069]⚙ game event %s[/color]" % step["id"])
+			print(step)
+			if step.gameData != null:
+				print("hi")
 			_show_next()
 		"choice":
 			_show_choices(step["options"])
