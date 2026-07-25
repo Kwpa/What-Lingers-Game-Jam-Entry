@@ -5,22 +5,30 @@
 [ext_resource type="AudioStream" uid="uid://b237soeae3cjo" path="res://audio/sfx/sfx_ghost_appear_short.mp3" id="2_h6j6i"]
 [ext_resource type="AudioStream" uid="uid://djorpdf58itfk" path="res://audio/ambience_audio_stream_interactive.tres" id="3_8tqdp"]
 [ext_resource type="AudioStream" uid="uid://d0up3gvr2f87x" path="res://audio/sfx/sfx_footfalls_short.mp3" id="3_sm7jd"]
-[ext_resource type="AudioStream" uid="uid://bwmbljw6kch66" path="res://audio/sfx/sfx_ghost_move_on_pos.mp3" id="4_74rsu"]
-[ext_resource type="AudioStream" uid="uid://d20wsokj8ncv" path="res://audio/sfx/sfx_ghost_move_on_neg.mp3" id="5_voe3v"]
-[ext_resource type="AudioStream" uid="uid://cxdcbkdclsc1p" path="res://audio/sfx/sfx_ghost_linger_pos.mp3" id="6_tnd1i"]
-[ext_resource type="AudioStream" uid="uid://gvfa7qqpbu4o" path="res://audio/sfx/sfx_ghost_linger_neg.mp3" id="7_1ucoi"]
+[ext_resource type="AudioStream" uid="uid://cmfplfqobpity" path="res://audio/sfx/sfx_ghost_lingers_neg_short.mp3" id="5_tnd1i"]
+[ext_resource type="AudioStream" uid="uid://bmvsxypb8qy32" path="res://audio/sfx/sfx_ghost_lingers_pos_short.mp3" id="6_1ucoi"]
+[ext_resource type="AudioStream" uid="uid://dvq4e23a7fv2e" path="res://audio/sfx/sfx_ghost_moves_on_neg_short.mp3" id="7_7j3cy"]
 [ext_resource type="AudioStream" uid="uid://0rsuffgb5gex" path="res://audio/sfx/sfx_button_click.wav" id="8_7j3cy"]
+[ext_resource type="AudioStream" uid="uid://cqaqkcuv6elcx" path="res://audio/sfx/sfx_ghost_moves_on_pos_short.mp3" id="8_xwfei"]
+[ext_resource type="AudioStream" uid="uid://br7vpplggbh22" path="res://audio/sfx/sfx_aquire_item.mp3" id="9_mwmw7"]
+[ext_resource type="AudioStream" uid="uid://m4twqgfsbnxb" path="res://audio/sfx/sfx_pocket_item.ogg" id="10_v0cxg"]
+[ext_resource type="AudioStream" uid="uid://co5b7pbjsknlq" path="res://audio/sfx/sfx_retrieve_item.ogg" id="11_p82ql"]
+[ext_resource type="AudioStream" uid="uid://cas5uu1f7u5ub" path="res://audio/sfx/sfx_door.mp3" id="12_6tc7g"]
 
 [node name="AudioManager" type="Node" unique_id=617749080]
 script = ExtResource("1_ngew5")
 sfx = Dictionary[StringName, AudioStream]({
+&"sfx_acquire_item": ExtResource("9_mwmw7"),
 &"sfx_button_press": ExtResource("8_7j3cy"),
 &"sfx_footsteps": ExtResource("3_sm7jd"),
+&"sfx_footsteps_door": ExtResource("12_6tc7g"),
 &"sfx_ghost_appears": ExtResource("2_h6j6i"),
-&"sfx_lingers_chime_neg": ExtResource("7_1ucoi"),
-&"sfx_lingers_chime_pos": ExtResource("6_tnd1i"),
-&"sfx_moves_on_chime_neg": ExtResource("5_voe3v"),
-&"sfx_moves_on_chime_pos": ExtResource("4_74rsu")
+&"sfx_lingers_chime_neg": ExtResource("5_tnd1i"),
+&"sfx_lingers_chime_pos": ExtResource("6_1ucoi"),
+&"sfx_moves_on_chime_neg": ExtResource("7_7j3cy"),
+&"sfx_moves_on_chime_pos": ExtResource("8_xwfei"),
+&"sfx_pocket_item": ExtResource("10_v0cxg"),
+&"sfx_retrieve_item": ExtResource("11_p82ql")
 })
 music_volume_offset = Dictionary[StringName, float]({
 &"music_ghost": -1.5
