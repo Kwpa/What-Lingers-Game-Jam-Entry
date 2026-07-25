@@ -1,0 +1,42 @@
+[gd_resource type="AudioStreamInteractive" format=3 uid="uid://djorpdf58itfk"]
+
+[ext_resource type="AudioStream" uid="uid://kfpvhiikreon" path="res://audio/ambience/ambience_sea.mp3" id="1_3yk3c"]
+[ext_resource type="AudioStream" uid="uid://cmtmi1auhienl" path="res://audio/ambience/ambience_wind_alone.mp3" id="2_bq1cu"]
+[ext_resource type="AudioStream" uid="uid://c0l8lci33re3k" path="res://audio/ambience/ambience_sea_muted.mp3" id="3_qfywt"]
+
+[sub_resource type="AudioStreamInteractive" id="AudioStreamInteractive_pfkx5"]
+
+[resource]
+clip_count = 8
+clip_0/name = &"silent"
+clip_0/stream = SubResource("AudioStreamInteractive_pfkx5")
+clip_0/auto_advance = 0
+clip_1/name = &"amb_sea"
+clip_1/stream = ExtResource("1_3yk3c")
+clip_1/auto_advance = 0
+clip_2/name = &"amb_cliff_face"
+clip_2/stream = ExtResource("1_3yk3c")
+clip_2/auto_advance = 0
+clip_3/name = &"amb_in_town"
+clip_3/stream = ExtResource("2_bq1cu")
+clip_3/auto_advance = 0
+clip_4/name = &"amb_smoke_break"
+clip_4/stream = ExtResource("1_3yk3c")
+clip_4/auto_advance = 0
+clip_5/name = &"amb_site_keepers_house"
+clip_5/stream = ExtResource("3_qfywt")
+clip_5/auto_advance = 0
+clip_6/name = &"amb_lighthouse_interior"
+clip_6/stream = ExtResource("3_qfywt")
+clip_6/auto_advance = 0
+clip_7/name = &"amb_lighthouse_exterior"
+clip_7/stream = ExtResource("3_qfywt")
+clip_7/auto_advance = 0
+_transitions = {
+Vector2i(-1, -1): {
+"fade_beats": 3.0,
+"fade_mode": 3,
+"from_time": 0,
+"to_time": 1
+}
+}

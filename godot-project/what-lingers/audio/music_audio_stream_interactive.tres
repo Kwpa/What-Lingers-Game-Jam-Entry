@@ -1,0 +1,33 @@
+[gd_resource type="AudioStreamInteractive" format=3 uid="uid://cwikx10jeeh4u"]
+
+[ext_resource type="AudioStream" uid="uid://c5iycotajwpt2" path="res://audio/music/music_background.mp3" id="1_xxcp8"]
+[ext_resource type="AudioStream" uid="uid://ca7dfg6ighdkv" path="res://audio/music/music_ghost.mp3" id="2_kevix"]
+[ext_resource type="AudioStream" uid="uid://dalxbudd0tuii" path="res://audio/music/music_sea_shanty.mp3" id="3_7m1qc"]
+
+[sub_resource type="AudioStreamInteractive" id="AudioStreamInteractive_xxcp8"]
+
+[resource]
+clip_count = 5
+clip_0/name = &"silent"
+clip_0/stream = SubResource("AudioStreamInteractive_xxcp8")
+clip_0/auto_advance = 0
+clip_1/name = &"music_background"
+clip_1/stream = ExtResource("1_xxcp8")
+clip_1/auto_advance = 0
+clip_2/name = &"music_ghost"
+clip_2/stream = ExtResource("2_kevix")
+clip_2/auto_advance = 0
+clip_3/name = &"music_credits"
+clip_3/stream = ExtResource("3_7m1qc")
+clip_3/auto_advance = 0
+clip_4/name = &"music_menu"
+clip_4/stream = ExtResource("1_xxcp8")
+clip_4/auto_advance = 0
+_transitions = {
+Vector2i(-1, -1): {
+"fade_beats": 2.5,
+"fade_mode": 3,
+"from_time": 0,
+"to_time": 1
+}
+}
