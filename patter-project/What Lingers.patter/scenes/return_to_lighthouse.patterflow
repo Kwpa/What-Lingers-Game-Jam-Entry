@@ -136,7 +136,6 @@
                     "beats": [
                       {
                         "gameData": {
-                          "Fade Out Looped Audio": "amb_lighthouse_exterior",
                           "Play Oneshot SFX": "sfx_footsteps",
                         },
                         "id": "A_l9kbs2wp",

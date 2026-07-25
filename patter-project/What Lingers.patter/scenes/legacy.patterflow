@@ -323,6 +323,7 @@
             "beats": [
               {
                 "gameData": {
+                  "Fade In Looped Audio": "music_ghost",
                   "Play Oneshot SFX": "sfx_ghost_appears",
                 },
                 "id": "A_ogy5l07a",
@@ -339,14 +340,6 @@
           },
           {
             "beats": [
-              {
-                "gameData": {
-                  "Fade In Looped Audio": "music_ghost",
-                  "Fade Out Looped Audio": "music_background",
-                },
-                "id": "A_ib81vqen",
-                "kind": "gameEvent",
-              },
               {
                 "id": "L_orlsugel",
                 "kind": "text",

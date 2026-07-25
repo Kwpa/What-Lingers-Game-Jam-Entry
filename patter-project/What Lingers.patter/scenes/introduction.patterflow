@@ -84,6 +84,26 @@
       {
         "children": [
           {
+            "beats": [
+              {
+                "gameData": {
+                  "Fade In Looped Audio": "amb_lighthouse_interior",
+                },
+                "id": "A_lai3ze80",
+                "kind": "gameEvent",
+              },
+            ],
+            "id": "sn_onayifuq",
+            "onEnter": [
+              {
+                "kind": "set",
+                "target": "@photo_title",
+                "value": "\"lighthouse_interior\"",
+              },
+            ],
+            "type": "snippet",
+          },
+          {
             "children": [
               {
                 "children": [

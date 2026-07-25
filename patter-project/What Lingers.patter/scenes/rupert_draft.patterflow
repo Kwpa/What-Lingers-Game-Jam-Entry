@@ -18,6 +18,13 @@
               },
             ],
             "id": "sn_yo25zipf",
+            "onEnter": [
+              {
+                "kind": "set",
+                "target": "@photo_title",
+                "value": "\"keepers_house_site\"",
+              },
+            ],
             "type": "snippet",
           },
           {
@@ -466,6 +473,7 @@
             "beats": [
               {
                 "gameData": {
+                  "Fade In Looped Audio": "music_ghost",
                   "Play Oneshot SFX": "sfx_ghost_appears",
                 },
                 "id": "A_1d2pgahm",
@@ -489,14 +497,6 @@
           },
           {
             "beats": [
-              {
-                "gameData": {
-                  "Fade In Looped Audio": "music_ghost",
-                  "Fade Out Looped Audio": "music_background",
-                },
-                "id": "A_67s8gyk3",
-                "kind": "gameEvent",
-              },
               {
                 "id": "L_miet7eir",
                 "kind": "text",

@@ -26,9 +26,9 @@
     }
   ],
   "content": {
-    "hash": "0n6nu55",
+    "hash": "1gkoolt",
     "project": "proj_pvhchy3o",
-    "structureHash": "1hda44s"
+    "structureHash": "1vyijp0"
   },
   "gameDataFields": {
     "gameEvent": [
@@ -245,7 +245,6 @@
                       "beats": [
                         {
                           "gameData": {
-                            "Fade Out Looped Audio": "amb_lighthouse_exterior",
                             "Play Oneshot SFX": "sfx_footsteps"
                           },
                           "id": "A_l9kbs2wp",
@@ -746,6 +745,7 @@
               "beats": [
                 {
                   "gameData": {
+                    "Fade In Looped Audio": "music_ghost",
                     "Play Oneshot SFX": "sfx_ghost_appears"
                   },
                   "id": "A_ogy5l07a",
@@ -762,14 +762,6 @@
             },
             {
               "beats": [
-                {
-                  "gameData": {
-                    "Fade In Looped Audio": "music_ghost",
-                    "Fade Out Looped Audio": "music_background"
-                  },
-                  "id": "A_ib81vqen",
-                  "kind": "gameEvent"
-                },
                 {
                   "id": "L_orlsugel",
                   "kind": "text"
@@ -1586,6 +1578,32 @@
         {
           "children": [
             {
+              "beats": [
+                {
+                  "gameData": {
+                    "Fade In Looped Audio": "amb_lighthouse_interior"
+                  },
+                  "id": "A_lai3ze80",
+                  "kind": "gameEvent"
+                }
+              ],
+              "id": "sn_onayifuq",
+              "onEnter": [
+                {
+                  "kind": "set",
+                  "target": "@photo_title",
+                  "value": {
+                    "ast": [
+                      "s",
+                      "lighthouse_interior"
+                    ],
+                    "src": "\"lighthouse_interior\""
+                  }
+                }
+              ],
+              "type": "snippet"
+            },
+            {
               "children": [
                 {
                   "children": [
@@ -1856,6 +1874,19 @@
                 }
               ],
               "id": "sn_yo25zipf",
+              "onEnter": [
+                {
+                  "kind": "set",
+                  "target": "@photo_title",
+                  "value": {
+                    "ast": [
+                      "s",
+                      "keepers_house_site"
+                    ],
+                    "src": "\"keepers_house_site\""
+                  }
+                }
+              ],
               "type": "snippet"
             },
             {
@@ -2358,6 +2389,7 @@
               "beats": [
                 {
                   "gameData": {
+                    "Fade In Looped Audio": "music_ghost",
                     "Play Oneshot SFX": "sfx_ghost_appears"
                   },
                   "id": "A_1d2pgahm",
@@ -2387,14 +2419,6 @@
             },
             {
               "beats": [
-                {
-                  "gameData": {
-                    "Fade In Looped Audio": "music_ghost",
-                    "Fade Out Looped Audio": "music_background"
-                  },
-                  "id": "A_67s8gyk3",
-                  "kind": "gameEvent"
-                },
                 {
                   "id": "L_miet7eir",
                   "kind": "text"
@@ -3465,6 +3489,7 @@
               "beats": [
                 {
                   "gameData": {
+                    "Fade In Looped Audio": "music_ghost",
                     "Play Oneshot SFX": "sfx_ghost_appears"
                   },
                   "id": "A_vucpoqrq",
@@ -3494,14 +3519,6 @@
             },
             {
               "beats": [
-                {
-                  "gameData": {
-                    "Fade In Looped Audio": "music_ghost",
-                    "Fade Out Looped Audio": "music_background"
-                  },
-                  "id": "A_nubg7pmu",
-                  "kind": "gameEvent"
-                },
                 {
                   "id": "L_j6p4wqjg",
                   "kind": "text"
