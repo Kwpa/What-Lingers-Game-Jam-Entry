@@ -1,10 +1,34 @@
 {
   "edits": {
+    "L_197oqjha": {
+      "modifiedAt": "2026-07-25T15:53:21.494Z",
+    },
+    "L_1bc773cu": {
+      "modifiedAt": "2026-07-25T15:53:21.494Z",
+    },
+    "L_2e40yfzm": {
+      "modifiedAt": "2026-07-25T14:42:21.505Z",
+    },
     "L_4mb6osvl": {
       "modifiedAt": "2026-07-24T18:21:07.158Z",
     },
     "L_6yg5wr61": {
       "modifiedAt": "2026-07-24T18:21:07.158Z",
+    },
+    "L_8y6yxvyj": {
+      "modifiedAt": "2026-07-25T15:54:51.502Z",
+    },
+    "L_9ammycvt": {
+      "modifiedAt": "2026-07-25T14:42:21.505Z",
+    },
+    "L_a3d8ltck": {
+      "modifiedAt": "2026-07-25T15:56:21.967Z",
+    },
+    "L_bntq4zjk": {
+      "modifiedAt": "2026-07-25T15:49:51.499Z",
+    },
+    "L_dls1kmhu": {
+      "modifiedAt": "2026-07-25T14:26:21.497Z",
     },
     "L_e2mzfj6x": {
       "modifiedAt": "2026-07-23T15:53:59.102Z",
@@ -15,27 +39,49 @@
     "L_fmi4ixm4": {
       "modifiedAt": "2026-07-23T15:55:59.088Z",
     },
+    "L_giha5vka": {
+      "modifiedAt": "2026-07-25T16:00:51.498Z",
+    },
+    "L_h2jaqe3k": {
+      "modifiedAt": "2026-07-25T14:45:21.493Z",
+    },
+    "L_hsiqhvme": {
+      "modifiedAt": "2026-07-25T14:40:51.492Z",
+    },
+    "L_iadozr77": {
+      "modifiedAt": "2026-07-25T14:45:51.505Z",
+    },
     "L_p5yyl6fk": {
       "modifiedAt": "2026-07-23T16:11:51.252Z",
+    },
+    "L_vk4ed0ta": {
+      "modifiedAt": "2026-07-25T14:44:51.493Z",
     },
     "L_w15hkfcg": {
       "modifiedAt": "2026-07-23T15:53:59.102Z",
     },
+    "L_w3uzjotm": {
+      "modifiedAt": "2026-07-25T15:59:21.497Z",
+    },
     "L_w5wr6i1p": {
       "modifiedAt": "2026-07-23T15:53:59.102Z",
+    },
+    "L_x6y93of9": {
+      "modifiedAt": "2026-07-25T15:49:21.507Z",
     },
     "L_zeu4b0ri": {
       "modifiedAt": "2026-07-23T15:53:59.102Z",
     },
     "scn_q2o3j5ux": {
-      "by": "Esther",
-      "modifiedAt": "2026-07-25T01:42:11.078Z",
+      "by": "Kai",
+      "modifiedAt": "2026-07-25T16:01:36.974Z",
     },
   },
   "schema": "patter/authoring@0",
   "writing": {
     "L_bxms09yk": "draft 1",
     "L_e0l8e9zj": "draft 1",
+    "L_l1a31hlz": "draft 1",
     "L_qewl8yry": "draft 1",
     "L_umustd7w": "draft 1",
   },

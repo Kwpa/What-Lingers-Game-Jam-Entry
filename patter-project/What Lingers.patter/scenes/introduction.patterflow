@@ -6,7 +6,14 @@
           {
             "beats": [
               {
-                "id": "L_y0pq7vo2",
+                "gameData": {
+                  "Fade In Looped Audio": "amb_lighthouse_interior",
+                },
+                "id": "A_fkxtr5xj",
+                "kind": "gameEvent",
+              },
+              {
+                "id": "L_y887gtqr",
                 "kind": "text",
               },
             ],
@@ -79,6 +86,10 @@
                         "id": "L_597l5mx6",
                         "kind": "text",
                       },
+                      {
+                        "id": "A_jwp06wjj",
+                        "kind": "gameEvent",
+                      },
                     ],
                     "id": "sn_xscvec4h",
                     "jump": {
@@ -109,6 +120,13 @@
                         "id": "L_b9dlmzrj",
                         "kind": "text",
                       },
+                      {
+                        "gameData": {
+                          "Play Oneshot SFX": "sfx_acquire_item",
+                        },
+                        "id": "A_7x9qxcsk",
+                        "kind": "gameEvent",
+                      },
                     ],
                     "id": "sn_pro9fzj9",
                     "jump": {
@@ -138,6 +156,13 @@
                       {
                         "id": "L_8jp82ohu",
                         "kind": "text",
+                      },
+                      {
+                        "gameData": {
+                          "Play Oneshot SFX": "sfx_acquire_item",
+                        },
+                        "id": "A_5lw8eq8y",
+                        "kind": "gameEvent",
                       },
                     ],
                     "id": "sn_lswch43z",
@@ -182,6 +207,14 @@
                       {
                         "id": "L_dfmdpejo",
                         "kind": "text",
+                      },
+                      {
+                        "gameData": {
+                          "Fade Out Looped Audio": "amb_lighthouse_interior",
+                          "Play Oneshot SFX": "sfx_footsteps",
+                        },
+                        "id": "A_ly89h9lx",
+                        "kind": "gameEvent",
                       },
                     ],
                     "condition": "not @has_key and not @has_ligher and not @has_vial",

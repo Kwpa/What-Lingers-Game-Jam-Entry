@@ -6,7 +6,14 @@
           {
             "beats": [
               {
-                "id": "L_r6id9d6x",
+                "gameData": {
+                  "Fade In Looped Audio": "amb_cliff_face",
+                },
+                "id": "A_rp9bum9o",
+                "kind": "gameEvent",
+              },
+              {
+                "id": "L_swj3484d",
                 "kind": "text",
               },
             ],
@@ -59,6 +66,14 @@
                       {
                         "id": "L_zw8z5i1h",
                         "kind": "text",
+                      },
+                      {
+                        "gameData": {
+                          "Fade Out Looped Audio": "amb_cliff_face",
+                          "Play Oneshot SFX": "sfx_footsteps",
+                        },
+                        "id": "A_9mn4yy6l",
+                        "kind": "gameEvent",
                       },
                     ],
                     "id": "sn_rhy5l1p6",
@@ -171,7 +186,14 @@
                   {
                     "beats": [
                       {
-                        "id": "L_tlm6kapm",
+                        "gameData": {
+                          "Play Oneshot SFX": "sfx_retrieve_item",
+                        },
+                        "id": "A_pk69y9hv",
+                        "kind": "gameEvent",
+                      },
+                      {
+                        "id": "L_254pjkf1",
                         "kind": "text",
                       },
                       {
@@ -260,6 +282,14 @@
                         "id": "L_8vsnlvz3",
                         "kind": "text",
                       },
+                      {
+                        "gameData": {
+                          "Fade Out Looped Audio": "amb_cliff_face",
+                          "Play Oneshot SFX": "sfx_footsteps",
+                        },
+                        "id": "A_7haycaz6",
+                        "kind": "gameEvent",
+                      },
                     ],
                     "id": "sn_ohs4sipm",
                     "jump": {
@@ -303,7 +333,14 @@
           {
             "beats": [
               {
-                "id": "L_0s4qfuda",
+                "gameData": {
+                  "Play Oneshot SFX": "sfx_ghost_appears",
+                },
+                "id": "A_ib81vqen",
+                "kind": "gameEvent",
+              },
+              {
+                "id": "L_orlsugel",
                 "kind": "text",
               },
             ],
@@ -945,6 +982,14 @@
               {
                 "id": "L_86kgq4j7",
                 "kind": "text",
+              },
+              {
+                "gameData": {
+                  "Fade Out Looped Audio": "amb_cliff_face",
+                  "Play Oneshot SFX": "sfx_footsteps",
+                },
+                "id": "A_mykoc2tw",
+                "kind": "gameEvent",
               },
             ],
             "id": "sn_tivr3csc",
