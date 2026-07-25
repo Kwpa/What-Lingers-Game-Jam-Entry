@@ -252,6 +252,7 @@ mouse_filter = 2
 script = ExtResource("14_ctf42")
 
 [node name="Label1" type="Label" parent="DummyAudio" unique_id=1986294757]
+visible = false
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -263,6 +264,7 @@ grow_horizontal = 2
 horizontal_alignment = 1
 
 [node name="Label2" type="Label" parent="DummyAudio" unique_id=77119884]
+visible = false
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -275,6 +277,7 @@ grow_horizontal = 2
 horizontal_alignment = 1
 
 [node name="Label3" type="Label" parent="DummyAudio" unique_id=67450692]
+visible = false
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
