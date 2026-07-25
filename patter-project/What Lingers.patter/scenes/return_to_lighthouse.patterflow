@@ -6,10 +6,25 @@
           {
             "beats": [
               {
+                "id": "L_u912nuzh",
+                "kind": "text",
+              },
+            ],
+            "condition": "seen(blk_oc4u3n36) and seen(blk_y5p6kxmg) and seen(blk_drpqr9np)",
+            "id": "sn_jhxwzuaj",
+            "jump": {
+              "to": "scn_b4t9ehwb",
+            },
+            "type": "snippet",
+          },
+          {
+            "beats": [
+              {
                 "id": "T_o9399qkh",
                 "kind": "text",
               },
             ],
+            "condition": "not (seen(blk_oc4u3n36) and seen(blk_y5p6kxmg) and seen(blk_drpqr9np))",
             "id": "sn_zld4v6ie",
             "onEnter": [
               {
@@ -114,9 +129,11 @@
                   "id": "L_62liwz0k",
                   "kind": "text",
                 },
+                "sticky": true,
                 "type": "group",
               },
             ],
+            "condition": "not (seen(blk_oc4u3n36) and seen(blk_y5p6kxmg) and seen(blk_drpqr9np))",
             "id": "g_y4dqj2tt",
             "selector": "choice",
             "type": "group",
@@ -124,6 +141,12 @@
         ],
         "id": "blk_hwgzp5pq",
         "name": "Location Choice",
+        "type": "block",
+      },
+      {
+        "children": [],
+        "id": "blk_6m1do6w6",
+        "name": "To the end",
         "type": "block",
       },
     ],

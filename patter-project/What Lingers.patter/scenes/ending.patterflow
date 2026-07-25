@@ -1,0 +1,135 @@
+{
+  "scene": {
+    "blocks": [
+      {
+        "children": [
+          {
+            "beats": [
+              {
+                "id": "L_gzn5ie20",
+                "kind": "text",
+              },
+            ],
+            "id": "sn_odcjlovi",
+            "type": "snippet",
+          },
+          {
+            "beats": [
+              {
+                "id": "L_7yx41p3c",
+                "kind": "text",
+              },
+            ],
+            "condition": "seen(blk_aeyglvsv)",
+            "id": "sn_bjw6jpyt",
+            "type": "snippet",
+          },
+          {
+            "beats": [
+              {
+                "id": "L_9h05bn3d",
+                "kind": "text",
+              },
+            ],
+            "condition": "seen(blk_3my4pn3k)",
+            "id": "sn_umxesekf",
+            "type": "snippet",
+          },
+          {
+            "beats": [
+              {
+                "id": "L_tsscwz4l",
+                "kind": "text",
+              },
+            ],
+            "condition": "seen(blk_8ogr0z5u) or seen(blk_2f2ivc9n)",
+            "id": "sn_0war8kq4",
+            "type": "snippet",
+          },
+          {
+            "beats": [
+              {
+                "id": "L_sfoian5r",
+                "kind": "text",
+              },
+            ],
+            "condition": "seen(blk_0enia60g) or seen(blk_uxi5uona)",
+            "id": "sn_e9c3fgpf",
+            "type": "snippet",
+          },
+          {
+            "beats": [
+              {
+                "id": "L_5fyzfhq5",
+                "kind": "text",
+              },
+            ],
+            "id": "sn_tugiucrx",
+            "jump": {
+              "to": "END",
+            },
+            "type": "snippet",
+          },
+        ],
+        "id": "blk_ckuvidyr",
+        "name": "Main",
+        "type": "block",
+      },
+      {
+        "children": [
+          {
+            "beats": [
+              {
+                "id": "L_xbxyfirl",
+                "kind": "text",
+              },
+            ],
+            "id": "sn_q1gbmhm6",
+            "type": "snippet",
+          },
+        ],
+        "id": "blk_0xdatog0",
+        "name": "Rupert Linger End Text",
+        "type": "block",
+      },
+      {
+        "children": [
+          {
+            "beats": [
+              {
+                "id": "L_cois0olq",
+                "kind": "text",
+              },
+            ],
+            "id": "sn_5pwr1ykz",
+            "type": "snippet",
+          },
+        ],
+        "id": "blk_lefhc0hk",
+        "name": "Rupert Positive Move on End Text",
+        "type": "block",
+      },
+      {
+        "children": [
+          {
+            "beats": [
+              {
+                "id": "L_wjzk9mmr",
+                "kind": "text",
+              },
+            ],
+            "id": "sn_3o783n55",
+            "type": "snippet",
+          },
+        ],
+        "id": "blk_xaxlgg2f",
+        "name": "Rupert Negative Move on End Text",
+        "type": "block",
+      },
+    ],
+    "id": "scn_b4t9ehwb",
+    "name": "Ending",
+    "type": "scene",
+  },
+  "schema": "patter/flow@0",
+}

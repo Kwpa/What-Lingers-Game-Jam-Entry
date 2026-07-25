@@ -53,7 +53,7 @@
                     ],
                     "id": "sn_xbbyelm7",
                     "jump": {
-                      "to": "blk_oc4u3n36",
+                      "to": "scn_89sjd1s0",
                     },
                     "type": "snippet",
                   },
@@ -855,7 +855,7 @@
           },
         ],
         "id": "blk_3my4pn3k",
-        "name": "Move on Ending",
+        "name": "Shelly Move On",
         "type": "block",
       },
       {
@@ -908,7 +908,7 @@
           },
         ],
         "id": "blk_aeyglvsv",
-        "name": "Linger Ending",
+        "name": "Shelly Linger",
         "type": "block",
       },
       {
@@ -920,7 +920,7 @@
                   {
                     "id": "sn_4gtzikon",
                     "jump": {
-                      "to": "blk_hwgzp5pq",
+                      "to": "scn_89sjd1s0",
                     },
                     "type": "snippet",
                   },
