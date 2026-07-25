@@ -26,9 +26,9 @@
     }
   ],
   "content": {
-    "hash": "1y4xf2l",
+    "hash": "0n6nu55",
     "project": "proj_pvhchy3o",
-    "structureHash": "0hcafeg"
+    "structureHash": "1hda44s"
   },
   "gameDataFields": {
     "gameEvent": [
@@ -2412,6 +2412,9 @@
                 }
               ],
               "id": "sn_ych0o0a7",
+              "jump": {
+                "to": "blk_y4yaud29"
+              },
               "type": "snippet"
             }
           ],
