@@ -595,8 +595,9 @@
                   {
                     "beats": [
                       {
+                        "character": "RUPERT",
                         "id": "L_4xa35oxr",
-                        "kind": "text",
+                        "kind": "line",
                       },
                     ],
                     "id": "sn_s5486a2n",
@@ -618,8 +619,9 @@
                   {
                     "beats": [
                       {
+                        "character": "RUPERT",
                         "id": "L_sfook5qs",
-                        "kind": "text",
+                        "kind": "line",
                       },
                     ],
                     "id": "sn_79gn1d5i",
@@ -930,6 +932,12 @@
                 "id": "L_5ghzu3oc",
                 "kind": "text",
               },
+            ],
+            "id": "sn_h7542h8r",
+            "type": "snippet",
+          },
+          {
+            "beats": [
               {
                 "gameData": {
                   "Play Oneshot SFX": "sfx_moves_on_chime_pos",
@@ -946,10 +954,17 @@
                 "kind": "text",
               },
             ],
-            "id": "sn_h7542h8r",
+            "id": "sn_lhdlwh3r",
             "jump": {
               "to": "blk_3kdz8gna",
             },
+            "onEnter": [
+              {
+                "kind": "set",
+                "target": "@ghost_name",
+                "value": "\"NONE\"",
+              },
+            ],
             "type": "snippet",
           },
         ],
@@ -1008,6 +1023,19 @@
                 "id": "L_e5qhmh3t",
                 "kind": "line",
               },
+            ],
+            "id": "sn_gokgxyc2",
+            "onExit": [
+              {
+                "kind": "set",
+                "target": "@ghost_name",
+                "value": "\"NONE\"",
+              },
+            ],
+            "type": "snippet",
+          },
+          {
+            "beats": [
               {
                 "gameData": {
                   "Play Oneshot SFX": "sfx_moves_on_chime_neg",
@@ -1024,7 +1052,7 @@
                 "kind": "text",
               },
             ],
-            "id": "sn_gokgxyc2",
+            "id": "sn_kqpobkem",
             "jump": {
               "to": "blk_3kdz8gna",
             },
@@ -1056,6 +1084,19 @@
                 "id": "L_44jru503",
                 "kind": "text",
               },
+            ],
+            "id": "sn_lpiql6j2",
+            "onExit": [
+              {
+                "kind": "set",
+                "target": "@ghost_name",
+                "value": "\"NONE\"",
+              },
+            ],
+            "type": "snippet",
+          },
+          {
+            "beats": [
               {
                 "gameData": {
                   "Play Oneshot SFX": "sfx_lingers_chime_pos",
@@ -1072,7 +1113,7 @@
                 "kind": "text",
               },
             ],
-            "id": "sn_lpiql6j2",
+            "id": "sn_pn6pm7g3",
             "jump": {
               "to": "blk_3kdz8gna",
             },
