@@ -114,6 +114,10 @@ func _step() -> void:
 							Events.emit_signal("oneshot_sfx",step.gameData[key])
 						"Remove Fog":
 							Events.emit_signal("remove_fog")
+						"Show_Item":
+							Events.emit_signal("show_item",step.gameData[key])
+						"Hide_Item":
+							Events.emit_signal("hide_item")
 			_step()
 		"choice":
 			_show_choices(step["options"])

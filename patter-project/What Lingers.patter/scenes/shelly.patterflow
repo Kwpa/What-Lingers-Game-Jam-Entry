@@ -296,6 +296,7 @@
               {
                 "gameData": {
                   "Play Oneshot SFX": "sfx_retrieve_item",
+                  "Show Item": "LIGHTER",
                 },
                 "id": "A_pczwdmv6",
                 "kind": "gameEvent",
@@ -327,6 +328,13 @@
               {
                 "id": "L_gkxr56mr",
                 "kind": "text",
+              },
+              {
+                "gameData": {
+                  "Hide Item": true,
+                },
+                "id": "A_q89ql9l9",
+                "kind": "gameEvent",
               },
             ],
             "id": "sn_xdk7lc3l",

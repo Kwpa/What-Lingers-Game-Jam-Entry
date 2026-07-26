@@ -76,6 +76,15 @@
         "name": "Remove Fog",
         "type": "boolean",
       },
+      {
+        "name": "Show Item",
+        "type": "text",
+      },
+      {
+        "default": false,
+        "name": "Hide Item",
+        "type": "boolean",
+      },
     ],
   },
   "locales": {

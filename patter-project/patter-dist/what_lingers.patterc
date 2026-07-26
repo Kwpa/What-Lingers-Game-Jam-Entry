@@ -26,9 +26,9 @@
     }
   ],
   "content": {
-    "hash": "072afha",
+    "hash": "0upqgpw",
     "project": "proj_pvhchy3o",
-    "structureHash": "0hvu78h"
+    "structureHash": "1kk5pwm"
   },
   "gameDataFields": {
     "gameEvent": [
@@ -50,6 +50,15 @@
       {
         "default": false,
         "name": "Remove Fog",
+        "type": "boolean"
+      },
+      {
+        "name": "Show Item",
+        "type": "text"
+      },
+      {
+        "default": false,
+        "name": "Hide Item",
         "type": "boolean"
       }
     ]
@@ -419,7 +428,8 @@
               "beats": [
                 {
                   "gameData": {
-                    "Play Oneshot SFX": "sfx_retrieve_item"
+                    "Play Oneshot SFX": "sfx_retrieve_item",
+                    "Show Item": "LIGHTER"
                   },
                   "id": "A_s2ed3437",
                   "kind": "gameEvent"
@@ -430,6 +440,7 @@
                 },
                 {
                   "gameData": {
+                    "Hide Item": true,
                     "Play Oneshot SFX": "sfx_pocket_item"
                   },
                   "id": "A_z0hq0x9z",
@@ -450,7 +461,8 @@
               "beats": [
                 {
                   "gameData": {
-                    "Play Oneshot SFX": "sfx_retrieve_item"
+                    "Play Oneshot SFX": "sfx_retrieve_item",
+                    "Show Item": "KEY"
                   },
                   "id": "A_nmq2wdva",
                   "kind": "gameEvent"
@@ -461,6 +473,7 @@
                 },
                 {
                   "gameData": {
+                    "Hide Item": true,
                     "Play Oneshot SFX": "sfx_pocket_item"
                   },
                   "id": "A_puc3a3ae",
@@ -481,7 +494,8 @@
               "beats": [
                 {
                   "gameData": {
-                    "Play Oneshot SFX": "sfx_retrieve_item"
+                    "Play Oneshot SFX": "sfx_retrieve_item",
+                    "Show Item": "VIAL"
                   },
                   "id": "A_uiu5j44r",
                   "kind": "gameEvent"
@@ -492,6 +506,7 @@
                 },
                 {
                   "gameData": {
+                    "Hide Item": true,
                     "Play Oneshot SFX": "sfx_pocket_item"
                   },
                   "id": "A_xb3hclvn",
@@ -945,7 +960,8 @@
                       "beats": [
                         {
                           "gameData": {
-                            "Play Oneshot SFX": "sfx_retrieve_item"
+                            "Play Oneshot SFX": "sfx_retrieve_item",
+                            "Show Item": "KEY"
                           },
                           "id": "A_pk69y9hv",
                           "kind": "gameEvent"
@@ -961,6 +977,13 @@
                         {
                           "id": "L_dm8d4mwo",
                           "kind": "text"
+                        },
+                        {
+                          "gameData": {
+                            "Hide Item": true
+                          },
+                          "id": "A_d6ax3hq2",
+                          "kind": "gameEvent"
                         }
                       ],
                       "id": "sn_aei41c0f",
@@ -2641,7 +2664,8 @@
               "beats": [
                 {
                   "gameData": {
-                    "Play Oneshot SFX": "sfx_retrieve_item"
+                    "Play Oneshot SFX": "sfx_retrieve_item",
+                    "Show Item": "VIAL"
                   },
                   "id": "A_8xjoainf",
                   "kind": "gameEvent"
@@ -2847,6 +2871,13 @@
                 {
                   "id": "L_qewl8yry",
                   "kind": "text"
+                },
+                {
+                  "gameData": {
+                    "Hide Item": true
+                  },
+                  "id": "A_k11kny5s",
+                  "kind": "gameEvent"
                 }
               ],
               "id": "sn_13avk8cu",
@@ -2942,8 +2973,12 @@
                     {
                       "beats": [
                         {
-                          "character": "???",
                           "id": "L_evybg16w",
+                          "kind": "text"
+                        },
+                        {
+                          "character": "???",
+                          "id": "L_i9akssl3",
                           "kind": "line"
                         }
                       ],
@@ -2966,8 +3001,12 @@
                     {
                       "beats": [
                         {
-                          "character": "???",
                           "id": "L_2xdzc8iu",
+                          "kind": "text"
+                        },
+                        {
+                          "character": "???",
+                          "id": "L_kqpbm7mm",
                           "kind": "line"
                         }
                       ],
@@ -3004,8 +3043,13 @@
                     {
                       "beats": [
                         {
-                          "character": "RUPERT",
+                          "character": "YOU",
                           "id": "L_4xa35oxr",
+                          "kind": "line"
+                        },
+                        {
+                          "character": "RUPERT",
+                          "id": "L_h5cknd6j",
                           "kind": "line"
                         }
                       ],
@@ -3028,8 +3072,13 @@
                     {
                       "beats": [
                         {
-                          "character": "RUPERT",
+                          "character": "YOU",
                           "id": "L_sfook5qs",
+                          "kind": "line"
+                        },
+                        {
+                          "character": "RUPERT",
+                          "id": "L_atb1j59g",
                           "kind": "line"
                         }
                       ],
@@ -3120,6 +3169,17 @@
                         {
                           "id": "L_ebs97quz",
                           "kind": "text"
+                        },
+                        {
+                          "gameData": {
+                            "Show Item": "VIAL"
+                          },
+                          "id": "A_a5c9m4s7",
+                          "kind": "gameEvent"
+                        },
+                        {
+                          "id": "L_8ox09jte",
+                          "kind": "text"
                         }
                       ],
                       "id": "sn_8yrcfof9",
@@ -3139,7 +3199,14 @@
                     {
                       "beats": [
                         {
-                          "id": "L_fn18d6og",
+                          "gameData": {
+                            "Hide Item": true
+                          },
+                          "id": "A_8txk4tk9",
+                          "kind": "gameEvent"
+                        },
+                        {
+                          "id": "L_ewq2y32z",
                           "kind": "text"
                         }
                       ],
@@ -3173,8 +3240,13 @@
                     {
                       "beats": [
                         {
-                          "character": "RUPERT",
+                          "character": "YOU",
                           "id": "L_2ebdg1hk",
+                          "kind": "line"
+                        },
+                        {
+                          "character": "RUPERT",
+                          "id": "L_b8io98eu",
                           "kind": "line"
                         }
                       ],
@@ -3900,7 +3972,8 @@
               "beats": [
                 {
                   "gameData": {
-                    "Play Oneshot SFX": "sfx_retrieve_item"
+                    "Play Oneshot SFX": "sfx_retrieve_item",
+                    "Show Item": "LIGHTER"
                   },
                   "id": "A_pczwdmv6",
                   "kind": "gameEvent"
@@ -3932,6 +4005,13 @@
                 {
                   "id": "L_gkxr56mr",
                   "kind": "text"
+                },
+                {
+                  "gameData": {
+                    "Hide Item": true
+                  },
+                  "id": "A_q89ql9l9",
+                  "kind": "gameEvent"
                 }
               ],
               "id": "sn_xdk7lc3l",
@@ -4744,10 +4824,10 @@
       "L_290jlhag": "Exactly. I finally feel like I'm right where I need to be. Can you hang onto that lighter for me? I don't have anywhere to put it. I'll see you around.",
       "L_2byiz0qg": "Why stay here though?",
       "L_2e40yfzm": "Fragrant steam escapes the cross stitch pattern of cuts on the skin of the cooked cod. A door cracks open, letting in the cold from an icy hail outside... A shout of grief and joy and relief as both brothers embrace. ",
-      "L_2ebdg1hk": "No... No, I don't suppose I'll know either... ",
+      "L_2ebdg1hk": "I don't know.",
       "L_2h24z2a6": "Its okay. Go see them. They're waiting for you.",
       "L_2vfrrfk7": "Admit that the world is a tough place right now",
-      "L_2xdzc8iu": "It's me, Johnathon. Why, you barely recognise me do ya?",
+      "L_2xdzc8iu": "You stay silent.",
       "L_2xskv8uj": "What will you reflect on?",
       "L_2ygtnxkw": "But I'm like that mermaid; I belong with the waves. And she knows that, deep down, even if she doesn't understand why it's true.",
       "L_33xlzqlw": "It's time for a new chapter, and you're eager to take up the mantle of the lighthouse keeper, with all of its responsibilities.",
@@ -4765,7 +4845,7 @@
       "L_4fa7v880": "I insist. Lets go for a walk in town.",
       "L_4mb6osvl": "There is nothing for you here. Best to head back.  ",
       "L_4vcn2z5a": "I'm the new lighthouse keeper.",
-      "L_4xa35oxr": "Surely you know me. I'm the lightkeep, the wickie. Rupert! Your big brother eh lad?",
+      "L_4xa35oxr": "Who are you?",
       "L_50rnso44": "She lights her translucent cigarette and turns the lighter over in her hand.",
       "L_597l5mx6": "That rusty lump of metal looks like a key, but larger than any key made in this century... or the last. When you pick it up, you feel a resonance. You put it in your pocket.",
       "L_5fyzfhq5": "Tonight, the fog will roll back in again, and more people will need your guidance to find safe harbour on these rocks.",
@@ -4797,6 +4877,7 @@
       "L_8ldn9lk4": "Surely it must be better than sitting out here? Reminding yourself of how you died.",
       "L_8n935pbu": "So you intend to just sit here and punish yourself for eternity?",
       "L_8nbu6rcs": "... 100 years?",
+      "L_8ox09jte": "You've been tightly holding onto the small empty bottle of antitoxin this whole time. Rupert leans in close enough for you to make out icicles fused to his matted hair.",
       "L_8vsnlvz3": "There is nothing for you here. Best to head back.  ",
       "L_8y6yxvyj": "You take out the small empty vial from your pocket. It's warmed up since being closer to your skin. The curved bulge at one end reminds you of the reminds you of the flowing slopes of granite around you.  ",
       "L_8ykz79qz": "No... No, I don't think so... This whole thing has got me thinking... I've wallowed in this place long enough. Now its time for another group of  Montgomerys to feed this town. And I'm happy knowing that I could be here to see it. Thank you...",
@@ -4816,12 +4897,14 @@
       "L_aqwtfo76": "Why? You sitting on this rock isn't going to make it better. There's nothing for it but to move on.",
       "L_arlhn3o2": "The apparition begins to fade from view. He takes no notice of you as you reach out to try and stop him. He just mutters to himself.",
       "L_asqgxqo2": "You know nothing about me or my family.",
+      "L_atb1j59g": "Don't play games now. You're my flesh and blood. My little brother. Same salt and iron runs through ole Rupert's veins that runs through yours.",
       "L_au7ez05s": "... 50 years?",
       "L_autsga3p": "You wander into the lighthouse and peruse the objects in the perpetual lost and found.   ",
       "L_awip25ie": "He bows his head, obscuring his face with his yellow nautical hat.  ",
       "L_ay6cyec8": "You think back on your apprenticeship to the previous lighthouse keeper. The lighthouse keepers have served this community as a trusted guide for generations, keeping ships from foundering on the rocks and shining light where it is needed most.",
       "L_ayuu2x8q": "Theo then disappears into the wind. A gust pushes you back away from the cliff. Theo's home is amongst the crags of the shoreline. His vigil everlasting... Such is the legacy of the Montgomery family.",
       "L_b73o03rw": "You sit on the picnic bench and look up at the rocks. Their peaks are hidden by the fog, for now. Soon the sun will turn them a pale pink, then reveal more and more of their heights as the fog burns away.",
+      "L_b8io98eu": "No... No, I don't suppose I'll know either... ",
       "L_b9dlmzrj": "A golden glimmer catches your eye. It's a lighter, the refillable kind. It's rusty and some of the gold plating has been worn away. This one must have been in the sea for some time before being washed up again. You'll hold onto it for now.",
       "L_bg0lz5y6": "Head back to the lighthouse",
       "L_bmxkbhrq": "The apparition then begins to fade from view. With a tired smile he nods to you before finally disappearing completely.",
@@ -4832,7 +4915,7 @@
       "L_c1j1nr5g": "You know, before I wasn't sure, but I was content here. Working as a waitress on the weekends, driving into town to see my girl when I can. I would have been more content if she'd visited more often, but we were working on it. I would still be working on it, I guess.",
       "L_c6oi4riy": "The ghost is gone from this place. There is nothing left for you here.",
       "L_cdyj7w3y": "The vial looks like something from an old-time pharmacy. Maybe it belonged to someone who lived in the village ages ago. You wonder if any buildings are still standing from that time. Medicine like this would have been brought in from the city by boat. You wonder who used it.",
-      "L_cois0olq": "Rupert was delighted to learn that John survived and millions more have been saved.",
+      "L_cois0olq": "You remember Rupert's face, transformed by the belief that Johnathon and many more besides were given a second chance at life thanks to the antitoxin. You even think you remember the empty lamp he held flare gold for a spell before he moved on to... elsewhere.",
       "L_cqgmbrwe": "You stand there a long moment, watching that spot. Then it's time to return to your duties.",
       "L_cua946ka": "Your penance is paid, Theo.",
       "L_cxdem1h2": "I just... couldn't. I could never bear to stay inland for too long. Got saltwater for blood, she says. Maybe she's just salty that I wasn't willing to scrounge around for a place to stay in the city.",
@@ -4854,19 +4937,19 @@
       "L_e3rh6fhm": "... 20 years?",
       "L_e5qhmh3t": "The age-old rocks... of eons born will stand, and man may pass, forever go.",
       "L_e6bywiys": "Linger...",
-      "L_ebs97quz": "You open your palm. You've been tightly holding onto the small empty bottle of antitoxin this whole time. Rupert leans in close enough for you to make out icicles fused to his matted hair.",
+      "L_ebs97quz": "You open your palm.",
       "L_ef1ujo0p": "A stupid way to die. A dishonourable way. A way not fitting the weight I held. The trust my ancestors left to me. I squandered it. Now there is nothing.",
       "L_ei4gkxni": "<i>Diphtheria Antitoxin, 10,000 units. Mr Johnathon Blakely  </i>",
       "L_en1lzu86": "Doesn't sound like a terrible life. Why didn't you stick to the plan?",
       "L_ep4wsehx": "The smell of a full fish dinner enters your nose. It smothers your tastebuds, from the golden potatoes to the creamy sauce to the pan fried crisped skin of a freshly caught cod. Before you know it, your mouth starts salivating profusely.",
-      "L_evybg16w": "Hmm... Johnathon... will ya be home in time for supper?",
+      "L_evybg16w": "You shake your head.",
+      "L_ewq2y32z": "You feel a swell of tears growing inside in response to Rupert's elation. The ghost looks at you once more, an unmistakable weight lifted from his brow.",
       "L_f2fn857f": "You take the glass vial out of your pocket.",
       "L_f2i7q0f5": "But now... I want to carve my happiness into these rocks. I want to stay.",
       "L_fdm2d23v": "You know better than to get too close to the edge, but the view of the town is incredible.",
       "L_fh0ag060": "Of course...",
       "L_fi4bdq13": "The front and back of it are engraved with a mermaid motif, in the style of a sailor's tattoo. Her hands are pushing back her hair, and her smiling face is somewhat worn down. This lighter has seen a lot of use.",
       "L_fmi4ixm4": "You bring out the rusty key.",
-      "L_fn18d6og": "You feel a swell of tears growing inside in response to Rupert's elation. The ghost looks at you once more, an unmistakable weight lifted from his brow.",
       "L_gckwsese": "Speaking of which... It's late, my friend. The wind gets dangerous here at night.",
       "L_gcupcyt4": "...",
       "L_gg5bpmsm": "At this time of night, on the cusp of morning, the empty promise of the waves is the only sound you can hear. The fog is rolling in, extinguishing the stars and softening the hard shapes of the rocks. ",
@@ -4877,6 +4960,7 @@
       "L_h2jaqe3k": "I've hidden away at home you know, and at the lighthouse, for so long. Don't want the town catching the croup from me. I hope the world has changed since I last went out, and everyone is free from such ailments... I just don't know.",
       "L_h3chz14i": "It was useful, I guess. I would have kept at it if I hadn't been laid off.",
       "L_h3v858ya": "Shelly turns away with a smile, and you watch her sink into the waves.",
+      "L_h5cknd6j": "Surely you know me. I'm the lightkeep, the wickie. Rupert! Your big brother eh lad?",
       "L_h5fwq28x": "This is my duty.... and I will see it through.",
       "L_h97ydol4": "Your training",
       "L_h9m86pt9": "... If it weren't for me I might still have descendants running around. Great great grand children proudly upholding the name Montgomery. These rocks are my penance. I stay to remind myself of all I've done.",
@@ -4888,6 +4972,7 @@
       "L_hsiqhvme": "It would make sense, around 100 years ago the first cures for diphtheria were introduced to Atlantic Canada. You're just glad that today that kids are immunized against this kind of thing.",
       "L_hxtfc8rb": "Yet we can't change the past... What's done is done. The Montgomerys are no more.",
       "L_i0uq4br9": "You know, the Brothers Grimm give that story a very different ending. Whatever. I can't believe I'm still having this argument over and over again. I can't do this anymore.",
+      "L_i9akssl3": "Hmm... Johnathon... will ya be home in time for supper?",
       "L_i9qu3653": "Explain that vaccines now save lives",
       "L_iadozr77": "There was none of that croupy medicine left in town. Johnathon was the first of us to get the croup, poor boy. We had to send him to the city to get treatment. It was hard on our community— on me— but at least he'd stand a chance...",
       "L_ihupemdl": "I used to live in the city...",
@@ -4911,6 +4996,7 @@
       "L_k3g8v4d5": "Were you a Montgomery?",
       "L_kl7aem9j": "And so is the ghost of Rupert.",
       "L_kp463q12": "Pick up the lighter",
+      "L_kqpbm7mm": "It's me, Johnathon. Why, you barely recognise me do ya?",
       "L_kvfj0btq": "You chalk it up to the famous sturdiness of the folk inhabiting these colourful homes. What will you reflect on? ",
       "L_kx4yx8lq": "...",
       "L_l0bcw964": "Well... it's not all bad.",
@@ -4961,7 +5047,7 @@
       "L_rxqfrn2z": "To the cliffs near town",
       "L_s05imwtb": "Who are you?",
       "L_sfoian5r": "Theo's spirit now is finally at rest. As you look to the sky and feel the breeze, you are reminded of the sad miller's story. Maybe this memory too is a legacy of a sort. The echo of the Montgomery family is still felt clearly in this little town.",
-      "L_sfook5qs": "Don't play games now. You're my flesh and blood. My little brother. Same salt and iron runs through ole Rupert's veins that runs through yours.",
+      "L_sfook5qs": "Who is Johnathon?",
       "L_sp6clmpl": "You take out the glass vial.",
       "L_sqy4o4jj": "Legacy takes many forms. A local baker recently purchased the land where your windmill stood. They're a lover of history as it were and felt like they would honour your family by not only using the windmill but also naming their new company after its original owners. The Montgomerys still feed the people of this town. Even now.",
       "L_st6nbww3": "Not much to go on. You take a guess at the age of the vial...  ",
@@ -4997,11 +5083,11 @@
       "L_wcwfiu09": "I am. I have something I'd like to show you. I think it will be helpful for you.",
       "L_why0aiw1": "Shelly tosses her cigarette butt. You watch it fall, wondering what will happen to it when it reaches the ground. But before it does, it fades away. You look back at Shelly, but she's gone, too.",
       "L_witct8bn": "What does it matter? I don't want to use it for anything. My folks thought it'd start me off in a great career. The perfect career for me! And my girlfriend said the same thing. I could have done it; worked in my field, married her, bought that townhouse and adopted a perfect purebred dog.",
-      "L_wjzk9mmr": "Rupert was sad to hear about the sorry state of the world.",
+      "L_wjzk9mmr": "Rupert's words, tinged with grief and hope, stay with you. The world might be crumbling, but at the end, you can only make do with the time you have. You hope Rupert finds peace knowing Johnathon may have survived.  ",
       "L_ww4b4473": "Why? The town has nothing for me now. I— It will only remind me of what I threw away.",
       "L_x6k7subl": "I'm the new lighthouse keeper.",
       "L_xb5m0msp": "... I do.",
-      "L_xbxyfirl": "Rupert lingered in uncertainty, as we all do in life.",
+      "L_xbxyfirl": "Occasionally, when you walk by the site of the old lighthouse keeper's house, you smell the alluring wafts of Rupert's 'welcome home' supper. You don't suppose this ghost will ever move on, not without his brother.   ",
       "L_xe5fe95t": "'Cause I can't bear to see it.",
       "L_xkwf599b": " Well, I did walk through that door and it didn't turn out quite how I planned. And now I guess I have to walk through another one, to whatever's next, right? I don't even get to grow old here.",
       "L_xlo2p9g9": "Oh, and popular, too... Cause what really matters is what other people think of you. I've been down that road with my parents. But I couldn't just live the life they wanted me to. Stay in the city, marry my girlfriend, buy a house, work a job that actually uses my degree.",

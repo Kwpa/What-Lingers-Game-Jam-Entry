@@ -11,9 +11,14 @@
 [ext_resource type="PackedScene" uid="uid://dm62dnxcua4vd" path="res://silhouettes/ghost.tscn" id="7_njcbe"]
 [ext_resource type="Material" uid="uid://bscvohn1msyvl" path="res://shaders/animated-outline.tres" id="9_8fh76"]
 [ext_resource type="PackedScene" uid="uid://bj06jif4bxt58" path="res://scenes/lighthouse_button.tscn" id="9_8vd72"]
+[ext_resource type="Texture2D" uid="uid://bqd7wn7kijus" path="res://graphics/Keepsake_Key.png" id="9_rwucg"]
+[ext_resource type="Script" uid="uid://yamnpajbwet1" path="res://scripts/items.gd" id="9_y8bmc"]
 [ext_resource type="Texture2D" uid="uid://doholpu0tqb2w" path="res://graphics/textbox-whiteonly.png" id="10_3akvv"]
 [ext_resource type="Texture2D" uid="uid://uggdke35u2n7" path="res://graphics/textbox_large.png" id="10_6j7cu"]
+[ext_resource type="Shader" uid="uid://ddtmuijam5hww" path="res://shaders/animated-outline.gdshader" id="10_qr2ms"]
+[ext_resource type="Texture2D" uid="uid://cfmqr5q4fq6a7" path="res://graphics/Keepsake_Vial.png" id="10_y8bmc"]
 [ext_resource type="PackedScene" uid="uid://bcdjwp4us8ql1" path="res://scenes/next.tscn" id="11_3akvv"]
+[ext_resource type="Texture2D" uid="uid://cnhxxk2u1suow" path="res://graphics/Keepsake_Lighter.png" id="11_qr2ms"]
 [ext_resource type="Script" uid="uid://dmi2dum7siiiw" path="res://scripts/dummy_audio.gd" id="14_ctf42"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_hh8yg"]
@@ -29,6 +34,15 @@ shader_parameter/blur_radius = 0.2
 shader_parameter/blur_amount = 1.0
 shader_parameter/blur_inner = 0.6
 shader_parameter/blur_outer = 0.66
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_y8bmc"]
+shader = ExtResource("10_qr2ms")
+shader_parameter/max_line_width = 13.0
+shader_parameter/min_line_width = 5.0
+shader_parameter/freq = 3.0
+shader_parameter/block_size = 15.0
+shader_parameter/outline_color = Vector4(0, 0, 0, 1)
+shader_parameter/box_color = Vector4(1, 1, 1, 1)
 
 [node name="WhatLingersDemo" type="Control" unique_id=809353887]
 layout_mode = 3
@@ -114,6 +128,73 @@ anchor_bottom = 1.0
 offset_right = 13.333374
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="Items" type="Control" parent="." unique_id=348720864]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("9_y8bmc")
+
+[node name="lighter" type="TextureRect" parent="Items" unique_id=428721039]
+visible = false
+material = SubResource("ShaderMaterial_y8bmc")
+custom_minimum_size = Vector2(600, 600)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -533.3334
+offset_top = -348.0
+offset_right = 533.33325
+offset_bottom = 252.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("11_qr2ms")
+expand_mode = 3
+
+[node name="key" type="TextureRect" parent="Items" unique_id=141042661]
+visible = false
+material = SubResource("ShaderMaterial_y8bmc")
+custom_minimum_size = Vector2(550, 550)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -488.8889
+offset_top = -338.0
+offset_right = 488.88892
+offset_bottom = 212.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("9_rwucg")
+expand_mode = 3
+
+[node name="vial" type="TextureRect" parent="Items" unique_id=1999486426]
+visible = false
+material = SubResource("ShaderMaterial_y8bmc")
+custom_minimum_size = Vector2(600, 600)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -533.3334
+offset_top = -349.0
+offset_right = 533.33325
+offset_bottom = 251.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("10_y8bmc")
+expand_mode = 3
 
 [node name="Ghost" parent="." unique_id=617256557 instance=ExtResource("7_njcbe")]
 modulate = Color(1, 1, 1, 0)
