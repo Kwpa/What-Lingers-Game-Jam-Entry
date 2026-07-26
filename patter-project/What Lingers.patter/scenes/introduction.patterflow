@@ -13,7 +13,14 @@
                 "kind": "gameEvent",
               },
               {
-                "id": "L_y887gtqr",
+                "gameData": {
+                  "Fade In Looped Audio": "music_background",
+                },
+                "id": "A_z46y6phn",
+                "kind": "gameEvent",
+              },
+              {
+                "id": "L_v5249d7h",
                 "kind": "text",
               },
             ],
@@ -21,13 +28,6 @@
             "jump": {
               "to": "blk_v4yjnpqq",
             },
-            "onEnter": [
-              {
-                "kind": "set",
-                "target": "@photo_title",
-                "value": "\"lighthouse_interior\"",
-              },
-            ],
             "type": "snippet",
           },
         ],
@@ -52,6 +52,13 @@
               },
             ],
             "id": "sn_bm7zo0cl",
+            "onEnter": [
+              {
+                "kind": "set",
+                "target": "@photo_title",
+                "value": "\"lighthouse_interior\"",
+              },
+            ],
             "type": "snippet",
           },
           {
@@ -60,29 +67,11 @@
                 "id": "L_k1w01qf8",
                 "kind": "text",
               },
-              {
-                "id": "L_a57fhyh4",
-                "kind": "text",
-              },
             ],
             "condition": "not seen(blk_hwgzp5pq)",
             "id": "sn_dylufw5c",
             "type": "snippet",
           },
-          {
-            "id": "sn_1op50tfh",
-            "jump": {
-              "to": "blk_usdt6ey1",
-            },
-            "type": "snippet",
-          },
-        ],
-        "id": "blk_v4yjnpqq",
-        "name": "Enter the Lighthouse",
-        "type": "block",
-      },
-      {
-        "children": [
           {
             "beats": [
               {
@@ -104,6 +93,37 @@
             "type": "snippet",
           },
           {
+            "id": "sn_1op50tfh",
+            "jump": {
+              "to": "blk_usdt6ey1",
+            },
+            "type": "snippet",
+          },
+        ],
+        "id": "blk_v4yjnpqq",
+        "name": "Enter the Lighthouse",
+        "type": "block",
+      },
+      {
+        "children": [
+          {
+            "beats": [
+              {
+                "id": "L_7lp1gimq",
+                "kind": "text",
+              },
+            ],
+            "id": "sn_m7dzlrl1",
+            "onEnter": [
+              {
+                "kind": "set",
+                "target": "@photo_title",
+                "value": "\"lighthouse_interior\"",
+              },
+            ],
+            "type": "snippet",
+          },
+          {
             "children": [
               {
                 "children": [
@@ -114,6 +134,9 @@
                         "kind": "text",
                       },
                       {
+                        "gameData": {
+                          "Play Oneshot SFX": "sfx_acquire_item",
+                        },
                         "id": "A_jwp06wjj",
                         "kind": "gameEvent",
                       },

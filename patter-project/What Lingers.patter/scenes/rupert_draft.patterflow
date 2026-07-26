@@ -689,7 +689,7 @@
             ],
             "id": "sn_dlih4f2n",
             "jump": {
-              "to": "blk_y4yaud29",
+              "to": "blk_zd1roqik",
             },
             "type": "snippet",
           },
@@ -744,6 +744,9 @@
                       },
                     ],
                     "id": "sn_65v4iyup",
+                    "jump": {
+                      "to": "blk_tub1romz",
+                    },
                     "type": "snippet",
                   },
                 ],
@@ -765,83 +768,8 @@
                       },
                     ],
                     "id": "sn_f07s3ghl",
-                    "type": "snippet",
-                  },
-                  {
-                    "beats": [
-                      {
-                        "character": "RUPERT",
-                        "id": "L_0947i49j",
-                        "kind": "line",
-                      },
-                    ],
-                    "id": "sn_lpiql6j2",
-                    "type": "snippet",
-                  },
-                  {
-                    "beats": [
-                      {
-                        "id": "L_9ammycvt",
-                        "kind": "text",
-                      },
-                    ],
-                    "id": "sn_iaur3mbx",
-                    "type": "snippet",
-                  },
-                  {
-                    "beats": [
-                      {
-                        "id": "L_2e40yfzm",
-                        "kind": "text",
-                      },
-                    ],
-                    "id": "sn_0s18i1qi",
-                    "type": "snippet",
-                  },
-                  {
-                    "beats": [
-                      {
-                        "id": "L_44jru503",
-                        "kind": "text",
-                      },
-                    ],
-                    "id": "sn_xp03mvjw",
-                    "onExit": [
-                      {
-                        "kind": "set",
-                        "target": "@ghost_name",
-                        "value": "\"\"",
-                      },
-                    ],
-                    "type": "snippet",
-                  },
-                  {
-                    "beats": [
-                      {
-                        "gameData": {
-                          "Play Oneshot SFX": "sfx_lingers_chime_pos",
-                        },
-                        "id": "A_huz0ioje",
-                        "kind": "gameEvent",
-                      },
-                      {
-                        "id": "L_kl7aem9j",
-                        "kind": "text",
-                      },
-                    ],
-                    "id": "sn_2c21pmr8",
-                    "type": "snippet",
-                  },
-                  {
-                    "beats": [
-                      {
-                        "id": "L_3eyyzx0m",
-                        "kind": "text",
-                      },
-                    ],
-                    "id": "sn_cfer8dve",
                     "jump": {
-                      "to": "blk_3kdz8gna",
+                      "to": "blk_6ql24v81",
                     },
                     "type": "snippet",
                   },
@@ -877,73 +805,8 @@
                       },
                     ],
                     "id": "sn_xe8s33zs",
-                    "type": "snippet",
-                  },
-                  {
-                    "beats": [
-                      {
-                        "id": "L_riv8x740",
-                        "kind": "text",
-                      },
-                    ],
-                    "id": "sn_h7542h8r",
-                    "type": "snippet",
-                  },
-                  {
-                    "beats": [
-                      {
-                        "character": "RUPERT",
-                        "id": "L_p5yyl6fk",
-                        "kind": "line",
-                      },
-                    ],
-                    "id": "sn_koozcsh4",
-                    "type": "snippet",
-                  },
-                  {
-                    "beats": [
-                      {
-                        "id": "L_5ghzu3oc",
-                        "kind": "text",
-                      },
-                    ],
-                    "id": "sn_35k294dl",
-                    "onExit": [
-                      {
-                        "kind": "set",
-                        "target": "@ghost_name",
-                        "value": "\"\"",
-                      },
-                    ],
-                    "type": "snippet",
-                  },
-                  {
-                    "beats": [
-                      {
-                        "gameData": {
-                          "Play Oneshot SFX": "sfx_moves_on_chime_pos",
-                        },
-                        "id": "A_hrs5vcl2",
-                        "kind": "gameEvent",
-                      },
-                      {
-                        "id": "L_n5vh0wbe",
-                        "kind": "text",
-                      },
-                    ],
-                    "id": "sn_ac0dxdiy",
-                    "type": "snippet",
-                  },
-                  {
-                    "beats": [
-                      {
-                        "id": "L_va2gb6tv",
-                        "kind": "text",
-                      },
-                    ],
-                    "id": "sn_4ep6zo0q",
                     "jump": {
-                      "to": "blk_3kdz8gna",
+                      "to": "blk_25suz2s1",
                     },
                     "type": "snippet",
                   },
@@ -965,119 +828,8 @@
                       },
                     ],
                     "id": "sn_5b6umla2",
-                    "type": "snippet",
-                  },
-                  {
-                    "beats": [
-                      {
-                        "id": "L_zv05xd5g",
-                        "kind": "text",
-                      },
-                    ],
-                    "id": "sn_gokgxyc2",
-                    "type": "snippet",
-                  },
-                  {
-                    "beats": [
-                      {
-                        "id": "L_bpd1jec3",
-                        "kind": "text",
-                      },
-                    ],
-                    "id": "sn_es40g1jf",
-                    "type": "snippet",
-                  },
-                  {
-                    "beats": [
-                      {
-                        "id": "L_awip25ie",
-                        "kind": "text",
-                      },
-                    ],
-                    "id": "sn_rywz1hro",
-                    "type": "snippet",
-                  },
-                  {
-                    "beats": [
-                      {
-                        "character": "RUPERT",
-                        "id": "L_te8gp2su",
-                        "kind": "line",
-                      },
-                    ],
-                    "id": "sn_s380d2q1",
-                    "type": "snippet",
-                  },
-                  {
-                    "beats": [
-                      {
-                        "character": "RUPERT",
-                        "direction": "sings",
-                        "id": "L_ox0aoxx0",
-                        "kind": "line",
-                      },
-                      {
-                        "character": "RUPERT",
-                        "direction": "sings",
-                        "id": "L_jhjck42y",
-                        "kind": "line",
-                      },
-                      {
-                        "character": "RUPERT",
-                        "direction": "sings",
-                        "id": "L_iq69kkje",
-                        "kind": "line",
-                      },
-                      {
-                        "character": "RUPERT",
-                        "direction": "sings",
-                        "id": "L_uly52w03",
-                        "kind": "line",
-                      },
-                      {
-                        "character": "RUPERT",
-                        "direction": "sings",
-                        "id": "L_e5qhmh3t",
-                        "kind": "line",
-                      },
-                    ],
-                    "id": "sn_qdp6i6tq",
-                    "onExit": [
-                      {
-                        "kind": "set",
-                        "target": "@ghost_name",
-                        "value": "\"\"",
-                      },
-                    ],
-                    "type": "snippet",
-                  },
-                  {
-                    "beats": [
-                      {
-                        "gameData": {
-                          "Play Oneshot SFX": "sfx_moves_on_chime_neg",
-                        },
-                        "id": "A_rd0ebphn",
-                        "kind": "gameEvent",
-                      },
-                      {
-                        "id": "L_giha5vka",
-                        "kind": "text",
-                      },
-                    ],
-                    "id": "sn_tclkn7kq",
-                    "type": "snippet",
-                  },
-                  {
-                    "beats": [
-                      {
-                        "id": "L_6rwpqvbr",
-                        "kind": "text",
-                      },
-                    ],
-                    "id": "sn_yb8mzuw7",
                     "jump": {
-                      "to": "blk_3kdz8gna",
+                      "to": "blk_0qzvjhsy",
                     },
                     "type": "snippet",
                   },
@@ -1159,6 +911,176 @@
         ],
         "id": "blk_3kdz8gna",
         "name": "Leave Rupert",
+        "type": "block",
+      },
+      {
+        "children": [
+          {
+            "beats": [
+              {
+                "id": "L_riv8x740",
+                "kind": "text",
+              },
+              {
+                "character": "RUPERT",
+                "id": "L_p5yyl6fk",
+                "kind": "line",
+              },
+              {
+                "id": "L_5ghzu3oc",
+                "kind": "text",
+              },
+              {
+                "gameData": {
+                  "Play Oneshot SFX": "sfx_moves_on_chime_pos",
+                },
+                "id": "A_hrs5vcl2",
+                "kind": "gameEvent",
+              },
+              {
+                "id": "L_n5vh0wbe",
+                "kind": "text",
+              },
+              {
+                "id": "L_va2gb6tv",
+                "kind": "text",
+              },
+            ],
+            "id": "sn_h7542h8r",
+            "jump": {
+              "to": "blk_3kdz8gna",
+            },
+            "type": "snippet",
+          },
+        ],
+        "id": "blk_25suz2s1",
+        "name": "Rupert Positive Move On ",
+        "type": "block",
+      },
+      {
+        "children": [
+          {
+            "beats": [
+              {
+                "id": "L_zv05xd5g",
+                "kind": "text",
+              },
+              {
+                "id": "L_bpd1jec3",
+                "kind": "text",
+              },
+              {
+                "id": "L_awip25ie",
+                "kind": "text",
+              },
+              {
+                "character": "RUPERT",
+                "id": "L_te8gp2su",
+                "kind": "line",
+              },
+              {
+                "character": "RUPERT",
+                "direction": "sings",
+                "id": "L_ox0aoxx0",
+                "kind": "line",
+              },
+              {
+                "character": "RUPERT",
+                "direction": "sings",
+                "id": "L_jhjck42y",
+                "kind": "line",
+              },
+              {
+                "character": "RUPERT",
+                "direction": "sings",
+                "id": "L_iq69kkje",
+                "kind": "line",
+              },
+              {
+                "character": "RUPERT",
+                "direction": "sings",
+                "id": "L_uly52w03",
+                "kind": "line",
+              },
+              {
+                "character": "RUPERT",
+                "direction": "sings",
+                "id": "L_e5qhmh3t",
+                "kind": "line",
+              },
+              {
+                "gameData": {
+                  "Play Oneshot SFX": "sfx_moves_on_chime_neg",
+                },
+                "id": "A_rd0ebphn",
+                "kind": "gameEvent",
+              },
+              {
+                "id": "L_giha5vka",
+                "kind": "text",
+              },
+              {
+                "id": "L_6rwpqvbr",
+                "kind": "text",
+              },
+            ],
+            "id": "sn_gokgxyc2",
+            "jump": {
+              "to": "blk_3kdz8gna",
+            },
+            "type": "snippet",
+          },
+        ],
+        "id": "blk_0qzvjhsy",
+        "name": "Rupert Negative Move On",
+        "type": "block",
+      },
+      {
+        "children": [
+          {
+            "beats": [
+              {
+                "character": "RUPERT",
+                "id": "L_0947i49j",
+                "kind": "line",
+              },
+              {
+                "id": "L_9ammycvt",
+                "kind": "text",
+              },
+              {
+                "id": "L_2e40yfzm",
+                "kind": "text",
+              },
+              {
+                "id": "L_44jru503",
+                "kind": "text",
+              },
+              {
+                "gameData": {
+                  "Play Oneshot SFX": "sfx_lingers_chime_pos",
+                },
+                "id": "A_huz0ioje",
+                "kind": "gameEvent",
+              },
+              {
+                "id": "L_kl7aem9j",
+                "kind": "text",
+              },
+              {
+                "id": "L_3eyyzx0m",
+                "kind": "text",
+              },
+            ],
+            "id": "sn_lpiql6j2",
+            "jump": {
+              "to": "blk_3kdz8gna",
+            },
+            "type": "snippet",
+          },
+        ],
+        "id": "blk_6ql24v81",
+        "name": "Rupert Linger",
         "type": "block",
       },
     ],
