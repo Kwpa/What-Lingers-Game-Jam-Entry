@@ -138,11 +138,19 @@
                   {
                     "beats": [
                       {
-                        "id": "L_597l5mx6",
+                        "gameData": {
+                          "Show Item": "KEY",
+                        },
+                        "id": "A_q5r52hb4",
+                        "kind": "gameEvent",
+                      },
+                      {
+                        "id": "L_3g5ornc9",
                         "kind": "text",
                       },
                       {
                         "gameData": {
+                          "Hide Item": true,
                           "Play Oneshot SFX": "sfx_acquire_item",
                         },
                         "id": "A_jwp06wjj",
@@ -175,11 +183,19 @@
                   {
                     "beats": [
                       {
-                        "id": "L_b9dlmzrj",
+                        "gameData": {
+                          "Show Item": "LIGHTER",
+                        },
+                        "id": "A_97a8iehw",
+                        "kind": "gameEvent",
+                      },
+                      {
+                        "id": "L_3hxgm3es",
                         "kind": "text",
                       },
                       {
                         "gameData": {
+                          "Hide Item": true,
                           "Play Oneshot SFX": "sfx_acquire_item",
                         },
                         "id": "A_7x9qxcsk",
@@ -212,11 +228,19 @@
                   {
                     "beats": [
                       {
-                        "id": "L_8jp82ohu",
+                        "gameData": {
+                          "Show Item": "VIAL",
+                        },
+                        "id": "A_onh21uyr",
+                        "kind": "gameEvent",
+                      },
+                      {
+                        "id": "L_n3b9dl6c",
                         "kind": "text",
                       },
                       {
                         "gameData": {
+                          "Hide Item": true,
                           "Play Oneshot SFX": "sfx_acquire_item",
                         },
                         "id": "A_5lw8eq8y",

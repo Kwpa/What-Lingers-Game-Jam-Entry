@@ -26,9 +26,9 @@
     }
   ],
   "content": {
-    "hash": "0upqgpw",
+    "hash": "0qrwsjf",
     "project": "proj_pvhchy3o",
-    "structureHash": "1kk5pwm"
+    "structureHash": "0uxdwg1"
   },
   "gameDataFields": {
     "gameEvent": [
@@ -2117,11 +2117,19 @@
                     {
                       "beats": [
                         {
-                          "id": "L_597l5mx6",
+                          "gameData": {
+                            "Show Item": "KEY"
+                          },
+                          "id": "A_q5r52hb4",
+                          "kind": "gameEvent"
+                        },
+                        {
+                          "id": "L_3g5ornc9",
                           "kind": "text"
                         },
                         {
                           "gameData": {
+                            "Hide Item": true,
                             "Play Oneshot SFX": "sfx_acquire_item"
                           },
                           "id": "A_jwp06wjj",
@@ -2160,11 +2168,19 @@
                     {
                       "beats": [
                         {
-                          "id": "L_b9dlmzrj",
+                          "gameData": {
+                            "Show Item": "LIGHTER"
+                          },
+                          "id": "A_97a8iehw",
+                          "kind": "gameEvent"
+                        },
+                        {
+                          "id": "L_3hxgm3es",
                           "kind": "text"
                         },
                         {
                           "gameData": {
+                            "Hide Item": true,
                             "Play Oneshot SFX": "sfx_acquire_item"
                           },
                           "id": "A_7x9qxcsk",
@@ -2203,11 +2219,19 @@
                     {
                       "beats": [
                         {
-                          "id": "L_8jp82ohu",
+                          "gameData": {
+                            "Show Item": "VIAL"
+                          },
+                          "id": "A_onh21uyr",
+                          "kind": "gameEvent"
+                        },
+                        {
+                          "id": "L_n3b9dl6c",
                           "kind": "text"
                         },
                         {
                           "gameData": {
+                            "Hide Item": true,
                             "Play Oneshot SFX": "sfx_acquire_item"
                           },
                           "id": "A_5lw8eq8y",
@@ -4832,6 +4856,8 @@
       "L_2ygtnxkw": "But I'm like that mermaid; I belong with the waves. And she knows that, deep down, even if she doesn't understand why it's true.",
       "L_33xlzqlw": "It's time for a new chapter, and you're eager to take up the mantle of the lighthouse keeper, with all of its responsibilities.",
       "L_3eyyzx0m": "But the smell of a reunion that never was lingers on. ",
+      "L_3g5ornc9": "That rusty lump of metal looks like a key, but larger than any key made in this century... or the last. When you pick it up, you feel a resonance. You put it in your pocket.",
+      "L_3hxgm3es": "A golden glimmer catches your eye. It's a lighter, the refillable kind. It's rusty and some of the gold plating has been worn away. This one must have been in the sea for some time before being washed up again. You'll hold onto it for now.",
       "L_3ihdu46w": "When I got laid off, I knew I needed to do something different.",
       "L_3my1lr2g": "Why stay here though?  ",
       "L_3qtmd7vf": "The apparition looks up to the store, confused at first. But after a moment its eyes widen in disbelief.",
@@ -4847,7 +4873,6 @@
       "L_4vcn2z5a": "I'm the new lighthouse keeper.",
       "L_4xa35oxr": "Who are you?",
       "L_50rnso44": "She lights her translucent cigarette and turns the lighter over in her hand.",
-      "L_597l5mx6": "That rusty lump of metal looks like a key, but larger than any key made in this century... or the last. When you pick it up, you feel a resonance. You put it in your pocket.",
       "L_5fyzfhq5": "Tonight, the fog will roll back in again, and more people will need your guidance to find safe harbour on these rocks.",
       "L_5ghzu3oc": "Rupert grins to himself, shaving decades from his face.",
       "L_5je4lacn": "Johnathon lad, is that you?",
@@ -4873,7 +4898,6 @@
       "L_84mf1odz": "Who are you?",
       "L_88xus0uu": "Fine... I can tell you won't let this go. Lead on.",
       "L_8gwqow6e": "When I got laid off, I knew I needed to do something different.",
-      "L_8jp82ohu": "A small glass vial with a water-logged label. You think you can still make out some of the lettering on it. It's cool and smooth to the touch. You'll take it with you today.",
       "L_8ldn9lk4": "Surely it must be better than sitting out here? Reminding yourself of how you died.",
       "L_8n935pbu": "So you intend to just sit here and punish yourself for eternity?",
       "L_8nbu6rcs": "... 100 years?",
@@ -4905,7 +4929,6 @@
       "L_ayuu2x8q": "Theo then disappears into the wind. A gust pushes you back away from the cliff. Theo's home is amongst the crags of the shoreline. His vigil everlasting... Such is the legacy of the Montgomery family.",
       "L_b73o03rw": "You sit on the picnic bench and look up at the rocks. Their peaks are hidden by the fog, for now. Soon the sun will turn them a pale pink, then reveal more and more of their heights as the fog burns away.",
       "L_b8io98eu": "No... No, I don't suppose I'll know either... ",
-      "L_b9dlmzrj": "A golden glimmer catches your eye. It's a lighter, the refillable kind. It's rusty and some of the gold plating has been worn away. This one must have been in the sea for some time before being washed up again. You'll hold onto it for now.",
       "L_bg0lz5y6": "Head back to the lighthouse",
       "L_bmxkbhrq": "The apparition then begins to fade from view. With a tired smile he nods to you before finally disappearing completely.",
       "L_bpd1jec3": "In truth, you realise he's probably seen just as much suffering as you're describing, just in different guises. You finish feeling a little foolish. ",
@@ -5012,6 +5035,7 @@
       "L_mpvklgx2": "Right on the edge. A liminal space. ",
       "L_mtd5mkvn": "You look up to the windmill on the hill as it begins to turn in the cool breeze.",
       "L_mwuknde0": "... I always thought I had done us in for good... but yet, my family endures in some way. I don't know what to say...",
+      "L_n3b9dl6c": "A small glass vial with a water-logged label. You think you can still make out some of the lettering on it. It's cool and smooth to the touch. You'll take it with you today.",
       "L_n5vh0wbe": "Before you can say anything else, he is gone.",
       "L_na6v92dj": "Wow... Sounds like you really believed in the cause, eh?",
       "L_nn2oojnd": "You wouldn't understand. I— I couldn't face them... on the other side. I wouldn't know what to say. How to ask their forgiveness.",
