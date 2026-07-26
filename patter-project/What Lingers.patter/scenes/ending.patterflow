@@ -9,6 +9,13 @@
                 "id": "L_7xydcvlr",
                 "kind": "text",
               },
+              {
+                "gameData": {
+                  "Remove Fog": true,
+                },
+                "id": "A_hksnif4z",
+                "kind": "gameEvent",
+              },
             ],
             "id": "sn_odcjlovi",
             "type": "snippet",
@@ -94,6 +101,10 @@
             "beats": [
               {
                 "id": "L_5fyzfhq5",
+                "kind": "text",
+              },
+              {
+                "id": "L_5y5qgsun",
                 "kind": "text",
               },
             ],

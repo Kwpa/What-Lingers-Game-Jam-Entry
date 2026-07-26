@@ -395,6 +395,11 @@
                 "kind": "line",
               },
               {
+                "character": "???",
+                "id": "L_zjlp87si",
+                "kind": "line",
+              },
+              {
                 "character": "SHELLY",
                 "id": "L_0sntv0tk",
                 "kind": "line",
@@ -796,6 +801,11 @@
                 "kind": "line",
               },
               {
+                "character": "SHELLY",
+                "id": "L_2ygtnxkw",
+                "kind": "line",
+              },
+              {
                 "character": "YOU",
                 "id": "L_vtf919vn",
                 "kind": "line",
@@ -909,7 +919,7 @@
             "jump": {
               "to": "blk_oc4u3n36",
             },
-            "onExit": [
+            "onEnter": [
               {
                 "kind": "set",
                 "target": "@ghost_name",
@@ -938,6 +948,11 @@
                 "kind": "line",
               },
               {
+                "character": "SHELLY",
+                "id": "L_f2i7q0f5",
+                "kind": "line",
+              },
+              {
                 "character": "YOU",
                 "id": "L_jhhztx7q",
                 "kind": "line",
@@ -957,6 +972,19 @@
                 "id": "L_h3v858ya",
                 "kind": "text",
               },
+            ],
+            "id": "sn_fgjgl0mp",
+            "onExit": [
+              {
+                "kind": "set",
+                "target": "@ghost_name",
+                "value": "\"NONE\"",
+              },
+            ],
+            "type": "snippet",
+          },
+          {
+            "beats": [
               {
                 "gameData": {
                   "Play Oneshot SFX": "sfx_lingers_chime_pos",
@@ -977,17 +1005,10 @@
                 "kind": "gameEvent",
               },
             ],
-            "id": "sn_fgjgl0mp",
+            "id": "sn_j9gb0h1u",
             "jump": {
               "to": "blk_oc4u3n36",
             },
-            "onExit": [
-              {
-                "kind": "set",
-                "target": "@ghost_name",
-                "value": "\"NONE\"",
-              },
-            ],
             "type": "snippet",
           },
           {

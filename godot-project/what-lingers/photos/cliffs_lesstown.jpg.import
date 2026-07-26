@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://7gav744ecw3k"
-path="res://.godot/imported/cliffs.jpg-51e75e077d765412e830df8451b3facd.ctex"
+uid="uid://bf3ngceoercag"
+path="res://.godot/imported/cliffs_lesstown.jpg-e3366c2d88ee4e980f58c5765563c2e2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://photos/cliffs.jpg"
-dest_files=["res://.godot/imported/cliffs.jpg-51e75e077d765412e830df8451b3facd.ctex"]
+source_file="res://photos/cliffs_lesstown.jpg"
+dest_files=["res://.godot/imported/cliffs_lesstown.jpg-e3366c2d88ee4e980f58c5765563c2e2.ctex"]
 
 [params]
 
