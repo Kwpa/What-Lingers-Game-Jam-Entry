@@ -40,6 +40,7 @@ ambience_volume_offset = Dictionary[StringName, float]({
 &"amb_smoke_break": -3.0
 })
 sfx_volume_offset = Dictionary[StringName, float]({
+&"sfx_acquire_item": -6.0,
 &"sfx_button_press": -20.0,
 &"sfx_footsteps_door": -6.0
 })

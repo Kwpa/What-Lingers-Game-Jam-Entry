@@ -37,7 +37,13 @@ func _ready():
 	sfx_enabled = sfx_enabled
 
 func set_music(music_name: StringName) -> void:
-	var playback: AudioStreamPlaybackInteractive = $MusicAudioStreamPlayer.get_stream_playback()
+	var player: AudioStreamPlayer = $MusicAudioStreamPlayer
+	var stream: AudioStreamInteractive = player.stream
+	var playback: AudioStreamPlaybackInteractive = player.get_stream_playback()
+	var current_stream_name = stream.get_clip_name(playback.get_current_clip_index())
+	if current_stream_name == music_name:
+		return
+	
 	playback.switch_to_clip_by_name(music_name)
 	var volume_offset: float = 0
 	if music_volume_offset.has(music_name):
@@ -50,7 +56,13 @@ func set_music(music_name: StringName) -> void:
 	)
 
 func set_ambience(ambience_name: StringName) -> void:
-	var playback: AudioStreamPlaybackInteractive = $AmbienceAudioStreamPlayer.get_stream_playback()
+	var player: AudioStreamPlayer = $AmbienceAudioStreamPlayer
+	var stream: AudioStreamInteractive = player.stream
+	var playback: AudioStreamPlaybackInteractive = player.get_stream_playback()
+	var current_stream_name = stream.get_clip_name(playback.get_current_clip_index())
+	if current_stream_name == ambience_name:
+		return
+	
 	playback.switch_to_clip_by_name(ambience_name)
 	var volume_offset: float = 0
 	if ambience_volume_offset.has(ambience_name):
