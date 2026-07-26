@@ -9,7 +9,7 @@ What Lingers is a narrative-driven piece of interactive fiction inspired by the 
 
 Use the mouse to select a dialogue option. It is also possible to navigate options using tab and enter. Press the lighthouse in the upper left to view the menu.
 
-### Credits
+## Credits
 
 AquaLunae Games: programming, photography, VFX, writing
 - Esther Fraser: programming, photography, writing
