@@ -1,0 +1,17 @@
+{
+  "default": true,
+  "locale": "en",
+  "scene": "scn_b4t9ehwb",
+  "schema": "patter/strings@0",
+  "strings": {
+    "L_5fyzfhq5": "Tonight, the fog will roll back in again and more people will need your guidance to find safe harbour on these rocks.",
+    "L_7xydcvlr": "It must be nearly 10 o'clock. You look out over the waves at the distant horizon.  ",
+    "L_7yx41p3c": "You feel Shelly's lighter in your pocket. She was finally able to choose her own path. Like the mermaid she admired, she's now truly a creature of the waves, lingering in the place she loved best.",
+    "L_9h05bn3d": "You're not sure what awaits Shelly in the world beyond, or if there even is one. But she had to move on. She couldn't have lingered here forever...could she? You hope you were right to give her that push.",
+    "L_cois0olq": "Rupert was delighted to learn that John survived and millions more have been saved.",
+    "L_sfoian5r": "Theo's spirit now is finally at rest. As you look to the sky and feel the breeze, you are reminded of the sad miller's story. Maybe this memory too is a legacy of a sort. The echo of the Montgomery family is still felt clearly in this little town.",
+    "L_tsscwz4l": "You wish you could have gotten through to Theo. But the cycle of sadness and guilt is a chain not so easily broken. Maybe at some point Theo will find peace with what happened. But until that day the legacy of the Montgomery family still lingers in those isolated crags.",
+    "L_wjzk9mmr": "Rupert was sad to hear about the sorry state of the world.",
+    "L_xbxyfirl": "Rupert lingered in uncertainty, as we all do in life.",
+  },
+}

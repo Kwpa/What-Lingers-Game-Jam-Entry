@@ -197,6 +197,10 @@
                         "kind": "text",
                       },
                       {
+                        "id": "L_hhbj7djj",
+                        "kind": "text",
+                      },
+                      {
                         "id": "L_dm8d4mwo",
                         "kind": "text",
                       },
@@ -256,6 +260,10 @@
                     "beats": [
                       {
                         "id": "L_suk7brcu",
+                        "kind": "text",
+                      },
+                      {
+                        "id": "L_33xlzqlw",
                         "kind": "text",
                       },
                     ],
@@ -770,6 +778,10 @@
             "beats": [
               {
                 "id": "L_lpu7qv0s",
+                "kind": "text",
+              },
+              {
+                "id": "L_lf5xupsf",
                 "kind": "text",
               },
             ],
