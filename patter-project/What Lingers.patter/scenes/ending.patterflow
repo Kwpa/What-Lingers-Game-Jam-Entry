@@ -57,13 +57,6 @@
             "id": "sn_e9c3fgpf",
             "type": "snippet",
           },
-        ],
-        "id": "blk_ckuvidyr",
-        "name": "Main",
-        "type": "block",
-      },
-      {
-        "children": [
           {
             "beats": [
               {
@@ -75,13 +68,6 @@
             "id": "sn_q1gbmhm6",
             "type": "snippet",
           },
-        ],
-        "id": "blk_0xdatog0",
-        "name": "Rupert Linger End Text",
-        "type": "block",
-      },
-      {
-        "children": [
           {
             "beats": [
               {
@@ -93,13 +79,6 @@
             "id": "sn_5pwr1ykz",
             "type": "snippet",
           },
-        ],
-        "id": "blk_lefhc0hk",
-        "name": "Rupert Positive Move on End Text",
-        "type": "block",
-      },
-      {
-        "children": [
           {
             "beats": [
               {
@@ -125,8 +104,8 @@
             "type": "snippet",
           },
         ],
-        "id": "blk_xaxlgg2f",
-        "name": "Rupert Negative Move on End Text",
+        "id": "blk_ckuvidyr",
+        "name": "Main",
         "type": "block",
       },
     ],

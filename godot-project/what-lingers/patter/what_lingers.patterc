@@ -26,9 +26,9 @@
     }
   ],
   "content": {
-    "hash": "1tsmkew",
+    "hash": "0b2bpkq",
     "project": "proj_pvhchy3o",
-    "structureHash": "1soqe05"
+    "structureHash": "0rp36q2"
   },
   "gameDataFields": {
     "gameEvent": [
@@ -148,6 +148,30 @@
               "jump": {
                 "to": "scn_b4t9ehwb"
               },
+              "onEnter": [
+                {
+                  "kind": "set",
+                  "target": "@photo_title",
+                  "value": {
+                    "ast": [
+                      "s",
+                      "lighthouse_exterior"
+                    ],
+                    "src": "\"lighthouse_exterior\""
+                  }
+                },
+                {
+                  "kind": "set",
+                  "target": "@ghost_name",
+                  "value": {
+                    "ast": [
+                      "s",
+                      "NONE"
+                    ],
+                    "src": "\"NONE\""
+                  }
+                }
+              ],
               "type": "snippet"
             },
             {
@@ -608,14 +632,7 @@
               },
               "id": "sn_e9c3fgpf",
               "type": "snippet"
-            }
-          ],
-          "id": "blk_ckuvidyr",
-          "name": "Main",
-          "type": "block"
-        },
-        {
-          "children": [
+            },
             {
               "beats": [
                 {
@@ -636,14 +653,7 @@
               },
               "id": "sn_q1gbmhm6",
               "type": "snippet"
-            }
-          ],
-          "id": "blk_0xdatog0",
-          "name": "Rupert Linger End Text",
-          "type": "block"
-        },
-        {
-          "children": [
+            },
             {
               "beats": [
                 {
@@ -664,14 +674,7 @@
               },
               "id": "sn_5pwr1ykz",
               "type": "snippet"
-            }
-          ],
-          "id": "blk_lefhc0hk",
-          "name": "Rupert Positive Move on End Text",
-          "type": "block"
-        },
-        {
-          "children": [
+            },
             {
               "beats": [
                 {
@@ -707,8 +710,8 @@
               "type": "snippet"
             }
           ],
-          "id": "blk_xaxlgg2f",
-          "name": "Rupert Negative Move on End Text",
+          "id": "blk_ckuvidyr",
+          "name": "Main",
           "type": "block"
         }
       ],
@@ -941,6 +944,10 @@
                           "kind": "text"
                         },
                         {
+                          "id": "L_hhbj7djj",
+                          "kind": "text"
+                        },
+                        {
                           "id": "L_dm8d4mwo",
                           "kind": "text"
                         }
@@ -1014,6 +1021,10 @@
                       "beats": [
                         {
                           "id": "L_suk7brcu",
+                          "kind": "text"
+                        },
+                        {
+                          "id": "L_33xlzqlw",
                           "kind": "text"
                         }
                       ],
@@ -1529,6 +1540,10 @@
                 {
                   "id": "L_lpu7qv0s",
                   "kind": "text"
+                },
+                {
+                  "id": "L_lf5xupsf",
+                  "kind": "text"
                 }
               ],
               "id": "sn_fcqigyw6",
@@ -1823,7 +1838,14 @@
                   "kind": "gameEvent"
                 },
                 {
-                  "id": "L_y887gtqr",
+                  "gameData": {
+                    "Fade In Looped Audio": "music_background"
+                  },
+                  "id": "A_z46y6phn",
+                  "kind": "gameEvent"
+                },
+                {
+                  "id": "L_v5249d7h",
                   "kind": "text"
                 }
               ],
@@ -1831,19 +1853,6 @@
               "jump": {
                 "to": "blk_v4yjnpqq"
               },
-              "onEnter": [
-                {
-                  "kind": "set",
-                  "target": "@photo_title",
-                  "value": {
-                    "ast": [
-                      "s",
-                      "lighthouse_interior"
-                    ],
-                    "src": "\"lighthouse_interior\""
-                  }
-                }
-              ],
               "type": "snippet"
             }
           ],
@@ -1868,6 +1877,19 @@
                 }
               ],
               "id": "sn_bm7zo0cl",
+              "onEnter": [
+                {
+                  "kind": "set",
+                  "target": "@photo_title",
+                  "value": {
+                    "ast": [
+                      "s",
+                      "lighthouse_interior"
+                    ],
+                    "src": "\"lighthouse_interior\""
+                  }
+                }
+              ],
               "type": "snippet"
             },
             {
@@ -1936,6 +1958,29 @@
         {
           "children": [
             {
+              "beats": [
+                {
+                  "id": "L_7lp1gimq",
+                  "kind": "text"
+                }
+              ],
+              "id": "sn_m7dzlrl1",
+              "onEnter": [
+                {
+                  "kind": "set",
+                  "target": "@photo_title",
+                  "value": {
+                    "ast": [
+                      "s",
+                      "lighthouse_interior"
+                    ],
+                    "src": "\"lighthouse_interior\""
+                  }
+                }
+              ],
+              "type": "snippet"
+            },
+            {
               "children": [
                 {
                   "children": [
@@ -1946,6 +1991,9 @@
                           "kind": "text"
                         },
                         {
+                          "gameData": {
+                            "Play Oneshot SFX": "sfx_acquire_item"
+                          },
                           "id": "A_jwp06wjj",
                           "kind": "gameEvent"
                         }
@@ -3444,6 +3492,10 @@
                         {
                           "id": "L_gg5bpmsm",
                           "kind": "text"
+                        },
+                        {
+                          "id": "L_z7yy5g4n",
+                          "kind": "text"
                         }
                       ],
                       "condition": {
@@ -3612,6 +3664,10 @@
                         {
                           "id": "L_b73o03rw",
                           "kind": "text"
+                        },
+                        {
+                          "id": "L_5oucsj1u",
+                          "kind": "text"
                         }
                       ],
                       "id": "sn_febwnyr5",
@@ -3685,6 +3741,10 @@
                 },
                 {
                   "id": "L_3surfs6l",
+                  "kind": "text"
+                },
+                {
+                  "id": "L_fi4bdq13",
                   "kind": "text"
                 }
               ],
@@ -4477,10 +4537,10 @@
       "L_0lu4y0kt": "Why continue to punish yourself for what happened so long ago?",
       "L_0p718wn5": "Glass vial",
       "L_0sntv0tk": "Anyway, I haven't seen you out here before. I'm Shelly. Who are you?  ",
-      "L_0xvl550u": "I haven't seen that key in a very long time... brings back memories... good memories. Memories of what could have been.\"",
+      "L_0xvl550u": "I haven't seen that key in a very long time... brings back memories... good memories. Memories of what could have been.",
       "L_12a4tjho": "So tell me, did he make it? Did they save my little brother?",
       "L_12t8bid4": "So even though it always takes two or three tries to light it, it's my treasure. My hope, my proof that she understands who I am. No matter how much we bicker and fight... After those long arguments, I always come out here to smoke. Y'know, to calm down and remind myself that we might not see eye to eye, but we see each other.  ",
-      "L_18kykl3i": "You cant be serious...",
+      "L_18kykl3i": "You can't be serious...",
       "L_197oqjha": "You dab your face with a handkerchief, and look around, spying the restaurant too far in distance to be influencing you this way. Then, as you turn back to face the granite landscape, an apparition stands before you.  ",
       "L_1bc773cu": "John...?",
       "L_1h02vf13": "Looking it over again, the printed font on the vial looks quite ancient, so maybe not within the last half a century... ",
@@ -4493,7 +4553,7 @@
       "L_1tm3j39o": "Rusted Key",
       "L_1y2n56oy": "You can't grow old here, that's true enough. But what you do next is up to you.",
       "L_23exwn8r": "There was a lot to like. I just... didn't.",
-      "L_254pjkf1": "You reach into your pocket and pull out the rusted old key. It might have once been ornate but with time its lustre has dimmed a bit. Still the design on its handle is distinct: a depiction of a famous local windmill from the early 1800s sits within a wreath of wheat. Below is a ribbon with the name Montgomery etched inside. Only just legible as the years wear and tear have taken hold.",
+      "L_254pjkf1": "You reach into your pocket and pull out the rusted old key. It might have once been ornate but with time its lustre has dimmed a bit. ",
       "L_290jlhag": "Exactly. I finally feel like I'm right where I need to be. Can you hang onto that lighter for me? I don't have anywhere to put it. I'll see you around.",
       "L_2byiz0qg": "Why stay here though?",
       "L_2e40yfzm": "Fragrant steam escapes the cross stitch pattern of cuts on the skin of the cooked cod. A door cracks open, letting in the cold from an icy hail outside... A shout of grief and joy and relief... As both brothers embrace... ",
@@ -4502,12 +4562,13 @@
       "L_2vfrrfk7": "Admit that the world is a tough place right now",
       "L_2xdzc8iu": "It's me Johnathon. Why, you barely recognise me do ya?",
       "L_2xskv8uj": "What will you reflect on?",
+      "L_33xlzqlw": "It's time for a new chapter, and you're eager to take up the mantle of the lighthouse keeper, with all of its responsibilities.",
       "L_3eyyzx0m": "But the smell of a reunion that never was, lingers on. ",
       "L_3ihdu46w": "When I got laid off, I knew I couldn't just find another job doing that. I needed to do something different  .",
       "L_3my1lr2g": "Why stay here though?  ",
       "L_3qtmd7vf": "The apparition looks up to the store, confused at first. But after a moment its eyes widen in disbelief.",
       "L_3s23qi5g": "Theo then disappears completely. The only things left in this place are yourself, the sound of the ocean and a slight breeze disappearing off into the distance.",
-      "L_3surfs6l": "You take from your pocket the mermaid lighter, and turn it over a couple times in your hand.  It's made from a cold and solid metal, but it's not as heavy as you might have expected. The front and back of it are engraved with a mermaid motif, in the style of a sailor's tattoo. Her hands are pushing back her hair, and her smiling face is somewhat worn down. This lighter has seen a lot of use.",
+      "L_3surfs6l": "You take from your pocket the mermaid lighter, and turn it over a couple times in your hand.  It's made from a cold and solid metal, but it's not as heavy as you might have expected. ",
       "L_3xzn1hwp": "Degree? What did you study?",
       "L_44jru503": "But before the scene can conclude, the image is gone. ",
       "L_45zvi7ey": "So what do you want to do?",
@@ -4522,6 +4583,7 @@
       "L_5fyzfhq5": "Tonight, the fog will roll back in again and more people will need your guidance to find safe harbour on these rocks.",
       "L_5ghzu3oc": "Rupert grins to himself, shaving decades from his face. ",
       "L_5je4lacn": "Johnathon lad, is that you?",
+      "L_5oucsj1u": "Your future felt similarly obscured, until recently. Your apprenticeship with the lighthouse keeper gave you the direction you had been missing. Now that he has retired, you feel confident stepping into the role on your own. ",
       "L_5qvuk51w": "Remember,  Ariel had to leave the ocean to find her prince and satisfy her curiosity.",
       "L_5y4b677l": "... not sure... time moves so slowly here... and yet decades can go by like an instant. I've watched over the city the whole time. I've seen multiple generations pass. Children growing into grandparents. And each cycle reminds me of my failure...",
       "L_62liwz0k": "Into the lighthouse",
@@ -4535,12 +4597,13 @@
       "L_7cixjnhx": "It was...useful, I guess. Meaningful, probably. I would have kept at it if I hadn't been laid off.  ",
       "L_7f9tmmt7": "It could be a reproduction of a much older item, but you just have a feeling this is the real deal... ",
       "L_7i5avrta": "Glass vial",
+      "L_7lp1gimq": "What will you do?",
       "L_7njxkkxy": "She loves it there. She has this picture in her mind of the two of us living in a townhouse with a dog in ten years. I keep trying to tell her that I'm content here. I don't need my stupid degree.",
       "L_7qjqv8kq": "Pick up the key",
       "L_7xydcvlr": "It must be nearly 10 o'clock. You look out over the waves at the distant horizon.  ",
       "L_7yx41p3c": "You feel Shelly's lighter in your pocket. She was finally able to choose her own path. Like the mermaid she admired, she's now truly a creature of the waves, lingering in the place she loved best.",
       "L_84mf1odz": "Who are you?",
-      "L_88xus0uu": "Fine... I can tell you wont let this go... Lead on.",
+      "L_88xus0uu": "Fine... I can tell you won't let this go... Lead on.",
       "L_8gwqow6e": "When I got laid off, I knew I couldn't just find another job doing that. I needed to do something different.",
       "L_8jp82ohu": "A small glass vial with a water-logged label. You think you can still make out some of the lettering on it. It's cool and smooth to the touch. You'll take it with you today.",
       "L_8ldn9lk4": "Surely it must be better than sitting out here? Reminding yourself of how you died...",
@@ -4569,7 +4632,7 @@
       "L_awip25ie": "He bows his head, obscuring his face with his yellow nautical hat.  ",
       "L_ay6cyec8": "You think back on your apprenticeship to the previous lighthouse keeper. The lighthouse keepers have served this community as a trusted guide for generations, keeping ships from foundering on the rocks and shining light where it is needed most.",
       "L_ayuu2x8q": "Theo then disappears into the wind. A gust pushes against you forcing you back away from the cliff. Theo's new home is amongst the crags of the shoreline. His vigil everlasting... such is the legacy of the Montgomery family.",
-      "L_b73o03rw": "You sit on the picnic bench and look up at the rocks. Their peaks are hidden by the fog, for now. Soon the sun will turn them a pale pink, then reveal more and more of their heights as the fog burns away. Your future felt similarly obscured, until recently. Your apprenticeship with the lighthouse keeper gave you the direction you had been missing. Now that he has retired, you feel confident stepping into the role on your own. ",
+      "L_b73o03rw": "You sit on the picnic bench and look up at the rocks. Their peaks are hidden by the fog, for now. Soon the sun will turn them a pale pink, then reveal more and more of their heights as the fog burns away.",
       "L_b9dlmzrj": "A golden glimmer catches your eye. It's a lighter, the refillable kind. It's rusty and some of the gold plating has been worn away. This one must have been in the sea for some time before being washed up again. You'll hold onto it for now.",
       "L_bg0lz5y6": "Head back to the lighthouse",
       "L_bmxkbhrq": "The apparition then begins to fade from view. With a tired smile he nods to you before finally disappearing completely.",
@@ -4586,7 +4649,7 @@
       "L_cxdem1h2": "I just...couldn't. I could never bear to stay inland for too long. Got saltwater for blood, she says. Maybe she's just salty that I wasn't willing to scrounge around for a place to stay in the city. But I'm like that mermaid; I belong with the waves. And she knows that, deep down, even if she doesn't understand why it's true.",
       "L_d1z6wajd": "Move on",
       "L_d2de5krv": "Degree? What did you study?",
-      "L_dalio096": "Its not. So long as I can I will stay here. It's what I deserve.",
+      "L_dalio096": "It's not. So long as I can I will stay here. It's what I deserve.",
       "L_danwhdez": "They will understand I'm sure. You do not need to linger here any longer punishing yourself, Theo.",
       "L_dfmdpejo": "You're not interested in any of the items that litter the table. You go outside to get a breath of air. ",
       "L_dfx0bxum": "You take the rusted key out of your pocket.",
@@ -4610,11 +4673,12 @@
       "L_f2fn857f": "You take the glass vial out of your pocket.",
       "L_fdm2d23v": "You know better than to get too close to the edge, but the view of the town is incredible.",
       "L_fh0ag060": "Of course...",
+      "L_fi4bdq13": "The front and back of it are engraved with a mermaid motif, in the style of a sailor's tattoo. Her hands are pushing back her hair, and her smiling face is somewhat worn down. This lighter has seen a lot of use.",
       "L_fmi4ixm4": "You bring out the rusty key.",
       "L_fn18d6og": "You feel a swell of tears growing inside in response to Rupert's elation. The ghost looks at you once more, an unmistakable weight lifted from his brow.",
       "L_gckwsese": "Speaking of which...Its getting late, my friend. The wind gets dangerous here at night.",
       "L_gcupcyt4": "...",
-      "L_gg5bpmsm": "At this time of night, on the cusp of morning, the empty promise of the waves is the only sound you can hear. The fog is rolling in, extinguishing the stars and softening the hard shapes of the rocks. The restaurant itself is far enough inland to dig a shallow foundation into the earth, but only just. A short trail leads from the employees' door to the shoreline, hardy sea weeds parting for their footsteps. Cigarette stubs are scattered like breadcrumbs, leading you onto the smooth and immense forms of the rocks.",
+      "L_gg5bpmsm": "At this time of night, on the cusp of morning, the empty promise of the waves is the only sound you can hear. The fog is rolling in, extinguishing the stars and softening the hard shapes of the rocks. ",
       "L_gglkt8ka": "They key is huge, much larger than any key made these days. You think you can make out a faint etching of a windmill in the ornate handle. An old mill stands in town. You would have a good view of it from the cliffs.",
       "L_giha5vka": "Before you can say anything else, he is gone.",
       "L_gkxr56mr": "You try a couple more times anyway. The mechanism stops resisting, making a satisfying click. But no fire is forthcoming.",
@@ -4622,15 +4686,16 @@
       "L_h2jaqe3k": "I've hidden away at home you know, and at the lighthouse, for so long. Don't want the town catching the croup from me. Maybe the world has changed since I last went out, and everyone is free from such ailments... I just don't know.",
       "L_h3chz14i": "It was...useful, I guess. Meaningful, probably. I would have kept at it if I hadn't been laid off.",
       "L_h3v858ya": "Shelly turns away with a smile, and you watch her sink into the waves. ",
-      "L_h5fwq28x": "This is my duty.... and i will see it through.\"",
+      "L_h5fwq28x": "This is my duty.... and I will see it through.\"",
       "L_h97ydol4": "Your training",
       "L_h9m86pt9": "...if it weren't for me I might still have ancestors running around. Great great grand children proudly upholding the name Montgomery. These rocks are my penance. I stay to remind myself of all I've done.",
       "L_hdmlwmke": "So you intend to just sit here and punish yourself for eternity?",
       "L_hgo2utey": "The cold air is salt-laden and whips around the curves of the worn granite underfoot. Light and shadow highlight the cross stitch pattern of crevices riddled throughout the stone. ",
+      "L_hhbj7djj": "Still the design on its handle is distinct: a depiction of a famous local windmill from the early 1800s sits within a wreath of wheat. Below is a ribbon with the name Montgomery etched inside. Only just legible as the years wear and tear have taken hold.",
       "L_hmmttuo2": "Say you don't know",
       "L_hnpf2is7": "I know what you mean. In a way, I was glad to be laid off. It pushed me through a door I wouldn't have had the courage to open, let alone walk through.",
       "L_hsiqhvme": "It would make sense, around 100 years ago the first cures for diphtheria were introduced to Atlantic Canada. You're just glad that today that kids are immunized against this kind of thing.",
-      "L_hxtfc8rb": "Yet we cant change the past... What's done is done. The Montgomerys are no more.",
+      "L_hxtfc8rb": "Yet we can't change the past... What's done is done. The Montgomerys are no more.",
       "L_i0uq4br9": "You know, the Brothers Grimm give that story a very different ending. Whatever. I can't believe I'm still having this argument over and over again. I can't do this anymore.",
       "L_i9qu3653": "Explain that vaccines now save lives",
       "L_iadozr77": "There was none of that croupy medicine left in the town. Johnathon was the first of us to get the croup, poor boy. We had to send him to the city to get treatment. It was hard on our community... on me... but at least he'd stand a chance...",
@@ -4650,7 +4715,7 @@
       "L_jhjck42y": "Many have seen. . . . but blind to the heartbeats inside the open doors.",
       "L_jlk1jiqw": "Where were you before?",
       "L_jrcmv0en": "Yeah, that was how I felt after graduation. Like, if I had to find a job in that field and work at it for the rest of my life...I would survive it, I guess. Buy a house, marry my girlfriend. That's what she wanted. It's what my folks wanted.",
-      "L_k1w01qf8": "Some items were lost that day, like a keychain that fell out of the unzipped pocket of a tourist clambering over the rocks. Others look so old that they're unlikely to be claimed by any modern visitor. You look at the table. A few items stand out to you.  ",
+      "L_k1w01qf8": "Some items were lost in the last few days, like a keychain that fell out of the unzipped pocket of a tourist clambering over the rocks. Others look so old that they're unlikely to be claimed by any modern visitor. You look at the table. A few items stand out to you.  ",
       "L_k3g8v4d5": "Were you a Montgomery?",
       "L_kl7aem9j": "So has the ghost of Rupert.",
       "L_kp463q12": "Pick up the lighter",
@@ -4659,7 +4724,8 @@
       "L_l0bcw964": "... well...its not all bad.",
       "L_l1a31hlz": "What will you do here?",
       "L_l2atfu2w": "You're not interested in any of the other items that litter the table. Maybe a walk will clear your head. Surely the sun will rise soon. You leave the lighthouse.",
-      "L_lpu7qv0s": "You walk a mile or so. In the distance an old windmill in surprisingly good condition stands proudly. But with each step closer you feel an icy chill from behind you. The anxiety welling up within Theo chills you to your very core. Eventually you reach the plot in which the windmill is set and make your way along its border, into town. after a minute or so you stop in front of an old wooden storefront.",
+      "L_lf5xupsf": "Eventually you reach the plot in which the windmill is set and make your way along its border, into town. After a minute or so you stop in front of an old wooden storefront.",
+      "L_lpu7qv0s": "You walk a mile or so. In the distance an old windmill in surprisingly good condition stands proudly. But with each step closer you feel an icy chill from behind you. The anxiety welling up within Theo chills you to your very core. ",
       "L_m2ewo5h9": "... at one time... it meant everything.",
       "L_mdk1s9we": "Hey! I was good at it, and it was good for the world, you know? I got to approve a bunch of genuinely impactful projects. I was always a hit at cocktail parties, too.",
       "L_miet7eir": "A short figure, swaddled in a yellow fisherman's coat and hat, peers at you warily from behind a lightless lamp. Both bushy beard and grey eyes seem to sparkle, as if left out on a frosty morning. The aroma of a lovingly cooked meal surrounds them.",
@@ -4675,7 +4741,7 @@
       "L_nrari1un": "What will you reflect on?  ",
       "L_nrd4rsrn": "Want to return to your cliffside?",
       "L_oga2e3gj": "It's what you want for yourself that matters most.",
-      "L_orlsugel": "A voice whispers from behind you. As you turn you see him. A ethereal young man stands before you. He is tall and broad chested dressed in a vest and slacks. He slumps slightly as he towers over you. His head hangs low and his shoulders slouched. You cant make out his face but you feel his stare. His voice is low and has the unmistakable hint of melancholy.",
+      "L_orlsugel": "A voice whispers from behind you. As you turn you see him. An ethereal young man stands before you. He is tall and broad chested dressed in a vest and slacks. He slumps slightly as he towers over you. His head hangs low and his shoulders slouched. You can't make out his face but you feel his stare. His voice is low and has the unmistakable hint of melancholy.",
       "L_ox0aoxx0": "Many have missed the starry nights, the crescent moon - the friendly lights.",
       "L_p5yyl6fk": "Aye! John would be pleased with this. He was always harkened on about pasturised milk and needles and the like. Didn't think he'd actually be right... smart lad. Guess he can make his own supper tonight.",
       "L_p9mivedy": "I'm new in town.  ",
@@ -4706,9 +4772,9 @@
       "L_sfoian5r": "Theo's spirit now is finally at rest. As you look to the sky and feel the breeze, you are reminded of the sad miller's story. Maybe this memory too is a legacy of a sort. The echo of the Montgomery family is still felt clearly in this little town.",
       "L_sfook5qs": "Don't play games now. You're my flesh and blood. My little brother. Same salt and iron runs through ole Rupert's veins that runs through yours.",
       "L_sp6clmpl": "You take out the glass vial.",
-      "L_sqy4o4jj": "Legacy takes many forms. A local baker recently purchased the land your windmill stood. They're a lover of history as it were and felt like they would honour your family by not only using the windmill but also naming her new company after its original owners. The Montgomerys still feed the people of this town. Even now.",
+      "L_sqy4o4jj": "Legacy takes many forms. A local baker recently purchased the land where your windmill stood. They're a lover of history as it were and felt like they would honour your family by not only using the windmill but also naming their new company after its original owners. The Montgomerys still feed the people of this town. Even now.",
       "L_st6nbww3": "Not much to go on. You take a guess at the age of the vial...  ",
-      "L_suk7brcu": "You do, in fact, belong in this place. At least, you do now. You have left the bustle of the city for this isolation by choice. After you got laid off, there was nothing to keep you there. No family, few friends. The close ones will stay in touch and the others will move on.It's time for a new chapter, and you're eager to take up the mantle of the lighthouse keeper, with all of its responsibilities.",
+      "L_suk7brcu": "You do, in fact, belong in this place. At least, you do now. You have left the bustle of the city for this isolation by choice. After you got laid off, there was nothing to keep you there. No family, few friends. The close ones will stay in touch and the others will move on.",
       "L_swj3484d": "The wind almost rebels against your steps as you walk out onto the rocky cliff face. The spray of the waves below is fresh in the air as they just barely crest over the steep ledge. ",
       "L_t81o2avu": "\"A bakery? Wh- Montgomery Mill Baking Company? But how is this possible? My parents had passed before me and I died without kids. The Montgomery name should be all but dead...",
       "L_te8gp2su": "Let me share something I've learned as my time as a wickie...",
@@ -4724,6 +4790,7 @@
       "L_uly52w03": "Man may change the Cove at will With dwellings, houses, stores — and still",
       "L_uwxx6su0": "You stare out over the rolling rocks with a gentle gaze, letting the landscape fill your senses. ",
       "L_ux3t4f92": "I wanted you to see something... Look at this building",
+      "L_v5249d7h": "You're up early, again. So early that folks in the city are still having a late night. But in this small town, you are the only living soul up and about.",
       "L_va2gb6tv": "The smell of food is gone also, even if - strangely - your appetite remains.  ",
       "L_vccta3yn": "Really gives you scope of how small life in this little town is. Yet as soon at you take a few moments of this quiet contemplation in the wind howls up again. Pushing against you and away from the cliff. As if to tell you: 'Go back home. You do not belong in this place'.",
       "L_vcoe0rup": "Return to the lighthouse",
@@ -4744,17 +4811,17 @@
       "L_ww4b4473": "Why? The town has nothing for me now... I-... It will only remind me of what I threw away.",
       "L_x6k7subl": "I'm the new lighthouse keeper.",
       "L_xb5m0msp": ".. I do.",
-      "L_xbxyfirl": "Rupert lingered in uncertainty",
+      "L_xbxyfirl": "Rupert lingered in uncertainty, as we all do in life.",
       "L_xe5fe95t": "'Cause I can't bear to see it...",
       "L_xkwf599b": " Well, I did walk through that door and it didn't turn out quite how I planned. And now I guess I have to walk through another one, to whatever's next, right? I don't even get to grow old here.",
       "L_xlo2p9g9": "Oh, and popular, too... Cause what really matters is what other people think of you. I've been down that road with my parents. But I couldn't just live the life they wanted me to. Stay in the city, marry my girlfriend, buy a house, work a job that actually uses my degree.",
       "L_xm4d8z1w": "Rusty Key",
       "L_xz8epju2": "Move on.",
-      "L_y2ninfuz": "Then why do you linger here and not the old mill?",
-      "L_y887gtqr": "You're up early, again. So early that folks in the city are still having a late night. But in this small town, you are the only living soul up and about.",
+      "L_y2ninfuz": "Then why do you linger here and not at the old mill?",
       "L_yn9n6e2n": "You turn your back, ignoring the wind's song as you leave.",
       "L_ysafydga": "You sound just like my girlfriend. \"You can be anything you want up here! There's nothing for you back home!\" What if I don't want to take any of those opportunities. What if I don't want anything? I had to live there to get this stupid degree, and then I spent all summer after graduation trying to get work with it. I'm honestly relieved I didn't get hired up there.",
       "L_z2jvf84o": "I'm new in town.",
+      "L_z7yy5g4n": "The restaurant itself is far enough inland to dig a shallow foundation into the earth, but only just. A short trail leads from the employees' door to the shoreline, hardy sea weeds parting for their footsteps. Cigarette stubs are scattered like breadcrumbs, leading you onto the smooth and immense forms of the rocks.",
       "L_zco2auz3": "There's more to see elsewhere. Maybe you'll come back later.",
       "L_zeu4b0ri": "You take the mermaid lighter from your pocket.",
       "L_zf8ipdru": "Shake your head",
@@ -4763,7 +4830,7 @@
       "L_zuhls44v": "I always loved coming out to these cliffs as a kid. Feeling the wind pushing against me. Back when I had less to worry about.",
       "L_zv05xd5g": "Maybe you're hoping this phantom from the afterlife has some essential wisdom to share. ",
       "L_zw8z5i1h": "The crashing waves make you uneasy. Time to go.",
-      "L_zwh8c0ok": "Don't you see though? That's just it. I cant move on.... if I do then there truly WILL be nothing. I am the last spark of our legacy. ",
+      "L_zwh8c0ok": "Don't you see though? That's just it. I can't move on.... if I do then there truly WILL be nothing. I am the last spark of our legacy. ",
       "L_zyehp8xs": "You flip it open and try to light it. The mechanism catches under your thumb. On closer inspection, it's tarnished. There's a slight build-up of salt encrusting the opening where the flame should appear. It must have fallen into the sea.",
       "T_o9399qkh": "It's still not light out, and the fog coils around you. Where will you go next?"
     }

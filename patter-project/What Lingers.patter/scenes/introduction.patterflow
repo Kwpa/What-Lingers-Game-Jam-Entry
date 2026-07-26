@@ -13,7 +13,14 @@
                 "kind": "gameEvent",
               },
               {
-                "id": "L_y887gtqr",
+                "gameData": {
+                  "Fade In Looped Audio": "music_background",
+                },
+                "id": "A_z46y6phn",
+                "kind": "gameEvent",
+              },
+              {
+                "id": "L_v5249d7h",
                 "kind": "text",
               },
             ],
@@ -21,13 +28,6 @@
             "jump": {
               "to": "blk_v4yjnpqq",
             },
-            "onEnter": [
-              {
-                "kind": "set",
-                "target": "@photo_title",
-                "value": "\"lighthouse_interior\"",
-              },
-            ],
             "type": "snippet",
           },
         ],
@@ -52,6 +52,13 @@
               },
             ],
             "id": "sn_bm7zo0cl",
+            "onEnter": [
+              {
+                "kind": "set",
+                "target": "@photo_title",
+                "value": "\"lighthouse_interior\"",
+              },
+            ],
             "type": "snippet",
           },
           {
@@ -100,6 +107,23 @@
       {
         "children": [
           {
+            "beats": [
+              {
+                "id": "L_7lp1gimq",
+                "kind": "text",
+              },
+            ],
+            "id": "sn_m7dzlrl1",
+            "onEnter": [
+              {
+                "kind": "set",
+                "target": "@photo_title",
+                "value": "\"lighthouse_interior\"",
+              },
+            ],
+            "type": "snippet",
+          },
+          {
             "children": [
               {
                 "children": [
@@ -110,6 +134,9 @@
                         "kind": "text",
                       },
                       {
+                        "gameData": {
+                          "Play Oneshot SFX": "sfx_acquire_item",
+                        },
                         "id": "A_jwp06wjj",
                         "kind": "gameEvent",
                       },
