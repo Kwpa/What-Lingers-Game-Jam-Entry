@@ -10,6 +10,8 @@ func _ready() -> void:
 	$TitleBackground/TitleText.modulate = Color(1, 1, 1, 0)
 	$Controls.modulate = Color(1, 1, 1, 0)
 	$Controls/OptionButton.disabled = true
+	
+	AudioManager.set_music("music_menu")
 
 
 func _process(delta: float) -> void:

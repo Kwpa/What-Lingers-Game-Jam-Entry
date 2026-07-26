@@ -271,7 +271,11 @@ func _hide_menu():
 
 
 func _toggle_audio():
+	# Patter functionality
 	_audio_enabled = not _audio_enabled
+	
+	# Our audio
+	AudioManager.audio_enabled = _audio_enabled
 
 
 func _return_to_title():

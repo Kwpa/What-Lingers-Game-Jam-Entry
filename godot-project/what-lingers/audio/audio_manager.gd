@@ -1,5 +1,26 @@
 extends Node
 
+@export var audio_enabled: bool = true:
+	set(value):
+		audio_enabled = value
+		AudioServer.set_bus_mute(0, !audio_enabled)
+
+@export var music_enabled: bool = true:
+	set(value):
+		music_enabled = value
+		AudioServer.set_bus_mute(1, !music_enabled)
+
+@export var ambience_enabled: bool = true:
+	set(value):
+		ambience_enabled = value
+		AudioServer.set_bus_mute(2, !ambience_enabled)
+
+@export var sfx_enabled: bool = true:
+	set(value):
+		sfx_enabled = value
+		AudioServer.set_bus_mute(3, !sfx_enabled)
+
+
 @export var sfx: Dictionary[StringName, AudioStream]
 
 @export var music_volume_offset: Dictionary[StringName, float]
@@ -7,6 +28,13 @@ extends Node
 @export var sfx_volume_offset: Dictionary[StringName, float]
 
 @export var volume_offset_tween_time: float = 2.5
+
+func _ready():
+	# Trigger setters
+	audio_enabled = audio_enabled
+	music_enabled = music_enabled
+	ambience_enabled = ambience_enabled
+	sfx_enabled = sfx_enabled
 
 func set_music(music_name: StringName) -> void:
 	var playback: AudioStreamPlaybackInteractive = $MusicAudioStreamPlayer.get_stream_playback()
