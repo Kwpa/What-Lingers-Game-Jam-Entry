@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cikwfcjia6se5" path="res://patter/tour_copy.gd" id="1_6gba0"]
 [ext_resource type="Texture2D" uid="uid://clyjaixgpwhs7" path="res://photos/lighthouse_exterior.jpg" id="2_nsoh1"]
+[ext_resource type="Script" uid="uid://dyxaim7xddosa" path="res://scripts/background.gd" id="2_ygqty"]
 [ext_resource type="Texture2D" uid="uid://bm4kkhku8vbgj" path="res://graphics/black.jpg" id="3_yhno6"]
 [ext_resource type="Shader" uid="uid://jffbdrtd34xn" path="res://shaders/glitch-double-vision.gdshader" id="4_njcbe"]
 [ext_resource type="Texture2D" uid="uid://cf8rkoglvveo3" path="res://graphics/blank.jpg" id="5_5l8xs"]
@@ -50,6 +51,7 @@ offset_bottom = -11.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(1.05, 1.05)
+script = ExtResource("2_ygqty")
 
 [node name="Photo" type="TextureRect" parent="Background" unique_id=873929310]
 layout_mode = 1
@@ -217,6 +219,7 @@ bbcode_enabled = true
 text = "You are the lighthouse keeper."
 
 [node name="Controls" type="VBoxContainer" parent="." unique_id=1409167491]
+visible = false
 custom_minimum_size = Vector2(600, 150)
 layout_mode = 1
 anchors_preset = 7

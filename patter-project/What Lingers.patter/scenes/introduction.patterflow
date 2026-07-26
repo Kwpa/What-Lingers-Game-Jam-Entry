@@ -7,7 +7,7 @@
             "beats": [
               {
                 "gameData": {
-                  "Fade In Looped Audio": "amb_lighthouse_interior",
+                  "Fade In Looped Audio": "amb_lighthouse_exterior",
                 },
                 "id": "A_fkxtr5xj",
                 "kind": "gameEvent",
@@ -22,6 +22,13 @@
               {
                 "id": "L_v5249d7h",
                 "kind": "text",
+              },
+              {
+                "gameData": {
+                  "Play Oneshot SFX": "sfx_footsteps",
+                },
+                "id": "A_ndlsdfl2",
+                "kind": "gameEvent",
               },
             ],
             "id": "sn_wk50zmo4",
@@ -42,12 +49,13 @@
               {
                 "gameData": {
                   "Fade In Looped Audio": "music_background",
+                  "Remove Fog Text": "TRUE",
                 },
                 "id": "A_nzyl6q6v",
                 "kind": "gameEvent",
               },
               {
-                "id": "L_reg927cb",
+                "id": "L_autsga3p",
                 "kind": "text",
               },
             ],

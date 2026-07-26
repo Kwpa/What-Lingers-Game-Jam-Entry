@@ -72,10 +72,14 @@ func _ready() -> void:
 
 
 func _start() -> void:
+	Events.emit_signal("return_fog")
+	_set_dialogue_zero_alpha()
 	for child in _transcript.get_children():
 		child.queue_free()
 	_flow = _engine.open_flow("main", "introduction")  # the project's start scene
 	_step()
+	await get_tree().create_timer(2.5).timeout
+	_fadein_dialogue(1)
 
 
 func _step() -> void:
@@ -99,7 +103,8 @@ func _step() -> void:
 			#_append("[color=#8a8069]⚙ game event %s[/color]" % step["id"])
 			print(step)
 			if step.has("gameData"):
-				for key in step.gameData.keys():
+				var keys = step.gameData.keys()
+				for key in keys:
 					match key:
 						"Fade In Looped Audio":
 							Events.emit_signal("fadein_loop_sfx",step.gameData[key])
@@ -107,6 +112,8 @@ func _step() -> void:
 							Events.emit_signal("fadeout_loop_sfx",step.gameData[key])
 						"Play Oneshot SFX":
 							Events.emit_signal("oneshot_sfx",step.gameData[key])
+						"Remove Fog":
+							Events.emit_signal("remove_fog")
 			_step()
 		"choice":
 			_show_choices(step["options"])
@@ -147,6 +154,12 @@ func _create_control_modulate_tween(node: Node, value_end: Color, duration: floa
 	return tween
 
 
+func _set_dialogue_zero_alpha():
+	_create_shader_color_tween($Dialogue/TextBackground,"box_color",Vector4(1,1,1,1), Vector4(1,1,1,0),0)
+	_create_shader_color_tween($Dialogue/TextBackground,"outline_color",Vector4(0,0,0,1), Vector4(0,0,0,0),0)
+	_create_control_modulate_tween($Dialogue,Color(1,1,1,0),0)
+	
+	
 func _fadeout_dialogue(timing : float) -> void:
 	_create_shader_color_tween($Dialogue/TextBackground,"box_color",Vector4(1,1,1,1), Vector4(1,1,1,0),timing)
 	_create_shader_color_tween($Dialogue/TextBackground,"outline_color",Vector4(0,0,0,1), Vector4(0,0,0,0),timing)

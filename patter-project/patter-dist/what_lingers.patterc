@@ -26,9 +26,9 @@
     }
   ],
   "content": {
-    "hash": "0s27f81",
+    "hash": "072afha",
     "project": "proj_pvhchy3o",
-    "structureHash": "14dybin"
+    "structureHash": "0hvu78h"
   },
   "gameDataFields": {
     "gameEvent": [
@@ -1931,7 +1931,7 @@
               "beats": [
                 {
                   "gameData": {
-                    "Fade In Looped Audio": "amb_lighthouse_interior"
+                    "Fade In Looped Audio": "amb_lighthouse_exterior"
                   },
                   "id": "A_fkxtr5xj",
                   "kind": "gameEvent"
@@ -1946,6 +1946,13 @@
                 {
                   "id": "L_v5249d7h",
                   "kind": "text"
+                },
+                {
+                  "gameData": {
+                    "Play Oneshot SFX": "sfx_footsteps"
+                  },
+                  "id": "A_ndlsdfl2",
+                  "kind": "gameEvent"
                 }
               ],
               "id": "sn_wk50zmo4",
@@ -1965,13 +1972,14 @@
               "beats": [
                 {
                   "gameData": {
-                    "Fade In Looped Audio": "music_background"
+                    "Fade In Looped Audio": "music_background",
+                    "Remove Fog Text": "TRUE"
                   },
                   "id": "A_nzyl6q6v",
                   "kind": "gameEvent"
                 },
                 {
-                  "id": "L_reg927cb",
+                  "id": "L_autsga3p",
                   "kind": "text"
                 }
               ],
@@ -4809,6 +4817,7 @@
       "L_arlhn3o2": "The apparition begins to fade from view. He takes no notice of you as you reach out to try and stop him. He just mutters to himself.",
       "L_asqgxqo2": "You know nothing about me or my family.",
       "L_au7ez05s": "... 50 years?",
+      "L_autsga3p": "You wander into the lighthouse and peruse the objects in the perpetual lost and found.   ",
       "L_awip25ie": "He bows his head, obscuring his face with his yellow nautical hat.  ",
       "L_ay6cyec8": "You think back on your apprenticeship to the previous lighthouse keeper. The lighthouse keepers have served this community as a trusted guide for generations, keeping ships from foundering on the rocks and shining light where it is needed most.",
       "L_ayuu2x8q": "Theo then disappears into the wind. A gust pushes you back away from the cliff. Theo's home is amongst the crags of the shoreline. His vigil everlasting... Such is the legacy of the Montgomery family.",
@@ -4943,7 +4952,6 @@
       "L_r0u8ioxq": "Remember, Ariel had to leave the ocean to find her prince and satisfy her curiosity.  ",
       "L_r8z63i2j": "Linger...",
       "L_r9z6za30": "You're wrong friend... I must stay here.",
-      "L_reg927cb": "You wander into the lighthouse and peruse the objects in the perpetual lost and found.   ",
       "L_rhus38j5": "Rupert's eyes open again. He stares at you with glittering orbs, thawing from grey to blue. His voice falters.",
       "L_riv8x740": "He silently listens to you explain that some major infections and illnesses have been treatable for while, and that vaccinations have saved untold numbers of lives. ",
       "L_rjx6ki9b": "Return to the lighthouse",
