@@ -82,6 +82,7 @@ func _step() -> void:
 	var step: Dictionary = _flow.advance()
 	#print(_flow.get_property("@scene.linger_points")) # get Shelly's linger points
 	#print(_flow.get_property("@photo_title")) # get the global photo title
+	
 	_update_background()
 	_update_ghost()
 	match step["type"]:
@@ -118,8 +119,47 @@ func _update_background() -> void:
 	var correct_background = str("res://photos/", _flow.get_property("@photo_title"), ".jpg")
 	var current_background: String = _photo.texture.get_path()
 	if current_background != correct_background:
+		$Dialogue/Lines.visible = false
+		_fadeout_dialogue(1)
+		await get_tree().create_timer(2).timeout
 		_photo.texture = load(correct_background)
+		await get_tree().create_timer(3).timeout
+		$Dialogue/Lines.visible = true
+		_fadein_dialogue(1)
 
+
+func _create_shader_color_tween(node: Node, shader_property: String, value_start: Vector4, value_end: Vector4, duration: float) -> Tween:
+	await get_tree().create_timer(0.2).timeout
+	var nodemat = node.material
+	var tween = get_tree().create_tween()
+	tween.tween_method(
+	func(value): node.material.set_shader_parameter(shader_property, value),  
+	value_start,
+	value_end,
+	duration
+  );
+	return tween
+
+
+func _create_control_modulate_tween(node: Node, value_end: Color, duration: float) -> Tween:
+	var tween = get_tree().create_tween()
+	tween.tween_property(node,"modulate",value_end,duration)
+	return tween
+
+
+func _fadeout_dialogue(timing : float) -> void:
+	_create_shader_color_tween($Dialogue/TextBackground,"box_color",Vector4(1,1,1,1), Vector4(1,1,1,0),timing)
+	_create_shader_color_tween($Dialogue/TextBackground,"outline_color",Vector4(0,0,0,1), Vector4(0,0,0,0),timing)
+	_create_control_modulate_tween($Dialogue,Color(1,1,1,0),timing)
+	$Controls.visible = false
+		
+
+func _fadein_dialogue(timing: float) -> void:
+	_create_shader_color_tween($Dialogue/TextBackground,"box_color",Vector4(1,1,1,0), Vector4(1,1,1,1),timing)
+	_create_shader_color_tween($Dialogue/TextBackground,"outline_color",Vector4(0,0,0,0), Vector4(0,0,0,1),timing)
+	_create_control_modulate_tween($Dialogue,Color(1,1,1,1),timing)
+	await get_tree().create_timer(2).timeout
+	$Controls.visible = true
 
 func _update_ghost() -> void:
 	var ghost_name: String = _flow.get_property("@ghost_name")
