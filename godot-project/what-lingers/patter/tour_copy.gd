@@ -111,7 +111,10 @@ func _step() -> void:
 						"Fade Out Looped Audio":
 							Events.emit_signal("fadeout_loop_sfx",step.gameData[key])
 						"Play Oneshot SFX":
-							Events.emit_signal("oneshot_sfx",step.gameData[key])
+							var delay = 0
+							if "SFX Delay" in keys:
+								delay = step.gameData["SFX Delay"]
+							Events.emit_signal("oneshot_sfx",step.gameData[key],delay)
 						"Remove Fog":
 							Events.emit_signal("remove_fog")
 						"Show Item":
