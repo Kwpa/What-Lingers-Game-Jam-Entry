@@ -251,7 +251,7 @@ func _append(bbcode: String) -> void:
 func _show_next() -> void:
 	# _next_button.show()
 	var button = _button_scene.instantiate()
-	button._set_option("▸ Next", _step)
+	button._set_option("Next", _step)
 	_set_controls([button])
 
 
@@ -279,7 +279,7 @@ func _clear_controls():
 
 
 func _show_restart() -> void:
-	_set_controls([_button("↺ Play again", _start)])
+	_set_controls([_button("Return to Title", _return_to_title)])
 
 
 func _button(label: String, on_pressed: Callable) -> Button:

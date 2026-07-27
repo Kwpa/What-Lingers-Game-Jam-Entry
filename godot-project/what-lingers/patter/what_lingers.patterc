@@ -26,9 +26,9 @@
     }
   ],
   "content": {
-    "hash": "0qrwsjf",
+    "hash": "0okarex",
     "project": "proj_pvhchy3o",
-    "structureHash": "0uxdwg1"
+    "structureHash": "1l07d59"
   },
   "gameDataFields": {
     "gameEvent": [
@@ -1158,6 +1158,10 @@
               "beats": [
                 {
                   "id": "L_orlsugel",
+                  "kind": "text"
+                },
+                {
+                  "id": "L_4rkjhqby",
                   "kind": "text"
                 }
               ],
@@ -4870,6 +4874,7 @@
       "L_4dto6hro": "You don't know how much Rupert would have known about vaccinations 100 years ago. ",
       "L_4fa7v880": "I insist. Lets go for a walk in town.",
       "L_4mb6osvl": "There is nothing for you here. Best to head back.  ",
+      "L_4rkjhqby": "As you turn you see him. An ethereal young man stands before you. He is tall and broad chested dressed in a vest and slacks. He slumps slightly as he towers over you. His head hangs low and his shoulders slouched. You can't make out his face but you feel his stare. ",
       "L_4vcn2z5a": "I'm the new lighthouse keeper.",
       "L_4xa35oxr": "Who are you?",
       "L_50rnso44": "She lights her translucent cigarette and turns the lighter over in her hand.",
@@ -5043,7 +5048,7 @@
       "L_nrari1un": "What will you reflect on?  ",
       "L_nrd4rsrn": "Want to return to your cliffside?",
       "L_oga2e3gj": "It's what you want for yourself that matters most.",
-      "L_orlsugel": "A voice whispers from behind you. As you turn you see him. An ethereal young man stands before you. He is tall and broad chested dressed in a vest and slacks. He slumps slightly as he towers over you. His head hangs low and his shoulders slouched. You can't make out his face but you feel his stare. His voice is low and has the unmistakable hint of melancholy.",
+      "L_orlsugel": "A voice whispers from behind you— low and with the unmistakable hint of melancholy.",
       "L_ox0aoxx0": "Many have missed the starry nights, the crescent moon— the friendly lights.",
       "L_p5yyl6fk": "Aye! John would be pleased with this. He was always hearkening on about pasturised milk and needles and the like. Didn't think he'd actually be right... Smart lad. Guess he can make his own supper tonight.",
       "L_p9mivedy": "I'm new in town.  ",
