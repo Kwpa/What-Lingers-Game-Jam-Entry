@@ -8,6 +8,8 @@
               {
                 "gameData": {
                   "Fade In Looped Audio": "amb_cliff_face",
+                  "Play Oneshot SFX": "sfx_footsteps",
+                  "SFX Delay": 1.8,
                 },
                 "id": "A_rp9bum9o",
                 "kind": "gameEvent",
@@ -69,8 +71,8 @@
                       },
                       {
                         "gameData": {
-                          "Fade Out Looped Audio": "amb_cliff_face",
                           "Play Oneshot SFX": "sfx_footsteps",
+                          "SFX Delay": 1.8,
                         },
                         "id": "A_9mn4yy6l",
                         "kind": "gameEvent",
@@ -300,8 +302,8 @@
                       },
                       {
                         "gameData": {
-                          "Fade Out Looped Audio": "amb_cliff_face",
                           "Play Oneshot SFX": "sfx_footsteps",
+                          "SFX Delay": 1.8,
                         },
                         "id": "A_7haycaz6",
                         "kind": "gameEvent",
@@ -804,7 +806,16 @@
           {
             "beats": [
               {
-                "id": "L_lpu7qv0s",
+                "gameData": {
+                  "Fade In Looped Audio": "amb_in_town",
+                  "Play Oneshot SFX": "sfx_footsteps",
+                  "SFX Delay": 1.8,
+                },
+                "id": "A_ctqqu4xz",
+                "kind": "gameEvent",
+              },
+              {
+                "id": "L_c0upda30",
                 "kind": "text",
               },
               {
@@ -1093,7 +1104,6 @@
               {
                 "gameData": {
                   "Fade In Looped Audio": "music_background",
-                  "Fade Out Looped Audio": "music_ghost",
                 },
                 "id": "A_ocwirkve",
                 "kind": "gameEvent",
@@ -1104,8 +1114,8 @@
               },
               {
                 "gameData": {
-                  "Fade Out Looped Audio": "amb_cliff_face",
                   "Play Oneshot SFX": "sfx_footsteps",
+                  "SFX Delay": 1.8,
                 },
                 "id": "A_mykoc2tw",
                 "kind": "gameEvent",
