@@ -75,8 +75,11 @@ func set_ambience(ambience_name: StringName) -> void:
 	)
 		
 
-func play_sfx(sfx_name: StringName) -> void:
+func play_sfx(sfx_name: StringName, delay: float = 0) -> void:
 	if sfx.has(sfx_name):
+		if delay > 0:
+			await get_tree().create_timer(delay).timeout
+		
 		var player = AudioStreamPlayer.new()
 		player.bus = "SFX"
 		player.stream = sfx[sfx_name]

@@ -62,6 +62,10 @@
         "type": "text",
       },
       {
+        "name": "SFX Delay",
+        "type": "number",
+      },
+      {
         "default": "NONE",
         "name": "Fade In Looped Audio",
         "type": "text",

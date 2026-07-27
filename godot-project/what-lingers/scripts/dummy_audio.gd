@@ -21,8 +21,8 @@ func _input(event: InputEvent) -> void:
 				$Label1.text = ""
 	
 
-func oneshot_sfx(clip_name : String):
-	AudioManager.play_sfx(clip_name)
+func oneshot_sfx(clip_name : String, delay: float = 0):
+	AudioManager.play_sfx(clip_name, delay)
 	$Label1.text = "oneshot " + clip_name
 	await get_tree().create_timer(1).timeout
 	$Label1.text = ""

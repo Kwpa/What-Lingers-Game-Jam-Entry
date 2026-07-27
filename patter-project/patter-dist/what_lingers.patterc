@@ -26,9 +26,9 @@
     }
   ],
   "content": {
-    "hash": "0okarex",
+    "hash": "1dh3tv9",
     "project": "proj_pvhchy3o",
-    "structureHash": "1l07d59"
+    "structureHash": "0mtgtbt"
   },
   "gameDataFields": {
     "gameEvent": [
@@ -36,6 +36,10 @@
         "default": "NONE",
         "name": "Play Oneshot SFX",
         "type": "text"
+      },
+      {
+        "name": "SFX Delay",
+        "type": "number"
       },
       {
         "default": "NONE",
@@ -107,7 +111,14 @@
             {
               "beats": [
                 {
-                  "id": "L_u912nuzh",
+                  "gameData": {
+                    "Fade In Looped Audio": "amb_lighthouse_exterior"
+                  },
+                  "id": "A_6uzfpy9j",
+                  "kind": "gameEvent"
+                },
+                {
+                  "id": "L_u66ypwdr",
                   "kind": "text"
                 },
                 {
@@ -186,7 +197,14 @@
             {
               "beats": [
                 {
-                  "id": "T_o9399qkh",
+                  "gameData": {
+                    "Fade In Looped Audio": "amb_lighthouse_exterior"
+                  },
+                  "id": "A_00immudh",
+                  "kind": "gameEvent"
+                },
+                {
+                  "id": "L_0hsjg3v9",
                   "kind": "text"
                 }
               ],
@@ -335,7 +353,7 @@
                     {
                       "id": "sn_2ifzbarw",
                       "jump": {
-                        "to": "blk_usdt6ey1"
+                        "to": "blk_v4yjnpqq"
                       },
                       "type": "snippet"
                     }
@@ -753,7 +771,9 @@
               "beats": [
                 {
                   "gameData": {
-                    "Fade In Looped Audio": "amb_cliff_face"
+                    "Fade In Looped Audio": "amb_cliff_face",
+                    "Play Oneshot SFX": "sfx_footsteps",
+                    "SFX Delay": 1.8
                   },
                   "id": "A_rp9bum9o",
                   "kind": "gameEvent"
@@ -821,8 +841,8 @@
                         },
                         {
                           "gameData": {
-                            "Fade Out Looped Audio": "amb_cliff_face",
-                            "Play Oneshot SFX": "sfx_footsteps"
+                            "Play Oneshot SFX": "sfx_footsteps",
+                            "SFX Delay": 1.8
                           },
                           "id": "A_9mn4yy6l",
                           "kind": "gameEvent"
@@ -1087,8 +1107,8 @@
                         },
                         {
                           "gameData": {
-                            "Fade Out Looped Audio": "amb_cliff_face",
-                            "Play Oneshot SFX": "sfx_footsteps"
+                            "Play Oneshot SFX": "sfx_footsteps",
+                            "SFX Delay": 1.8
                           },
                           "id": "A_7haycaz6",
                           "kind": "gameEvent"
@@ -1603,7 +1623,16 @@
             {
               "beats": [
                 {
-                  "id": "L_lpu7qv0s",
+                  "gameData": {
+                    "Fade In Looped Audio": "amb_in_town",
+                    "Play Oneshot SFX": "sfx_footsteps",
+                    "SFX Delay": 1.8
+                  },
+                  "id": "A_ctqqu4xz",
+                  "kind": "gameEvent"
+                },
+                {
+                  "id": "L_c0upda30",
                   "kind": "text"
                 },
                 {
@@ -1915,8 +1944,7 @@
               "beats": [
                 {
                   "gameData": {
-                    "Fade In Looped Audio": "music_background",
-                    "Fade Out Looped Audio": "music_ghost"
+                    "Fade In Looped Audio": "music_background"
                   },
                   "id": "A_ocwirkve",
                   "kind": "gameEvent"
@@ -1927,8 +1955,8 @@
                 },
                 {
                   "gameData": {
-                    "Fade Out Looped Audio": "amb_cliff_face",
-                    "Play Oneshot SFX": "sfx_footsteps"
+                    "Play Oneshot SFX": "sfx_footsteps",
+                    "SFX Delay": 1.8
                   },
                   "id": "A_mykoc2tw",
                   "kind": "gameEvent"
@@ -1973,13 +2001,6 @@
                 {
                   "id": "L_v5249d7h",
                   "kind": "text"
-                },
-                {
-                  "gameData": {
-                    "Play Oneshot SFX": "sfx_footsteps"
-                  },
-                  "id": "A_ndlsdfl2",
-                  "kind": "gameEvent"
                 }
               ],
               "id": "sn_wk50zmo4",
@@ -1999,8 +2020,10 @@
               "beats": [
                 {
                   "gameData": {
-                    "Fade In Looped Audio": "music_background",
-                    "Remove Fog Text": "TRUE"
+                    "Fade In Looped Audio": "amb_lighthouse_interior",
+                    "Play Oneshot SFX": "sfx_footsteps_door",
+                    "Remove Fog Text": "TRUE",
+                    "SFX Delay": 1.75
                   },
                   "id": "A_nzyl6q6v",
                   "kind": "gameEvent"
@@ -2054,9 +2077,6 @@
             {
               "beats": [
                 {
-                  "gameData": {
-                    "Fade In Looped Audio": "amb_lighthouse_interior"
-                  },
                   "id": "A_lai3ze80",
                   "kind": "gameEvent"
                 }
@@ -2276,6 +2296,14 @@
                         {
                           "id": "L_l2atfu2w",
                           "kind": "text"
+                        },
+                        {
+                          "gameData": {
+                            "Play Oneshot SFX": "sfx_footsteps_door",
+                            "SFX Delay": 1.75
+                          },
+                          "id": "A_2ys2cegd",
+                          "kind": "gameEvent"
                         }
                       ],
                       "condition": {
@@ -2318,8 +2346,8 @@
                         },
                         {
                           "gameData": {
-                            "Fade Out Looped Audio": "amb_lighthouse_interior",
-                            "Play Oneshot SFX": "sfx_footsteps"
+                            "Play Oneshot SFX": "sfx_footsteps_door",
+                            "SFX Delay": 1.75
                           },
                           "id": "A_ly89h9lx",
                           "kind": "gameEvent"
@@ -2401,7 +2429,9 @@
               "beats": [
                 {
                   "gameData": {
-                    "Fade In Looped Audio": "amb_site_keepers_house"
+                    "Fade In Looped Audio": "amb_site_keepers_house",
+                    "Play Oneshot SFX": "sfx_footsteps",
+                    "SFX Delay": 1.8
                   },
                   "id": "A_l1q0zpsl",
                   "kind": "gameEvent"
@@ -2466,6 +2496,14 @@
                         {
                           "id": "L_zco2auz3",
                           "kind": "text"
+                        },
+                        {
+                          "gameData": {
+                            "Play Oneshot SFX": "sfx_footsteps",
+                            "SFX Delay": 1.8
+                          },
+                          "id": "A_qlz6yj24",
+                          "kind": "gameEvent"
                         }
                       ],
                       "id": "sn_6agqoi49",
@@ -2646,6 +2684,14 @@
                                 {
                                   "id": "L_4mb6osvl",
                                   "kind": "text"
+                                },
+                                {
+                                  "gameData": {
+                                    "Play Oneshot SFX": "sfx_footsteps",
+                                    "SFX Delay": 1.8
+                                  },
+                                  "id": "A_qgyoj43h",
+                                  "kind": "gameEvent"
                                 }
                               ],
                               "id": "sn_fv3d56hh",
@@ -3200,6 +3246,7 @@
                         },
                         {
                           "gameData": {
+                            "Play Oneshot SFX": "sfx_retrieve_item",
                             "Show Item": "VIAL"
                           },
                           "id": "A_a5c9m4s7",
@@ -3228,7 +3275,8 @@
                       "beats": [
                         {
                           "gameData": {
-                            "Hide Item": true
+                            "Hide Item": true,
+                            "Play Oneshot SFX": "sfx_pocket_item"
                           },
                           "id": "A_8txk4tk9",
                           "kind": "gameEvent"
@@ -3372,8 +3420,8 @@
                 },
                 {
                   "gameData": {
-                    "Fade Out Looped Audio": "amb_site_keepers_house",
-                    "Play Oneshot SFX": "sfx_footsteps"
+                    "Play Oneshot SFX": "sfx_footsteps",
+                    "SFX Delay": 1.8
                   },
                   "id": "A_kho1pqjx",
                   "kind": "gameEvent"
@@ -3393,8 +3441,8 @@
                       "beats": [
                         {
                           "gameData": {
-                            "Fade Out Looped Audio": "amb_site_keepers_house",
-                            "Play Oneshot SFX": "sfx_footsteps"
+                            "Play Oneshot SFX": "sfx_footsteps",
+                            "SFX Delay": 1.8
                           },
                           "id": "A_4hr4wfh2",
                           "kind": "gameEvent"
@@ -3449,6 +3497,7 @@
               "beats": [
                 {
                   "gameData": {
+                    "Fade In Looped Audio": "music_background",
                     "Play Oneshot SFX": "sfx_moves_on_chime_pos"
                   },
                   "id": "A_hrs5vcl2",
@@ -3559,6 +3608,7 @@
               "beats": [
                 {
                   "gameData": {
+                    "Fade In Looped Audio": "music_background",
                     "Play Oneshot SFX": "sfx_moves_on_chime_neg"
                   },
                   "id": "A_rd0ebphn",
@@ -3626,6 +3676,7 @@
               "beats": [
                 {
                   "gameData": {
+                    "Fade In Looped Audio": "music_background",
                     "Play Oneshot SFX": "sfx_lingers_chime_pos"
                   },
                   "id": "A_huz0ioje",
@@ -3671,7 +3722,9 @@
               "beats": [
                 {
                   "gameData": {
-                    "Fade In Looped Audio": "amb_smoke_break"
+                    "Fade In Looped Audio": "amb_smoke_break",
+                    "Play Oneshot SFX": "sfx_footsteps",
+                    "SFX Delay": 1.8
                   },
                   "id": "A_1k3hs7k6",
                   "kind": "gameEvent"
@@ -3729,8 +3782,8 @@
                         },
                         {
                           "gameData": {
-                            "Fade Out Looped Audio": "amb_smoke_break",
-                            "Play Oneshot SFX": "sfx_footsteps"
+                            "Play Oneshot SFX": "sfx_footsteps",
+                            "SFX Delay": 1.8
                           },
                           "id": "A_9sk2rhns",
                           "kind": "gameEvent"
@@ -3961,8 +4014,8 @@
                         },
                         {
                           "gameData": {
-                            "Fade Out Looped Audio": "amb_smoke_break",
-                            "Play Oneshot SFX": "sfx_footsteps"
+                            "Play Oneshot SFX": "sfx_footsteps",
+                            "SFX Delay": 1.8
                           },
                           "id": "A_ejeefbt6",
                           "kind": "gameEvent"
@@ -4642,8 +4695,7 @@
                 },
                 {
                   "gameData": {
-                    "Fade In Looped Audio": "music_background",
-                    "Fade Out Looped Audio": "music_ghost"
+                    "Fade In Looped Audio": "music_background"
                   },
                   "id": "A_k2b5oxy0",
                   "kind": "gameEvent"
@@ -4744,8 +4796,7 @@
                 },
                 {
                   "gameData": {
-                    "Fade In Looped Audio": "music_background",
-                    "Fade Out Looped Audio": "music_ghost"
+                    "Fade In Looped Audio": "music_background"
                   },
                   "id": "A_56d0os9f",
                   "kind": "gameEvent"
@@ -4776,8 +4827,8 @@
                       "beats": [
                         {
                           "gameData": {
-                            "Fade Out Looped Audio": "amb_smoke_break",
-                            "Play Oneshot SFX": "sfx_footsteps"
+                            "Play Oneshot SFX": "sfx_footsteps",
+                            "SFX Delay": 1.8
                           },
                           "id": "A_qu55u8fc",
                           "kind": "gameEvent"
@@ -4829,6 +4880,7 @@
       "L_0abmu7uu": "Stay silent",
       "L_0gewemiv": "Will you stay in this windswept place?",
       "L_0gnymqfh": "This, this has your name on it, John. My god... then you must have made it...",
+      "L_0hsjg3v9": "It's still not light out, and the fog coils around you. Where will you go next?",
       "L_0lu4y0kt": "Why continue to punish yourself for what happened so long ago?",
       "L_0p718wn5": "Glass vial",
       "L_0sntv0tk": "Anyway, I haven't seen you out here before. I'm Shelly. Who are you?  ",
@@ -4873,7 +4925,7 @@
       "L_49exti52": "You're an odd duck.",
       "L_4dto6hro": "You don't know how much Rupert would have known about vaccinations 100 years ago. ",
       "L_4fa7v880": "I insist. Lets go for a walk in town.",
-      "L_4mb6osvl": "There is nothing for you here. Best to head back.  ",
+      "L_4mb6osvl": "There is nothing for you here. Best to head back. ",
       "L_4rkjhqby": "As you turn you see him. An ethereal young man stands before you. He is tall and broad chested dressed in a vest and slacks. He slumps slightly as he towers over you. His head hangs low and his shoulders slouched. You can't make out his face but you feel his stare. ",
       "L_4vcn2z5a": "I'm the new lighthouse keeper.",
       "L_4xa35oxr": "Who are you?",
@@ -4940,6 +4992,7 @@
       "L_bqvx3niw": "It's hard to look Rupert dead on and tell him about pandemics, pharmaceutical companies, wars, corporate exploitation... but the words spill out. ",
       "L_bt2y0vfk": "Mermaid Lighter",
       "L_bvd7egxb": "There was a lot to like. I just... didn't.",
+      "L_c0upda30": "You walk a mile or so. In the distance an old windmill in surprisingly good condition stands proudly. But with each step closer you feel an icy chill from behind you. The anxiety welling up within Theo chills you to your very core. ",
       "L_c1j1nr5g": "You know, before I wasn't sure, but I was content here. Working as a waitress on the weekends, driving into town to see my girl when I can. I would have been more content if she'd visited more often, but we were working on it. I would still be working on it, I guess.",
       "L_c6oi4riy": "The ghost is gone from this place. There is nothing left for you here.",
       "L_cdyj7w3y": "The vial looks like something from an old-time pharmacy. Maybe it belonged to someone who lived in the village ages ago. You wonder if any buildings are still standing from that time. Medicine like this would have been brought in from the city by boat. You wonder who used it.",
@@ -5031,7 +5084,6 @@
       "L_l1a31hlz": "What will you do here?",
       "L_l2atfu2w": "You're not interested in any of the other items that litter the table. Maybe a walk will clear your head. Surely the sun will rise soon. You leave the lighthouse.",
       "L_lf5xupsf": "Eventually you reach the plot in which the windmill is set and make your way along its border, into town. After a minute or so you stop in front of an old wooden storefront.",
-      "L_lpu7qv0s": "You walk a mile or so. In the distance an old windmill in surprisingly good condition stands proudly. But with each step closer you feel an icy chill from behind you. The anxiety welling up within Theo chills you to your very core. ",
       "L_m2ewo5h9": "At one time... it meant everything.",
       "L_mdk1s9we": "Hey! I was good at it, and it was good for the world, you know? I got to approve a bunch of genuinely impactful projects. I was always a hit at cocktail parties, too.",
       "L_miet7eir": "A short figure, swaddled in a yellow fisherman's coat and hat, peers at you warily from behind a lightless lamp. Both bushy beard and grey eyes seem to sparkle, as if left out on a frosty morning. The aroma of a lovingly cooked meal surrounds him.",
@@ -5088,8 +5140,8 @@
       "L_tsscwz4l": "You wish you could have gotten through to Theo. But the cycle of sadness and guilt is a chain not so easily broken. Maybe at some point Theo will find peace with what happened. But until that day, the legacy of the Montgomery family lingers in those isolated crags.",
       "L_tx2zc6ah": "Soon though the wind settles for but a moment, giving you a view of the ocean from on high. This is about as far from the city you can get without making an unfortunate decent to the churning water below.",
       "L_u1fiwv1h": "Up to the rocks close to the lighthouse",
+      "L_u66ypwdr": "The fog is burning off in the strong morning light.",
       "L_u7rxvp4u": "They loved you?",
-      "L_u912nuzh": "The fog is burning off in the strong morning light.",
       "L_ubiray8d": "I know what you mean. In a way, I was glad to be laid off. It pushed me through a door I wouldn't have had the courage to open, let alone walk through.",
       "L_udamx04r": "You want to see them too, yeah?",
       "L_uk2b2tf3": "I used to review grant applications at a charitable family foundation. I'd write reports on which projects to fund.",
@@ -5137,8 +5189,7 @@
       "L_zv05xd5g": "Maybe you're hoping this phantom from the afterlife has some essential wisdom to share. ",
       "L_zw8z5i1h": "The crashing waves make you uneasy. Time to go.",
       "L_zwh8c0ok": "Don't you see though? That's just it. I can't move on.... if I do then there truly WILL be nothing. I am the last spark of our legacy. ",
-      "L_zyehp8xs": "You flip it open and try to light it. The mechanism catches under your thumb. On closer inspection, it's tarnished. There's a slight build-up of salt encrusting the opening where the flame should appear. It must have fallen into the sea.",
-      "T_o9399qkh": "It's still not light out, and the fog coils around you. Where will you go next?"
+      "L_zyehp8xs": "You flip it open and try to light it. The mechanism catches under your thumb. On closer inspection, it's tarnished. There's a slight build-up of salt encrusting the opening where the flame should appear. It must have fallen into the sea."
     }
   },
   "voiced": false

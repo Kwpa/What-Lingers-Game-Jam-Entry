@@ -8,6 +8,8 @@
               {
                 "gameData": {
                   "Fade In Looped Audio": "amb_smoke_break",
+                  "Play Oneshot SFX": "sfx_footsteps",
+                  "SFX Delay": 1.8,
                 },
                 "id": "A_1k3hs7k6",
                 "kind": "gameEvent",
@@ -59,8 +61,8 @@
                       },
                       {
                         "gameData": {
-                          "Fade Out Looped Audio": "amb_smoke_break",
                           "Play Oneshot SFX": "sfx_footsteps",
+                          "SFX Delay": 1.8,
                         },
                         "id": "A_9sk2rhns",
                         "kind": "gameEvent",
@@ -256,8 +258,8 @@
                       },
                       {
                         "gameData": {
-                          "Fade Out Looped Audio": "amb_smoke_break",
                           "Play Oneshot SFX": "sfx_footsteps",
+                          "SFX Delay": 1.8,
                         },
                         "id": "A_ejeefbt6",
                         "kind": "gameEvent",
@@ -917,7 +919,6 @@
               {
                 "gameData": {
                   "Fade In Looped Audio": "music_background",
-                  "Fade Out Looped Audio": "music_ghost",
                 },
                 "id": "A_k2b5oxy0",
                 "kind": "gameEvent",
@@ -1007,7 +1008,6 @@
               {
                 "gameData": {
                   "Fade In Looped Audio": "music_background",
-                  "Fade Out Looped Audio": "music_ghost",
                 },
                 "id": "A_56d0os9f",
                 "kind": "gameEvent",
@@ -1038,8 +1038,8 @@
                     "beats": [
                       {
                         "gameData": {
-                          "Fade Out Looped Audio": "amb_smoke_break",
                           "Play Oneshot SFX": "sfx_footsteps",
+                          "SFX Delay": 1.8,
                         },
                         "id": "A_qu55u8fc",
                         "kind": "gameEvent",

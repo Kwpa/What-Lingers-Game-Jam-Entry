@@ -8,6 +8,8 @@
               {
                 "gameData": {
                   "Fade In Looped Audio": "amb_site_keepers_house",
+                  "Play Oneshot SFX": "sfx_footsteps",
+                  "SFX Delay": 1.8,
                 },
                 "id": "A_l1q0zpsl",
                 "kind": "gameEvent",
@@ -66,6 +68,14 @@
                       {
                         "id": "L_zco2auz3",
                         "kind": "text",
+                      },
+                      {
+                        "gameData": {
+                          "Play Oneshot SFX": "sfx_footsteps",
+                          "SFX Delay": 1.8,
+                        },
+                        "id": "A_qlz6yj24",
+                        "kind": "gameEvent",
                       },
                     ],
                     "id": "sn_6agqoi49",
@@ -225,6 +235,14 @@
                               {
                                 "id": "L_4mb6osvl",
                                 "kind": "text",
+                              },
+                              {
+                                "gameData": {
+                                  "Play Oneshot SFX": "sfx_footsteps",
+                                  "SFX Delay": 1.8,
+                                },
+                                "id": "A_qgyoj43h",
+                                "kind": "gameEvent",
                               },
                             ],
                             "id": "sn_fv3d56hh",
@@ -740,6 +758,7 @@
                       },
                       {
                         "gameData": {
+                          "Play Oneshot SFX": "sfx_retrieve_item",
                           "Show Item": "VIAL",
                         },
                         "id": "A_a5c9m4s7",
@@ -769,6 +788,7 @@
                       {
                         "gameData": {
                           "Hide Item": true,
+                          "Play Oneshot SFX": "sfx_pocket_item",
                         },
                         "id": "A_8txk4tk9",
                         "kind": "gameEvent",
@@ -912,8 +932,8 @@
               },
               {
                 "gameData": {
-                  "Fade Out Looped Audio": "amb_site_keepers_house",
                   "Play Oneshot SFX": "sfx_footsteps",
+                  "SFX Delay": 1.8,
                 },
                 "id": "A_kho1pqjx",
                 "kind": "gameEvent",
@@ -933,8 +953,8 @@
                     "beats": [
                       {
                         "gameData": {
-                          "Fade Out Looped Audio": "amb_site_keepers_house",
                           "Play Oneshot SFX": "sfx_footsteps",
+                          "SFX Delay": 1.8,
                         },
                         "id": "A_4hr4wfh2",
                         "kind": "gameEvent",
@@ -989,6 +1009,7 @@
             "beats": [
               {
                 "gameData": {
+                  "Fade In Looped Audio": "music_background",
                   "Play Oneshot SFX": "sfx_moves_on_chime_pos",
                 },
                 "id": "A_hrs5vcl2",
@@ -1087,6 +1108,7 @@
             "beats": [
               {
                 "gameData": {
+                  "Fade In Looped Audio": "music_background",
                   "Play Oneshot SFX": "sfx_moves_on_chime_neg",
                 },
                 "id": "A_rd0ebphn",
@@ -1148,6 +1170,7 @@
             "beats": [
               {
                 "gameData": {
+                  "Fade In Looped Audio": "music_background",
                   "Play Oneshot SFX": "sfx_lingers_chime_pos",
                 },
                 "id": "A_huz0ioje",

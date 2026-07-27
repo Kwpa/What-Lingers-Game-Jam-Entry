@@ -23,13 +23,6 @@
                 "id": "L_v5249d7h",
                 "kind": "text",
               },
-              {
-                "gameData": {
-                  "Play Oneshot SFX": "sfx_footsteps",
-                },
-                "id": "A_ndlsdfl2",
-                "kind": "gameEvent",
-              },
             ],
             "id": "sn_wk50zmo4",
             "jump": {
@@ -48,8 +41,10 @@
             "beats": [
               {
                 "gameData": {
-                  "Fade In Looped Audio": "music_background",
+                  "Fade In Looped Audio": "amb_lighthouse_interior",
+                  "Play Oneshot SFX": "sfx_footsteps_door",
                   "Remove Fog Text": "TRUE",
+                  "SFX Delay": 1.75,
                 },
                 "id": "A_nzyl6q6v",
                 "kind": "gameEvent",
@@ -83,9 +78,6 @@
           {
             "beats": [
               {
-                "gameData": {
-                  "Fade In Looped Audio": "amb_lighthouse_interior",
-                },
                 "id": "A_lai3ze80",
                 "kind": "gameEvent",
               },
@@ -276,6 +268,14 @@
                         "id": "L_l2atfu2w",
                         "kind": "text",
                       },
+                      {
+                        "gameData": {
+                          "Play Oneshot SFX": "sfx_footsteps_door",
+                          "SFX Delay": 1.75,
+                        },
+                        "id": "A_2ys2cegd",
+                        "kind": "gameEvent",
+                      },
                     ],
                     "condition": "@has_vial or @has_key or @has_ligher",
                     "id": "sn_7eseuo1w",
@@ -292,8 +292,8 @@
                       },
                       {
                         "gameData": {
-                          "Fade Out Looped Audio": "amb_lighthouse_interior",
-                          "Play Oneshot SFX": "sfx_footsteps",
+                          "Play Oneshot SFX": "sfx_footsteps_door",
+                          "SFX Delay": 1.75,
                         },
                         "id": "A_ly89h9lx",
                         "kind": "gameEvent",
