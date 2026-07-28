@@ -900,7 +900,7 @@
             "jump": {
               "to": "blk_y5p6kxmg",
             },
-            "onEnter": [
+            "onExit": [
               {
                 "kind": "set",
                 "target": "@ghost_name",

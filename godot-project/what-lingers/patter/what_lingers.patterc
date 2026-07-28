@@ -26,9 +26,9 @@
     }
   ],
   "content": {
-    "hash": "1dh3tv9",
+    "hash": "0p1en1q",
     "project": "proj_pvhchy3o",
-    "structureHash": "0mtgtbt"
+    "structureHash": "1o713zi"
   },
   "gameDataFields": {
     "gameEvent": [
@@ -739,7 +739,15 @@
             {
               "beats": [
                 {
-                  "id": "L_5fyzfhq5",
+                  "gameData": {
+                    "Fade In Looped Audio": "music_menu",
+                    "Remove Fog": true
+                  },
+                  "id": "A_pemq0bbl",
+                  "kind": "gameEvent"
+                },
+                {
+                  "id": "L_2rmepz60",
                   "kind": "text"
                 },
                 {
@@ -1723,7 +1731,7 @@
               "jump": {
                 "to": "blk_y5p6kxmg"
               },
-              "onEnter": [
+              "onExit": [
                 {
                   "kind": "set",
                   "target": "@ghost_name",
@@ -4906,6 +4914,7 @@
       "L_2e40yfzm": "Fragrant steam escapes the cross stitch pattern of cuts on the skin of the cooked cod. A door cracks open, letting in the cold from an icy hail outside... A shout of grief and joy and relief as both brothers embrace. ",
       "L_2ebdg1hk": "I don't know.",
       "L_2h24z2a6": "Its okay. Go see them. They're waiting for you.",
+      "L_2rmepz60": "Tonight, the fog will roll back in again, and more people will need your guidance to find safe harbour on these rocks.",
       "L_2vfrrfk7": "Admit that the world is a tough place right now",
       "L_2xdzc8iu": "You stay silent.",
       "L_2xskv8uj": "What will you reflect on?",
@@ -4926,14 +4935,13 @@
       "L_4dto6hro": "You don't know how much Rupert would have known about vaccinations 100 years ago. ",
       "L_4fa7v880": "I insist. Lets go for a walk in town.",
       "L_4mb6osvl": "There is nothing for you here. Best to head back. ",
-      "L_4rkjhqby": "As you turn you see him. An ethereal young man stands before you. He is tall and broad chested dressed in a vest and slacks. He slumps slightly as he towers over you. His head hangs low and his shoulders slouched. You can't make out his face but you feel his stare. ",
+      "L_4rkjhqby": "As you turn you see him. An ethereal young man stands before you. He is tall and broad chested dressed in a vest and slacks. He slumps slightly as he towers over you. His head hangs low and his shoulders slouch. You can't make out his face, but you feel his stare. ",
       "L_4vcn2z5a": "I'm the new lighthouse keeper.",
       "L_4xa35oxr": "Who are you?",
       "L_50rnso44": "She lights her translucent cigarette and turns the lighter over in her hand.",
-      "L_5fyzfhq5": "Tonight, the fog will roll back in again, and more people will need your guidance to find safe harbour on these rocks.",
       "L_5ghzu3oc": "Rupert grins to himself, shaving decades from his face.",
       "L_5je4lacn": "Johnathon lad, is that you?",
-      "L_5oucsj1u": "Your future felt similarly obscured, until recently. Your apprenticeship with the lighthouse keeper gave you the direction you had been missing. Now that he has retired, you feel confident stepping into the role on your own. ",
+      "L_5oucsj1u": "Your future felt similarly obscured, until recently. Your apprenticeship with the lighthouse keeper gave you the direction you had been missing. Now that they have retired, you feel confident stepping into the role on your own. ",
       "L_5qvuk51w": "Remember,  Ariel had to leave the ocean to find her prince and satisfy her curiosity.",
       "L_5y4b677l": "I'm not sure. Time moves so slowly here... And yet decades can go by in an instant. I've watched over this town the whole time. I've seen multiple generations pass. Children growing into grandparents. And each cycle reminds me of my failure...",
       "L_5y5qgsun": "But for now, the whole day is ahead of you.",
@@ -4960,7 +4968,7 @@
       "L_8nbu6rcs": "... 100 years?",
       "L_8ox09jte": "You've been tightly holding onto the small empty bottle of antitoxin this whole time. Rupert leans in close enough for you to make out icicles fused to his matted hair.",
       "L_8vsnlvz3": "There is nothing for you here. Best to head back.  ",
-      "L_8y6yxvyj": "You take out the small empty vial from your pocket. It's warmed up since being closer to your skin. The curved bulge at one end reminds you of the reminds you of the flowing slopes of granite around you.  ",
+      "L_8y6yxvyj": "You take out the small empty vial from your pocket. It's warmed up since being closer to your skin. The curved bulge at one end reminds you of the flowing slopes of granite around you.  ",
       "L_8ykz79qz": "No... No, I don't think so... This whole thing has got me thinking... I've wallowed in this place long enough. Now its time for another group of  Montgomerys to feed this town. And I'm happy knowing that I could be here to see it. Thank you...",
       "L_8zbbfvo8": "Who is Johnathon?",
       "L_9ammycvt": "For the briefest moment, you catch a glimpse of the scene in the ghost's heart. A table laid with the bounty of sea and field, all caught and grown by Rupert's own hands. ",
@@ -4968,7 +4976,7 @@
       "L_9h05bn3d": "You're not sure what awaits Shelly in the world beyond, or if there even is one. But she had to move on. She couldn't have lingered here forever... could she? You hope you were right to give her that push.",
       "L_9k8om9h6": "Yeah, right, sure.",
       "L_9mqz7xoo": "The last little flame keeping our foothold to our home. I have a new duty now.",
-      "L_9u78mxyw": "Maybe that why I chose to come this way on that night. It hadn't been 2 weeks since I buried by father. 'Heartsickness from my mother's passing the year prior', they said. I was yearning for a simpler time. So I walked the cliffs as I did back then...",
+      "L_9u78mxyw": "Maybe that why I chose to come this way on that night. It hadn't been 2 weeks since I buried my father. 'Heartsickness from my mother's passing the year prior', they said. I was yearning for a simpler time. So I walked the cliffs as I did back then...",
       "L_9um5evet": "The wind continues to howl like before: 'Go back home. You do not belong in this place.' ",
       "L_a3ahhmb2": "Have you never thought to see the town as it is now?  ",
       "L_a3d8ltck": "You head back to the lighthouse.",
@@ -5055,11 +5063,11 @@
       "L_i0uq4br9": "You know, the Brothers Grimm give that story a very different ending. Whatever. I can't believe I'm still having this argument over and over again. I can't do this anymore.",
       "L_i9akssl3": "Hmm... Johnathon... will ya be home in time for supper?",
       "L_i9qu3653": "Explain that vaccines now save lives",
-      "L_iadozr77": "There was none of that croupy medicine left in town. Johnathon was the first of us to get the croup, poor boy. We had to send him to the city to get treatment. It was hard on our community— on me— but at least he'd stand a chance...",
+      "L_iadozr77": "There was none of that croupy medicine left in town. Johnathon was the first of us to get the croup, poor boy. We had to send him to the city to get treatment. It was hard on our community — on me — but at least he'd stand a chance...",
       "L_ihupemdl": "I used to live in the city...",
       "L_iibv2hid": "Pick up the vial",
       "L_ilh8yn8t": "True. But if I was a parent watching my child put themself through this, I'd be pretty upset.",
-      "L_iq69kkje": "Many have talked of storms— and storms... So few have heard the roar of pounding surf on windswept shores.",
+      "L_iq69kkje": "Many have talked of storms — and storms... So few have heard the roar of pounding surf on windswept shores.",
       "L_itikmlb9": "... I think you're right... Thanks... thanks for talkin', friend.",
       "L_ivxguvsn": "Will you stay here a while?",
       "L_ix4rmvof": "You enjoy watching over the village, even if no one else is awake yet.",
@@ -5095,13 +5103,13 @@
       "L_n3b9dl6c": "A small glass vial with a water-logged label. You think you can still make out some of the lettering on it. It's cool and smooth to the touch. You'll take it with you today.",
       "L_n5vh0wbe": "Before you can say anything else, he is gone.",
       "L_na6v92dj": "Wow... Sounds like you really believed in the cause, eh?",
-      "L_nn2oojnd": "You wouldn't understand. I— I couldn't face them... on the other side. I wouldn't know what to say. How to ask their forgiveness.",
+      "L_nn2oojnd": "You wouldn't understand. I — I couldn't face them... on the other side. I wouldn't know what to say. How to ask their forgiveness.",
       "L_nr66qpcy": "Here. There's a trick to it. Pass it over.",
       "L_nrari1un": "What will you reflect on?  ",
       "L_nrd4rsrn": "Want to return to your cliffside?",
       "L_oga2e3gj": "It's what you want for yourself that matters most.",
-      "L_orlsugel": "A voice whispers from behind you— low and with the unmistakable hint of melancholy.",
-      "L_ox0aoxx0": "Many have missed the starry nights, the crescent moon— the friendly lights.",
+      "L_orlsugel": "A voice whispers from behind you—low and with the unmistakable hint of melancholy.",
+      "L_ox0aoxx0": "Many have missed the starry nights, the crescent moon — the friendly lights.",
       "L_p5yyl6fk": "Aye! John would be pleased with this. He was always hearkening on about pasturised milk and needles and the like. Didn't think he'd actually be right... Smart lad. Guess he can make his own supper tonight.",
       "L_p9mivedy": "I'm new in town.  ",
       "L_pansdxhu": "Linger...  ",
@@ -5109,7 +5117,7 @@
       "L_pq05f08i": "Your penance is paid, Theo.",
       "L_pvgmay5h": "How the static wooden structures of the town survive the stormy months truly remains a mystery to you.   ",
       "L_q6o1oiuf": "You blink, and when you open your eyes, Theo has vanished. As you try to find him, the strong wind picks up once more. You catch yourself before you tumble backwards away from the cliff face.",
-      "L_q6tkr4kt": "My family... I'm— I was the last. It was on these cliffs that my line ended. I was drunk and on a dare was walking along the edge. The wind picked up... and my family's legacy ended.",
+      "L_q6tkr4kt": "My family... I'm — I was the last. It was on these cliffs that my line ended. I was drunk and on a dare was walking along the edge. The wind picked up... and my family's legacy ended.",
       "L_qewl8yry": "As your thumb traces the bottle, thinking about the poor souls of the past infected by the diphtheria bacteria, the strangest sensation overcomes you. ",
       "L_qkbvwrv2": "Face the sea",
       "L_qrluqif5": "Mermaid Lighter",
@@ -5122,7 +5130,7 @@
       "L_rhus38j5": "Rupert's eyes open again. He stares at you with glittering orbs, thawing from grey to blue. His voice falters.",
       "L_riv8x740": "He silently listens to you explain that some major infections and illnesses have been treatable for while, and that vaccinations have saved untold numbers of lives. ",
       "L_rjx6ki9b": "Return to the lighthouse",
-      "L_rldhu02u": "Your hand finds the engraved lighter.",
+      "L_rldhu02u": "Your hand finds the lighter.",
       "L_rs5covfm": "You'd better get back. There's nothing out here anymore.",
       "L_rucuvgi5": "Oh, how come you two are living apart?",
       "L_rxqfrn2z": "To the cliffs near town",
@@ -5145,12 +5153,12 @@
       "L_ubiray8d": "I know what you mean. In a way, I was glad to be laid off. It pushed me through a door I wouldn't have had the courage to open, let alone walk through.",
       "L_udamx04r": "You want to see them too, yeah?",
       "L_uk2b2tf3": "I used to review grant applications at a charitable family foundation. I'd write reports on which projects to fund.",
-      "L_uly52w03": "Man may change the Cove at will with dwellings, houses, stores— and still",
+      "L_uly52w03": "Man may change the Cove at will with dwellings, houses, stores — and still",
       "L_uwxx6su0": "You stare out over the rolling rocks with a gentle gaze, letting the landscape fill your senses. ",
-      "L_ux3t4f92": "I wanted you to see something. Look at this building",
+      "L_ux3t4f92": "I wanted you to see something. Look at this building.",
       "L_v5249d7h": "You're up early, again. So early that folks in the city are still having a late night. But in this small town, you are the only living soul up and about.",
-      "L_va2gb6tv": "The smell of food is gone also, even if— strangely— your appetite remains.  ",
-      "L_vccta3yn": "Really gives you scope of how small life in this little town is. Yet as soon at you take a few moments of this quiet contemplation in the wind howls up again. Pushing against you and away from the cliff. As if to tell you: 'Go back home. You do not belong in this place.'",
+      "L_va2gb6tv": "The smell of food is gone also, even if — strangely — your appetite remains.  ",
+      "L_vccta3yn": "Really gives you scope of how small life in this little town is. Yet as soon as you take a few moments of quiet contemplation, the wind howls up again. Pushing against you and away from the cliff. As if to tell you: 'Go back home. You do not belong in this place.'",
       "L_vcoe0rup": "Return to the lighthouse",
       "L_ve1tyk1n": "It's what you want for yourself that matters most.",
       "L_vjus2jiw": "My name is... Theo. I don't have much of an opportunity to use it these days.",
@@ -5158,14 +5166,14 @@
       "L_vyodd8y3": "The lighthouse, tall and stoic, is not far removed from your view. You remember reading about an old lighthouse keeper's cottage. Was it where you are standing now? It was lost to the irreparable damage of a major ice storm, you recall.",
       "L_w15hkfcg": "The glass vial",
       "L_w21f44tm": "Degree? What did you study?",
-      "L_w3uzjotm": "Something is off. This ghost— this Rupert— seems to think you're someone else. Suddenly he starts coughing, eyes tight shut as his body heaves like an ocean wave. ",
+      "L_w3uzjotm": "Something is off. This ghost — this Rupert — seems to think you're someone else. Suddenly he starts coughing, eyes tight shut as his body heaves like an ocean wave. ",
       "L_w5wr6i1p": "The mermaid lighter",
       "L_wcg03aht": "Inspecting closer this time, you can read some of the words on the tarnished label: ",
       "L_wcwfiu09": "I am. I have something I'd like to show you. I think it will be helpful for you.",
       "L_why0aiw1": "Shelly tosses her cigarette butt. You watch it fall, wondering what will happen to it when it reaches the ground. But before it does, it fades away. You look back at Shelly, but she's gone, too.",
       "L_witct8bn": "What does it matter? I don't want to use it for anything. My folks thought it'd start me off in a great career. The perfect career for me! And my girlfriend said the same thing. I could have done it; worked in my field, married her, bought that townhouse and adopted a perfect purebred dog.",
       "L_wjzk9mmr": "Rupert's words, tinged with grief and hope, stay with you. The world might be crumbling, but at the end, you can only make do with the time you have. You hope Rupert finds peace knowing Johnathon may have survived.  ",
-      "L_ww4b4473": "Why? The town has nothing for me now. I— It will only remind me of what I threw away.",
+      "L_ww4b4473": "Why? The town has nothing for me now. I — It will only remind me of what I threw away.",
       "L_x6k7subl": "I'm the new lighthouse keeper.",
       "L_xb5m0msp": "... I do.",
       "L_xbxyfirl": "Occasionally, when you walk by the site of the old lighthouse keeper's house, you smell the alluring wafts of Rupert's 'welcome home' supper. You don't suppose this ghost will ever move on, not without his brother.   ",

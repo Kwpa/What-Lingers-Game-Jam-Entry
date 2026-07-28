@@ -43,6 +43,8 @@ sfx_volume_offset = Dictionary[StringName, float]({
 &"sfx_acquire_item": -9.5,
 &"sfx_button_press": -20.0,
 &"sfx_footsteps_door": -7.0,
+&"sfx_lingers_chime_neg": 3.0,
+&"sfx_lingers_chime_pos": 3.0,
 &"sfx_pocket_item": -1.0,
 &"sfx_retrieve_item": -3.5
 })

@@ -100,7 +100,15 @@
           {
             "beats": [
               {
-                "id": "L_5fyzfhq5",
+                "gameData": {
+                  "Fade In Looped Audio": "music_menu",
+                  "Remove Fog": true,
+                },
+                "id": "A_pemq0bbl",
+                "kind": "gameEvent",
+              },
+              {
+                "id": "L_2rmepz60",
                 "kind": "text",
               },
               {

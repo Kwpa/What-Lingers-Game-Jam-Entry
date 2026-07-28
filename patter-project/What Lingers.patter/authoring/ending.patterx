@@ -1,5 +1,8 @@
 {
   "edits": {
+    "L_2rmepz60": {
+      "modifiedAt": "2026-07-28T00:55:20.591Z",
+    },
     "L_5fyzfhq5": {
       "modifiedAt": "2026-07-26T12:53:41.436Z",
     },
@@ -40,8 +43,8 @@
       "modifiedAt": "2026-07-26T12:34:57.145Z",
     },
     "scn_b4t9ehwb": {
-      "by": "Kai",
-      "modifiedAt": "2026-07-26T18:19:18.599Z",
+      "by": "Esther",
+      "modifiedAt": "2026-07-28T00:55:30.972Z",
     },
   },
   "schema": "patter/authoring@0",
